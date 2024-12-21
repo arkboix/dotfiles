@@ -1,0 +1,28 @@
+[focused_window]
+command=xdotool getwindowfocus getwindowname
+interval=1
+color=#ffb5d9
+
+# [separator]
+# command=echo " | "
+# interval=once
+# color=#ffb5d9
+
+[volume]
+label=
+command=pamixer --get-volume
+interval=1
+color=#ffb5d9
+
+[time]
+label=
+command=date '+%I:%M %p'
+interval=60
+color=#ffb5d9
+
+[date]
+label=
+command=date '+%Y-%m-%d'
+interval=3600
+color=#ffb5d9
+

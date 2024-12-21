@@ -1,0 +1,216 @@
+
+# i3 config file
+# Save as ~/.config/i3/config
+
+# Set Mod key (Mod4 = Super/Windows key)
+set $mod Mod4
+
+# Font for window titles and i3bar
+
+font pango:Jetbrains Mono 14
+
+# Use Mouse+$mod to drag floating windows
+floating_modifier $mod
+
+# Start a terminal
+bindsym $mod+Return exec --no-startup-id kitty
+
+# Restart i3 inplace (preserves your layout/session)
+bindsym $mod+Shift+r restart
+
+# Exit i3 (logout)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
+
+# Resize windows
+mode "resize" {
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+# Split in horizontal/vertical
+bindsym $mod+h split h
+bindsym $mod+v split v
+
+# Focus windows
+bindsym $mod+j focus left
+bindsym $mod+semicolon focus down
+bindsym $mod+l focus up
+bindsym $mod+k focus right
+
+# Move focused window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+
+
+
+# Application shortcuts
+bindsym $mod+d exec dmenu_run
+
+# Lock screen
+bindsym $mod+Shift+x exec i3lock
+
+# Screenshot
+bindsym Print exec scrot ~/Pictures/screenshot_%Y-%m-%d_%H-%M-%S.png
+
+
+# Status bar (i3status)
+
+bar {
+    status_command i3blocks
+    font pango:Jetbrains Mono 16
+    position top
+	colors {
+		background #242424
+	    	separator #757575
+		#                  border             background         text
+		focused_workspace  #242424          #242424          $text-color
+		inactive_workspace #242424 #242424 $inactive-text-color
+		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+	}
+}
+
+# bar {
+#	status_command
+#	position bottom
+#	font pango: Jetbrains Mono 8
+#	 colors {
+#               background #242424
+#                separator #757575
+#                #                  border             background         text
+#                focused_workspace  $text-color          $text-color          #242424
+#                inactive_workspace #242424 #242424 $inactive-text-color
+#                urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+#        }
+#	tray_output primary
+#	workspace_buttons no
+# }
+
+# Gaps (requires i3-gaps)
+gaps inner 6
+gaps outer 6
+
+# Rofi
+
+bindsym Ctrl+space exec --no-startup-id rofi -show drun
+bindsym Mod1+Tab exec rofi -show window
+
+
+
+# Windows
+
+bindsym $mod+w kill
+
+# Wallpaper
+
+exec_always --no-startup-id feh --bg-scale ~/Desktop/wallpapers/wallpaper.jpg
+
+# scratchpad
+
+# Move the focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the scratchpad window
+bindsym $mod+minus scratchpad show
+
+# Switch to workspace 1, 2, 3, etc.
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# Switch Window to workspace 1, 2, 3, etc.
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# Vars
+
+set $workspace2 "2"
+set $workspace3 "3"
+set $workspace1 "1"
+
+# picom
+
+exec --no-startup-id picom -b
+
+# Start Thorium
+
+bindsym $mod+Shift+b exec thorium-browser
+
+# Volume
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+# Touchpad controls
+bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+# Autostart
+
+assign [class="Thorium-browser"] $workspace1
+exec thorium-browser
+
+
+# Colors
+
+set $bg-color 	         #eb0e7c
+# #80003e
+set $inactive-bg-color   #470123
+set $text-color          #ffb5d9
+set $inactive-text-color #9e6f86
+set $urgent-bg-color     #E53935
+
+# window colors
+#                       border              background         text                 indicator
+client.focused          $bg-color           $bg-color          $text-color          #ba0f64
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #ba0f64
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #ba0f64
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #ba0f64
+
+hide_edge_borders both
+
+# Screenshot
+
+bindsym $mod+Print exec gnome-screenshot
+
+new_window pixel 4
+
+# Pamixer
+
+exec_always --no-startup-id pamixer
+
+# Layouts
+
+bindsym $mod+s layout stacking
+bindsym $mod+t layout default
