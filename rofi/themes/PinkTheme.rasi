@@ -1,29 +1,29 @@
 /**
  * ROFI Color theme
- * User: Arkboi
+ * User: Qball
  * Copyright: Dave Davenport
  */
 
 * {
-    selected-normal-foreground: #ffc9f2;
-    foreground: #7a5d73;
+    selected-normal-foreground:  @background;
+    foreground: #FFE4E9;
     normal-foreground:           @foreground;
     alternate-normal-background: rgba ( 0, 0, 0, 0 % );
     red:                         rgba ( 220, 50, 47, 100 % );
-    selected-urgent-foreground:  rgba ( 2, 20, 63, 100 % );
+    selected-urgent-foreground:  @foreground;
     pink:                        rgba ( 255, 182, 193, 100 % );
     urgent-foreground:           @foreground;
     alternate-urgent-background: @foreground;
     active-foreground:           @foreground;
     lightbg:                     rgba ( 238, 232, 213, 100 % );
-    selected-active-foreground:  rgba ( 2, 20, 63, 100 % );
-    alternate-active-background: rgba ( 56, 0, 44, 87 % );
-    background:                  rgba ( 56, 0, 44, 77 % ); /* Dark pink with translucency */
+    selected-active-foreground:  @foreground;
+    alternate-active-background: @foreground;
+    background:                  rgba ( 120, 10, 40, 87 % ); /* Dark pink with translucency */
     bordercolor:                 rgba ( 219, 223, 188, 100 % );
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 0, 0, 208, 0 % );
     lightfg:                     rgba ( 88, 104, 117, 100 % );
-    selected-normal-background:  rgba ( 56, 0, 44, 87 % );
+    selected-normal-background:  rgba ( 255, 182, 193, 100 % );
     border-color:                @foreground;
     spacing:                     2;
     separatorcolor:              rgba ( 219, 223, 188, 100 % );
@@ -33,12 +33,12 @@
     background-color:            rgba ( 0, 0, 0, 0 % );
     alternate-active-foreground: @active-foreground;
     active-background:           rgba ( 255, 192, 203, 100 % );
-    selected-active-background:  rgba ( 56, 0, 44, 87 % );
+    selected-active-background:  rgba ( 255, 182, 193, 100 % );
 }
 window {
     background-color: @background;
-    border:           2;
-    padding:          9;
+    border:           1;
+    padding:          4;
 }
 mainbox {
     border:  0;
@@ -47,22 +47,22 @@ mainbox {
 message {
     border:       2px 0px 0px ;
     border-color: @separatorcolor;
-    padding:      8px ;
+    padding:      1px ;
 }
 textbox {
-    text-color: #ffc9f2;
+    text-color: @foreground;
 }
 listview {
     fixed-height: 0;
     border:       2px 0px 0px ;
     border-color: @separatorcolor;
-    spacing:      12px ;
+    spacing:      2px ;
     scrollbar:    true;
     padding:      2px 0px 0px ;
 }
 element {
     border:  0;
-    padding: 1px ;
+    padding: 3px ;
 }
 element-text {
     background-color: inherit;
@@ -144,3 +144,4 @@ textbox-prompt-colon {
     margin:     0px 0.3em 0em 0em ;
     text-color: @normal-foreground;
 }
+
