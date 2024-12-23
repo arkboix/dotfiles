@@ -3,16 +3,17 @@ command=xdotool getwindowfocus getwindowname
 interval=1
 color=#ffb5d9
 
+[seperator]
+label=
+command=echo " "
+interval=once
+
 # [separator]
 # command=echo " | "
 # interval=once
 # color=#ffb5d9
 
-[volume]
-label=
-command=pamixer --get-volume
-interval=1
-color=#ffb5d9
+
 
 [time]
 label=
@@ -25,4 +26,24 @@ label=
 command=date '+%Y-%m-%d'
 interval=3600
 color=#ffb5d9
+
+[seperator]
+label=
+command=echo " "
+interval=once
+
+[volume]
+label=
+command=pamixer --get-volume
+interval=1
+color=#a2ffbc
+
+
+[battery]
+label=
+command=acpi | awk -F', ' '{print $2}'
+interval=30
+color=##ffdca3
+
+
 
