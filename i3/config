@@ -7,7 +7,7 @@ set $mod Mod4
 
 # Font for window titles and i3bar
 
-font pango:Jetbrains Mono 14
+font pango:Agave Nerd Font Mono 14
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -63,7 +63,7 @@ bindsym Print exec scrot ~/Pictures/screenshot_%Y-%m-%d_%H-%M-%S.png
 
 bar {
     status_command i3blocks
-    font pango:Jetbrains Mono 16
+    font pango:Agave Nerd Font Mono 22
     position top
 	colors {
 		background #242424
@@ -122,8 +122,8 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
 bindsym $mod+3 workspace $workspace3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
+bindsym $mod+4 workspace $workspace4
+bindsym $mod+5 workspace $workspace5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
@@ -134,8 +134,8 @@ bindsym $mod+0 workspace 10
 bindsym $mod+Shift+1 move container to workspace $workspace1
 bindsym $mod+Shift+2 move container to workspace $workspace2
 bindsym $mod+Shift+3 move container to workspace $workspace3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
@@ -144,9 +144,11 @@ bindsym $mod+Shift+0 move container to workspace 10
 
 # Vars
 
+set $workspace4 "4"
 set $workspace2 "2"
 set $workspace3 "3"
 set $workspace1 "1"
+set $workspace5 "5"
 
 # picom
 
@@ -159,8 +161,8 @@ bindsym $mod+Shift+b exec thorium-browser
 # Volume
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
@@ -176,16 +178,30 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+
 # Autostart
 
 assign [class="Thorium-browser"] $workspace1
 exec thorium-browser
 
+# Assign applications to specific workspaces
+assign [class="kitty-terminal"] $workspace2
+assign [class="kitty-ttyclock"] $workspace3
+assign [class="kitty-cava"] $workspace3
+assign [class="Nemo"] $workspace4
+
+# Start the terminal and run applications with specific class names
+exec --no-startup-id kitty --class kitty-terminal
+exec --no-startup-id kitty --class kitty-ttyclock -e tty-clock -t -c
+exec --no-startup-id kitty --class kitty-cava -e cava
+exec --no-startup-id nemo
+
 
 # Colors
 
-set $bg-color 	         #eb0e7c
+set $bg-color	         #eb0e7c
 # #80003e
+
 set $inactive-bg-color   #470123
 set $text-color          #ffb5d9
 set $inactive-text-color #9e6f86
@@ -214,3 +230,17 @@ exec_always --no-startup-id pamixer
 
 bindsym $mod+s layout stacking
 bindsym $mod+t layout default
+
+# Clipboard manager
+
+exec_always copyq
+bindsym $mod+Shift+v exec --no-startup-id copyq show
+
+# Autohide Cursor
+
+exec_always unclutter -idle 0.5
+
+
+# File Explorer
+
+bindsym $mod+e exec --no-startup-id nemo
