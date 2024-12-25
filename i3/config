@@ -63,7 +63,7 @@ bindsym Print exec scrot ~/Pictures/screenshot_%Y-%m-%d_%H-%M-%S.png
 
 bar {
     status_command i3blocks
-    font pango:Agave Nerd Font Mono 22
+    font pango:Agave Nerd Font Mono 24
     position top
 	colors {
 		background #242424
@@ -152,7 +152,7 @@ set $workspace5 "5"
 
 # picom
 
-exec --no-startup-id picom -b
+exec_always --no-startup-id picom --backend glx --experimental-backends
 
 # Start Thorium
 
@@ -181,7 +181,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Autostart
 
-assign [class="Thorium-browser"] $workspace1
+assign [class="Thorium-browser"] $workspace5
 exec thorium-browser
 
 # Assign applications to specific workspaces
@@ -205,7 +205,7 @@ set $bg-color	         #eb0e7c
 set $inactive-bg-color   #470123
 set $text-color          #ffb5d9
 set $inactive-text-color #9e6f86
-set $urgent-bg-color     #E53935
+set $urgent-bg-color     #1c1c1c
 
 # window colors
 #                       border              background         text                 indicator
@@ -244,3 +244,7 @@ exec_always unclutter -idle 0.5
 # File Explorer
 
 bindsym $mod+e exec --no-startup-id nemo
+
+# Flameshot
+
+bindsym $mod+Shift+s exec --no-startup-id flameshot gui
