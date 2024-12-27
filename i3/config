@@ -1,13 +1,23 @@
+#    _   ___ _  _____  ___ _____  __   _____   ___ _____ ___ ___ _    ___ ___ 
+#   /_\ | _ \ |/ / _ )/ _ \_ _\ \/ /  / /   \ / _ \_   _| __|_ _| |  | __/ __|
+#  / _ \|   / ' <| _ \ (_) | | >  <  / /| |) | (_) || | | _| | || |__| _|\__ \
+# /_/ \_\_|_\_|\_\___/\___/___/_/\_\/_/ |___/ \___/ |_| |_| |___|____|___|___/
+#                                                                             
+
 
 # i3 config file
 # Save as ~/.config/i3/config
+
+###########################
+## SYSTEM CONFIG & BINDS ##
+###########################
 
 # Set Mod key (Mod4 = Super/Windows key)
 set $mod Mod4
 
 # Font for window titles and i3bar
 
-font pango:Agave Nerd Font Mono 14
+font pango:Agave Nerd Font Mono 16, FontAwesome 16
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -58,6 +68,9 @@ bindsym $mod+Shift+x exec i3lock
 # Screenshot
 bindsym Print exec scrot ~/Pictures/screenshot_%Y-%m-%d_%H-%M-%S.png
 
+#####################
+## i3 BAR SETTINGS ##
+#####################
 
 # Status bar (i3status)
 
@@ -91,6 +104,10 @@ bar {
 #	workspace_buttons no
 # }
 
+####################################
+## WINDOWS & APPLICATION LAUNCHER ##
+####################################
+
 # Gaps (requires i3-gaps)
 gaps inner 6
 gaps outer 6
@@ -106,17 +123,17 @@ bindsym Mod1+Tab exec rofi -show window
 
 bindsym $mod+w kill
 
+###############
+## WALLPAPER ##
+###############
+
 # Wallpaper
 
 exec_always --no-startup-id feh --bg-scale ~/Desktop/wallpapers/wallpaper.jpg
 
-# scratchpad
-
-# Move the focused window to the scratchpad
-bindsym $mod+Shift+minus move scratchpad
-
-# Show the scratchpad window
-bindsym $mod+minus scratchpad show
+################
+## WORKSPACES ##
+################
 
 # Switch to workspace 1, 2, 3, etc.
 bindsym $mod+1 workspace $workspace1
@@ -124,11 +141,11 @@ bindsym $mod+2 workspace $workspace2
 bindsym $mod+3 workspace $workspace3
 bindsym $mod+4 workspace $workspace4
 bindsym $mod+5 workspace $workspace5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace $workspace7
+bindsym $mod+8 workspace $workspace8
+bindsym $mod+9 workspace $workspace9
+bindsym $mod+0 workspace $workspace10
 
 # Switch Window to workspace 1, 2, 3, etc.
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -136,27 +153,46 @@ bindsym $mod+Shift+2 move container to workspace $workspace2
 bindsym $mod+Shift+3 move container to workspace $workspace3
 bindsym $mod+Shift+4 move container to workspace $workspace4
 bindsym $mod+Shift+5 move container to workspace $workspace5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
+bindsym $mod+Shift+0 move container to workspace $worskpace10
 
 # Vars
 
-set $workspace4 "4"
-set $workspace2 "2"
-set $workspace3 "3"
-set $workspace1 "1"
-set $workspace5 "5"
+set $workspace1 "  "
+set $workspace2 "  "
+set $workspace3 "  "
+set $workspace4 "  "
+set $workspace5 "  "
+set $workspace6 "  "
+set $workspace7 "  "
+set $workspace8 "  "
+set $workspace9 "  "
+set $workspace10 "  "
+
+
+########################
+## DISPLAY COMPOSITOR ##
+########################
 
 # picom
 
-exec_always --no-startup-id picom --backend glx --experimental-backends
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf --experimental-backends &
+
+
+########################################################################
+## THORIUM BROWSER BIND (REPLACE "thorium-browser" WITH YOUR BROWSER) ##
+########################################################################
 
 # Start Thorium
 
 bindsym $mod+Shift+b exec thorium-browser
+
+###############################################################################
+## CONTROL BUTTON COMPATIBLITY (VOLUME BUTTONS, TOUCHPAD BUTTONS, BRIGHTNESS)##
+###############################################################################
 
 # Volume
 
@@ -178,12 +214,13 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+#################################################
+## ASSIGN CERTAIN WINDOWS TO CERTAIN WORKSPACES ##
+#################################################
 
 # Autostart
 
 assign [class="Thorium-browser"] $workspace5
-exec thorium-browser
-
 # Assign applications to specific workspaces
 assign [class="kitty-terminal"] $workspace2
 assign [class="kitty-ttyclock"] $workspace3
@@ -195,7 +232,12 @@ exec --no-startup-id kitty --class kitty-terminal
 exec --no-startup-id kitty --class kitty-ttyclock -e tty-clock -t -c
 exec --no-startup-id kitty --class kitty-cava -e cava
 exec --no-startup-id nemo
+exec --no-startup-id thorium-browser
 
+
+###################
+## COLORS CONFIG ##
+###################
 
 # Colors
 
@@ -216,9 +258,11 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 hide_edge_borders both
 
-# Screenshot
+###########
+## TOOLS ##
+###########
 
-bindsym $mod+Print exec gnome-screenshot
+# Window Border Thickness
 
 new_window pixel 4
 
@@ -248,3 +292,18 @@ bindsym $mod+e exec --no-startup-id nemo
 # Flameshot
 
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
+
+######################################
+## OTHER WINDOW MANAGEMENT, APPLETS ##
+######################################
+
+# Fullscreen
+
+bindsym $mod+f fullscreen
+
+# Applets - Display a network manager applet, bluetooth applet
+
+exec_always --no-startup-id nm-applet
+exec_always --no-startup-id blueman-applet
+
+# THANKS FOR USING THIS DOTFILE!
