@@ -12,3 +12,6 @@ the file "i3" is a config file for i3wm, the window manager i use.
 # Installation
 
 install and you're done
+
+this is the kind of experience i have when reading the installation guide of something so might as well do the exact same thing
+
