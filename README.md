@@ -15,3 +15,21 @@ install and you're done
 
 this is the kind of experience i have when reading the installation guide of something so might as well do the exact same thing
 
+jokes asside,
+
+## Dependencies
+
+The following dependenices are needed for the configuration to work properly.
+
+`feh, kitty, librewolf, starship, flameshot, xdotool, pamixer, copyq, nemo, cava, tty-clock, i3blocks, picom, nm-applet, blueman-manager, vim, nvim, fontawesome, agave nerd font, fastfetch`
+
+### To install;
+
+#### For Debian-based distributions
+``sudo apt update && sudo apt install -y feh kitty flameshot xdotool pamixer copyq nemo cava tty-clock i3blocks picom network-manager-gnome blueman vim neovim fonts-font-awesome fonts-agave fastfetch``
+
+CAUTION: LibreWolf and Starship have to be installed externally. (starship.rs & librewolf.net)
+
+#### For Arch/Arch-based
+
+``sudo pacman -S feh kitty flameshot xdotool pamixer copyq nemo cava tty-clock i3blocks picom network-manager-gnome blueman vim neovim fonts-font-awesome fonts-agave fastfetch``
