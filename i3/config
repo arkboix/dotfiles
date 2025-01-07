@@ -7,6 +7,33 @@
 
 # i3 config file
 # Save as ~/.config/i3/config
+# github.com/arkboix/dotfiles
+
+############################
+## PREFERRED APPLICATIONS ##
+############################
+
+# CHANGING THIS WILL NOT CHANGE DEFAULT APPS, THIS IS TO SHOW WHAT APPS YOU NEED TO INSTALL INORDER FOR THE CONFIG TO WORK
+
+# Terminal Emulator: Kitty
+# Web Browser: LibreWolf
+# Wallpaper Utility: feh
+# Status Bar: i3blocks
+# Bar: i3blocks
+# Applets: NetworkManager (nm-applet), BlueMan-applet, CopyQ
+# Screenshot Utility: Flameshot (Win+Shift+S)
+
+# Floating Mode
+
+bindsym $mod+Shift+f floating toggle
+
+#########################
+## AUTO-DYNAMIC TILING ##
+#########################
+
+exec_always --no-startup-id i3-autotiling
+
+
 
 ###########################
 ## SYSTEM CONFIG & BINDS ##
@@ -17,7 +44,7 @@ set $mod Mod4
 
 # Font for window titles and i3bar
 
-font pango:Agave Nerd Font Mono 16, FontAwesome 16
+font pango:Agave Nerd Font Mono Regular 16, FontAwesome 16
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -65,9 +92,6 @@ bindsym $mod+d exec dmenu_run
 # Lock screen
 bindsym $mod+Shift+x exec i3lock
 
-# Screenshot
-bindsym Print exec scrot ~/Pictures/screenshot_%Y-%m-%d_%H-%M-%S.png
-
 #####################
 ## i3 BAR SETTINGS ##
 #####################
@@ -76,7 +100,7 @@ bindsym Print exec scrot ~/Pictures/screenshot_%Y-%m-%d_%H-%M-%S.png
 
 bar {
     status_command i3blocks
-    font pango:Agave Nerd Font Mono 24
+    font pango:Symbols Nerd Font Mono Regular, Agave Nerd Font Mono Regular 19
     position top
 	colors {
 		background #242424
@@ -89,9 +113,9 @@ bar {
 }
 
 # bar {
-#	status_command
+#	status_command i3blocks
 #	position bottom
-#	font pango: Jetbrains Mono 8
+#	font pango: JetbrainsMono Nerd Font Mono 19
 #	 colors {
 #               background #242424
 #                separator #757575
@@ -109,7 +133,7 @@ bar {
 ####################################
 
 # Gaps (requires i3-gaps)
-gaps inner 6
+gaps inner 12
 gaps outer 6
 
 # Rofi
@@ -129,7 +153,7 @@ bindsym $mod+w kill
 
 # Wallpaper
 
-exec_always --no-startup-id feh --bg-scale ~/Desktop/wallpapers/wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale ~/Desktop/wallpapers/wallpaper3.jpg
 
 ################
 ## WORKSPACES ##
@@ -163,7 +187,7 @@ bindsym $mod+Shift+0 move container to workspace $worskpace10
 
 set $workspace1 "  "
 set $workspace2 "  "
-set $workspace3 "  "
+set $workspace3 "  "
 set $workspace4 "  "
 set $workspace5 "  "
 set $workspace6 "  "
@@ -182,13 +206,12 @@ set $workspace10 "  "
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf --experimental-backends &
 
 
-########################################################################
-## THORIUM BROWSER BIND (REPLACE "thorium-browser" WITH YOUR BROWSER) ##
-########################################################################
+############################################################
+## LIBREWOLF BIND (REPLACE "librewolf" WITH YOUR BROWSER) ##
+############################################################
+# Start Librewolf
 
-# Start Thorium
-
-bindsym $mod+Shift+b exec thorium-browser
+bindsym $mod+Shift+b exec librewolf
 
 ###############################################################################
 ## CONTROL BUTTON COMPATIBLITY (VOLUME BUTTONS, TOUCHPAD BUTTONS, BRIGHTNESS)##
@@ -202,8 +225,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 # Touchpad controls
 bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
@@ -220,7 +243,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Autostart
 
-assign [class="Thorium-browser"] $workspace5
+assign [class="LibreWolf"] $workspace5
 # Assign applications to specific workspaces
 assign [class="kitty-terminal"] $workspace2
 assign [class="kitty-ttyclock"] $workspace3
@@ -232,7 +255,7 @@ exec --no-startup-id kitty --class kitty-terminal
 exec --no-startup-id kitty --class kitty-ttyclock -e tty-clock -t -c
 exec --no-startup-id kitty --class kitty-cava -e cava
 exec --no-startup-id nemo
-exec --no-startup-id thorium-browser
+exec --no-startup-id librewolf
 
 
 ###################
@@ -245,16 +268,16 @@ set $bg-color	         #eb0e7c
 # #80003e
 
 set $inactive-bg-color   #470123
-set $text-color          #ffb5d9
-set $inactive-text-color #9e6f86
+set $text-color          #ff3b6c
+set $inactive-text-color #9c2744
 set $urgent-bg-color     #1c1c1c
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #ba0f64
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #ba0f64
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #ba0f64
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #ba0f64
+client.focused          $bg-color           $bg-color          $text-color          $bg-color
+client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color $inactive-bg-color
+client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color $inactive-bg-color
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $urgent-bg-color
 
 hide_edge_borders both
 
@@ -282,7 +305,7 @@ bindsym $mod+Shift+v exec --no-startup-id copyq show
 
 # Autohide Cursor
 
-exec_always unclutter -idle 0.5
+exec_always unclutter -idle 1
 
 
 # File Explorer
@@ -304,6 +327,32 @@ bindsym $mod+f fullscreen
 # Applets - Display a network manager applet, bluetooth applet
 
 exec_always --no-startup-id nm-applet
-exec_always --no-startup-id blueman-applet
+# exec_always --no-startup-id blueman-applet
+
+############
+## GAMING ##
+############
+
+# Gaming Mode hotkey: Win+G
+
+#Toggle on:
+
+bindsym $mod+g exec killall picom
+
+# Toggle off:
+
+bindsym $mod+Shift+g exec --no-startup-id picom --config ~/.config/picom/picom.conf --experimental-backends &
+
+# What is gaming mode? Gaming mode disables the display compositor, picom, wich means it disables active window translucency and blur, this can increase performance in big
+# numbers, so it is recommended to not use picom while gaming. You can toggle picom back on by either reloading i3 with Win+Shift+R or, just run picom with Win+Shift+G
+
+##################
+## EMOJI PICKER ##
+##################
+
+for_window [class="org.gnome.Characters"] floating enable
+exec_always --no-startup-id dex -a -e gnome-characters
+bindsym $mod+Shift+p exec --no-startup-id gnome-characters
+
 
 # THANKS FOR USING THIS DOTFILE!
