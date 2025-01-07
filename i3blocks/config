@@ -1,9 +1,9 @@
 separator_block_width=10
 
 [focused_window]
-command=xdotool getwindowfocus getwindowname
+command=xdotool getwindowname $(xdotool getactivewindow)
 interval=1
-color=#ffb5d9
+color=#ff3b6c
 align=center
 label= 
 separator=false
@@ -23,7 +23,7 @@ interval=once
 
 
 [time]
-label= 
+label=
 command=date '+%I:%M %p'
 interval=60
 color=#ffb5d9
@@ -39,10 +39,16 @@ color=#ffb5d9
 separator=false
 color=#eb4034
 
+[brightness]
+command=light -G | awk '{printf "%.0f%%", $1}'
+interval=5
+label=
+separator=false
+color=#FF8FG
 
 
 [volume]
-label= 
+label=
 command=pamixer --get-volume
 interval=1
 color=#a2ffbc
@@ -51,7 +57,7 @@ separator=false
 
 
 [battery]
-label= 
+label=
 command=acpi | awk -F', ' '{print $2}'
 interval=30
 color=##ffdca3
@@ -59,7 +65,7 @@ separator=false
 
 [spacer]
 label=
-command=echo " "
+command=echo "|"
 interval=1
 
 
