@@ -1,0 +1,22 @@
+# Startup
+arch
+
+# Prompt
+
+PS1='%F{white}[%F{yellow}  %F{cyan}%D{%I:%M %p}%F{red} %n@%m %F{yellow}%~%F{white}]%f '
+
+# Example Prompts
+#PS1='%F{red}> %F{cyan}%~ %f'
+#PS1='%F{white}[ %F{blue}%~ %F{white}] %f'
+#PS1='%F{white}[ %F{blue}%D{%I:%M %p} %F{yellow}%~ %F{white}] %f'
+
+# Aliases
+alias ls="exa -lah"
+alias cat="bat"
+alias rld="source ~/.zshrc"
+alias doas="sudo"
+alias fastfetch="fastfetch --logo-color-1 cyan --color cyan"
+
+# Emacs Makes me Do More Work (E.M.D.M.W)
+export PATH="$HOME/.emacs.d/bin:$PATH"
+#alias emacs="emacsclient -c -a 'emacs'"
