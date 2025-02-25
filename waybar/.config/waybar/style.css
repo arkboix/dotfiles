@@ -1,0 +1,192 @@
+/* 💫 https://github.com/arkboix */
+@import url("file:/home/arkboi/dotfiles/waybar/.config/waybar/solarized.css");
+
+
+* {
+    border: 0;
+    border-radius: 0px;
+    font-family: "IBM Plex Mono, JetBrains Mono, Font Awesome 6 Free";
+    font-size: 14px;
+}
+
+.modules-right {
+    margin-right: 2px;
+    border-radius: 6px;
+}
+#custom-disk {
+    border-top: 2px solid @battery;
+    color: @battery;
+}
+/*window#waybar > box {
+    border-radius: 8px;
+    margin: 4px 8px 8px 8px;
+    background-color: rgba(32, 32, 32, 0.75);
+    41, 45, 52, 1
+}*/
+
+window#waybar {
+    background: @bg;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    color: @color5;
+    margin: 12px;
+    margin-top: 12px;
+        border-top: 2px solid @color13;
+    border-bottom: 2px solid @color13;
+
+}
+
+#custom-main, #custom-scale, #custom-color, #custom-fzf, #custom-config, #custom-info, #custom-backup, #custom-wall-select, #custom-dots, #custom-update, #custom-play, #custom-stop, #custom-drawer {
+   color: @extra;
+   border-bottom: 2px solid @extra;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+#custom-player {
+  color: @music;
+}
+
+#custom-uname {
+  color: @sys-info;
+}
+
+#custom-group-icon-2 {
+    color: @extra;
+    border-bottom: 2px solid @extra;
+    padding-left: 4px;
+}
+
+/*
+.modules_left {
+    padding:7px;
+    margin:5px;
+    border-radius:10px;
+    background: alpha(@background,.5);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+*/
+
+#window {
+    font-weight: bolder;
+    font-family: "Fira Sans, Ubuntu";
+    color: @fg;
+}
+
+
+
+#window.empty {
+    border-top: none;
+    background: none;
+}
+
+#workspaces {
+  padding: 0px;
+  font-weight: 900;
+}
+
+
+#workspaces button /*#custom-play, #custom-stop*/ {
+    background: transparent;
+    color: @workspaces-gray;
+    padding: 0px;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-top: 0px solid transparent;
+}
+
+#workspaces button.active {
+    color: @bg;
+    background-color: @color13;
+    border-bottom: 2px solid @color13;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+
+#battery, #cpu, #memory, #pulseaudio, #custom-spotify, #tray, #mode {
+    padding: 0 3px;
+    margin: 0 2px;
+    font-weight: bold;
+    border-bottom: 2px solid @color5;
+}
+
+#clock {
+    font-weight: bolder;
+}
+
+#battery {
+   color: @battery;
+   border-bottom: 2px solid @battery;
+}
+
+#battery icon {
+    color: red;
+}
+
+#battery.charging {
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+
+#battery.warning:not(.charging) {
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+}
+
+#memory {
+    color: @memory;
+    border-bottom: 2px solid @memory;
+}
+
+
+#network.disconnected {
+    background: #f53c3c;
+}
+
+#pulseaudio {
+    color: @color13;
+    border-bottom: 2px solid @color13;
+}
+
+#pulseaudio.muted {
+}
+
+#custom-spotify {
+    color: rgb(102, 220, 105);
+}
+
+#tray {
+    border-bottom: 2px solid @tray;
+}
+
+
+#custom-wofi, #custom-swaync, #custom-wall, #custom-reload, #custom-power {
+    border-bottom: 2px solid @extra;
+    color: @extra;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#clock {
+    border-bottom: 2px solid @extra;
+    margin-left: 2px;
+}
+
+#custom-power {
+	color: @extra;
+}
+
+

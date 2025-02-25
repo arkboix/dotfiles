@@ -1,0 +1,319 @@
+// 💫 https://github.com/arkboix
+
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar at the top of your screen
+    "height":32, // Waybar height
+    "margin": 0,
+    // , 
+    // "width": 1366, // Waybar width HELLO
+    // Choose the order of the modules
+    "modules-left": ["custom/apps", "hyprland/workspaces", "hyprland/submap", "custom/spotify", "hyprland/window"],
+    "modules-center": ["custom/cpuh", "custom/uname", "custom/animation", "custom/player"],
+    "modules-right": ["pulseaudio",  "memory", "battery","tray", "clock", "custom/power", "group/sysext"],
+    "hyprland/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": false,
+        "format": "{icon}",
+        "format-icons": {
+            "1:web": "",
+            "2:code": "",
+            "3:term": "",
+            "4:work": "",
+            "5:music": "",
+            "6:docs": "",
+            "urgent": "",
+//            "active": "",
+//            "default": ""
+        }
+    },
+    "hyprland/window": {
+      "format": "{}",
+      "icon": "true"
+    },
+    "hyprland/submap": {
+        "format": "{}"
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+	"format": "{:%I:%M %p}",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "{usage}% "
+    },
+    "memory": {
+        "format": "{}% "
+    },
+   "battery": {
+        "bat": "BAT0",
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        // "interface": "wlp2s0", // (Optional) To force the use of this interface
+        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-disconnected": "Disconnected ⚠",
+        "on-click": "~/repos/rofi-wifi-menu/rofi-wifi-menu.sh"
+    },
+    "pulseaudio": {
+        //"scroll-step": 1,
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/spotify": {
+        "format": " {}",
+        "max-length": 40,
+        "interval": 30, // Remove this if your script is endless and write in loop
+        "exec": "$HOME/.config/waybar/mediaplayer.sh 2> /dev/null", // Script in resources folder
+        "exec-if": "pgrep spotify"
+    },
+
+
+  "custom/apps": {
+    "format": "  ",
+    "on-click": "rofi -show drun"
+},
+
+
+
+"custom/main": {
+  "format": "{}",
+  "exec": "echo ",
+  "on-click": "~/arkscripts/main.sh",
+  "exec-if": "true"
+},
+
+  "custom/player": {
+    "format": "[ {} ]",
+    "exec": "playerctl metadata --format '[ Now Playing: {{title}} by {{artist}} ]' || echo 'No music playing'",
+    "interval": 2,
+    "on-click": "playerctl play-pause",
+    "tooltip": false
+},
+
+
+"custom/color": {
+  "format": "",
+  "exec": "echo ",
+  "on-click": "~/arkscripts/waybar-colors.css",
+  "exec-if": "true"
+},
+
+"custom/scale": {
+  "format": "",
+  "exec": "echo ",
+  "on-click": "~/arkscripts/scaling.sh",
+  "exec-if": "true"
+},
+
+"custom/animation": {
+  "format": "  [ ✨ Animations] ",
+  "exec": "echo [Animations]",
+  "on-click": "~/arkscripts/animation.sh",
+  "exec-if": "true"
+},
+
+"custom/fzf": { 
+  "format": "",
+  "exec": "echo ",
+  "on-click": "~/arkscripts/fzf-rofi.sh",
+  "exec-if": "true"
+},
+
+"custom/info": {
+	"format": "",
+	"exec": "echo ",
+	"on-click": "~/arkscripts/info.sh",
+	"exec-if": "true"
+},
+
+"custom/config": {
+	"format": "",
+	"exec": "echo ",
+	"on-click": "arkscripts/config-edit.sh",
+	"exec-if": "true"
+},
+
+"custom/uname": {
+    "exec": "~/arkscripts/unamea.sh",
+    "interval": 60,
+    "format": "{}"
+},
+
+
+"custom/power": {
+	"format": "",
+	"exec": "echo ",
+	"on-click": ".config/rofi/scripts/powermenu.sh",
+	"exec-if": "true"
+},
+
+"custom/stop": {
+	"format": "",
+	"exec": "echo ",
+	"on-click": "~/arkscripts/stop-sounds.sh",
+	"exec-if": "true"
+},
+
+"custom/play": {
+	"format": "",
+	"exec": "echo ",
+	"on-click": "~/arscripts/sounds.sh",
+	"exec-if": "true"
+},
+
+"custom/drawer": {
+	"format": "",
+	"exec": "echo ",
+	"on-click": "nwg-drawer",
+	"exec-if": "true"
+},
+
+"custom/group-icon": {
+    "format":"",
+    "exec": "echo ",
+    "on-click": "echo hi",
+    "exec-if": "true"
+},
+
+"custom/group-icon-2": {
+    "format":"",
+    "exec": "echo ",
+    "on-click": "echo hi",
+    "exec-if": "true"
+},
+
+"custom/cpuh": {
+    "exec": "~/arkscripts/errors.sh",  
+  "interval": 30,
+    "format": "{}"
+},
+
+
+"group/sysext": {
+	"orientation": "inherit",
+	"drawer": {
+		"transition-duration": 754,
+		"children-class": "custom/group-icon-2",
+		"transition-left-to-right": false
+        },
+	"modules": [
+        "custom/group-icon-2",
+        "custom/fzf",
+		"custom/backup",
+    "custom/main"
+    ]
+},
+
+
+"custom/update": {
+	"format": "",
+	"exec": "echo ",
+	"on-click": "~/arkscripts/update.sh",
+	"exec-if": "true",
+    "class": "grouped"
+},
+
+"custom/errors": {
+  "format": " {}",
+  "exec": "~/arkscripts/errors.sh",
+  "on-click": "kitty -e journalctl -p 3 -xe"
+
+},
+
+"custom/seperator": {
+  "exec": "echo  | ",
+  "interval": "0"
+},
+
+"custom/dots": {
+	"format": "",
+	"exec": "echo ",
+	"on-click": "~/arkscripts/dots.sh",
+    "class": "grouped",
+	"exec-if": "true"
+},
+
+"custom/wall-select": {
+	"format": "",
+	"exec": "echo ",
+	"on-click": "waypaper",
+    "class": "grouped",
+	"exec-if": "true"
+},
+
+"custom/backup": {
+
+    "format": "",
+    "exec": "echo ",
+    "on-click": "~/arkscripts/backup.sh",
+    "class": "grouped",
+    "exec-if": "true"
+},
+
+"custom/swaync": {
+	"format": "",
+        "exec": "echo ",
+        "on-click": "swaync-client -t",
+        "exec-if": "true"
+},
+
+
+"custom/cava": {
+    "format":"cava",
+    "exec":"cava"
+},
+
+"custom/reload": {
+    "format": "",
+    "exec": "echo ",
+    "on-click": "~/arkscripts/waybar-reload.sh",
+    "exec-if": "true"
+},
+
+  "custom/wofi": {
+     "format": "",
+     "exec": "echo hello",
+     "on-click": "rofi -show drun",
+     "tooltip": "Click to open wofi",
+     "exec-if": "true"
+     
+},
+"custom/disk": {
+    "format": " {}",
+    "interval": "300",
+    "max-length": "20",
+    "exec": "df --total -hl | grep 'nvme0n1p8' | awk '{print $5}'"
+},
+
+"custom/wall": {
+    "format": "",  // You can change this icon to anything you prefer
+    "exec": "echo ", // This will just display the icon
+    "on-click": "~/arkscripts/wall.sh", // Run the script when clicked
+    "tooltip": "Click to change wallpaper", // Tooltip for the icon
+    "exec-if": "true"
+}
+}

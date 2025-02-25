@@ -1,0 +1,32 @@
+/*  Custom Color Scheme in GTK CSS */
+
+@define-color workspaces-gray #6F6A73;
+@define-color workspaces-bg-focused #4A90E2;
+@define-color bg #1B1F23;
+@define-color fg #C8C5C0;
+@define-color sys-info #D9A441;
+@define-color music #D16C48;
+@define-color player #4A90E2;
+@define-color memory #D9A441;
+@define-color battery #C0392B;
+@define-color tray #955BA5;
+@define-color extra #6ABF69;
+
+/* Custom Colors (color0 to color16) */
+@define-color color0  #1B1F23;
+@define-color color1  #2A2E33;
+@define-color color2  #53585D;
+@define-color color3  #676E73;
+@define-color color4  #8C9399;
+@define-color color5  #B0B6BA;
+@define-color color6  #E1E4E6;
+@define-color color7  #F3F5F6;
+@define-color color8  #D9A441;
+@define-color color9  #D16C48;
+@define-color color10 #C0392B;
+@define-color color11 #955BA5;
+@define-color color12 #4A90E2;
+@define-color color13 #5A8DE1;
+@define-color color14 #66CCB3;
+@define-color color15 #6ABF69;
+@define-color color16 #F3F5F6;

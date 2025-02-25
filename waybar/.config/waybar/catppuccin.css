@@ -1,0 +1,32 @@
+/* Catppuccin Color Scheme in GTK CSS */
+
+@define-color workspaces-gray #6E6C7E;
+@define-color workspaces-bg-focused #89B4FA;
+@define-color bg #1E1E2E;
+@define-color fg #D9E0EE;
+@define-color sys-info #F9E2AF;
+@define-color music #FAB387;
+@define-color player #89B4FA;
+@define-color memory #F9E2AF;
+@define-color battery #F38BA8;
+@define-color tray #CBA6F7;
+@define-color extra #A6E3A1;
+
+/* Catppuccin Colors (color0 to color16) */
+@define-color color0  #1E1E2E;
+@define-color color1  #282738;
+@define-color color2  #45475A;
+@define-color color3  #585B70;
+@define-color color4  #6E6C7E;
+@define-color color5  #D9E0EE;
+@define-color color6  #F5E0DC;
+@define-color color7  #F2CDCD;
+@define-color color8  #F38BA8;
+@define-color color9  #FAB387;
+@define-color color10 #F9E2AF;
+@define-color color11 #CBA6F7;
+@define-color color12 #89B4FA;
+@define-color color13 #89B4FA;
+@define-color color14 #94E2D5;
+@define-color color15 #A6E3A1;
+@define-color color16 #F5E0DC;
