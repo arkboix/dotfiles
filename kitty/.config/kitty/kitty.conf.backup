@@ -1,4 +1,4 @@
-include ~/dotfiles/kitty/.config/kitty/catppuccin.conf
+include ~/dotfiles/kitty/.config/kitty/nord.conf
 #include ~/dotfiles/kitty/.config/kitty/nord.conf
 
 font_family    IBM Plex Mono Bold
