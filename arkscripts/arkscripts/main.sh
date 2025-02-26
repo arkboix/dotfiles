@@ -14,6 +14,7 @@ options=(
     "Send Info notification"
     "Update System"
     "Change Waybar Theme"
+    "Change Terminal (kitty) theme"
 )
 
 # Define corresponding commands
@@ -30,6 +31,7 @@ commands=(
     "~/dotfiles/arkscripts/arkscripts/info.sh"
     "~/dotfiles/arkscripts/arkscripts/update.sh"
     "~/dotfiles/arkscripts/arkscripts/waybar-color.sh"
+    "~/dotfiles/arkscripts/arkscripts/kitty-color.sh"
 )
 
 # Show Rofi menu
