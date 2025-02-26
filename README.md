@@ -2,6 +2,13 @@
 
 These are dotfiles used by Arkboi, it turns hyprland into just a window manager without usual eye candy.
 
+# Pictures
+
+![Image 1](assets/2025-02-26-194942_hyprshot.png)
+![Image 2](assets/2025-02-26-194954_hyprshot.png)
+![Image 2](assets/2025-02-26-194959_hyprshot.png)
+
+
 # Installation
 
 > [!CAUTION]
