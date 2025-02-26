@@ -107,13 +107,8 @@
 },
 
   "custom/player": {
-<<<<<<< HEAD
     "format": "{}",
     "exec": "playerctl metadata --format '[ Now Playing: {{title}} by {{artist}} ]' || echo '[ No music playing ]'",
-=======
-    "format": "[ {} ]",
-    "exec": "playerctl metadata --format '[ Now Playing: {{title}} by {{artist}} ]' || echo 'No music playing'",
->>>>>>> aea740b1137e8ae8dbfc55c1aaaef2c0a743d9b5
     "interval": 2,
     "on-click": "playerctl play-pause",
     "tooltip": false
@@ -172,7 +167,7 @@
 "custom/power": {
 	"format": "",
 	"exec": "echo ",
-	"on-click": ".config/rofi/scripts/powermenu.sh",
+	"on-click": "wlogout",
 	"exec-if": "true"
 },
 

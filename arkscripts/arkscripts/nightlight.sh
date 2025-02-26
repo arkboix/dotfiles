@@ -1,8 +1,12 @@
 #!/bin/bash
 
-HOUR=$(date +%H)
-if [[ "$HOUR" -ge 18 ]] || [[ "$HOUR" -lt 6 ]]; then
-    hyprsunset -O 3500 && notify-send "🌙 Night Mode Activated (3500K)"
+sunset=$(hyprsunset | grep "Sunset" | awk '{print $2}')
+current_time=$(date +%H:%M)
+
+if [[ "$current_time" > "$sunset" ]]; then
+    hyprsunset -t 3000
+    notify-send "Night Mode" "Enabled warm colors for evening."
 else
-    hyprsunset -x && notify-send "☀️ Night Mode Disabled"
+    hyprsunset -t 7000
+    notify-send "Night Mode" "Daytime mode active."
 fi

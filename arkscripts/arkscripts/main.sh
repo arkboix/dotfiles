@@ -11,6 +11,8 @@ options=(
     "Emergency Wifi Fix"
     "Backup Files"
     "Night Light"
+    "Send Info notification"
+    "Update System"
 )
 
 # Define corresponding commands
@@ -24,6 +26,8 @@ commands=(
     "~/dotfiles/arkscripts/arkscripts/wifi.sh"
     "~/dotfiles/arkscripts/arkscripts/backup.sh"
     "~/dotfiles/arkscripts/arkscripts/nightlight.sh"
+    "~/dotfiles/arkscripts/arkscripts/info.sh"
+    "~/dotfiles/arkscripts/arkscripts/update.sh"
 )
 
 # Show Rofi menu

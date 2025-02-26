@@ -16,3 +16,4 @@ echo "🗜️ Compressing backup..."
 tar -czf "$BACKUP_DIR.tar.gz" -C "$HOME/backups" "$(basename "$BACKUP_DIR")"
 
 echo "✅ Backup completed! Archive saved as $BACKUP_DIR.tar.gz"
+notify-send "Backup" "saved as $BACKUP_DIR.tar.gz"
