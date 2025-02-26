@@ -9,6 +9,10 @@
     font-size: 14px;
 }
 
+
+#custom-cpuh {
+    color: @sys-info;
+}
 .modules-right {
     margin-right: 2px;
     border-radius: 6px;
