@@ -13,6 +13,7 @@ options=(
     "Night Light"
     "Send Info notification"
     "Update System"
+    "Change Waybar Theme"
 )
 
 # Define corresponding commands
@@ -28,6 +29,7 @@ commands=(
     "~/dotfiles/arkscripts/arkscripts/nightlight.sh"
     "~/dotfiles/arkscripts/arkscripts/info.sh"
     "~/dotfiles/arkscripts/arkscripts/update.sh"
+    "~/dotfiles/arkscripts/arkscripts/waybar-color.sh"
 )
 
 # Show Rofi menu
