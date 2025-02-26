@@ -19,8 +19,9 @@ WALLPAPER=$(ls "$WALLPAPER_DIR" | rofi -dmenu -p "Select Wallpaper")
 WALLPAPER_PATH="$WALLPAPER_DIR/$WALLPAPER"
 
 # Apply the wallpaper with Hyprpaper
-hyprctl hyprpaper wallpaper "$WALLPAPER_PATH"
-hyprctl hyprpaper reload "$WALLPAPER_PATH"
+# Fix using double quotes
+hyprctl hyprpaper preload "$WALLPAPER_PATH"
+hyprctl hyprpaper wallpaper "eDP-1,$WALLPAPER_PATH"
 
 # Success message
 echo "Wallpaper set to: $WALLPAPER_PATH"
