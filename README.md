@@ -14,8 +14,15 @@ These are dotfiles used by Arkboi, it turns hyprland into just a window manager 
 > [!CAUTION]
 > These are meant to be used by Arkboi only, might have issues installing it yourself, but I believe you can do it 😉
 
+## Install Scripts (beta)
+
+For an install script on Arch Linux or Arch Linux based distros, run the install setup script in the [Arch-hyprland repo](https://github.com/arkboix/arch-hyprland)
+
+
 > [!WARNING]
 > If you are a script runner kid that came from.. let's say JaKoolit, get out of here. Dotfiles install Scripts are for noobs and they are pretty annoying to make, you have to manually install. However, I am making a script and working on it. So wait I guess.
+
+
 
 ## Step 0 : Install Packages
 
