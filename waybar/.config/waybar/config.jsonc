@@ -112,7 +112,7 @@
 
 "custom/main": {
   "format": "{}",
-  "exec": "echo ",
+  "exec": "echo ",
   "on-click": "~/arkscripts/main.sh",
   "exec-if": "true"
 },

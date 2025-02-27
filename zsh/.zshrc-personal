@@ -5,6 +5,7 @@ fastfetch
 # Prompt
 
 PS1='%F{white}[%F{yellow}  %F{cyan}%D{%I:%M %p}%F{red} %n@%m %F{yellow}%~%F{white}]%f '
+eval "$(starship init zsh)"
 
 # Example Prompts
 #PS1='%F{red}> %F{cyan}%~ %f'
