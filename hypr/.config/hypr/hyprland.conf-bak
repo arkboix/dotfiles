@@ -74,3 +74,6 @@ windowrulev2 = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinn
 #         raise_float_to_top = 1 # raise the window that is floating before to top after leave overview mode
 #     }
 # }
+
+
+

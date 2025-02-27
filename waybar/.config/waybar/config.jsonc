@@ -9,7 +9,7 @@
     // "width": 1366, // Waybar width HELLO
     // Choose the order of the modules
     "modules-left": ["custom/apps", "hyprland/workspaces", "hyprland/submap", "custom/spotify", "hyprland/window"],
-    "modules-center": ["custom/cpuh", "custom/uname", "custom/animation", "custom/player"],
+    "modules-center": ["custom/cpuh", "custom/uname", "custom/animation", "custom/player", "custom/cava"],
     "modules-right": ["pulseaudio",  "memory", "battery","tray", "clock", "custom/power", "group/sysext"],
     "hyprland/workspaces": {
         "disable-scroll": false,
@@ -97,6 +97,11 @@
     "on-click": "rofi -show drun"
 },
 
+
+"custom/cava": {
+    "exec": "~/arkscripts/waybar-cava.sh",
+    "format": "{}"
+},
 
 
 "custom/main": {

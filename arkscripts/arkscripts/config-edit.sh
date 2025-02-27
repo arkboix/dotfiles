@@ -2,6 +2,7 @@
 
 # Define options
 options=(
+    "GUI Hyprland Tweak Tool"
     "Edit Hypr configs"
     "Edit Waybar configs"
     "Edit Rofi configs"
@@ -14,6 +15,7 @@ options=(
 
 # Define corresponding commands
 commands=(
+    "hyprgui"
     "emacsclient -c ~/.config/hypr"
     "emacsclient -c ~/.config/waybar"
     "emacsclient -c ~/.config/rofi"

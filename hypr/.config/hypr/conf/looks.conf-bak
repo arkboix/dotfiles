@@ -12,7 +12,7 @@ source = ~/dotfiles/hypr/.config/hypr/conf/programs.conf
 general {
     gaps_in = 4
     gaps_out = 14
-    no_border_on_floating = false
+    no_border_on_floating = true
     border_size = 2
 
  #   # https://wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
@@ -28,7 +28,7 @@ general {
     # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
     allow_tearing = false
 
-    layout = master
+  layout = master 
 }
 
 # https://wiki.hyprland.org/Configuring/Variables/#decoration
@@ -37,8 +37,6 @@ decoration {
     windowrule = float,^(yad)$
     windowrule = center,^(yad)$
     windowrule = float,^(nwg-displays)$
-    windowrule = float,^(hyprgui)$
-    windowrule = float, hyprgui
     windowrule = float,rofi
     layerrule = order 3, rofi
     layerrule = blur,rofi
@@ -142,5 +140,4 @@ master {
 misc {
     force_default_wallpaper = 0 # Set to 0 or 1 to disable the anime mascot wallpapers
     disable_hyprland_logo = true # If true disables the random hyprland logo / anime girl background. :(
-    font_family = IBM Plex Mono
 }
