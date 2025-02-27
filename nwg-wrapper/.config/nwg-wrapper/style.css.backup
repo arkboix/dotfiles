@@ -1,5 +1,5 @@
 window {
-background-color: rgba(46, 52, 64, 0.9);
+        background-color: rgba (0, 43, 54, 0.8);
         padding: 12px;
         font-family: IBM Plex Mono;
         font-size: 16px;
@@ -17,6 +17,6 @@ background-color: rgba(46, 52, 64, 0.9);
         border-radius: 0px;
 	border-style: solid;
 	border-width: 3px;
-border-color: rgba(136, 192, 208, 0.8);
+	border-color: rgba (38, 139, 210, 1);
 	padding: 10px
 }

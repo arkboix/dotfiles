@@ -119,7 +119,7 @@
 
   "custom/player": {
     "format": "{}",
-    "exec": "playerctl metadata --format '[ Now Playing: {{title}} by {{artist}} ]' || echo '[ No music playing ]'",
+    "exec": "playerctl metadata --format '[  Now Playing: {{title}} by {{artist}} ]' || echo '[  No music playing ]'",
     "interval": 2,
     "on-click": "playerctl play-pause",
     "tooltip": false
@@ -141,7 +141,7 @@
 },
 
 "custom/animation": {
-  "format": "  [ ✨ Animations] ",
+  "format": "  [  Animations] ",
   "exec": "echo [Animations]",
   "on-click": "~/arkscripts/animation.sh",
   "exec-if": "true"

@@ -6,6 +6,7 @@ KITTY_CONFIG="$HOME/dotfiles/kitty/.config/kitty/kitty.conf"
 ROFI_CONFIG="$HOME/dotfiles/rofi/.config/rofi/config.rasi"
 MAKO_CONFIG="$HOME/.config/mako/config"
 DOOM_CONFIG="$HOME/.config/doom/config.el"
+NWG_STYLE="$HOME/.config/nwg-wrapper/style.css"
 
 # Define wallpapers for each theme
 declare -A WALLPAPERS
@@ -26,6 +27,21 @@ MAKO_ACCENT_COLORS["solarized"]="#268bd2"
 MAKO_ACCENT_COLORS["everforest"]="#7fbbb3"
 MAKO_ACCENT_COLORS["catppuccin"]="#89b4fa"
 MAKO_ACCENT_COLORS["custom"]="#7aa2f7"
+
+# Define theme-specific RGB colors for nwg-wrapper (without the # symbol)
+declare -A NWG_BG_COLORS
+NWG_BG_COLORS["nord"]="46, 52, 64"
+NWG_BG_COLORS["solarized"]="0, 43, 54"
+NWG_BG_COLORS["everforest"]="45, 53, 59"
+NWG_BG_COLORS["catppuccin"]="30, 30, 46"
+NWG_BG_COLORS["custom"]="26, 27, 38"
+
+declare -A NWG_ACCENT_COLORS
+NWG_ACCENT_COLORS["nord"]="136, 192, 208"
+NWG_ACCENT_COLORS["solarized"]="38, 139, 210"
+NWG_ACCENT_COLORS["everforest"]="127, 187, 179"
+NWG_ACCENT_COLORS["catppuccin"]="137, 180, 250"
+NWG_ACCENT_COLORS["custom"]="122, 162, 247"
 
 # Define doom emacs theme mappings
 declare -A DOOM_THEMES
@@ -48,7 +64,7 @@ check_file() {
 WAYBAR_THEMES=("solarized" "nord" "everforest" "custom")
 KITTY_THEMES=("solarized" "catppuccin" "nord")
 ROFI_THEMES=("solarized" "nord")
-NWG_THEMES=("solarized" "nord")
+NWG_THEMES=("solarized" "nord" "everforest" "catppuccin" "custom")
 MAKO_THEMES=("solarized" "nord" "everforest" "catppuccin" "custom")
 DOOM_THEME_NAMES=("solarized" "nord" "everforest" "catppuccin" "custom")
 
@@ -270,13 +286,33 @@ apply_nwg_theme() {
         return 1
     fi
 
+    # Check if style file exists
+    check_file "$NWG_STYLE" || exit 1
+
+    # Get background and accent colors for the theme
+    local bg_color="${NWG_BG_COLORS[$theme]}"
+    local accent_color="${NWG_ACCENT_COLORS[$theme]}"
+
+    # Check if colors are defined
+    if [[ -z "$bg_color" || -z "$accent_color" ]]; then
+        echo "Error: Missing color definitions for NWG theme: $theme"
+        return 1
+    fi
+
+    # Backup the original style file
+    cp "$NWG_STYLE" "${NWG_STYLE}.backup"
+
+    # Update the style.css file - line 2 (background color) and line 20 (border color)
+    sed -i "2s|.*|background-color: rgba(${bg_color}, 0.9);|" "$NWG_STYLE"
+    sed -i "20s|.*|border-color: rgba(${accent_color}, 0.8);|" "$NWG_STYLE"
+
     # Kill existing nwg-wrapper instances
     killall nwg-wrapper 2>/dev/null
 
     # Start nwg-wrapper with the selected theme
     nwg-wrapper -t "$theme.txt" -p right -mr 30 &
 
-    echo "NWG-Wrapper theme changed to $theme"
+    echo "NWG-Wrapper theme changed to $theme with background: $bg_color and accent: $accent_color"
 }
 
 # Function to apply mako theme
@@ -287,9 +323,7 @@ apply_mako_theme() {
         echo "Error: Invalid theme for Mako: $theme"
         return 1
     fi
-   # Reload mako
-   pkill mako
-   mako &
+
     # Get background and accent colors for the theme
     local bg_color="${MAKO_BG_COLORS[$theme]}"
     local accent_color="${MAKO_ACCENT_COLORS[$theme]}"
@@ -399,6 +433,9 @@ case "$SELECTED_APP" in
         ;;
 
     "nwg")
+        # Check if nwg style file exists
+        check_file "$NWG_STYLE" || exit 1
+
         # Select theme for nwg-wrapper
         SELECTED_THEME=$(printf "%s\n" "${NWG_THEMES[@]}" | rofi -dmenu -i -p "Select NWG-Wrapper Theme:")
 
@@ -469,6 +506,7 @@ case "$SELECTED_APP" in
         check_file "$ROFI_CONFIG" || exit 1
         check_file "$MAKO_CONFIG" || exit 1
         check_file "$DOOM_CONFIG" || exit 1
+        check_file "$NWG_STYLE" || exit 1
 
         # Find common themes among all apps
         COMMON_THEMES=($(find_common_themes "waybar" "kitty" "rofi" "nwg" "mako" "doom"))
@@ -507,6 +545,7 @@ case "$SELECTED_APP" in
         check_file "$ROFI_CONFIG" || exit 1
         check_file "$MAKO_CONFIG" || exit 1
         check_file "$DOOM_CONFIG" || exit 1
+        check_file "$NWG_STYLE" || exit 1
 
         # Find common themes among all apps that also have wallpapers
         COMMON_THEMES=($(find_common_themes "waybar" "kitty" "rofi" "nwg" "mako" "doom" "wallpaper"))
