@@ -1,6 +1,6 @@
 include ~/dotfiles/kitty/.config/kitty/nord.conf
 
-font_family    IBM Plex Mono Bold
+font_family    BlexMono Nerd Font Bold
 bold_font      auto
 font_size      18.0
 confirm_os_window_close 0
