@@ -15,7 +15,7 @@ options=(
     "Update System"
     "Change Waybar Theme"
     "Change Terminal (kitty) theme"
-    "Change Global Theme (unfinished)"
+    "Change Global Theme"
     "Change Display Settings"
 )
 

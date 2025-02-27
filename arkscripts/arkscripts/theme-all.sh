@@ -44,7 +44,7 @@ apply_waybar_theme() {
         return 1
     fi
 
-    # Create the import line with proper username expansion
+    # Create the import line with proper username expansion and semicolon
     IMPORT_LINE="@import url(\"file:/home/$(whoami)/dotfiles/waybar/.config/waybar/${theme}.css\");"
 
     # Backup the original file
@@ -54,8 +54,7 @@ apply_waybar_theme() {
     sed -i "2s|.*|${IMPORT_LINE}|" "$WAYBAR_STYLE"
 
     # Restart waybar to apply changes
-    pkill waybar
-    waybar
+    pkill waybar && waybar &
 
     echo "Waybar theme changed to $theme"
 }
@@ -75,8 +74,12 @@ apply_kitty_theme() {
     # Backup the original file
     cp "$KITTY_CONFIG" "${KITTY_CONFIG}.backup"
 
-    # Remove the first line and insert the new include line at the beginning
-    sed -i "1s|.*|${INCLUDE_LINE}|" "$KITTY_CONFIG"
+    # Completely replace the first line with the new include line
+    # Use a temporary file to ensure we're properly replacing the first line
+    echo "$INCLUDE_LINE" > /tmp/kitty_first_line
+    tail -n +2 "$KITTY_CONFIG" > /tmp/kitty_rest
+    cat /tmp/kitty_first_line /tmp/kitty_rest > "$KITTY_CONFIG"
+    rm /tmp/kitty_first_line /tmp/kitty_rest
 
     # Reload kitty configuration if kitty is running
     if pgrep -x "kitty" > /dev/null; then
