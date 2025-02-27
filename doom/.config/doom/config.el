@@ -83,3 +83,5 @@
 (after! org
   (setq org-superstar-headline-bullets-list '("◉" "○" "◈" "◇"))
   (add-hook 'org-mode-hook #'org-superstar-mode))
+
+(use-package! org)
