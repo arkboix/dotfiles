@@ -271,4 +271,12 @@ configuration {
 
 //@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
 
+//@theme "/home/arkboi/.config/rofi/themes/solarized_extra.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/solarized_extra.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/solarized_extra.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/nord.rasi"
+
 @theme "/home/arkboi/.config/rofi/themes/solarized_extra.rasi"

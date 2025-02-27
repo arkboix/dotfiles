@@ -9,6 +9,13 @@
     font-size: 14px;
 }
 
+#custom-audio-visualizer {
+    color: #f5c2e7;
+    padding: 0 6px;
+    font-family: monospace;
+    font-size: 14px;
+    min-width: 40px;
+}
 
 #custom-cpuh {
     color: @sys-info;
