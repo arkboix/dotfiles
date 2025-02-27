@@ -15,14 +15,23 @@ These are dotfiles used by Arkboi, it turns hyprland into just a window manager 
 > These are meant to be used by Arkboi only, might have issues installing it yourself, but I believe you can do it 😉
 
 > [!WARNING]
-> If you are a script runner kid that came from.. let's say JaKoolit, get out of here. Dotfiles install Scripts are for noobs and they are pretty annoying to make, you have to manually install.
+> If you are a script runner kid that came from.. let's say JaKoolit, get out of here. Dotfiles install Scripts are for noobs and they are pretty annoying to make, you have to manually install. However, I am making a script and working on it. So wait I guess.
 
 ## Step 0 : Install Packages
 
 For Arch based systems, use an AUR helper like yay or paru.
 
 ``` shell
-yay -S --needed hyprland hyprlock hypridle hyprpaper hyprsunset waybar rofi-wayland nwg-wrapper kitty zsh wlogout mako hyprgui zenity nwg-displays ttf-font-awesome ttf-ibm-plex
+yay -S --needed hyprland hyprlock hypridle hyprpaper hyprsunset waybar rofi-wayland nwg-wrapper kitty zsh wlogout mako hyprgui zenity nwg-displays ttf-font-awesome ttf-ibm-plex ttf-ibmplex-mono-nerd
+```
+
+Install Doom Emacs:
+
+``` shell
+mkdir emacs-backup
+mv ~/.emacs.d emacs-backup # If needed
+git clone https://github.com/doomemacs/doomemacs ~/.emacs.d
+~/.emacs.d/bin/doom install
 ```
 
 ## Step 1 : Pre Installation
