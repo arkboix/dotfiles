@@ -8,8 +8,8 @@
     // , 
     // "width": 1366, // Waybar width HELLO
     // Choose the order of the modules
-    "modules-left": ["custom/apps", "hyprland/workspaces", "hyprland/submap", "custom/spotify", "hyprland/window"],
-    "modules-center": ["custom/cpuh", "custom/uname", "custom/animation", "custom/player", "custom/cava"],
+    "modules-left": ["custom/apps", "hyprland/workspaces", "hyprland/submap", "custom/spotify", "hyprland/window", "custom/cava"],
+    "modules-center": ["custom/cpuh", "custom/uname", "custom/animation", "custom/player"],
     "modules-right": ["pulseaudio",  "memory", "battery","tray", "clock", "custom/power", "group/sysext"],
     "hyprland/workspaces": {
         "disable-scroll": false,
@@ -97,12 +97,12 @@
     "on-click": "rofi -show drun"
 },
 
-
 "custom/cava": {
     "exec": "~/arkscripts/waybar-cava.sh",
+    "return-type": "json",
+    "interval": 1,
     "format": "{}"
 },
-
 
 "custom/main": {
   "format": "{}",
@@ -288,8 +288,11 @@
 
 
 "custom/cava": {
-    "format":"cava",
-    "exec":"cava"
+       "exec": "~/arkscripts/waybar-cava.sh",
+        "return-type": "json",
+        "interval": "once",
+        "format": "{}",
+        "tooltip": false
 },
 
 "custom/reload": {

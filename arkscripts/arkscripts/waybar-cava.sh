@@ -1,42 +1,19 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# Not my own work. This was added through Github PR. Credit to original author
 
-#----- Optimized bars animation without much CPU usage increase --------
-bar="▁▂▃▄▅▆▇█"
-dict="s/;//g"
+# Get default sink
+SINK=$(pactl get-default-sink)
 
-# Calculate the length of the bar outside the loop
-bar_length=${#bar}
+while true; do
+    # Get volume level in percentage
+    VOLUME=$(pactl get-sink-volume "$SINK" | awk '{print $5}' | tr -d '%')
 
-# Create dictionary to replace char with bar
-for ((i = 0; i < bar_length; i++)); do
-    dict+=";s/$i/${bar:$i:1}/g"
+    # Generate visualizer bars (█ for full, ░ for empty)
+    BAR_COUNT=$((VOLUME / 10))
+    BAR=$(printf '█%.0s' $(seq 1 $BAR_COUNT))
+    EMPTY=$(printf '░%.0s' $(seq 1 $((10 - BAR_COUNT))))
+
+    # Output JSON for Waybar
+    echo "{\"text\": \"$BAR$EMPTY\", \"tooltip\": \"Volume: $VOLUME%\"}"
+
+    sleep 0.2  # Adjust for smoother updates
 done
-
-# Create cava config
-config_file="/tmp/bar_cava_config"
-cat >"$config_file" <<EOF
-[general]
-# Older systems show significant CPU use with default framerate
-# Setting maximum framerate to 30
-# You can increase the value if you wish
-framerate = 30
-bars = 10
-
-[input]
-method = pulse
-source = auto
-
-[output]
-method = raw
-raw_target = /dev/stdout
-data_format = ascii
-ascii_max_range = 7
-EOF
-
-# Kill cava if it's already running
-pkill -f "cava -p $config_file"
-
-# Read stdout from cava and perform substitution in a single sed command
-cava -p "$config_file" | sed -u "$dict"

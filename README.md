@@ -22,7 +22,7 @@ These are dotfiles used by Arkboi, it turns hyprland into just a window manager 
 For Arch based systems, use an AUR helper like yay or paru.
 
 ``` shell
-yay -S --needed hyprland hyprlock hypridle hyprpaper hyprsunset waybar rofi-wayland nwg-wrapper kitty zsh wlogout mako hyprgui
+yay -S --needed hyprland hyprlock hypridle hyprpaper hyprsunset waybar rofi-wayland nwg-wrapper kitty zsh wlogout mako hyprgui zenity nwg-displays
 ```
 
 ## Step 1 : Pre Installation

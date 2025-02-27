@@ -2,6 +2,7 @@
 
 # Define options
 options=(
+    "Edit Configs (GUI)"
     "Edit Configs"
     "Reload Waybar"
     "Set Wallpaper"
@@ -21,6 +22,7 @@ options=(
 
 # Define corresponding commands
 commands=(
+    "~/dotfiles/arkscripts/arkscripts/config-edit-gui.sh"
     "~/dotfiles/arkscripts/arkscripts/config-edit.sh"
     "pkill -SIGUSR2 waybar"
     "~/dotfiles/arkscripts/arkscripts/select-wall.sh"
