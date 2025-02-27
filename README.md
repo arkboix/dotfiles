@@ -89,6 +89,12 @@ chmod +x *.sh
 
 you'll be prompted to choose waybar theme, pick any you like (Solarized Recommended)
 
+Next, we need to create a symbolic link (symlink) of our wallpaper to /tmp folder, for the logout screen to work. Heres how:
+
+``` shell
+ln -sf "$HOME/wallpapers/wlogout.jpg" "/tmp/wlogout.jpg"
+```
+
 then, just log out, and log back in.
 
 ## Step 5 : Post Issues on the repo
