@@ -287,7 +287,9 @@ apply_mako_theme() {
         echo "Error: Invalid theme for Mako: $theme"
         return 1
     fi
-
+   # Reload mako
+   pkill mako
+   mako &
     # Get background and accent colors for the theme
     local bg_color="${MAKO_BG_COLORS[$theme]}"
     local accent_color="${MAKO_ACCENT_COLORS[$theme]}"
