@@ -1,5 +1,5 @@
 /* 💫 https://github.com/arkboix */
-@import url("file:/home/arkboi/dotfiles/waybar/.config/waybar/nord.css");
+@import url("file:/home/arkboi/dotfiles/waybar/.config/waybar/solarized.css");
 
 
 * {

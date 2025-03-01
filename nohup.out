@@ -1,0 +1,2 @@
+
+(nwg-wrapper:785991): Gtk-WARNING **: 19:52:55.423: Theme parsing error: gtk-dark.css:9381:21: Not using units is deprecated. Assuming 'px'.
