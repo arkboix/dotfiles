@@ -11,7 +11,7 @@ NWG_STYLE="$HOME/.config/nwg-wrapper/style.css"
 # Define wallpapers for each theme
 declare -A WALLPAPERS
 WALLPAPERS["nord"]="$HOME/wallpapers/Anime-Japan-Street.png"
-WALLPAPERS["solarized"]="$HOME/wallpapers/solarized8.jpg"
+WALLPAPERS["solarized"]="$HOME/wallpapers/solarized13.jpg"
 
 # Define theme-specific colors for mako
 declare -A MAKO_BG_COLORS
