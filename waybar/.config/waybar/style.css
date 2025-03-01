@@ -36,14 +36,20 @@
 }*/
 
 window#waybar {
-    background: @bg;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    background: @transparent;
     color: @color5;
     margin: 12px;
     margin-top: 12px;
-        border-top: 2px solid @color13;
-    border-bottom: 2px solid @color13;
 
+}
+window#waybar > box {
+    border-radius: 0px; /* your preference for the curves */
+        border: 2px solid @color13;
+    border-bottom: 2px solid @color13;
+    margin: 4px 4px 4px 4px;
+    background-color:  @bg; /* change it your preference but this @ follows the theme */
+    box-shadow: 0px 0px 4px black;
+    padding: 2px 2px 2px 2px;/* And here is the requested shadow */
 }
 
 #custom-calendar, #custom-main, #custom-scale, #custom-color, #custom-fzf, #custom-config, #custom-info, #custom-backup, #custom-wall-select, #custom-dots, #custom-update, #custom-play, #custom-stop, #custom-drawer {
