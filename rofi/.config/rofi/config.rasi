@@ -172,8 +172,6 @@ configuration {
   display-filebrowser: "Files";
   modi: "drun,run,filebrowser";
   columns: 2;
-  location: 8 ;
-  position: 0;
 }
 
 //@theme "/home/arkboi/.config/rofi/themes/GreenMeho.rasi"
@@ -323,5 +321,9 @@ configuration {
 //@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
 
 //@theme "/usr/share/rofi/themes/paper-float.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/koolit.rasi"
 
 @theme "/home/arkboi/.config/rofi/themes/solarized.rasi"

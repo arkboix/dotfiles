@@ -1,163 +1,131 @@
 /**
- * Fullscreen Solarized Dark Sidebar Rofi Theme
- * A vertical sidebar launcher with Solarized Dark colors
- * Using IBM Plex Mono font with only right border
+ * ROFI Color Theme
+ *
+ * Fullscreen theme with switchable PREVIEW option.
+ *
+ * User: Dave Davenport
+ * Copyright: Dave Davenport
  */
-
-configuration {
-    display-drun: "";
-    display-window: "";
-    display-combi: "";
-    display-run: "";
-    show-icons: true;
-    sidebar-mode: true;
-    font: "IBM Plex Mono 11";
-}
-
 * {
-    /* Solarized Dark Colors */
-    base03: #002b36;
-    base02: #073642;
-    base01: #586e75;
-    base00: #657b83;
-    base0: #839496;
-    base1: #93a1a1;
-    base2: #eee8d5;
-    base3: #fdf6e3;
-    yellow: #b58900;
-    orange: #cb4b16;
-    red: #dc322f;
-    magenta: #d33682;
-    violet: #6c71c4;
-    blue: #268bd2;
-    cyan: #2aa198;
-    green: #859900;
-
-    /* Global Properties */
-    background-color: @base03;
-    text-color: @base0;
+	background-color: transparent;
+	text-color:       white;
 }
 
 window {
-    transparency: "real";
-    location: west;
-    anchor: west;
-    height: 100%;
-    width: 22%;
-    x-offset: 0;
-    y-offset: 0;
-    orientation: vertical;
-    children: [mainbox];
-    border: 2px 2px 2px 2px;
-    border-color: @blue;
-    margin-bottom: 8px;
+	fullscreen:       true;
+	background-color: rgba( 0,43,54, 80% );
+	padding:          4em;
+	children:         [ wrap, listview-split];
+	spacing:          1em;
 }
 
-mainbox {
-    spacing: 0;
-    children: [ inputbar, listview, mode-switcher ];
+
+/** We add an extra child to this is PREVIEW=true */
+listview-split {
+  orientation: horizontal;
+  spacing: 0.4em;
+  children: [listview];
 }
 
+wrap {
+	expand: false;
+	orientation: vertical;
+	children: [ inputbar, message ];
+	background-image: linear-gradient(white/5%, white/40%);
+	border-color: lightblue;
+	border: 3px;
+	border-radius: 0.4em;
+}
+
+icon-ib {
+	expand: false;
+	filename: "system-search";
+	vertical-align: 0.5;
+	horizontal-align: 0.5;
+	size: 1em;
+}
 inputbar {
-    color: @base3;
-    padding: 14px;
-    border: 0 0 2px 0;
-    border-color: @blue;
-    spacing: 8px;
-    children: [ prompt, entry ];
+	spacing: 0.4em;
+	padding: 0.4em;
+	children: [ icon-ib, entry ];
 }
-
-prompt {
-    text-color: @cyan;
-    font: "IBM Plex Mono Bold 12";
-}
-
 entry {
-    placeholder: "Search...";
-    placeholder-color: @base01;
-    text-color: @base1;
+	placeholder: "Search";
+	placeholder-color: rgba( 88,110,117 );
+}
+message {
+	background-color: red/20%;
+	border-color: lightsalmon;
+	border: 3px 0px 0px 0px;
+	padding: 0.4em;
+	spacing: 0.4em;
 }
 
 listview {
-    fixed-height: 0;
-    border: 0;
-    spacing: 0;
-    scrollbar: true;
-    padding: 8px 0;
+	flow: horizontal;
+	fixed-columns: true;
+	columns: 7;
+	lines: 5;
+	spacing: 1.0em;
 }
 
 element {
-    border: 0;
-    padding: 12px;
-    spacing: 8px;
-}
+	orientation: vertical;
+	padding: 0.1em;
 
-element normal.normal {
-    background-color: transparent;
-    text-color: @base01;  /* Dimmed text for unfocused items */
-}
+	background-image: linear-gradient(white/5%, white/20%);
+	border-color: lightblue /15%;
+	border: 3px;
+	border-radius: 0.4em;
 
-element selected.normal {
-    background-color: @base02;
-    text-color: @base3;
-    border-left: 3px;
-    border-color: @cyan;
+  children: [element-icon, element-text ];
 }
-
-element selected.active {
-    background-color: @base02;
-    text-color: @cyan;
-}
-
 element-icon {
-    size: 24px;
-    background-color: transparent;
-    opacity: 0.8;  /* Slightly dimmed icons for unfocused items */
+	size: calc(((100% - 8em) / 7 ));
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
 }
-
 element-text {
-    background-color: transparent;
-    text-color: inherit;
-    vertical-align: 0.5;
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
+  padding: 0.2em;
 }
 
-element selected element-icon {
-    opacity: 1.0;  /* Full opacity for selected item icon */
+element selected {
+	background-image: linear-gradient(white/25%, white/10%);
+	border-color: lightblue;
+	border: 3px;
+	border-radius: 0.4em;
 }
 
-mode-switcher {
-    spacing: 0;
-    border-top: 2px;
-    border-color: @blue;
+/**
+ * Launching rofi with environment PREVIEW set to true
+ * will split the screen and show a preview widget.
+ */
+@media ( enabled: env(PREVIEW, false)) {
+  /** preview widget */
+  icon-current-entry {
+    expand:          true;
+    size:            80%;
+  }
+  listview-split {
+    children: [listview, icon-current-entry];
+  }
+  listview {
+  columns: 4;
+  }
+
 }
 
-button {
-    padding: 10px;
-    background-color: @base03;
-    text-color: @base01;  /* Dimmed text for unfocused buttons */
-    border: 0;
-}
-
-button selected {
-    background-color: @base02;
-    text-color: @cyan;
-}
-
-scrollbar {
-    width: 4px;
-    border: 0;
-    handle-width: 8px;
-    handle-color: @blue;
-    background-color: @base02;
-    padding: 0 4px;
-}
-
-message {
-    border: 2px;
-    border-color: @blue;
-    padding: 10px;
-}
-
-textbox {
-    text-color: @base0;
+@media ( enabled: env(NO_IMAGE, false)) {
+	listview {
+		columns: 1;
+		spacing: 0.4em;
+	}
+	element {
+		children: [ element-text ];
+	}
+	element-text {
+		horizontal-align: 0.0;
+	}
 }
