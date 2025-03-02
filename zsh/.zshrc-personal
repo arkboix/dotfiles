@@ -19,7 +19,9 @@ alias rld="source ~/.zshrc"
 alias doas="sudo"
 alias fastfetch="fastfetch --logo-color-1 cyan --color cyan"
 alias youtube="yt-x"
-
+alias install="sudo pacman -S"
+alias remove="sudo pacman -R"
+alias search="pacman -Ss"
 
 # Emacs Makes me Do More Work (E.M.D.M.W)
 export PATH="$HOME/.emacs.d/bin:$PATH"
