@@ -10,7 +10,8 @@
     // Choose the order of the modules
     "modules-left": ["custom/apps","hyprland/workspaces", "hyprland/submap", "custom/spotify", "hyprland/window", "custom/cava"],
     "modules-center": ["custom/cpuh", "custom/uname", "custom/animation", "custom/player"],
-    "modules-right": ["pulseaudio",  "memory", "battery","tray", "clock", "custom/power", "custom/calendar","group/sysext"],
+    "modules-right": ["pulseaudio",  "memory", "battery","tray","clock", "custom/power", "custom/vm", "custom/calendar","group/sysext"],
+
     "hyprland/workspaces": {
         "disable-scroll": false,
         "all-outputs": false,
@@ -90,6 +91,13 @@
         "exec": "$HOME/.config/waybar/mediaplayer.sh 2> /dev/null", // Script in resources folder
         "exec-if": "pgrep spotify"
     },
+
+"custom/vm": {
+    "format": "{}",
+    "exec": "echo ",
+    "on-click": "virt-manager",
+    "exec-if": "true"
+},
 
 "custom/calendar": {
     "format": "{}",

@@ -52,7 +52,7 @@ window#waybar > box {
     padding: 2px 2px 2px 2px;/* And here is the requested shadow */
 }
 
-#custom-calendar, #custom-main, #custom-scale, #custom-color, #custom-fzf, #custom-config, #custom-info, #custom-backup, #custom-wall-select, #custom-dots, #custom-update, #custom-play, #custom-stop, #custom-drawer {
+#custom-vm, #custom-calendar, #custom-main, #custom-scale, #custom-color, #custom-fzf, #custom-config, #custom-info, #custom-backup, #custom-wall-select, #custom-dots, #custom-update, #custom-play, #custom-stop, #custom-drawer {
    color: @extra;
    border-bottom: 2px solid @extra;
    padding-left: 2px;
