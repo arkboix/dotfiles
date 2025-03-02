@@ -1,6 +1,6 @@
 #!/bin/bash
 # /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-# This script for selecting wallpapers (SUPER W)
+# This script for selecting wallpapers
 
 # WALLPAPERS PATH
 terminal=kitty
@@ -73,9 +73,6 @@ main() {
   if [[ "$choice" == "$RANDOM_PIC_NAME" ]]; then
     swww img -o "$focused_monitor" "$RANDOM_PIC" $SWWW_PARAMS;
     sleep 2
-    "$SCRIPTSDIR/WallustSwww.sh"
-    sleep 0.5
-    "$SCRIPTSDIR/Refresh.sh"
     exit 0
   fi
 
@@ -101,8 +98,5 @@ fi
 
 main
 
-wait $!
-"$SCRIPTSDIR/WallustSwww.sh" &&
-wait $!
-sleep 2
-"$SCRIPTSDIR/Refresh.sh"
+
+bash ~/arkscripts/reload.sh

@@ -12,7 +12,7 @@ entry {
     border-color: #586e75;
     background-color: #073642;
     padding: 4px;
-    placeholder: "Type to filter";
+    placeholder: "Please choose a wallpaper:";
     placeholder-color: #586e75;
     font: inherit;
     cursor: text;
@@ -38,6 +38,7 @@ button {
     border-color: #586e75;
     font: inherit;
     cursor: pointer;
+    box-shadow: 2px 2px 5px;
 }
 
 button selected {
