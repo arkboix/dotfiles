@@ -1,7 +1,7 @@
 // 💫 https://github.com/arkboix
 
 {
-    "layer": "top", // Waybar at top layer
+    "layer": "bottom", // Waybar at top layer
     "position": "top", // Waybar at the top of your screen
     "height":32, // Waybar height
     "margin": 0,

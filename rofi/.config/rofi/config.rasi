@@ -285,4 +285,6 @@ configuration {
 
 //@theme "/home/arkboi/.config/rofi/themes/solarized_extra.rasi"
 
-@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+//@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+
+@theme "/home/arkboi/.config/rofi/themes/wallpaper.rasi"
