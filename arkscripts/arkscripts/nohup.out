@@ -1719,3 +1719,157 @@ No players found
 No players found
 No players found
 Gdk-Message: 19:34:58.056: Error reading events from display: Connection reset by peer
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (1), removing 8.3MB
+[LOG] Preloaded target /home/arkboi/wallpapers/solarized13.jpg in 105.12ms -> Pixel size: [4226, 2847]
+[LOG] Buffer created for target /home/arkboi/wallpapers/solarized13.jpg, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 8.3MB
+[LOG] hyprpaper socket started at /run/user/1000/hypr/882f7ad7d2bbfc7440d0ccaef93b1cdd78e8e3ff_1740896374_1592635645/.hyprpaper.sock (fd: 4)
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/arkboi/wallpapers/solarized13.jpg at [0.00, -234.94], scale: 0.45 (original image size: [4226, 2847])
+[LOG] Submitting viewport dest size 1920x1080 for 61bbe2c33eb0
+[LOG] handlePreferredScale: 1.00 for 61bbe2c33eb0
+Terminated
+A4: 210x297 mm
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (1), removing 8.3MB
+[LOG] Preloaded target /home/arkboi/wallpapers/solarized13.jpg in 117.79ms -> Pixel size: [4226, 2847]
+[LOG] Buffer created for target /home/arkboi/wallpapers/solarized13.jpg, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 8.3MB
+[LOG] hyprpaper socket started at /run/user/1000/hypr/882f7ad7d2bbfc7440d0ccaef93b1cdd78e8e3ff_1740896374_1592635645/.hyprpaper.sock (fd: 5)
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/arkboi/wallpapers/solarized13.jpg at [0.00, -234.94], scale: 0.45 (original image size: [4226, 2847])
+[LOG] Submitting viewport dest size 1920x1080 for 5fa7c2d95f50
+[LOG] handlePreferredScale: 1.00 for 5fa7c2d95f50
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (1), removing 8.3MB
+[LOG] Preloaded target /home/arkboi/wallpapers/solarized13.jpg in 116.85ms -> Pixel size: [4226, 2847]
+[LOG] Buffer created for target /home/arkboi/wallpapers/solarized13.jpg, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 8.3MB
+[LOG] hyprpaper socket started at /run/user/1000/hypr/882f7ad7d2bbfc7440d0ccaef93b1cdd78e8e3ff_1740896374_1592635645/.hyprpaper.sock (fd: 4)
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/arkboi/wallpapers/solarized13.jpg at [0.00, -234.94], scale: 0.45 (original image size: [4226, 2847])
+[LOG] Submitting viewport dest size 1920x1080 for 5e35718fbf50
+[LOG] handlePreferredScale: 1.00 for 5e35718fbf50
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (1), removing 8.3MB
+[LOG] Preloaded target /home/arkboi/wallpapers/solarized13.jpg in 127.56ms -> Pixel size: [4226, 2847]
+[LOG] Buffer created for target /home/arkboi/wallpapers/solarized13.jpg, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 8.3MB
+[LOG] hyprpaper socket started at /run/user/1000/hypr/882f7ad7d2bbfc7440d0ccaef93b1cdd78e8e3ff_1740896374_1592635645/.hyprpaper.sock (fd: 4)
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/arkboi/wallpapers/solarized13.jpg at [0.00, -234.94], scale: 0.45 (original image size: [4226, 2847])
+[LOG] Submitting viewport dest size 1920x1080 for 5e36d4394f50
+[LOG] handlePreferredScale: 1.00 for 5e36d4394f50
+[LOG] Accepted incoming socket connection request on fd 5
+[LOG] Received a request: preload /home/arkboi/wallpapers/abstract1.jpg
+[LOG] Preloaded target /home/arkboi/wallpapers/abstract1.jpg in 84.52ms -> Pixel size: [3840, 2160]
+[LOG] Buffer created for target /home/arkboi/wallpapers/abstract1.jpg, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 16.6MB
+[LOG] Accepted incoming socket connection request on fd 5
+[LOG] Closing Accepted Connection
+[LOG] Accepted incoming socket connection request on fd 5
+[LOG] Received a request: wallpaper eDP-1,/home/arkboi/wallpapers/abstract1.jpg
+[LOG] Accepted incoming socket connection request on fd 5
+[LOG] Closing Accepted Connection
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/arkboi/wallpapers/abstract1.jpg at [-0.00, 0.00], scale: 0.50 (original image size: [3840, 2160])
+[LOG] Submitting viewport dest size 1920x1080 for 70da300014d0
+[LOG] handlePreferredScale: 1.00 for 70da300014d0
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (2), removing 16.6MB
+[LOG] Preloaded target /home/arkboi/wallpapers/solarized13.jpg in 127.88ms -> Pixel size: [4226, 2847]
+[LOG] Buffer created for target /home/arkboi/wallpapers/solarized13.jpg, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 8.3MB
+[LOG] hyprpaper socket started at /run/user/1000/hypr/882f7ad7d2bbfc7440d0ccaef93b1cdd78e8e3ff_1740896374_1592635645/.hyprpaper.sock (fd: 5)
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/arkboi/wallpapers/solarized13.jpg at [0.00, -234.94], scale: 0.45 (original image size: [4226, 2847])
+[LOG] Submitting viewport dest size 1920x1080 for 5b15296a4f50
+[LOG] handlePreferredScale: 1.00 for 5b15296a4f50
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: preload /home/arkboi/wallpapers/solarized-arco.png
+[LOG] Preloaded target /home/arkboi/wallpapers/solarized-arco.png in 82.43ms -> Pixel size: [3840, 2160]
+[LOG] Buffer created for target /home/arkboi/wallpapers/solarized-arco.png, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 16.6MB
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: wallpaper eDP-1,/home/arkboi/wallpapers/solarized-arco.png
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/arkboi/wallpapers/solarized-arco.png at [-0.00, 0.00], scale: 0.50 (original image size: [3840, 2160])
+[LOG] Submitting viewport dest size 1920x1080 for 7b967c0014d0
+[LOG] handlePreferredScale: 1.00 for 7b967c0014d0
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: preload /home/arkboi/wallpapers/solarized13.jpg
+[LOG] Ignoring request to preload /home/arkboi/wallpapers/solarized13.jpg as it already is preloaded!
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: wallpaper eDP-1,/home/arkboi/wallpapers/solarized13.jpg
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/arkboi/wallpapers/solarized13.jpg at [0.00, -234.94], scale: 0.45 (original image size: [4226, 2847])
+[LOG] Submitting viewport dest size 1920x1080 for 7b967c0015b0
+[LOG] handlePreferredScale: 1.00 for 7b967c0015b0
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: preload /home/arkboi/wallpapers/solarized17.jpg
+[LOG] Preloaded target /home/arkboi/wallpapers/solarized17.jpg in 60.86ms -> Pixel size: [2200, 1414]
+[LOG] Buffer created for target /home/arkboi/wallpapers/solarized17.jpg, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 24.9MB
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: wallpaper eDP-1,/home/arkboi/wallpapers/solarized17.jpg
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/arkboi/wallpapers/solarized17.jpg at [0.00, -88.25], scale: 0.87 (original image size: [2200, 1414])
+[LOG] Submitting viewport dest size 1920x1080 for 7b967c0016b0
+[LOG] handlePreferredScale: 1.00 for 7b967c0016b0
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: preload /home/arkboi/wallpapers/solarized18.jpg
+[LOG] Preloaded target /home/arkboi/wallpapers/solarized18.jpg in 226.55ms -> Pixel size: [6000, 4000]
+[LOG] Buffer created for target /home/arkboi/wallpapers/solarized18.jpg, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 33.2MB
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: wallpaper eDP-1,/home/arkboi/wallpapers/solarized18.jpg
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/arkboi/wallpapers/solarized18.jpg at [0.00, -312.50], scale: 0.32 (original image size: [6000, 4000])
+[LOG] Submitting viewport dest size 1920x1080 for 7b967c0015f0
+[LOG] handlePreferredScale: 1.00 for 7b967c0015f0
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: preload /home/arkboi/wallpapers/solarized13.jpg
+[LOG] Ignoring request to preload /home/arkboi/wallpapers/solarized13.jpg as it already is preloaded!
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: wallpaper eDP-1,/home/arkboi/wallpapers/solarized13.jpg
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/arkboi/wallpapers/solarized13.jpg at [0.00, -234.94], scale: 0.45 (original image size: [4226, 2847])
+[LOG] Submitting viewport dest size 1920x1080 for 7b967c005770
+[LOG] handlePreferredScale: 1.00 for 7b967c005770
