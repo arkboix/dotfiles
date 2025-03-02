@@ -1873,3 +1873,32 @@ built from commit  ()
 [LOG] Image data for eDP-1: /home/arkboi/wallpapers/solarized13.jpg at [0.00, -234.94], scale: 0.45 (original image size: [4226, 2847])
 [LOG] Submitting viewport dest size 1920x1080 for 7b967c005770
 [LOG] handlePreferredScale: 1.00 for 7b967c005770
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: preload /home/arkboi/wallpapers/Anime-Japan-Street.png
+[LOG] Preloaded target /home/arkboi/wallpapers/Anime-Japan-Street.png in 587.09ms -> Pixel size: [3840, 2160]
+[LOG] Buffer created for target /home/arkboi/wallpapers/Anime-Japan-Street.png, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 41.5MB
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: preload /home/arkboi/wallpapers/Anime-Japan-Street.png
+[LOG] Ignoring request to preload /home/arkboi/wallpapers/Anime-Japan-Street.png as it already is preloaded!
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: wallpaper eDP-1,/home/arkboi/wallpapers/Anime-Japan-Street.png
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Received a request: wallpaper eDP-1,/home/arkboi/wallpapers/Anime-Japan-Street.png
+[LOG] Accepted incoming socket connection request on fd 4
+[LOG] Closing Accepted Connection
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/arkboi/wallpapers/Anime-Japan-Street.png at [-0.00, 0.00], scale: 0.50 (original image size: [3840, 2160])
+[LOG] Submitting viewport dest size 1920x1080 for 7b967c006ae0
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/arkboi/wallpapers/Anime-Japan-Street.png at [-0.00, 0.00], scale: 0.50 (original image size: [3840, 2160])
+[LOG] Submitting viewport dest size 1920x1080 for 7b967c006ae0
+zwlr_layer_surface_v1#30: error 0: Serial invalid in ack_configure

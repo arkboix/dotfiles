@@ -317,4 +317,6 @@ configuration {
 
 //@theme "/usr/share/rofi/themes/fullscreen-preview.rasi"
 
+//@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+
 @theme "/home/arkboi/.config/rofi/themes/solarized.rasi"

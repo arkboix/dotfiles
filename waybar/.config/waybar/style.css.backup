@@ -19,6 +19,7 @@
 
 #custom-cpuh {
     color: @sys-info;
+    transition: 450ms;
 }
 .modules-right {
     margin-right: 2px;
@@ -52,15 +53,35 @@ window#waybar > box {
     padding: 2px 2px 2px 2px;/* And here is the requested shadow */
 }
 
-#custom-calendar, #custom-main, #custom-scale, #custom-color, #custom-fzf, #custom-config, #custom-info, #custom-backup, #custom-wall-select, #custom-dots, #custom-update, #custom-play, #custom-stop, #custom-drawer {
+#custom-vm, #custom-calendar, #custom-main, #custom-scale, #custom-color, #custom-fzf, #custom-config, #custom-info, #custom-backup, #custom-wall-select, #custom-dots, #custom-update, #custom-play, #custom-stop, #custom-drawer {
    color: @extra;
    border-bottom: 2px solid @extra;
    padding-left: 2px;
    padding-right: 2px;
 }
 
+#custom-player:hover {
+    font-size: 16px;
+    transition: 450ms;
+}
+
+#custom-animation {
+    transition: 450ms;
+}
+
+#custom-animation:hover {
+    font-size: 16px;
+    transition: 450ms;
+}
+
+#custom-cpuh:hover {
+    font-size: 16px;
+    transition: 450ms;
+}
+
 #custom-player {
   color: @music;
+  transition: 450ms;
 }
 
 #custom-uname {
