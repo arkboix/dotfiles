@@ -106,8 +106,8 @@ window#waybar > box {
     background: transparent;
     color: @workspaces-gray;
     padding: 0px;
-    padding-right: 6px;
-    padding-left: 6px;
+    padding-right: 2px;
+    padding-left: 2px;
     border-top: 0px solid transparent;
 }
 
@@ -115,8 +115,8 @@ window#waybar > box {
     color: @bg;
     background-color: @color13;
     border-bottom: 2px solid @color13;
-    padding-right: 6px;
-    padding-left: 6px;
+    padding-right: 2px;
+    padding-left: 2px;
 }
 
 
