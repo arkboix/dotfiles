@@ -287,4 +287,12 @@ configuration {
 
 //@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
 
-@theme "/home/arkboi/.config/rofi/themes/wallpaper.rasi"
+//@theme "/home/arkboi/.config/rofi/themes/wallpaper.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/wallpaper.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/nord.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/wallpaper.rasi"
+
+@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
