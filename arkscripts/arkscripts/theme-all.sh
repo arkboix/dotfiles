@@ -1,5 +1,13 @@
 #!/bin/bash
 
+
+# swww transition config
+FPS=60
+TYPE="any"
+DURATION=1
+BEZIER=".43,1.19,1,.4"
+SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION --transition-bezier $BEZIER"
+
 # Define paths to config files
 WAYBAR_STYLE="$HOME/dotfiles/waybar/.config/waybar/style.css"
 KITTY_CONFIG="$HOME/dotfiles/kitty/.config/kitty/kitty.conf"
@@ -270,9 +278,8 @@ apply_wallpaper() {
         return 1
     fi
 
-    # Preload and set the wallpaper using hyprpaper
-    hyprctl hyprpaper preload "$wallpaper"
-    hyprctl hyprpaper wallpaper "eDP-1,$wallpaper"
+    # Preload and set the wallpaper using swww
+    swww img -o "$focused_monitor" "$RANDOM_PIC" $SWWW_PARAMS;
 
     echo "Wallpaper set to $wallpaper for theme $theme"
 }

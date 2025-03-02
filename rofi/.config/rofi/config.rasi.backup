@@ -169,10 +169,9 @@ configuration {
   display-run: "Run";
   display-window: "Windows";
   display-dmenu: "Items";
-  modi: "drun,run";
+  display-filebrowser: "Files";
+  modi: "drun,run,filebrowser";
   columns: 2;
-  location: 8 ;
-  position: 0;
 }
 
 //@theme "/home/arkboi/.config/rofi/themes/GreenMeho.rasi"
@@ -318,5 +317,17 @@ configuration {
 //@theme "/usr/share/rofi/themes/fullscreen-preview.rasi"
 
 //@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+
+//@theme "/usr/share/rofi/themes/paper-float.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/koolit.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+
+//@theme "/usr/share/rofi/themes/docu.rasi"
 
 @theme "/home/arkboi/.config/rofi/themes/nord.rasi"

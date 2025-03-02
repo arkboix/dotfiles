@@ -14,15 +14,15 @@
 
     "hyprland/workspaces": {
         "disable-scroll": false,
-        "all-outputs": false,
+        "all-outputs": true,
         "format": "{icon}",
         "format-icons": {
-            "1:web": "",
-            "2:code": "",
-            "3:term": "",
-            "4:work": "",
-            "5:music": "",
-            "6:docs": "",
+            "1": "  ",
+            "2": "  ",
+            "3": "  ",
+            "4": "  ",
+            "5": "  ",
+            "6": "  ",
             "urgent": "",
 //            "active": "",
 //            "default": ""

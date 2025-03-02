@@ -120,6 +120,8 @@ window#waybar > box {
 #workspaces {
   padding: 0px;
   font-weight: 900;
+    margin-right: 2px;
+    margin-left: 2px;
 }
 
 
@@ -129,6 +131,8 @@ window#waybar > box {
     padding: 0px;
     padding-right: 2px;
     padding-left: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
     border-top: 0px solid transparent;
 }
 
@@ -138,6 +142,8 @@ window#waybar > box {
     border-bottom: 2px solid @color13;
     padding-right: 2px;
     padding-left: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
 }
 
 
