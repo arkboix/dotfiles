@@ -320,4 +320,8 @@ configuration {
 
 //@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
 
+//@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+
+//@theme "/usr/share/rofi/themes/paper-float.rasi"
+
 @theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
