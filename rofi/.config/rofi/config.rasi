@@ -326,4 +326,8 @@ configuration {
 
 //@theme "/home/arkboi/.config/rofi/themes/koolit.rasi"
 
+//@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+
+//@theme "/usr/share/rofi/themes/docu.rasi"
+
 @theme "/home/arkboi/.config/rofi/themes/solarized.rasi"

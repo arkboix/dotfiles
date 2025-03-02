@@ -1,131 +1,103 @@
 /**
- * ROFI Color Theme
- *
- * Fullscreen theme with switchable PREVIEW option.
- *
- * User: Dave Davenport
- * Copyright: Dave Davenport
+ * ROFI Solarized theme.
  */
+
 * {
-	background-color: transparent;
-	text-color:       white;
+    background-color: transparent;
+    text-color: #839496;
+}
+
+entry {
+    border: 2px 0px;
+    border-color: #586e75;
+    background-color: #073642;
+    padding: 4px;
+    placeholder: "Type to filter";
+    placeholder-color: #586e75;
+    font: inherit;
+    cursor: text;
+}
+
+inputbar {
+    spacing: 0;
+    children: [ icon-keyboard, entry, mode-switcher ];
+    font: "mono 18";
+}
+
+mode-switcher {
+    spacing: 2px;
+    border: 2px;
+    border-radius: 0px 4px 4px 0px;
+    border-color: #586e75;
+    background-color: #586e75;
+    font: inherit;
+}
+
+button {
+    background-color: #073642;
+    border-color: #586e75;
+    font: inherit;
+    cursor: pointer;
+}
+
+button selected {
+    background-color: #cb4b16;
+    text-color: #002b36;
+}
+
+icon-keyboard {
+    border: 2px 0px 2px 2px;
+    border-radius: 4px 0px 0px 4px;
+    border-color: #586e75;
+    background-color: #073642;
+    padding: 0px 10px 0px 10px;
+    expand: false;
+    size: 1.2em;
+    filename: "keyboard";
 }
 
 window {
-	fullscreen:       true;
-	background-color: rgba( 0,43,54, 80% );
-	padding:          4em;
-	children:         [ wrap, listview-split];
-	spacing:          1em;
+    anchor: north;
+    location: north;
+    width: 100%;
+    background-color: rgba(0, 43, 54, 0.8);
+    padding: 1em;
+    border-color: #002b36;
+    border: 0em 0.2em 0.2em;
 }
 
-
-/** We add an extra child to this is PREVIEW=true */
-listview-split {
-  orientation: horizontal;
-  spacing: 0.4em;
-  children: [listview];
-}
-
-wrap {
-	expand: false;
-	orientation: vertical;
-	children: [ inputbar, message ];
-	background-image: linear-gradient(white/5%, white/40%);
-	border-color: lightblue;
-	border: 3px;
-	border-radius: 0.4em;
-}
-
-icon-ib {
-	expand: false;
-	filename: "system-search";
-	vertical-align: 0.5;
-	horizontal-align: 0.5;
-	size: 1em;
-}
-inputbar {
-	spacing: 0.4em;
-	padding: 0.4em;
-	children: [ icon-ib, entry ];
-}
-entry {
-	placeholder: "Search";
-	placeholder-color: rgba( 88,110,117 );
-}
-message {
-	background-color: red/20%;
-	border-color: lightsalmon;
-	border: 3px 0px 0px 0px;
-	padding: 0.4em;
-	spacing: 0.4em;
+mainbox {
+    spacing: 1em;
 }
 
 listview {
-	flow: horizontal;
-	fixed-columns: true;
-	columns: 7;
-	lines: 5;
-	spacing: 1.0em;
+    lines: 4;
+    columns: 6;
+    spacing: 1em;
+    fixed-columns: true;
 }
 
 element {
-	orientation: vertical;
-	padding: 0.1em;
-
-	background-image: linear-gradient(white/5%, white/20%);
-	border-color: lightblue /15%;
-	border: 3px;
-	border-radius: 0.4em;
-
-  children: [element-icon, element-text ];
-}
-element-icon {
-	size: calc(((100% - 8em) / 7 ));
-	horizontal-align: 0.5;
-	vertical-align: 0.5;
-}
-element-text {
-	horizontal-align: 0.5;
-	vertical-align: 0.5;
-  padding: 0.2em;
+    orientation: vertical;
+    border: 2px;
+    border-radius: 4px;
+    border-color: #586e75;
+    background-color: #073642;
+    cursor: pointer;
+    padding: 4px;
 }
 
 element selected {
-	background-image: linear-gradient(white/25%, white/10%);
-	border-color: lightblue;
-	border: 3px;
-	border-radius: 0.4em;
+    background-color: #cb4b16;
+    text-color: #002b36;
 }
 
-/**
- * Launching rofi with environment PREVIEW set to true
- * will split the screen and show a preview widget.
- */
-@media ( enabled: env(PREVIEW, false)) {
-  /** preview widget */
-  icon-current-entry {
-    expand:          true;
-    size:            80%;
-  }
-  listview-split {
-    children: [listview, icon-current-entry];
-  }
-  listview {
-  columns: 4;
-  }
-
+element-icon {
+    size: 128px;
+    cursor: inherit;
 }
 
-@media ( enabled: env(NO_IMAGE, false)) {
-	listview {
-		columns: 1;
-		spacing: 0.4em;
-	}
-	element {
-		children: [ element-text ];
-	}
-	element-text {
-		horizontal-align: 0.0;
-	}
+element-text {
+    horizontal-align: 0.5;
+    cursor: inherit;
 }
