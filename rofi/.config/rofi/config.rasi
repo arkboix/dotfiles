@@ -169,7 +169,8 @@ configuration {
   display-run: "Run";
   display-window: "Windows";
   display-dmenu: "Items";
-  modi: "drun,run";
+  display-filebrowser: "Files";
+  modi: "drun,run,filebrowser";
   columns: 2;
   location: 8 ;
   position: 0;

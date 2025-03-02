@@ -6,13 +6,14 @@
  */
 
 configuration {
-    display-drun: "Apps";
-    display-window: "Windows";
+    display-drun: "󱗼 Apps";
+    display-window: "󰖲 Windows";
     display-combi: "All";
-    display-run: "Run";
+    display-run: " Run";
     show-icons: true;
+    display-filebrowser: " Files";
     sidebar-mode: true;
-    font: "IBM Plex Mono Bold 11";
+    font: "Blex Mono Nerd Font Bold 11";
 }
 
 * {
