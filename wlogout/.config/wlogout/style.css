@@ -4,8 +4,7 @@
 }
 
 window {
-	background-color: rgba(0, 43, 54, 0.8);
-    background-image: url("/tmp/wlogout.jpg") /* Base03 with transparency */
+	background-color: rgba(0, 43, 54, 8);
 }
 
 button {
@@ -17,7 +16,7 @@ button {
 	border-style: solid;
 	border-width: 1px;
     border-radius: 0px;
-    margin: 12px;
+    margin: 24px;
 	background-repeat: no-repeat;
 	background-position: center;
     text-shadow: 0px 0px 4px black;
@@ -25,15 +24,12 @@ button {
 	background-size: 25%;
 }
 
-button:active, button:hover {
-	outline-style: none;
-}
-
 
 button:hover {
-    border: 2px solid #268bd2;
-    box-shadow: 0px 0px 12px black;
+    background-color: #cb4b16;
+    margin: 12px;
 }
+
 #lock {
     background-image: image(url("/usr/share/wlogout/icons/lock.png"));
 

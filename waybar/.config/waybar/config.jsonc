@@ -2,7 +2,7 @@
 
 {
     "layer": "bottom", // Waybar at top layer
-    "position": "top", // Waybar at the top of your screen
+"position": "top",
     "height":32, // Waybar height
     "margin": 0,
     // , 
@@ -20,7 +20,7 @@
             "1": "  ",
             "2": "  ",
             "3": "  ",
-            "4": "  ",
+            "4": "  ",
             "5": "  ",
             "6": "  ",
             "urgent": "",

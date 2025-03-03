@@ -18,6 +18,7 @@ options=(
     "Change Terminal (kitty) theme"
     "Change Global Theme"
     "Change Display Settings"
+    "Change Waybar Layout"
 )
 
 # Define corresponding commands
@@ -38,6 +39,7 @@ commands=(
     "~/dotfiles/arkscripts/arkscripts/kitty-color.sh"
     "~/dotfiles/arkscripts/arkscripts/theme-all.sh"
     "nwg-displays"
+    "~/dotfiles/arkscripts/arkscripts/waybar-layout.sh"
 )
 
 # Show Rofi menu
