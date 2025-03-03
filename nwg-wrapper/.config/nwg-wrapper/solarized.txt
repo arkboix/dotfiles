@@ -22,7 +22,12 @@
 <span color="#839496">S + U I O P</span> - <span color="#586e75">Move Focus</span>  
 <span color="#839496">S + [Num]</span> - <span color="#586e75">Change Workspace</span>  
 <span color="#839496">S + s</span> - <span color="#586e75">Scratchpad</span>  
-<span color="#839496">S + SH + s</span> - <span color="#586e75">Move to Scratchpad</span>  
+<span color="#839496">S + SH + s</span> - <span color="#586e75">Move to Scratchpad</span>
+<span color="#839496">S + w</span> - <span color="#586e75">Close Window</span>
+<span color="#839496">S + c</span> - <span color="#586e75">Wallpaper Picker</span>
+<span color="#839496">S + v</span> - <span color="#586e75">Clipboard</span>
+
+
 
 <span color="#cb4b16" weight="bold">Applications;</span>
 
