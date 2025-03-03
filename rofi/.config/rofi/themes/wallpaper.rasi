@@ -4,7 +4,8 @@
 
 * {
     background-color: transparent;
-    text-color: #839496;
+    text-color: #eee8d5;
+    border-color: #eee8d5;
 }
 
 entry {
@@ -35,7 +36,6 @@ mode-switcher {
 
 button {
     background-color: #073642;
-    border-color: #586e75;
     font: inherit;
     cursor: pointer;
     box-shadow: 2px 2px 5px;
@@ -86,11 +86,13 @@ element {
     background-color: #073642;
     cursor: pointer;
     padding: 4px;
+    box-shadow: 4px 4px 4px;
 }
 
 element selected {
     background-color: #cb4b16;
     text-color: #002b36;
+    border-color: #eee8d5	;
 }
 
 element-icon {
@@ -99,6 +101,6 @@ element-icon {
 }
 
 element-text {
-    horizontal-align: 0.5;
+    horizontal-align: 0.1;
     cursor: inherit;
 }
