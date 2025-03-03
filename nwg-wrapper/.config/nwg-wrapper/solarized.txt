@@ -1,39 +1,29 @@
-<span color="#268bd2" size="xx-large" weight="bold">Welcome, Arkboi!</span>
-<span color="#dc322f" size="large" weight="600">What is your focus for today?</span>
+<span face="monospace">
+<span size="xx-large" foreground="#268bd2" face="serif">Cheat Sheet</span>
+<span foreground="#93a1a1">
 
+Terminal emulator	<span foreground="#268bd2" face="serif">S+Enter</span>
+Web browser		<span foreground="#268bd2" face="serif">S+W</span>
+Text editor		<span foreground="#268bd2" face="serif">DOOM Emacs</span>
+Wallpaper manager	<span foreground="#268bd2" face="serif">S+C</span>
+File manager		<span foreground="#268bd2" face="serif">Nemo</span>
+Application launcher	<span foreground="#268bd2" face="serif">S+SPC</span>
 
-<span color="#cb4b16" weight="bold">Variables;</span>
+Kill task		<span foreground="#268bd2" face="serif">S+W</span>
+Exit Hyprland		<span foreground="#268bd2" face="serif">S+M</span>
+Reload Waybar		<span foreground="#268bd2" face="serif">waybar reload</span>
 
-<span color="#839496">S</span> - <span color="#586e75">Super, Windows</span>  
-<span color="#839496">M</span> - <span color="#586e75">Alt, Meta</span>  
-<span color="#839496">C</span> - <span color="#586e75">Ctrl</span>  
-<span color="#839496">SH</span> - <span color="#586e75">Shift</span>  
-<span color="#839496">SPC</span> - <span color="#586e75">Space</span>  
+Switch workspace	<span foreground="#268bd2" face="serif">S+[Num]</span>
+Move to workspace	<span foreground="#268bd2" face="serif">S+SH+[Num]</span>
+Move focus		<span foreground="#268bd2" face="serif">S+U I O P</span>
+Move window		<span foreground="#268bd2" face="serif">S+SH+Arrow</span>
 
+Resize window		<span foreground="#268bd2" face="serif">S+M+Arrow</span>
+Toggle layout		<span foreground="#268bd2" face="serif">S+Tiling/Floating</span>
+Fullscreen		<span foreground="#268bd2" face="serif">S+F</span>
 
-<span color="#cb4b16" weight="bold">Keybindings;</span>
+Move to scratchpad	<span foreground="#268bd2" face="serif">S+SH+S</span>
+Show scratchpad		<span foreground="#268bd2" face="serif">S+S</span>
 
-<span color="#839496">S + Enter</span> - <span color="#586e75">Terminal (kitty)</span>  
-<span color="#839496">C + SPC</span> - <span color="#586e75">App Launcher (rofi)</span>  
-<span color="#839496">S + m</span> - <span color="#586e75">Exit Hyprland</span>  
-<span color="#839496">S + d</span> - <span color="#586e75">Emoji Picker</span>  
-<span color="#839496">S + SH + Arrow</span> - <span color="#586e75">Move Windows</span>  
-<span color="#839496">S + M + Arrow</span> - <span color="#586e75">Resize Windows</span>  
-<span color="#839496">S + U I O P</span> - <span color="#586e75">Move Focus</span>  
-<span color="#839496">S + [Num]</span> - <span color="#586e75">Change Workspace</span>  
-<span color="#839496">S + s</span> - <span color="#586e75">Scratchpad</span>  
-<span color="#839496">S + SH + s</span> - <span color="#586e75">Move to Scratchpad</span>
-<span color="#839496">S + w</span> - <span color="#586e75">Close Window</span>
-<span color="#839496">S + c</span> - <span color="#586e75">Wallpaper Picker</span>
-<span color="#839496">S + v</span> - <span color="#586e75">Clipboard</span>
-
-
-
-<span color="#cb4b16" weight="bold">Applications;</span>
-
-<span color="#839496">Terminal</span> - <span color="#586e75">Kitty</span>  
-<span color="#839496">File Manager</span> - <span color="#586e75">Nemo</span>  
-<span color="#839496">Browser</span> - <span color="#586e75">Firefox</span>  
-<span color="#839496">App Launcher</span> - <span color="#586e75">Rofi</span>  
-<span color="#839496">Top Bar</span> - <span color="#586e75">Waybar</span>  
-<span color="#839496">Text Editor</span> - <span color="#586e75"> DOOM Emacs </span>
+</span>
+</span>
