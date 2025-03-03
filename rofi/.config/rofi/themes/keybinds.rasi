@@ -1,0 +1,135 @@
+/**
+ * Rofi Solarized Dark Theme for Hyprland Keybindings
+ * Based on Solarized Dark color scheme by Ethan Schoonover
+ */
+
+* {
+    /* Solarized Dark Colors */
+    base03:     #002b36;
+    base02:     #073642;
+    base01:     #586e75;
+    base00:     #657b83;
+    base0:      #839496;
+    base1:      #93a1a1;
+    base2:      #eee8d5;
+    base3:      #fdf6e3;
+    yellow:     #b58900;
+    orange:     #cb4b16;
+    red:        #dc322f;
+    magenta:    #d33682;
+    violet:     #6c71c4;
+    blue:       #268bd2;
+    cyan:       #2aa198;
+    green:      #859900;
+
+    /* Theme settings */
+    background-color:   transparent;
+    text-color:         @base0;
+
+    font:               "JetBrainsMono Nerd Font 12";
+    border-color:       @blue;
+    separatorcolor:     @blue;
+
+    spacing:            2;
+}
+
+window {
+    width:              700px;
+    background-color:   @base03;
+    border:             2px;
+    border-color:       @blue;
+    border-radius:      8px;
+    padding:            15px;
+}
+
+mainbox {
+    border:             0;
+    padding:            0;
+}
+
+message {
+    border:             1px dash 0px 0px;
+    border-color:       @separatorcolor;
+    padding:            1px;
+}
+
+textbox {
+    text-color:         @text-color;
+    padding:            8px;
+}
+
+listview {
+    fixed-height:       false;
+    dynamic:            true;
+    border:             0px;
+    spacing:            2px;
+    scrollbar:          true;
+    padding:            5px 5px 0px 5px;
+    lines:              15;
+}
+
+element {
+    border:             0;
+    padding:            4px;
+    border-radius:      4px;
+}
+
+element-text {
+    background-color:   inherit;
+    text-color:         inherit;
+    vertical-align:     0.5;
+}
+
+element.normal.normal {
+    background-color:   @base03;
+    text-color:         @base0;
+}
+
+element.selected.normal {
+    background-color:   @base02;
+    text-color:         @base3;
+}
+
+element.alternate.normal {
+    background-color:   @base03;
+    text-color:         @base0;
+}
+
+scrollbar {
+    width:              4px;
+    border:             0;
+    handle-width:       8px;
+    padding:            0;
+    handle-color:       @blue;
+    background-color:   @base02;
+}
+
+inputbar {
+    spacing:            0;
+    text-color:         @base3;
+    padding:            5px;
+    border:             0px 0px 1px 0px;
+    border-color:       @separatorcolor;
+    background-color:   @base02;
+    children:           [ prompt, textbox-prompt-colon, entry ];
+}
+
+prompt {
+    spacing:            0;
+    text-color:         @blue;
+    background-color:   inherit;
+}
+
+textbox-prompt-colon {
+    expand:             false;
+    str:                " ";
+    margin:             0px 0.3em 0em 0em;
+    text-color:         @blue;
+    background-color:   inherit;
+}
+
+entry {
+    spacing:            0;
+    text-color:         @base3;
+    background-color:   inherit;
+}

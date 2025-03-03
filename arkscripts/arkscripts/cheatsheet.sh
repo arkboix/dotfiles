@@ -1,52 +1,322 @@
 #!/bin/bash
 
-# Set temp file for the overlay image
-cheatsheet="/tmp/hypr-cheatsheet.png"
+# Script to generate a cleaner keybindings cheatsheet for Hyprland using Rofi
+# Excludes common keybindings like workspace switching and multimedia keys
 
-# Define colors 🎨
-BG_COLOR="black"
-TITLE_COLOR="yellow"
-SECTION_COLOR="cyan"
-TEXT_COLOR="white"
+# Function to convert modifier keys to a more readable format
+format_modifiers() {
+  local mod="$1"
+  mod=$(echo "$mod" | sed 's/\$mainMod/Super/g')
+  mod=$(echo "$mod" | sed 's/SUPER/Super/g')
+  mod=$(echo "$mod" | sed 's/SUPER_SHIFT/Super+Shift/g')
+  mod=$(echo "$mod" | sed 's/SHIFT/Shift/g')
+  mod=$(echo "$mod" | sed 's/CTRL/Ctrl/g')
+  mod=$(echo "$mod" | sed 's/ALT/Alt/g')
+  mod=$(echo "$mod" | sed 's/_/ + /g')
+  mod=$(echo "$mod" | sed 's/ ,/ + /g')
+  echo "$mod"
+}
 
-# Use IBM Plex Mono
-FONT="IBM Plex Mono"
+# Function to provide more descriptive action names
+get_descriptive_action() {
+  local action="$1"
+  local target="$2"
 
-# Create the cheatsheet with smaller text and left alignment
-convert -size 1000x600 xc:$BG_COLOR -fill $TITLE_COLOR -font "$FONT" -pointsize 26 \
-    -gravity NorthWest -annotate +40+30 "Hyprland Cheatsheet" \
-    -fill $SECTION_COLOR -pointsize 20 -annotate +40+80 "[ Windows ]" \
-    -fill $TEXT_COLOR -pointsize 18 \
-    -annotate +60+110 "SUPER+SHIFT+Arrow   Move Window" \
-    -annotate +60+140 "SUPER+ALT+Arrow     Resize Window" \
-    -annotate +60+170 "SUPER+T             Toggle Floating" \
-    -annotate +60+200 "SUPER+F             Fullscreen" \
-    -annotate +60+230 "SUPER+P             Pseudo Mode (Dwindle)" \
-    -annotate +60+260 "SUPER+J             Toggle Split (Dwindle)" \
-    -fill $SECTION_COLOR -pointsize 20 -annotate +40+300 "[ Workspaces ]" \
-    -fill $TEXT_COLOR -pointsize 18 \
-    -annotate +60+330 "SUPER+[1-9,0]       Switch workspace" \
-    -annotate +60+360 "SUPER+SHIFT+[1-9,0] Move window to workspace" \
-    -annotate +60+390 "SUPER+S             Special workspace" \
-    -annotate +60+420 "SUPER+N             Cycle Layout" \
-    -fill $SECTION_COLOR -pointsize 20 -annotate +40+460 "[ Apps ]" \
-    -fill $TEXT_COLOR -pointsize 18 \
-    -annotate +60+490 "SUPER+B  Browser" \
-    -annotate +60+520 "SUPER+A  Video Editor" \
-    -annotate +60+550 "SUPER+C  Wallpaper Selector" \
-    -annotate +60+580 "SUPER+R  Color Picker" \
-    -annotate +60+610 "SUPER+D  Emoji Picker" \
-    -annotate +60+640 "SUPER+TAB Window Switcher" \
-    -annotate +60+670 "SUPER+RETURN Terminal" \
-    -fill $SECTION_COLOR -pointsize 20 -annotate +40+710 "[ Misc ]" \
-    -fill $TEXT_COLOR -pointsize 18 \
-    -annotate +60+740 "ALT+X   Random Wallpaper" \
-    -annotate +60+770 "Print   Screenshot" \
-    -annotate +60+800 "SUPER+V Clipboard Manager" \
-    "$cheatsheet"
+  case "$target" in
+    *"terminal"*)
+      echo "Launch terminal"
+      ;;
+    *"$browser"*)
+      echo "Launch browser"
+      ;;
+    *"$fileManager"*)
+      echo "Launch file manager"
+      ;;
+    *"emacs"*)
+      echo "Launch Emacs"
+      ;;
+    *"wall.sh"*)
+      echo "Set random wallpaper"
+      ;;
+    *"select-wall.sh"*)
+      echo "Select wallpaper"
+      ;;
+    *"waypaper"*)
+      echo "Launch Waypaper"
+      ;;
+    *"hyprpicker"*)
+      echo "Launch color picker"
+      ;;
+    *"hyprlock"*)
+      echo "Lock screen"
+      ;;
+    *"rofi -show emoji"*)
+      echo "Show emoji picker"
+      ;;
+    *"rofi -show window"*)
+      echo "Show window switcher"
+      ;;
+    *"fzf-rofi.sh"*)
+      echo "Show fuzzy finder"
+      ;;
+    *"volume.sh"*)
+      echo "Adjust volume"
+      ;;
+    *"hyprshot"*)
+      if [[ "$target" == *"region"* ]]; then
+        echo "Screenshot selected region"
+      else
+        echo "Screenshot full screen"
+      fi
+      ;;
+    *"cliphist"*)
+      echo "Show clipboard history"
+      ;;
+    *"$video-editor"*)
+      echo "Launch video editor"
+      ;;
+    *)
+      # If it's an exec command but not recognized, return the target
+      if [[ "$action" == "exec" ]]; then
+        echo "Launch: $target"
+      else
+        echo "$action $target"
+      fi
+      ;;
+  esac
+}
 
-# Show overlay using swappy (it disappears on click)
-swappy -f "$cheatsheet" &
+# Path to your Hyprland config file
+CONFIG_FILE="$HOME/.config/hypr/conf/input.conf"
 
-# Close on ESC after 8 seconds
-sleep 8 && wtype -k ESC
+# Check if the config file exists
+if [ ! -f "$CONFIG_FILE" ]; then
+  # Try the alternative path from the document
+  CONFIG_FILE="$HOME/dotfiles/hypr/.config/hypr/conf/input.conf"
+  if [ ! -f "$CONFIG_FILE" ]; then
+    echo "Config file not found!"
+    exit 1
+  fi
+fi
+
+# Create theme directory if it doesn't exist
+THEME_DIR="$HOME/.config/rofi/themes"
+mkdir -p "$THEME_DIR"
+
+# Path to the theme file
+THEME_FILE="$THEME_DIR/keybinds-solarized.rasi"
+
+# Create the Solarized theme file if it doesn't exist
+cat > "$THEME_FILE" << 'EOL'
+/**
+ * Rofi Solarized Dark Theme for Hyprland Keybindings
+ * Based on Solarized Dark color scheme by Ethan Schoonover
+ */
+
+* {
+    /* Solarized Dark Colors */
+    base03:     #002b36;
+    base02:     #073642;
+    base01:     #586e75;
+    base00:     #657b83;
+    base0:      #839496;
+    base1:      #93a1a1;
+    base2:      #eee8d5;
+    base3:      #fdf6e3;
+    yellow:     #b58900;
+    orange:     #cb4b16;
+    red:        #dc322f;
+    magenta:    #d33682;
+    violet:     #6c71c4;
+    blue:       #268bd2;
+    cyan:       #2aa198;
+    green:      #859900;
+
+    /* Theme settings */
+    background-color:   transparent;
+    text-color:         @base0;
+
+    font:               "JetBrainsMono Nerd Font 12";
+    border-color:       @blue;
+    separatorcolor:     @blue;
+
+    spacing:            2;
+}
+
+window {
+    width:              700px;
+    background-color:   @base03;
+    border:             2px;
+    border-color:       @blue;
+    border-radius:      8px;
+    padding:            15px;
+}
+
+mainbox {
+    border:             0;
+    padding:            0;
+}
+
+message {
+    border:             1px dash 0px 0px;
+    border-color:       @separatorcolor;
+    padding:            1px;
+}
+
+textbox {
+    text-color:         @text-color;
+    padding:            8px;
+}
+
+listview {
+    fixed-height:       false;
+    dynamic:            true;
+    border:             0px;
+    spacing:            2px;
+    scrollbar:          true;
+    padding:            5px 5px 0px 5px;
+    lines:              15;
+}
+
+element {
+    border:             0;
+    padding:            4px;
+    border-radius:      4px;
+}
+
+element-text {
+    background-color:   inherit;
+    text-color:         inherit;
+    vertical-align:     0.5;
+}
+
+element.normal.normal {
+    background-color:   @base03;
+    text-color:         @base0;
+}
+
+element.selected.normal {
+    background-color:   @base02;
+    text-color:         @base3;
+}
+
+element.alternate.normal {
+    background-color:   @base03;
+    text-color:         @base0;
+}
+
+scrollbar {
+    width:              4px;
+    border:             0;
+    handle-width:       8px;
+    padding:            0;
+    handle-color:       @blue;
+    background-color:   @base02;
+}
+
+inputbar {
+    spacing:            0;
+    text-color:         @base3;
+    padding:            5px;
+    border:             0px 0px 1px 0px;
+    border-color:       @separatorcolor;
+    background-color:   @base02;
+    children:           [ prompt, textbox-prompt-colon, entry ];
+}
+
+prompt {
+    spacing:            0;
+    text-color:         @blue;
+    background-color:   inherit;
+}
+
+textbox-prompt-colon {
+    expand:             false;
+    str:                " ";
+    margin:             0px 0.3em 0em 0em;
+    text-color:         @blue;
+    background-color:   inherit;
+}
+
+entry {
+    spacing:            0;
+    text-color:         @base3;
+    background-color:   inherit;
+}
+EOL
+
+# Parse the bind commands and extract the keybindings
+# Excludes common keybindings like workspace switching and system/media keys
+{
+  echo "🔍 HYPRLAND KEYBINDINGS CHEATSHEET"
+  echo "═════════════════════════════════════"
+
+  grep "^bind" "$CONFIG_FILE" | \
+    grep -v "workspace, [0-9]" | \
+    grep -v "movetoworkspace, [0-9]" | \
+    grep -v "movefocus" | \
+    grep -v "XF86" | \
+    while read -r line; do
+      # Extract the keys part
+      keys=$(echo "$line" | sed -E 's/bind\s*=\s*([^,]+).*/\1/g' | sed 's/^ *//;s/ *$//')
+
+      # Extract the action part
+      action=$(echo "$line" | sed -E 's/bind\s*=\s*[^,]+,\s*([^,]+).*/\1/g' | sed 's/^ *//;s/ *$//')
+
+      # Extract the target/command part (if exists)
+      target=""
+      if [[ "$line" =~ bind[[:space:]]*=[[:space:]]*[^,]+,[[:space:]]*[^,]+,[[:space:]]*(.*) ]]; then
+        target=${BASH_REMATCH[1]}
+        target=$(echo "$target" | sed 's/^ *//;s/ *$//')
+      fi
+
+      # Format the keys
+      formatted_keys=$(format_modifiers "$keys")
+
+      # Get descriptive action
+      descriptive_action=$(get_descriptive_action "$action" "$target")
+
+      # Categorize commands
+      if [[ "$action" == "exec" ]]; then
+        echo "🚀 $formatted_keys │ $descriptive_action"
+      elif [[ "$action" == "killactive" ]]; then
+        echo "🪟 $formatted_keys │ Close window"
+      elif [[ "$action" == "togglefloating" ]]; then
+        echo "🪟 $formatted_keys │ Toggle floating"
+      elif [[ "$action" == "fullscreen" ]]; then
+        echo "🪟 $formatted_keys │ Toggle fullscreen"
+      elif [[ "$action" == "pseudo" ]]; then
+        echo "🪟 $formatted_keys │ Toggle pseudo tiling"
+      elif [[ "$action" == "togglesplit" ]]; then
+        echo "🪟 $formatted_keys │ Toggle split direction"
+      elif [[ "$action" == "exit" ]]; then
+        echo "⚙️  $formatted_keys │ Exit Hyprland"
+      elif [[ "$action" == "pin" ]]; then
+        echo "📌 $formatted_keys │ Pin window"
+      elif [[ "$action" == "movewindow" ]]; then
+        dir=""
+        case "$target" in
+          "l") dir="left" ;;
+          "r") dir="right" ;;
+          "u") dir="up" ;;
+          "d") dir="down" ;;
+          *) dir="$target" ;;
+        esac
+        echo "🪟 $formatted_keys │ Move window $dir"
+      elif [[ "$action" == "resizeactive" ]]; then
+        echo "🪟 $formatted_keys │ Resize window"
+      elif [[ "$action" == "togglespecialworkspace" ]]; then
+        echo "📋 $formatted_keys │ Toggle scratchpad"
+      elif [[ "$action" == "layoutmsg" ]]; then
+        echo "📐 $formatted_keys │ $descriptive_action"
+      else
+        echo "⚙️  $formatted_keys │ $descriptive_action"
+      fi
+    done | sort
+} > /tmp/hypr_keybinds.txt
+
+# Display the keybindings using Rofi with our custom theme
+rofi -dmenu -i -p "Keybindings" -theme "$THEME_FILE" -markup-rows < /tmp/hypr_keybinds.txt
+
+# Clean up
+rm /tmp/hypr_keybinds.txt
