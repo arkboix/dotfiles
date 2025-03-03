@@ -22,6 +22,9 @@ alias youtube="yt-x"
 alias install="sudo pacman -S"
 alias remove="sudo pacman -R"
 alias search="pacman -Ss"
+alias d="mkdir"
+alias ..="cd .."
+alias .="cd ../.."
 
 # Emacs Makes me Do More Work (E.M.D.M.W)
 export PATH="$HOME/.emacs.d/bin:$PATH"
