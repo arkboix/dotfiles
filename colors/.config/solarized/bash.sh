@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+export COLOR0="#073642"
+export COLOR1="#dc322f"
+export COLOR2="#859900"
+export COLOR3="#b58900"
+export COLOR4="#268bd2"
+export COLOR5="#d33682"
+export COLOR6="#2aa198"
+export COLOR7="#eee8d5"
+export COLOR8="#002b36"
+export COLOR9="#cb4b16"
+export COLOR10="#586e75"
+export COLOR11="#657b83"
+export COLOR12="#839496"
+export COLOR13="#6c71c4"
+export COLOR14="#93a1a1"
+export COLOR15="#fdf6e3"

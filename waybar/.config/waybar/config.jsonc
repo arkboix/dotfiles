@@ -9,8 +9,8 @@
     // "width": 1366, // Waybar width HELLO
     // Choose the order of the modules
     "modules-left": ["custom/apps","hyprland/workspaces", "hyprland/submap", "custom/spotify", "hyprland/window", "custom/cava"],
-    "modules-center": ["custom/cpuh", "custom/uname", "custom/animation", "custom/player"],
-    "modules-right": ["pulseaudio",  "memory", "battery","tray","clock", "custom/power", "custom/vm", "custom/calendar","group/sysext"],
+    "modules-center": [],
+    "modules-right": ["custom/cpuh", "custom/animation", "pulseaudio",  "memory", "battery","tray","clock", "custom/power", "custom/vm", "custom/calendar","group/sysext"],
 
     "hyprland/workspaces": {
         "disable-scroll": false,
