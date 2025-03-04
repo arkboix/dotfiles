@@ -14,7 +14,8 @@
     ],
 
     "modules-center": [
-        "clock"
+        "clock",
+        "custom/scripts"
     ],
 
     "modules-right": [
@@ -159,17 +160,21 @@
     },
 
     "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "󰓇",
-            "default": "󰝚"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null",
-        "on-click": "playerctl play-pause"
+            "format": "🎵 {}",
+            "exec": "$HOME/arkscripts/player.sh",
+            "return-type": "json",
+            "signal": 10,
+            "on-click": "playerctl play-pause",
+            "on-scroll-up": "playerctl next",
+            "on-scroll-down": "playerctl previous"
     },
+
+"custom/scripts": {
+    "format": "{}",
+    "exec": "echo scripts",
+    "on-click": "~/arkscripts/main.sh",
+    "exec-if": "true"
+},
 
     "custom/power": {
         "format": "󰐥",

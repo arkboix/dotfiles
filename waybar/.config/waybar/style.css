@@ -132,6 +132,7 @@ tooltip label {
 #mode,
 #clock,
 #cpu,
+#custom-scripts,
 #memory,
 #temperature,
 #battery,
@@ -178,7 +179,7 @@ tooltip label {
 }
 
 /* Clock module */
-#clock {
+#clock, #custom-scripts {
     background-color: @cyan;
     color: @base03;
     font-weight: bold;
