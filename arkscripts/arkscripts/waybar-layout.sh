@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Launch rofi with position and theme options
-selected=$(echo -e "[Top] Default\n[Bottom] Default\n[Top] Simple\n[Bottom] Simple" | rofi -dmenu -p "Select Waybar Layout:" -i)
+selected=$(echo -e "[Top] Default\n[Bottom] Default\n[Top] Simple\n[Bottom] Simple\n[Top] Floating" | rofi -dmenu -p "Select Waybar Layout:" -i)
 
 # Check if a selection was made
 if [ -z "$selected" ]; then
@@ -9,37 +9,42 @@ if [ -z "$selected" ]; then
     exit 0
 fi
 
-# Use killall instead of pkill for more reliable termination
+# Kill any running Waybar instances
 killall waybar
 
-# Wait a moment to ensure waybar is fully terminated
+# Wait for termination
 sleep 1
 
-# Extract position and theme from selection
+# Extract position from selection
 if [[ "$selected" == *"Top"* ]]; then
     position="top"
 elif [[ "$selected" == *"Bottom"* ]]; then
     position="bottom"
 fi
 
-# Handle based on theme selection
+# Determine the config file based on the theme
 if [[ "$selected" == *"Simple"* ]]; then
-    # Update the position in theme-2 config
-    sed -i '3s/.*/"position": "'"$position"'",/' ~/.config/waybar/theme-2/config.jsonc
-
-    # Use nohup to prevent terminal-related issues and disown the process
-    nohup waybar -c ~/.config/waybar/theme-2/config.jsonc -s ~/.config/waybar/theme-2/style.css >/dev/null 2>&1 &
-    disown
+    config="$HOME/.config/waybar/theme-2/config.jsonc"
+    style="$HOME/.config/waybar/theme-2/style.css"
+elif [[ "$selected" == *"Floating"* ]]; then
+    config="$HOME/.config/waybar/theme-3/config.jsonc"
+    style="$HOME/.config/waybar/theme-3/style.css"
 else
-    # Default theme - update position in main config
-    sed -i '5s/.*/"position": "'"$position"'",/' ~/.config/waybar/config.jsonc
-
-    # Use nohup to prevent terminal-related issues and disown the process
-    nohup waybar >/dev/null 2>&1 &
-    disown
+    config="$HOME/.config/waybar/config.jsonc"
+    style=""
 fi
 
-echo "Waybar layout set to: $selected with position: $position"
+# Update position in the selected config file
+sed -i '3s/.*/"position": "'"$position"'",/' "$config"
 
-# Exit cleanly
+# Launch Waybar with the correct theme
+if [ -n "$style" ]; then
+    nohup waybar -c "$config" -s "$style" >/dev/null 2>&1 &
+else
+    nohup waybar -c "$config" >/dev/null 2>&1 &
+fi
+
+disown
+
+echo "Waybar layout set to: $selected with position: $position"
 exit 0

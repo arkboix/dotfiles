@@ -1,0 +1,121 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    background-color: transparent;
+    color: #93a1a1;
+    margin: 2px;
+    border-radius: 6px;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 43, 54, 0.5);
+    box-shadow: inherit;
+}
+
+#workspaces button.active {
+    background-color: #268bd2;
+    color: #002b36;
+}
+
+#workspaces button.urgent {
+    background-color: #dc322f;
+    color: #002b36;
+}
+
+#mode {
+    background-color: #073642;
+    color: #eee8d5;
+    border-radius: 6px;
+    margin: 0 5px;
+    padding: 0 10px;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#pulseaudio,
+#custom-media,
+#tray {
+    padding: 0 10px;
+    margin: 0 5px;
+    color: #eee8d5;
+    background-color: #073642;
+    border-radius: 6px;
+}
+
+#battery.charging, #battery.plugged {
+    color: #002b36;
+    background-color: #859900;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #dc322f;
+    color: #002b36;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #eee8d5;
+        color: #dc322f;
+    }
+}
+
+#temperature.critical {
+    background-color: #dc322f;
+    color: #002b36;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #cb4b16;
+}
+
+#custom-media {
+    background-color: #268bd2;
+    color: #002b36;
+}
+
+#clock {
+    background-color: #2aa198;
+    color: #002b36;
+    font-weight: bold;
+}
+
+#workspaces {
+    margin: 0 5px;
+}
+
+tooltip {
+    background-color: #002b36;
+    border: 1px solid #93a1a1;
+}
+
+tooltip label {
+    color: #93a1a1;
+}
