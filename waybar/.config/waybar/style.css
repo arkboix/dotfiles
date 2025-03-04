@@ -169,6 +169,7 @@ tooltip label {
     background-color: @blue;
     color: @base03;
     box-shadow: inset 0 0 0 2px @base2;
+    text-shadow: 0 0 5px @base3;
 }
 
 #workspaces button.urgent {
