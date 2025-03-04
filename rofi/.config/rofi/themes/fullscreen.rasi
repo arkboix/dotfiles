@@ -1,0 +1,96 @@
+/**
+ * Solarized Dark Fullscreen - A dramatic fullscreen launcher
+ */
+
+configuration {
+    display-drun: "Launch Application";
+}
+
+* {
+    base03:     #002b36;
+    base02:     #073642;
+    base01:     #586e75;
+    base00:     #657b83;
+    base0:      #839496;
+    base1:      #93a1a1;
+    base2:      #eee8d5;
+    base3:      #fdf6e3;
+    yellow:     #b58900;
+    orange:     #cb4b16;
+    red:        #dc322f;
+    magenta:    #d33682;
+    violet:     #6c71c4;
+    blue:       #268bd2;
+    cyan:       #2aa198;
+    green:      #859900;
+
+    background-color: transparent;
+    text-color:       @base0;
+    font:             "Sans 12";
+}
+
+window {
+    fullscreen:       true;
+    transparency:     "real";
+    background-color: #002b36DD;
+    padding:          25% 30%;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ inputbar, listview ];
+    spacing:          30px;
+}
+
+inputbar {
+    background-color: @base02;
+    border:           0px;
+    border-radius:    12px;
+    padding:          16px 20px;
+    spacing:          10px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color:       @green;
+    font:             "Sans Bold 14";
+}
+
+entry {
+    placeholder:      "Type to search...";
+    placeholder-color: @base01;
+    text-color:       @base1;
+    font:             "Sans 14";
+}
+
+listview {
+    background-color: transparent;
+    fixed-height:     false;
+    dynamic:          true;
+    padding:          0px;
+    spacing:          8px;
+    columns:          3;
+    lines:            5;
+}
+
+element {
+    background-color: @base02;
+    border-radius:    8px;
+    padding:          15px;
+    orientation:      vertical;
+    spacing:          10px;
+}
+
+element-icon {
+    size:             64px;
+    horizontal-align: 0.5;
+}
+
+element-text {
+    horizontal-align: 0.5;
+}
+
+element selected {
+    background-color: @green;
+    text-color:       @base3;
+}

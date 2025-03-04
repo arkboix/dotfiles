@@ -11,6 +11,8 @@
 @define-color battery #dc322f;
 @define-color tray #d33682;
 @define-color extra #859900;
+@define-color cheatsheet #cb4b16;
+
 
 /* Solarized Colors (color0 to color16) */
 @define-color color0  #002b36;

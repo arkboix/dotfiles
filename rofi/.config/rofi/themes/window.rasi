@@ -1,131 +1,161 @@
 /**
- * ROFI Color Theme
- *
- * Fullscreen theme with switchable PREVIEW option.
- *
- * User: Dave Davenport
- * Copyright: Dave Davenport
+ * Solarized Dark Grid Theme for Rofi Window Mode
+ * Designed for fullscreen Alt+Tab functionality
  */
+
 * {
-	background-color: transparent;
-	text-color:       white;
+    /* Solarized Dark Colors */
+    base03:     #002b36;
+    base02:     #073642;
+    base01:     #586e75;
+    base00:     #657b83;
+    base0:      #839496;
+    base1:      #93a1a1;
+    base2:      #eee8d5;
+    base3:      #fdf6e3;
+    yellow:     #b58900;
+    orange:     #cb4b16;
+    red:        #dc322f;
+    magenta:    #d33682;
+    violet:     #6c71c4;
+    blue:       #268bd2;
+    cyan:       #2aa198;
+    green:      #859900;
+
+    /* Global Properties */
+    background-color:            @base03;
+    text-color:                  @base0;
+    font:                        "Sans 12";
+
+    /* Window Properties */
+    window-format:               "{w} · {c} · {t}";
 }
 
 window {
-	fullscreen:       true;
-	background-color: rgba( 0,43,54, 80% );
-	padding:          4em;
-	children:         [ wrap, listview-split];
-	spacing:          1em;
+    fullscreen:                  true;
+    transparency:                "real";
+    background-color:            @base03;
+    padding:                     5% 5%;
 }
 
-
-/** We add an extra child to this is PREVIEW=true */
-listview-split {
-  orientation: horizontal;
-  spacing: 0.4em;
-  children: [listview];
+mainbox {
+    border:                      0;
+    padding:                     0;
+    background-color:            transparent;
 }
 
-wrap {
-	expand: false;
-	orientation: vertical;
-	children: [ inputbar, message ];
-	background-image: linear-gradient(white/5%, white/40%);
-	border-color: lightblue;
-	border: 3px;
-	border-radius: 0.4em;
-}
-
-icon-ib {
-	expand: false;
-	filename: "system-search";
-	vertical-align: 0.5;
-	horizontal-align: 0.5;
-	size: 1em;
-}
-inputbar {
-	spacing: 0.4em;
-	padding: 0.4em;
-	children: [ icon-ib, entry ];
-}
-entry {
-	placeholder: "Search";
-	placeholder-color: rgba( 88,110,117 );
-}
 message {
-	background-color: red/20%;
-	border-color: lightsalmon;
-	border: 3px 0px 0px 0px;
-	padding: 0.4em;
-	spacing: 0.4em;
+    border:                      0;
+    padding:                     5px 10px;
+    background-color:            @base02;
+    text-color:                  @base0;
+}
+
+textbox {
+    background-color:            transparent;
+    text-color:                  @base0;
+}
+
+inputbar {
+    background-color:            @base02;
+    border:                      0 0 2px 0;
+    border-color:                @blue;
+    padding:                     10px;
+    spacing:                     0;
+    children:                    [ prompt, textbox-prompt-colon, entry, case-indicator ];
+}
+
+prompt {
+    spacing:                     0;
+    text-color:                  @blue;
+}
+
+textbox-prompt-colon {
+    expand:                      false;
+    str:                         ":";
+    margin:                      0px 0.3em 0em 0em;
+    text-color:                  @blue;
+}
+
+entry {
+    spacing:                     0;
+    text-color:                  @base1;
+}
+
+case-indicator {
+    spacing:                     0;
+    text-color:                  @base01;
 }
 
 listview {
-	flow: horizontal;
-	fixed-columns: true;
-	columns: 7;
-	lines: 5;
-	spacing: 1.0em;
+    fixed-height:                0;
+    border:                      0;
+    scrollbar:                   true;
+    padding:                     15px 0 0;
+    columns:                     5;
+    lines:                       3;
 }
 
 element {
-	orientation: vertical;
-	padding: 0.1em;
-
-	background-image: linear-gradient(white/5%, white/20%);
-	border-color: lightblue /15%;
-	border: 3px;
-	border-radius: 0.4em;
-
-  children: [element-icon, element-text ];
+    border:                      0;
+    border-radius:               4px;
+    padding:                     10px;
+    orientation:                 vertical;
+    spacing:                     10px;
 }
+
+element normal.normal {
+    background-color:            @base02;
+    text-color:                  @base0;
+}
+
+element alternate.normal {
+    background-color:            @base02;
+    text-color:                  @base0;
+}
+
+element selected.normal {
+    background-color:            @blue;
+    text-color:                  @base3;
+}
+
 element-icon {
-	size: calc(((100% - 8em) / 7 ));
-	horizontal-align: 0.5;
-	vertical-align: 0.5;
+    size:                        48px;
+    border:                      0px;
+    background-color:            transparent;
+    horizontal-align:            0.5;
 }
+
 element-text {
-	horizontal-align: 0.5;
-	vertical-align: 0.5;
-  padding: 0.2em;
+    background-color:            transparent;
+    text-color:                  inherit;
+    highlight:                   inherit;
+    horizontal-align:            0.5;
 }
 
-element selected {
-	background-image: linear-gradient(white/25%, white/10%);
-	border-color: lightblue;
-	border: 3px;
-	border-radius: 0.4em;
+scrollbar {
+    width:                       4px;
+    border:                      0;
+    handle-color:                @blue;
+    handle-width:                8px;
+    padding:                     0;
 }
 
-/**
- * Launching rofi with environment PREVIEW set to true
- * will split the screen and show a preview widget.
- */
-@media ( enabled: env(PREVIEW, false)) {
-  /** preview widget */
-  icon-current-entry {
-    expand:          true;
-    size:            80%;
-  }
-  listview-split {
-    children: [listview, icon-current-entry];
-  }
-  listview {
-  columns: 4;
-  }
-
+mode-switcher {
+    border:                      0;
+    spacing:                     0px;
+    expand:                      true;
 }
 
-@media ( enabled: env(NO_IMAGE, false)) {
-	listview {
-		columns: 1;
-		spacing: 0.4em;
-	}
-	element {
-		children: [ element-text ];
-	}
-	element-text {
-		horizontal-align: 0.0;
-	}
+button {
+    text-color:                  @base0;
+    border:                      0 0 2px 0;
+    border-color:                @base02;
+    border-radius:               0;
+    padding:                     8px;
+}
+
+button selected {
+    text-color:                  @blue;
+    border-color:                @blue;
 }

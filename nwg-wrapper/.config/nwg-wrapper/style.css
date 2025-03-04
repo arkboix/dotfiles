@@ -1,16 +1,11 @@
 window {
-background-color: rgba(0, 43, 54, 1);
-        padding: 48px;
+        background-color: rgba (0, 43, 54, 1);
+        padding: 12px;
         font-family: IBM Plex Mono;
         font-size: 16px;
         font-weight: bold;
         color: rgb(131, 148, 150);
-        box-shadow: 1px 1px 4px black;
 }
-
-window > box {
-        box-shadow: 1px 1px 4px black;
-    }
 
 #box-outer {
         /* Define attributes of the box surrounding icons here */
@@ -18,11 +13,10 @@ window > box {
 }
 
 #box-inner {
-        background-color: rgba (23, 53, 63, 0);
+        background-color: rgba (23, 53, 63, 0.5);
         border-radius: 0px;
 	border-style: solid;
 	border-width: 3px;
-    text-shadow: 0px 0px 0px black;
-border-color: rgba(38, 139, 210, 1);
+	border-color: rgba (38, 139, 210, 1);
 	padding: 10px
 }

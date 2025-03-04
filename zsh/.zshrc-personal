@@ -13,7 +13,7 @@ eval "$(starship init zsh)"
 #PS1='%F{white}[ %F{blue}%D{%I:%M %p} %F{yellow}%~ %F{white}] %f'
 
 # Aliases
-alias ls="exa -lah"
+alias ls="exa"
 alias cat="bat"
 alias rld="source ~/.zshrc"
 alias doas="sudo"

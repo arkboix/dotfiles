@@ -1,0 +1,85 @@
+
+/**
+ * Solarized Dark Classic - A traditional application launcher
+ */
+
+configuration {
+    display-drun: "Run";
+}
+
+* {
+    base03:     #002b36;
+    base02:     #073642;
+    base01:     #586e75;
+    base00:     #657b83;
+    base0:      #839496;
+    base1:      #93a1a1;
+    base2:      #eee8d5;
+    base3:      #fdf6e3;
+    yellow:     #b58900;
+    orange:     #cb4b16;
+    red:        #dc322f;
+    magenta:    #d33682;
+    violet:     #6c71c4;
+    blue:       #268bd2;
+    cyan:       #2aa198;
+    green:      #859900;
+
+    background-color: @base03;
+    text-color:       @base0;
+    font:             "Monospace 11";
+}
+
+window {
+    width:            35%;
+    padding:          0;
+    border:           1px;
+    border-color:     @base01;
+}
+
+mainbox {
+    padding:          0;
+    background-color: @base03;
+}
+
+inputbar {
+    padding:          10px;
+    background-color: @base03;
+    children:         [ prompt, entry ];
+    spacing:          5px;
+}
+
+prompt {
+    text-color:       @yellow;
+}
+
+entry {
+    text-color:       @base1;
+}
+
+listview {
+    padding:          5px;
+    lines:            12;
+    columns:          1;
+    fixed-height:     false;
+    scrollbar:        true;
+}
+
+element {
+    padding:          4px 10px;
+    spacing:          5px;
+}
+
+element selected {
+    background-color: @yellow;
+    text-color:       @base03;
+}
+
+element-icon {
+    size:             16px;
+}
+
+scrollbar {
+    width:            4px;
+    handle-color:     @base01;
+}

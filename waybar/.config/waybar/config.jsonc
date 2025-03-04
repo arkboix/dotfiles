@@ -10,7 +10,7 @@
     // Choose the order of the modules
     "modules-left": ["custom/apps","hyprland/workspaces", "hyprland/submap", "custom/spotify", "hyprland/window", "custom/cava"],
     "modules-center": [],
-    "modules-right": ["custom/cpuh", "custom/animation", "pulseaudio",  "memory", "battery","tray","clock", "custom/power", "custom/vm", "custom/calendar","group/sysext"],
+    "modules-right": [ "custom/cheatsheet", "custom/cpuh", "custom/animation", "pulseaudio",  "memory", "battery","tray","clock", "custom/power", "custom/vm", "custom/calendar","group/sysext"],
 
     "hyprland/workspaces": {
         "disable-scroll": false,
@@ -99,6 +99,14 @@
     "exec-if": "true"
 },
 
+
+"custom/cheatsheet": {
+    "format": "{}",
+    "exec": "echo [  Cheatsheet ]",
+    "on-click": "~/arkscripts/cheatsheet.sh",
+    "exec-if": "true"
+},
+
 "custom/calendar": {
     "format": "{}",
     "exec": "echo ",
@@ -112,11 +120,10 @@
 },
 
 "custom/cava": {
-    "exec": "~/arkscripts/waybar-cava.sh",
-    "return-type": "json",
-    "interval": 1,
-    "format": "{}"
+	"exec": "$HOME/arkscripts/waybar-cava.sh",
+	"format": "{}"
 },
+
 
 "custom/main": {
   "format": "{}",

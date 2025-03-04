@@ -330,4 +330,42 @@ configuration {
 
 //@theme "/usr/share/rofi/themes/docu.rasi"
 
-@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+//@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/keybinds.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/centered.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/fullscreen.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/compact.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/material.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/grid.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/classic.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/translucent.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/solarized.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/centered.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/classic.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/compact.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/fullscreen.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/grid.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/material.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/minimal.rasi"
+
+@theme "/home/arkboi/.config/rofi/themes/compact.rasi"
