@@ -12,10 +12,10 @@ width=300
 height=100
 
 ### GRUVBOX THEME (DEFAULT) ###
-background-color=#282828
-text-color=#ebdbb2
-border-color=#d65d0e
-progress-color=over #83a598
+#background-color=#282828
+#text-color=#ebdbb2
+#border-color=#d65d0e
+#progress-color=over #83a598
 
 ### NORD THEME (COMMENTED) ###
 # background-color=#2e3440
@@ -30,10 +30,10 @@ progress-color=over #83a598
 # progress-color=over #50fa7b
 
 ### SOLARIZED DARK THEME (COMMENTED) ###
-# background-color=#002b36
-# text-color=#839496
-# border-color=#2aa198
-# progress-color=over #268bd2
+background-color=#002b36
+text-color=#839496
+border-color=#2aa198
+progress-color=over #268bd2
 
 ### MONOKAI THEME (COMMENTED) ###
 # background-color=#272822

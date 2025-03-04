@@ -5,7 +5,7 @@
  * Includes a mode switcher for easy navigation between modes
  */
 
-/* Solarized Dark Color Scheme
+/* Solarized Dark Color Scheme */
 * {
     /* Default colors */
     base03:     #002b36;
@@ -43,7 +43,7 @@
     border-radius:          10px;
     font:                   "JetBrainsMono Nerd Font 12";
 }
-*/
+
 /* Nord Color Scheme (Commented)
 * {
     base03:     #2e3440;
@@ -155,7 +155,7 @@
 }
 */
 
-/* Gruvbox Color Scheme (Commented)*/
+/* Gruvbox Color Scheme (Commented)
 * {
     base03:     #282828;
     base02:     #32302f;
@@ -191,7 +191,7 @@
     font:                   "JetBrainsMono Nerd Font 12";
 }
 
-
+*/
 window {
     background-color:       @background-transparent;
     border:                 2px;

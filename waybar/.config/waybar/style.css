@@ -4,7 +4,7 @@
  */
 
 /* Solarized Dark Color Scheme */
-/*
+
 @define-color base03 #002b36;
 @define-color base02 #073642;
 @define-color base01 #586e75;
@@ -21,7 +21,7 @@
 @define-color blue   #268bd2;
 @define-color cyan   #2aa198;
 @define-color green  #859900;
-*/
+
 /* Nord Color Scheme (Commented) */
 /*
 @define-color base03 #2e3440;
@@ -83,7 +83,7 @@
 */
 
 /* Gruvbox Color Scheme (Commented) */
-
+/*
 @define-color base03 #282828;
 @define-color base02 #32302f;
 @define-color base01 #3c3836;
@@ -100,7 +100,7 @@
 @define-color blue   #83a598;
 @define-color cyan   #8ec07c;
 @define-color green  #b8bb26;
-
+*/
 
 * {
     border: none;

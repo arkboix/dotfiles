@@ -5,15 +5,14 @@
  */
 
 * {
-    /* Gruvbox Dark Colors */
-    background:     #282828;
-    background-alt: #3c3836;
-    foreground:     #ebdbb2;
-    selected:       #458588;
-    active:         #b8bb26;
-    urgent:         #fb4934;
-    border:         #504945;
-
+    /* Solarized Dark Colors */
+    background:     #002b36;
+    background-alt: #073642;
+    foreground:     #839496;
+    selected:       #268bd2;
+    active:         #859900;
+    urgent:         #dc322f;
+    border:         #586e75;
     /* Theme Settings */
     spacing: 0;
     background-color: transparent;
@@ -136,4 +135,14 @@ selected:       #a9dc76;
 active:         #78dce8;
 urgent:         #ff6188;
 border:         #727072;
+*/
+
+    /* Gruvbox Dark Colors
+    background:     #282828;
+    background-alt: #3c3836;
+    foreground:     #ebdbb2;
+    selected:       #458588;
+    active:         #b8bb26;
+    urgent:         #fb4934;
+    border:         #504945;
 */
