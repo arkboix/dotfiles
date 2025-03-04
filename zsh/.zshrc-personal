@@ -29,3 +29,7 @@ alias .="cd ../.."
 # Emacs Makes me Do More Work (E.M.D.M.W)
 export PATH="$HOME/.emacs.d/bin:$PATH"
 #alias emacs="emacsclient -c -a 'emacs'"
+
+
+# ArkScripts
+export PATH="$HOME/arkscripts:$PATH"
