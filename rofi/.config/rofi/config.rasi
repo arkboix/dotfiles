@@ -368,4 +368,4 @@ configuration {
 
 //@theme "/home/arkboi/.config/rofi/themes/minimal.rasi"
 
-@theme "/home/arkboi/.config/rofi/themes/compact.rasi"
+@theme "~/.config/rofi/themes/solarized.rasi"

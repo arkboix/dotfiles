@@ -19,6 +19,7 @@ options=(
  #   "Change Global Theme"
     "Change Display Settings"
     "Change Waybar Layout"
+    "Change Rofi Style (NEW THEMES AVAILABLE)"
 )
 
 # Define corresponding commands
@@ -40,6 +41,7 @@ commands=(
 #    "~/dotfiles/arkscripts/arkscripts/theme-all.sh"
     "nwg-displays"
     "~/dotfiles/arkscripts/arkscripts/waybar-layout.sh"
+    "~/dotfiles/arkscripts/arkscripts/rofi-theme.sh"
 )
 
 # Show Rofi menu

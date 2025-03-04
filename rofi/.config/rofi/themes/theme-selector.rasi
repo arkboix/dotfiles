@@ -1,0 +1,91 @@
+/**
+ * Rofi Theme Selector - Solarized Dark
+ */
+
+* {
+    base03:     #002b36;
+    base02:     #073642;
+    base01:     #586e75;
+    base00:     #657b83;
+    base0:      #839496;
+    base1:      #93a1a1;
+    base2:      #eee8d5;
+    base3:      #fdf6e3;
+    yellow:     #b58900;
+    orange:     #cb4b16;
+    red:        #dc322f;
+    magenta:    #d33682;
+    violet:     #6c71c4;
+    blue:       #268bd2;
+    cyan:       #2aa198;
+    green:      #859900;
+
+    background-color: @base03;
+    text-color:       @base0;
+    font:             "Sans 12";
+}
+
+window {
+    width:            450px;
+    padding:          20px;
+    border:           2px;
+    border-color:     @cyan;
+    border-radius:    8px;
+}
+
+mainbox {
+    spacing:          10px;
+    children:         [ inputbar, message, listview ];
+}
+
+message {
+    padding:          10px;
+    border-radius:    5px;
+    background-color: @base02;
+    text-color:       @base0;
+}
+
+inputbar {
+    padding:          12px;
+    spacing:          12px;
+    background-color: @base02;
+    border-radius:    5px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color:       @cyan;
+    font:             "Sans Bold 12";
+}
+
+entry {
+    placeholder:      "Filter themes...";
+    placeholder-color: @base01;
+}
+
+listview {
+    border:           0;
+    spacing:          5px;
+    fixed-height:     false;
+    lines:            8;
+}
+
+element {
+    padding:          10px 15px;
+    spacing:          10px;
+    border-radius:    5px;
+}
+
+element normal.normal {
+    background-color: @base02;
+    text-color:       @base0;
+}
+
+element selected.normal {
+    background-color: @cyan;
+    text-color:       @base03;
+}
+
+element-text {
+    text-color:       inherit;
+}
