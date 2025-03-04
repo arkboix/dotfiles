@@ -4,8 +4,8 @@ These are dotfiles used by Arkboi, it turns hyprland into just a window manager 
 
 # Pictures
 
-![Image 1](assets/2025-03-04-094246_hyprshot.png)
-![Image 2](assets/2025-03-04-094300_hyprshot.png)
+![Image 1](assets/2025-03-03-181800_hyprshot.png)
+![Image 2](assets/2025-03-04-172418_hyprshot.png)
 
 
 # Installation
