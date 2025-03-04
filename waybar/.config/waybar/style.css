@@ -1,241 +1,314 @@
-/* 💫 https://github.com/arkboix */
-@import url("file:/home/arkboi/dotfiles/waybar/.config/waybar/solarized.css");
+/* Solarized Dark Waybar Theme - Floating Style
+ * A beautiful floating-style Waybar theme with Solarized Dark colors
+ * Each module has its own background with Solarized accent colors
+ */
+
+/* Solarized Dark Color Scheme */
+/*
+@define-color base03 #002b36;
+@define-color base02 #073642;
+@define-color base01 #586e75;
+@define-color base00 #657b83;
+@define-color base0  #839496;
+@define-color base1  #93a1a1;
+@define-color base2  #eee8d5;
+@define-color base3  #fdf6e3;
+@define-color yellow #b58900;
+@define-color orange #cb4b16;
+@define-color red    #dc322f;
+@define-color magenta #d33682;
+@define-color violet #6c71c4;
+@define-color blue   #268bd2;
+@define-color cyan   #2aa198;
+@define-color green  #859900;
+*/
+/* Nord Color Scheme (Commented) */
+/*
+@define-color base03 #2e3440;
+@define-color base02 #3b4252;
+@define-color base01 #434c5e;
+@define-color base00 #4c566a;
+@define-color base0  #d8dee9;
+@define-color base1  #e5e9f0;
+@define-color base2  #eceff4;
+@define-color base3  #ffffff;
+@define-color yellow #ebcb8b;
+@define-color orange #d08770;
+@define-color red    #bf616a;
+@define-color magenta #b48ead;
+@define-color violet #8fbcbb;
+@define-color blue   #81a1c1;
+@define-color cyan   #88c0d0;
+@define-color green  #a3be8c;
+*/
+
+/* Dracula Color Scheme (Commented) */
+/*
+@define-color base03 #282a36;
+@define-color base02 #44475a;
+@define-color base01 #6272a4;
+@define-color base00 #6272a4;
+@define-color base0  #f8f8f2;
+@define-color base1  #f8f8f2;
+@define-color base2  #f8f8f2;
+@define-color base3  #ffffff;
+@define-color yellow #f1fa8c;
+@define-color orange #ffb86c;
+@define-color red    #ff5555;
+@define-color magenta #ff79c6;
+@define-color violet #bd93f9;
+@define-color blue   #6272a4;
+@define-color cyan   #8be9fd;
+@define-color green  #50fa7b;
+*/
+
+/* Tokyo Night Color Scheme (Commented) */
+/*
+@define-color base03 #1a1b26;
+@define-color base02 #24283b;
+@define-color base01 #414868;
+@define-color base00 #565f89;
+@define-color base0  #a9b1d6;
+@define-color base1  #cfc9c2;
+@define-color base2  #cfc9c2;
+@define-color base3  #d5d6db;
+@define-color yellow #e0af68;
+@define-color orange #ff9e64;
+@define-color red    #f7768e;
+@define-color magenta #bb9af7;
+@define-color violet #9d7cd8;
+@define-color blue   #7aa2f7;
+@define-color cyan   #7dcfff;
+@define-color green  #9ece6a;
+*/
+
+/* Gruvbox Color Scheme (Commented) */
+
+@define-color base03 #282828;
+@define-color base02 #32302f;
+@define-color base01 #3c3836;
+@define-color base00 #504945;
+@define-color base0  #bdae93;
+@define-color base1  #d5c4a1;
+@define-color base2  #ebdbb2;
+@define-color base3  #fbf1c7;
+@define-color yellow #fabd2f;
+@define-color orange #fe8019;
+@define-color red    #fb4934;
+@define-color magenta #d3869b;
+@define-color violet #b16286;
+@define-color blue   #83a598;
+@define-color cyan   #8ec07c;
+@define-color green  #b8bb26;
 
 
 * {
-    border: 0;
-    border-radius: 0px;
-    font-family: "IBM Plex Mono, JetBrains Mono, Font Awesome 6 Free";
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
     font-size: 14px;
+    min-height: 0;
+    transition-property: background-color;
+    transition-duration: 0.2s;
 }
-
-#custom-audio-visualizer {
-    color: #f5c2e7;
-    padding: 0 6px;
-    font-family: monospace;
-    font-size: 14px;
-    min-width: 40px;
-}
-
-#custom-cpuh {
-    color: @sys-info;
-    transition: 450ms;
-}
-.modules-right {
-    margin-right: 2px;
-    border-radius: 6px;
-}
-#custom-disk {
-    border-top: 2px solid @battery;
-    color: @battery;
-}
-/*window#waybar > box {
-    border-radius: 8px;
-    margin: 4px 8px 8px 8px;
-    background-color: rgba(32, 32, 32, 0.75);
-    41, 45, 52, 1
-}*/
 
 window#waybar {
-    background: @transparent;
-    color: @color5;
-    margin: 12px;
-    margin-top: 12px;
-
-}
-window#waybar > box {
-    border-radius: 0px; /* your preference for the curves */
-        border: 2px solid @color13;
-    border-bottom: 2px solid @color13;
-    margin: 4px 4px 4px 4px;
-    background-color:  @bg; /* change it your preference but this @ follows the theme */
-    box-shadow: 0px 0px 4px black;
-    padding: 2px 2px 2px 2px;/* And here is the requested shadow */
+    background-color: rgba(0, 43, 54, 0.0);  /* Transparent background */
+    color: @base0;
 }
 
-#custom-vm, #custom-calendar, #custom-main, #custom-scale, #custom-color, #custom-fzf, #custom-config, #custom-info, #custom-backup, #custom-wall-select, #custom-dots, #custom-update, #custom-play, #custom-stop, #custom-drawer {
-   color: @extra;
-   border-bottom: 2px solid @extra;
-   padding-left: 2px;
-   padding-right: 2px;
+tooltip {
+    background-color: @base03;
+    border: 2px solid @blue;
+    border-radius: 8px;
 }
 
-#custom-cheatsheet {
-    color: @cheatsheet;
-    margin-right: 8px;
+tooltip label {
+    color: @base1;
 }
 
-#custom-player:hover {
-    font-size: 16px;
-    transition: 450ms;
+/* Floating module style - common properties */
+#workspaces button,
+#mode,
+#clock,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#network,
+#pulseaudio,
+#tray,
+#custom-media,
+#custom-power,
+#idle_inhibitor,
+#language,
+#backlight,
+#disk {
+    margin: 5px 2px;
+    padding: 0 12px;
+    border-radius: 10px;
+    background-color: @base02;
+    color: @base1;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-#custom-animation {
-    transition: 450ms;
+/* Workspaces module */
+#workspaces button {
+    padding: 0 6px;
+    background-color: @base02;
+    color: @base0;
+    min-width: 30px;
 }
 
-#custom-animation:hover {
-    font-size: 16px;
-    transition: 450ms;
-}
-
-#custom-cpuh:hover {
-    font-size: 16px;
-    transition: 450ms;
-}
-
-#custom-player {
-  color: @music;
-  transition: 450ms;
-}
-
-#custom-uname {
-  color: @sys-info;
-}
-
-#custom-group-icon-2 {
-    color: @extra;
-    border-bottom: 2px solid @extra;
-    padding-left: 4px;
-}
-
-/*
-.modules_left {
-    padding:7px;
-    margin:5px;
-    border-radius:10px;
-    background: alpha(@background,.5);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
-}
-*/
-
-#window {
-    font-weight: bolder;
-    font-family: "Fira Sans, Ubuntu";
-    color: @fg;
-}
-
-
-
-#window.empty {
-    border-top: none;
-    background: none;
-}
-
-#workspaces {
-  padding: 0px;
-  font-weight: 900;
-    margin-right: 2px;
-    margin-left: 2px;
-}
-
-
-#workspaces button /*#custom-play, #custom-stop*/ {
-    background: transparent;
-    color: @workspaces-gray;
-    padding: 0px;
-    padding-right: 2px;
-    padding-left: 2px;
-    margin-right: 2px;
-    margin-left: 2px;
-    border-top: 0px solid transparent;
+#workspaces button:hover {
+    background-color: @base01;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 #workspaces button.active {
-    color: @bg;
-    background-color: @color13;
-    border-bottom: 2px solid @color13;
-    padding-right: 2px;
-    padding-left: 2px;
-    margin-right: 2px;
-    margin-left: 2px;
+    background-color: @blue;
+    color: @base03;
+    box-shadow: inset 0 0 0 2px @base2;
 }
 
-
-#battery, #cpu, #memory, #pulseaudio, #custom-spotify, #tray, #mode {
-    padding: 0 3px;
-    margin: 0 2px;
-    font-weight: bold;
-    border-bottom: 2px solid @color5;
+#workspaces button.urgent {
+    background-color: @red;
+    color: @base3;
 }
 
+/* Clock module */
 #clock {
-    font-weight: bolder;
+    background-color: @cyan;
+    color: @base03;
+    font-weight: bold;
 }
 
-#battery {
-   color: @battery;
-   border-bottom: 2px solid @battery;
-}
-
-#battery icon {
-    color: red;
-}
-
-#battery.charging {
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: black;
-    }
-}
-
-
-#battery.warning:not(.charging) {
-    color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
+/* System modules */
 #cpu {
+    background-color: @green;
+    color: @base03;
 }
 
 #memory {
-    color: @memory;
-    border-bottom: 2px solid @memory;
+    background-color: @yellow;
+    color: @base03;
 }
 
+#temperature {
+    background-color: @orange;
+    color: @base03;
+}
+
+#temperature.critical {
+    background-color: @red;
+    color: @base3;
+    animation: blink 1s infinite alternate;
+}
+
+/* Battery module */
+#battery {
+    background-color: @violet;
+    color: @base03;
+}
+
+#battery.charging {
+    background-color: @green;
+    color: @base03;
+}
+
+#battery.warning:not(.charging) {
+    background-color: @yellow;
+    color: @base03;
+}
+
+#battery.critical:not(.charging) {
+    background-color: @red;
+    color: @base3;
+    animation: blink 1s infinite alternate;
+}
+
+/* Network module */
+#network {
+    background-color: @blue;
+    color: @base03;
+}
 
 #network.disconnected {
-    background: #f53c3c;
+    background-color: @red;
+    color: @base3;
 }
 
+/* Media modules */
 #pulseaudio {
-    color: @color13;
-    border-bottom: 2px solid @color13;
+    background-color: @magenta;
+    color: @base03;
 }
 
 #pulseaudio.muted {
+    background-color: @base01;
+    color: @base1;
 }
 
-#custom-spotify {
-    color: rgb(102, 220, 105);
+#backlight {
+    background-color: @yellow;
+    color: @base03;
 }
 
-#tray {
-    border-bottom: 2px solid @tray;
+/* Language module */
+#language {
+    background-color: @orange;
+    color: @base03;
+    min-width: 40px;
 }
 
-
-#custom-wofi, #custom-swaync, #custom-wall, #custom-reload, #custom-power {
-    border-bottom: 2px solid @extra;
-    color: @extra;
-    padding-left: 2px;
-    padding-right: 2px;
-}
-
-#clock {
-    border-bottom: 2px solid @extra;
-    margin-left: 2px;
+/* Custom modules */
+#custom-media {
+    background-color: @violet;
+    color: @base03;
+    min-width: 100px;
 }
 
 #custom-power {
-	color: @extra;
+    background-color: @red;
+    color: @base3;
+    margin-right: 6px;
 }
 
+/* System tray */
+#tray {
+    background-color: @base02;
+}
 
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @red;
+}
+
+/* Disk usage */
+#disk {
+    background-color: @green;
+    color: @base03;
+}
+
+/* Animation for critical indicators */
+@keyframes blink {
+    to {
+        background-color: @base3;
+        color: @red;
+    }
+}
+
+/* Idle inhibitor module */
+#idle_inhibitor {
+    background-color: @base01;
+    color: @base1;
+}
+
+#idle_inhibitor.activated {
+    background-color: @yellow;
+    color: @base03;
+}

@@ -370,4 +370,6 @@ configuration {
 
 //@theme "~/.config/rofi/themes/grid.rasi"
 
+//@theme "~/.config/rofi/themes/grid.rasi"
+
 @theme "/home/arkboi/.config/rofi/themes/translucent.rasi"

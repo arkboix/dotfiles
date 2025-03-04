@@ -5,8 +5,7 @@ notify-send "Reloading"
 # Waybar
 pkill waybar
 sleep 1
-waybar -c ~/.config/waybar/theme-3/config.jsonc -s ~/.config/waybar/theme-3/style.css &
-
+waybar
 # Mako
 pkill mako
 mako &

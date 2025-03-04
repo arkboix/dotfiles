@@ -1,0 +1,65 @@
+[2025-03-04 12:33:16.782] [info] Using configuration file /home/arkboi/.config/waybar/config.jsonc
+[2025-03-04 12:33:16.783] [info] Discovered appearance 'dark'
+[2025-03-04 12:33:16.783] [info] Using CSS file /home/arkboi/.config/waybar/style.css
+[2025-03-04 12:33:16.788] [info] Hyprland IPC starting
+[2025-03-04 12:33:16.788] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-04 12:33:16.792] [error] media stopped unexpectedly, is it endless?
+[2025-03-04 12:33:16.948] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+
+** (waybar:354732): WARNING **: 12:33:16.955: Status Notifier Item with bus name ':1.1097' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:354732): WARNING **: 12:33:18.619: Status Notifier Item with bus name ':1.1097' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:354732): WARNING **: 12:33:48.504: Status Notifier Item with bus name ':1.1097' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-04 12:35:33.139] [info] Reloading...
+[2025-03-04 12:35:33.146] [info] Using configuration file /home/arkboi/.config/waybar/config.jsonc
+[2025-03-04 12:35:33.147] [info] Using CSS file /home/arkboi/.config/waybar/style.css
+[2025-03-04 12:35:33.154] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-04 12:35:33.157] [error] media stopped unexpectedly, is it endless?
+[2025-03-04 12:35:33.271] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+
+** (waybar:354732): WARNING **: 12:35:33.280: Status Notifier Item with bus name ':1.1097' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:354732): WARNING **: 12:35:34.578: Status Notifier Item with bus name ':1.1097' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-04 12:36:02.102] [info] Reloading...
+[2025-03-04 12:36:02.109] [info] Using configuration file /home/arkboi/.config/waybar/config.jsonc
+[2025-03-04 12:36:02.110] [info] Using CSS file /home/arkboi/.config/waybar/style.css
+[2025-03-04 12:36:02.118] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-04 12:36:02.122] [error] media stopped unexpectedly, is it endless?
+[2025-03-04 12:36:02.238] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+
+** (waybar:354732): WARNING **: 12:36:02.246: Status Notifier Item with bus name ':1.1097' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:354732): WARNING **: 12:36:03.575: Status Notifier Item with bus name ':1.1097' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-04 12:36:18.937] [info] Reloading...
+[2025-03-04 12:36:18.946] [info] Using configuration file /home/arkboi/.config/waybar/config.jsonc
+[2025-03-04 12:36:18.946] [info] Using CSS file /home/arkboi/.config/waybar/style.css
+[2025-03-04 12:36:18.953] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-04 12:36:18.957] [error] media stopped unexpectedly, is it endless?
+[2025-03-04 12:36:19.072] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+
+** (waybar:354732): WARNING **: 12:36:19.081: Status Notifier Item with bus name ':1.1097' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:354732): WARNING **: 12:36:20.580: Status Notifier Item with bus name ':1.1097' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-04 12:36:42.340] [info] Reloading...
+[2025-03-04 12:36:42.345] [info] Using configuration file /home/arkboi/.config/waybar/config.jsonc
+[2025-03-04 12:36:42.345] [info] Using CSS file /home/arkboi/.config/waybar/style.css
+[2025-03-04 12:36:42.351] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-04 12:36:42.355] [error] media stopped unexpectedly, is it endless?
+[2025-03-04 12:36:42.469] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+
+** (waybar:354732): WARNING **: 12:36:42.476: Status Notifier Item with bus name ':1.1097' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:354732): WARNING **: 12:36:43.577: Status Notifier Item with bus name ':1.1097' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-04 12:36:54.612] [info] Reloading...
+[2025-03-04 12:36:54.620] [info] Using configuration file /home/arkboi/.config/waybar/config.jsonc
+[2025-03-04 12:36:54.620] [info] Using CSS file /home/arkboi/.config/waybar/style.css
+[2025-03-04 12:36:54.628] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-04 12:36:54.635] [error] media stopped unexpectedly, is it endless?
+[2025-03-04 12:36:54.747] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+
+** (waybar:354732): WARNING **: 12:36:54.758: Status Notifier Item with bus name ':1.1097' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:354732): WARNING **: 12:36:55.579: Status Notifier Item with bus name ':1.1097' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-04 12:37:33.471] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-03-04 12:37:33.473] [info] Loading persistent workspaces from Hyprland workspace rules
