@@ -1,258 +1,139 @@
 /**
- *
- * Original Author: Aditya Shakya (adi1090x)
- * Modified by: Claude
- *
- * Rofi Theme File - Enhanced Wallpaper Picker
- * Rofi Version: 1.7.3
- **/
+ * Rofi Wallpaper Gallery Theme
+ * A horizontal grid-based theme optimized for displaying wallpaper thumbnails
+ * Default: Gruvbox Dark
+ */
 
-/*****----- Configuration -----*****/
-configuration {
-    modi:                       "drun";
-    show-icons:                 true;
-    display-drun:               " Wallpapers";
-    drun-display-format:        "{name}";
-    icon-theme:                 "Papirus";
-    sort:                       true;
-    matching:                   "fuzzy";
-    window-thumbnail:           true;
-}
-
-/*****----- Global Properties -----*****/
 * {
-    /* Solarized Colors */
-    background:                  #002b36;
-    background-alt:              #073642;
-    foreground:                  #839496;
-    selected:                    #2aa198;  /* Solarized cyan */
-    urgent:                      #dc322f;
+    /* Gruvbox Dark Colors */
+    background:     #282828;
+    background-alt: #3c3836;
+    foreground:     #ebdbb2;
+    selected:       #458588;
+    active:         #b8bb26;
+    urgent:         #fb4934;
+    border:         #504945;
 
-    /* Font */
-    font:                        "BlexMono Nerd Font 10";
+    /* Theme Settings */
+    spacing: 0;
+    background-color: transparent;
+    text-color: @foreground;
+    font: "JetBrains Mono 11";
 }
 
-/*****----- Main Window -----*****/
 window {
-    transparency:                "real";
-    location:                    center;
-    anchor:                      center;
-    fullscreen:                  false;
-    width:                       1600px;
-    height:                      800px;
-    x-offset:                    0px;
-    y-offset:                    0px;
-
-    enabled:                     true;
-    margin:                      0px;
-    padding:                     0px;
-    border:                      2px solid;
-    border-color:                @selected;
-    background-color:            @background;
-    cursor:                      "default";
+    transparency: "real";
+    background-color: @background;
+    border: 2px;
+    border-color: @border;
+    border-radius: 10px;
+    padding: 15px;
+    width: 95%;
+    height: 40%;
 }
 
-/*****----- Main Box -----*****/
 mainbox {
-    enabled:                     true;
-    spacing:                     25px;
-    margin:                      40px;
-    padding:                     0px;
-    border:                      0px solid;
-    border-color:                @selected;
-    background-color:            transparent;
-    children:                    [ "inputbar", "message", "listview" ];
+    padding: 5px;
+    spacing: 10px;
+    children: [inputbar, listview];
 }
 
-/*****----- Inputbar -----*****/
 inputbar {
-    enabled:                     true;
-    spacing:                     0px;
-    margin:                      0px;
-    padding:                     0px;
-    border:                      0px;
-    border-color:                @selected;
-    background-color:            @background-alt;
-    text-color:                  @foreground;
-    children:                    [ "textbox-prompt", "entry", "num-filtered-rows", "textbox-num-sep", "num-rows" ];
+    spacing: 10px;
+    padding: 8px;
+    margin: 0px 0px 8px 0px;
+    background-color: @background-alt;
+    border-radius: 6px;
+    children: [prompt, entry];
 }
 
-textbox-prompt {
-    enabled:                     true;
-    padding:                     15px 20px;
-    background-color:            @selected;
-    text-color:                  @background;
-    str:                         " Wallpaper Gallery";
-    font:                        "BlexMono Nerd Font 12";
+prompt {
+    enabled: true;
+    padding: 5px 8px;
+    border-radius: 4px;
+    background-color: @selected;
+    text-color: @background;
 }
 
 entry {
-    enabled:                     true;
-    padding:                     15px;
-    background-color:            inherit;
-    text-color:                  inherit;
-    cursor:                      text;
-    placeholder:                 "Search wallpapers...";
-    placeholder-color:           @foreground;
+    padding: 5px 8px;
+    placeholder: "Search wallpapers...";
+    placeholder-color: #928374;
 }
 
-num-filtered-rows {
-    enabled:                     true;
-    expand:                      false;
-    padding:                     15px 0px;
-    background-color:            inherit;
-    text-color:                  inherit;
-}
-
-textbox-num-sep {
-    enabled:                     true;
-    expand:                      false;
-    str:                         "/";
-    padding:                     15px 5px;
-    background-color:            inherit;
-    text-color:                  inherit;
-}
-
-num-rows {
-    enabled:                     true;
-    expand:                      false;
-    padding:                     15px 20px 15px 0px;
-    background-color:            inherit;
-    text-color:                  inherit;
-}
-
-/*****----- Message -----*****/
-message {
-    enabled:                     true;
-    margin:                      0px;
-    padding:                     10px;
-    border:                      0px solid;
-    border-color:                @selected;
-    background-color:            @background-alt;
-    text-color:                  @foreground;
-}
-
-textbox {
-    background-color:            transparent;
-    text-color:                  @foreground;
-    vertical-align:              0.5;
-    horizontal-align:            0.0;
-    highlight:                   none;
-    placeholder-color:           @foreground;
-    blink:                       true;
-    markup:                      true;
-}
-
-/*****----- Listview -----*****/
 listview {
-    enabled:                     true;
-    columns:                     5;
-    lines:                       3;
-    cycle:                       true;
-    dynamic:                     true;
-    scrollbar:                   true;
-    layout:                      vertical;
-    reverse:                     false;
-    fixed-height:                true;
-    fixed-columns:               true;
-
-    spacing:                     20px;
-    margin:                      0px;
-    padding:                     0px;
-    border:                      0px solid;
-    border-color:                @selected;
-    background-color:            transparent;
-    text-color:                  @foreground;
-    cursor:                      "default";
+    spacing: 8px;
+    dynamic: true;
+    fixed-columns: true;
+    columns: 8;
+    lines: 2;
+    flow: horizontal;
+    layout: vertical;
+    cycle: false;
+    scrollbar: true;
 }
 
 scrollbar {
-    handle-width:                8px;
-    handle-color:                @selected;
-    background-color:            @background-alt;
+    handle-width: 6px;
+    handle-color: @selected;
+    background-color: @background-alt;
+    border-radius: 3px;
 }
 
-/*****----- Elements -----*****/
 element {
-    enabled:                     true;
-    spacing:                     10px;
-    margin:                      5px;
-    padding:                     10px;
-    border:                      0px solid;
-    border-color:                @selected;
-    background-color:            transparent;
-    text-color:                  @foreground;
-    orientation:                 vertical;
-    cursor:                      pointer;
-}
-
-element normal.normal {
-    background-color:            @background-alt;
-    text-color:                  @foreground;
-}
-
-element selected.normal {
-    background-color:            @background-alt;
-    text-color:                  @foreground;
-    border:                      2px solid;
-    border-color:                @selected;
+    orientation: vertical;
+    padding: 4px;
+    spacing: 4px;
+    border-radius: 6px;
+    background-color: @background-alt;
 }
 
 element-icon {
-    padding:                     0px;
-    background-color:            transparent;
-    text-color:                  inherit;
-    size:                        128px;
-    cursor:                      inherit;
+    size: 160px;
+    padding: 3px;
+    horizontal-align: 0.5;
+    border-radius: 3px;
 }
 
 element-text {
-    padding:                     8px;
-    background-color:            transparent;
-    text-color:                  inherit;
-    highlight:                   inherit;
-    cursor:                      inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.5;
-    font:                        "BlexMono Nerd Font 10";
+    horizontal-align: 0.5;
+    padding: 3px;
+    font: "JetBrains Mono 9";
 }
 
-element-text selected {
-    background-color:            @selected;
-    text-color:                  @background;
+element selected {
+    background-color: @selected;
+    text-color: @background;
 }
 
-/*****----- Mode Switcher -----*****/
-mode-switcher {
-    enabled:                     true;
-    spacing:                     10px;
-    margin:                      0px;
-    padding:                     0px;
-    border:                      0px solid;
-    border-color:                @selected;
-    background-color:            transparent;
-    text-color:                  @foreground;
-}
+/* Alternative Colorschemes - To use, replace variables at top */
 
-button {
-    padding:                     10px;
-    border:                      0px solid;
-    border-color:                @selected;
-    background-color:            @background-alt;
-    text-color:                  inherit;
-    cursor:                      pointer;
-}
+/* Nord Theme
+background:     #2e3440;
+background-alt: #3b4252;
+foreground:     #eceff4;
+selected:       #5e81ac;
+active:         #a3be8c;
+urgent:         #bf616a;
+border:         #4c566a;
+*/
 
-button selected {
-    background-color:            @selected;
-    text-color:                  @background;
-}
+/* Dracula Theme
+background:     #282a36;
+background-alt: #44475a;
+foreground:     #f8f8f2;
+selected:       #6272a4;
+active:         #50fa7b;
+urgent:         #ff5555;
+border:         #44475a;
+*/
 
-/*****----- Error Message -----*****/
-error-message {
-    padding:                     15px;
-    border:                      2px solid;
-    border-color:                @urgent;
-    background-color:            @background;
-    text-color:                  @urgent;
-}
+/* Catppuccin Theme
+background:     #1e1e2e;
+background-alt: #302d41;
+foreground:     #cdd6f4;
+selected:       #89b4fa;
+active:         #a6e3a1;
+urgent:         #f38ba8;
+border:         #45475a;
+*/

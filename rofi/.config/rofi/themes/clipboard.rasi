@@ -1,114 +1,139 @@
+/**
+ * Rofi Clipboard Manager Theme
+ * A compact theme optimized for clipboard history
+ * Default: Gruvbox Dark
+ */
+
 * {
-  font: "BlexMono Nerd Font  10";
+    /* Gruvbox Dark Colors */
+    background:     #282828;
+    background-alt: #3c3836;
+    foreground:     #ebdbb2;
+    selected:       #458588;
+    active:         #b8bb26;
+    urgent:         #fb4934;
+    border:         #504945;
 
-  bg0    : #003b46;
-  bg1    : rgba( 0,43,54, 80% );
-  bg2    : #005b66;
-  bg3    : #005b66;
-  fg0    : #ffffff;
-  fg1    : #cecece;
-  accent : #60cdff;
-  urgent : @accent;
-
-  background-color : transparent;
-  text-color       : @fg0;
-
-  margin  : 0;
-  padding : 0;
-  spacing : 0;
-}
-
-element-icon, element-text, scrollbar {
-  cursor: pointer;
+    /* Theme Settings */
+    spacing: 0;
+    background-color: transparent;
+    text-color: @foreground;
+    font: "JetBrains Mono 11";
 }
 
 window {
-  location : south;
-  width    : 600px;
-  height   : 600px;
-  y-offset : -4px;
-
-  background-color : @bg1;
-  border-radius    : 8px;
+    transparency: "real";
+    background-color: @background;
+    border: 2px;
+    border-color: @border;
+    border-radius: 10px;
+    padding: 15px;
+    width: 600px;
 }
 
 mainbox {
-  padding : 24px;
-  spacing : 24px;
+    padding: 5px;
+    spacing: 10px;
+    children: [inputbar, listview];
 }
 
 inputbar {
-  padding          : 8px;
-  spacing          : 4px;
-  children         : [ icon-search, entry ];
-  border           : 0 0 2px 0 solid;
-  border-color     : @accent;
-  border-radius    : 2px;
-  background-color : @bg0;
+    spacing: 10px;
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+    background-color: @background-alt;
+    border-radius: 6px;
+    children: [prompt, entry];
 }
 
-icon-search, entry, element-icon, element-text {
-  vertical-align: 0.5;
-}
-
-icon-search {
-  expand   : false;
-  filename : "search-symbolic";
-  size     : 24px;
+prompt {
+    enabled: true;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: @selected;
+    text-color: @background;
 }
 
 entry {
-  font              : "BlexMono Nerd Font 12";
-  placeholder       : "Type here to search clipboard";
-  placeholder-color : @fg1;
-}
-
-textbox {
-  padding          : 4px 8px;
-  background-color : @bg2;
+    padding: 5px 10px;
+    placeholder: "Search clipboard...";
+    placeholder-color: #928374;
 }
 
 listview {
-  columns       : 2;
-  spacing       : 8px;
-  fixed-height  : true;
-  fixed-columns : true;
+    fixed-height: false;
+    dynamic: true;
+    scrollbar: true;
+    spacing: 5px;
+    lines: 10;
+    cycle: false;
+}
+
+scrollbar {
+    handle-width: 6px;
+    handle-color: @selected;
+    background-color: @background-alt;
+    border-radius: 3px;
 }
 
 element {
-  spacing       : 1em;
-  padding       : 8px;
-  border-radius : 2px;
-}
-
-element normal urgent {
-  text-color: @urgent;
-}
-
-element normal active {
-  text-color: @accent;
-}
-
-element alternate active {
-  text-color: @accent;
-}
-
-element selected active {
-  text-color: @accent;
-}
-
-element selected {
-  background-color: @bg3;
-}
-
-element selected urgent {
-  background-color: @urgent;
-}
-
-element-icon {
-  size: 1.5em;
+    padding: 8px 10px;
+    spacing: 10px;
+    border-radius: 6px;
 }
 
 element-text {
-  text-color: inherit;
+    vertical-align: 0.5;
 }
+
+element-icon {
+    size: 16px;
+    padding: 0px 8px 0px 0px;
+}
+
+element normal.normal {
+    background-color: @background-alt;
+    text-color: @foreground;
+}
+
+element selected.normal {
+    background-color: @selected;
+    text-color: @background;
+}
+
+element alternate.normal {
+    background-color: @background-alt;
+    text-color: @foreground;
+}
+
+/* Alternative Colorschemes - To use, replace variables at top */
+
+/* Tokyo Night
+background:     #1a1b26;
+background-alt: #24283b;
+foreground:     #a9b1d6;
+selected:       #7aa2f7;
+active:         #9ece6a;
+urgent:         #f7768e;
+border:         #414868;
+*/
+
+/* Solarized Dark
+background:     #002b36;
+background-alt: #073642;
+foreground:     #839496;
+selected:       #268bd2;
+active:         #859900;
+urgent:         #dc322f;
+border:         #586e75;
+*/
+
+/* Monokai Pro
+background:     #2d2a2e;
+background-alt: #403e41;
+foreground:     #fcfcfa;
+selected:       #a9dc76;
+active:         #78dce8;
+urgent:         #ff6188;
+border:         #727072;
+*/
