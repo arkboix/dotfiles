@@ -1,6 +1,6 @@
 // 💫 https://github.com/arkboix
 
-{
+"position": "top",
     "layer": "bottom", // Waybar at top layer
 "position": "top",
     "height":32, // Waybar height
