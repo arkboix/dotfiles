@@ -8,6 +8,9 @@ These are dotfiles used by Arkboi, it turns hyprland into just a window manager 
 ![Image 2](assets/2025-03-04-172418_hyprshot.png)
 
 
+# Video
+![Video 1](assets/showcase.mp4)
+
 # Installation
 
 > [!CAUTION]
