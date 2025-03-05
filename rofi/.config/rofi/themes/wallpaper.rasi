@@ -1,159 +1,100 @@
+
 /**
- * Rofi Wallpaper Gallery Theme
- * A horizontal grid-based theme optimized for displaying wallpaper thumbnails
- * Default: Gruvbox Dark
+ * Solarized Dark Grid - A grid-style application launcher
  */
 
-/*
-* {
-    /* Gruvbox Dark Colors */
-  background:     #282828;
-    background-alt: #3c3836;
-    foreground:     #ebdbb2;
-    selected:       #458588;
-    active:         #b8bb26;
-    urgent:         #fb4934;
-    border:         #504945;
-
-    /* Theme Settings */
-    spacing: 0;
-    background-color: transparent;
-    text-color: @foreground;
-    font: "JetBrains Mono 11";
-}
-*/
-
-* {
-    /* Solarized Dark Colors */
-    background:     #002b36;
-    background-alt: #073642;
-    foreground:     #839496;
-    selected:       #268bd2;
-    active:         #b58900;
-    urgent:         #dc322f;
-    border:         #586e75;
-
-    /* Theme Settings */
-    spacing: 0;
-    background-color: transparent;
-    text-color: @foreground;
-    font: "JetBrains Mono 11";
+configuration {
+    display-drun: "Applications";
 }
 
+* {
+    base03:     #002b36;
+    base02:     #073642;
+    base01:     #586e75;
+    base00:     #657b83;
+    base0:      #839496;
+    base1:      #93a1a1;
+    base2:      #eee8d5;
+    base3:      #fdf6e3;
+    yellow:     #b58900;
+    orange:     #cb4b16;
+    red:        #dc322f;
+    magenta:    #d33682;
+    violet:     #6c71c4;
+    blue:       #268bd2;
+    cyan:       #2aa198;
+    green:      #859900;
+
+    background-color: transparent;
+    text-color:       @base0;
+    font:             "JetbrainsMono Nerd Font 11";
+}
 
 window {
-    transparency: "real";
-    background-color: @background;
-    border: 2px;
-    border-color: @border;
-    border-radius: 10px;
-    padding: 15px;
-    width: 95%;
-    height: 40%;
+    transparency:     "real";
+    background-color: #002b36E6;
+    width:            60%;
+    height:           70%;
+    border:           0;
+    padding:          2% 2%;
 }
 
 mainbox {
-    padding: 5px;
-    spacing: 10px;
-    children: [inputbar, listview];
+    background-color: transparent;
+    children:         [ inputbar, listview ];
+    spacing:          20px;
 }
 
 inputbar {
-    spacing: 10px;
-    padding: 8px;
-    margin: 0px 0px 8px 0px;
-    background-color: @background-alt;
-    border-radius: 6px;
-    children: [prompt, entry];
+    background-color: @base02;
+    border-radius:    6px;
+    padding:          10px;
+    spacing:          10px;
+    children:         [ entry ];
 }
 
+
 prompt {
-    enabled: true;
-    padding: 5px 8px;
-    border-radius: 4px;
-    background-color: @selected;
-    text-color: @background;
+    text-color:       @red;
+    font:             "Sans Bold 11";
 }
 
 entry {
-    padding: 5px 8px;
-    placeholder: "Search wallpapers...";
-    placeholder-color: #928374;
+    placeholder:      "Search";
+    placeholder-color: @base01;
+    text-color:       @base1;
 }
 
 listview {
-    spacing: 8px;
-    dynamic: true;
-    fixed-columns: true;
-    columns: 8;
-    lines: 2;
-    flow: horizontal;
-    layout: vertical;
-    cycle: false;
-    scrollbar: true;
-}
-
-scrollbar {
-    handle-width: 6px;
-    handle-color: @selected;
-    background-color: @background-alt;
-    border-radius: 3px;
+    background-color: transparent;
+    columns:          5;
+    lines:            4;
+    fixed-height:     false;
+    dynamic:          true;
+    cycle:            false;
+    scrollbar:        false;
+    layout:           vertical;
+    spacing:          10px;
 }
 
 element {
-    orientation: vertical;
-    padding: 4px;
-    spacing: 4px;
-    border-radius: 6px;
-    background-color: @background-alt;
+    background-color: @base02;
+    orientation:      vertical;
+    border-radius:    6px;
+    padding:          15px 10px;
 }
 
 element-icon {
-    size: 160px;
-    padding: 3px;
+    size:             28px;
     horizontal-align: 0.5;
-    border-radius: 3px;
 }
 
 element-text {
     horizontal-align: 0.5;
-    padding: 3px;
-    font: "JetBrains Mono 9";
+    vertical-align:   0.5;
 }
 
 element selected {
-    background-color: @selected;
-    text-color: @background;
+    background-color: @orange;
+    text-color:       @base01;
 }
-
-/* Alternative Colorschemes - To use, replace variables at top */
-
-/* Nord Theme
-background:     #2e3440;
-background-alt: #3b4252;
-foreground:     #eceff4;
-selected:       #5e81ac;
-active:         #a3be8c;
-urgent:         #bf616a;
-border:         #4c566a;
-*/
-
-/* Dracula Theme
-background:     #282a36;
-background-alt: #44475a;
-foreground:     #f8f8f2;
-selected:       #6272a4;
-active:         #50fa7b;
-urgent:         #ff5555;
-border:         #44475a;
-*/
-
-/* Catppuccin Theme
-background:     #1e1e2e;
-background-alt: #302d41;
-foreground:     #cdd6f4;
-selected:       #89b4fa;
-active:         #a6e3a1;
-urgent:         #f38ba8;
-border:         #45475a;
-*/
