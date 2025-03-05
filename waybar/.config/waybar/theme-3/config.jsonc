@@ -7,8 +7,8 @@
     "margin-right": 10,
     "spacing": 4,
 
-    "modules-left": ["hyprland/workspaces", "hyprland/submap", "custom/media", "custom/scripts"],
-    "modules-center": ["clock"],
+    "modules-left": ["hyprland/workspaces", "hyprland/submap", "custom/media", "hyprland/window"],
+    "modules-center": ["clock", "custom/scripts"],
     "modules-right": ["pulseaudio", "memory", "cpu", "temperature", "battery", "tray"],
 
     "hyprland/workspaces": {
@@ -84,7 +84,7 @@
 
 "custom/scripts": {
         "format": "{}",
-        "exec": "echo scripts",
+        "exec": "echo  ArkScripts",
         "on-click": "~/arkscripts/main.sh",
         "exec-if": "true"
 },

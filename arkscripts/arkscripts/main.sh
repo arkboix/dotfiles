@@ -2,6 +2,7 @@
 
 # Define options
 options=(
+    "Change Waybar Layout (NEW)"
     "Hyprland Settings App"
     "Edit Configs (GUI)"
     "Edit Configs"
@@ -22,6 +23,7 @@ options=(
 
 # Define corresponding commands
 commands=(
+    "~/dotfiles/arkscripts/arkscripts/waybar-theme.sh"
     "~/dotfiles/arkscripts/arkscripts/settings.sh"
     "~/dotfiles/arkscripts/arkscripts/config-edit-gui.sh"
     "~/dotfiles/arkscripts/arkscripts/config-edit.sh"

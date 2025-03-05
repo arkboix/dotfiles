@@ -52,6 +52,7 @@ window#waybar.hidden {
 #temperature,
 #pulseaudio,
 #custom-media,
+#custom-scripts,
 #tray {
     padding: 0 10px;
     margin: 0 5px;
@@ -101,7 +102,7 @@ window#waybar.hidden {
     color: #002b36;
 }
 
-#clock {
+#clock, #custom-scripts {
     background-color: #2aa198;
     color: #002b36;
     font-weight: bold;
