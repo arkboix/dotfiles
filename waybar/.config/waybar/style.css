@@ -1,105 +1,43 @@
 /* Solarized Dark Waybar Theme - Floating Style
- * A beautiful floating-style Waybar theme with Solarized Dark colors
- * Each module has its own background with Solarized accent colors
+ * Updated color scheme using color0-15 format
  */
 
+
 /* Solarized Dark Color Scheme */
+@define-color color0  #002b36;
+@define-color color1  #073642;
+@define-color color2  #586e75;
+@define-color color3  #657b83;
+@define-color color4  #839496;
+@define-color color5  #93a1a1;
+@define-color color6  #eee8d5;
+@define-color color7  #fdf6e3;
+@define-color color8  #b58900;
+@define-color color9  #cb4b16;
+@define-color color10 #dc322f;
+@define-color color11 #d33682;
+@define-color color12 #6c71c4;
+@define-color color13 #268bd2;
+@define-color color14 #2aa198;
+@define-color color15 #859900;
 
-@define-color base03 #002b36;
-@define-color base02 #073642;
-@define-color base01 #586e75;
-@define-color base00 #657b83;
-@define-color base0  #839496;
-@define-color base1  #93a1a1;
-@define-color base2  #eee8d5;
-@define-color base3  #fdf6e3;
-@define-color yellow #b58900;
-@define-color orange #cb4b16;
-@define-color red    #dc322f;
-@define-color magenta #d33682;
-@define-color violet #6c71c4;
-@define-color blue   #268bd2;
-@define-color cyan   #2aa198;
-@define-color green  #859900;
-
-/* Nord Color Scheme (Commented) */
-/*
-@define-color base03 #2e3440;
-@define-color base02 #3b4252;
-@define-color base01 #434c5e;
-@define-color base00 #4c566a;
-@define-color base0  #d8dee9;
-@define-color base1  #e5e9f0;
-@define-color base2  #eceff4;
-@define-color base3  #ffffff;
-@define-color yellow #ebcb8b;
-@define-color orange #d08770;
-@define-color red    #bf616a;
-@define-color magenta #b48ead;
-@define-color violet #8fbcbb;
-@define-color blue   #81a1c1;
-@define-color cyan   #88c0d0;
-@define-color green  #a3be8c;
-*/
-
-/* Dracula Color Scheme (Commented) */
-/*
-@define-color base03 #282a36;
-@define-color base02 #44475a;
-@define-color base01 #6272a4;
-@define-color base00 #6272a4;
-@define-color base0  #f8f8f2;
-@define-color base1  #f8f8f2;
-@define-color base2  #f8f8f2;
-@define-color base3  #ffffff;
-@define-color yellow #f1fa8c;
-@define-color orange #ffb86c;
-@define-color red    #ff5555;
-@define-color magenta #ff79c6;
-@define-color violet #bd93f9;
-@define-color blue   #6272a4;
-@define-color cyan   #8be9fd;
-@define-color green  #50fa7b;
-*/
-
-/* Tokyo Night Color Scheme (Commented) */
-/*
-@define-color base03 #1a1b26;
-@define-color base02 #24283b;
-@define-color base01 #414868;
-@define-color base00 #565f89;
-@define-color base0  #a9b1d6;
-@define-color base1  #cfc9c2;
-@define-color base2  #cfc9c2;
-@define-color base3  #d5d6db;
-@define-color yellow #e0af68;
-@define-color orange #ff9e64;
-@define-color red    #f7768e;
-@define-color magenta #bb9af7;
-@define-color violet #9d7cd8;
-@define-color blue   #7aa2f7;
-@define-color cyan   #7dcfff;
-@define-color green  #9ece6a;
-*/
-
-/* Gruvbox Color Scheme (Commented) */
-/*
-@define-color base03 #282828;
-@define-color base02 #32302f;
-@define-color base01 #3c3836;
-@define-color base00 #504945;
-@define-color base0  #bdae93;
-@define-color base1  #d5c4a1;
-@define-color base2  #ebdbb2;
-@define-color base3  #fbf1c7;
-@define-color yellow #fabd2f;
-@define-color orange #fe8019;
-@define-color red    #fb4934;
-@define-color magenta #d3869b;
-@define-color violet #b16286;
-@define-color blue   #83a598;
-@define-color cyan   #8ec07c;
-@define-color green  #b8bb26;
+/* Nord
+@define-color color0  #2e3440;
+@define-color color1  #3b4252;
+@define-color color2  #434c5e;
+@define-color color3  #4c566a;
+@define-color color4  #d8dee9;
+@define-color color5  #e5e9f0;
+@define-color color6  #eceff4;
+@define-color color7  #ffffff;
+@define-color color8  #ebcb8b;
+@define-color color9  #d08770;
+@define-color color10 #bf616a;
+@define-color color11 #b48ead;
+@define-color color12 #81a1c1;
+@define-color color13 #5e81ac;
+@define-color color14 #88c0d0;
+@define-color color15 #a3be8c;
 */
 
 * {
@@ -114,17 +52,17 @@
 
 window#waybar {
     background-color: rgba(0, 43, 54, 0.0);  /* Transparent background */
-    color: @base0;
+    color: @color4;
 }
 
 tooltip {
-    background-color: @base03;
-    border: 2px solid @blue;
+    background-color: @color0;
+    border: 2px solid @color13;
     border-radius: 8px;
 }
 
 tooltip label {
-    color: @base1;
+    color: @color5;
 }
 
 /* Floating module style - common properties */
@@ -149,138 +87,137 @@ tooltip label {
     margin: 5px 2px;
     padding: 0 12px;
     border-radius: 10px;
-    background-color: @base02;
-    color: @base1;
+    background-color: @color1;
+    color: @color5;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Workspaces module */
 #workspaces button {
     padding: 0 6px;
-    background-color: @base02;
-    color: @base0;
+    background-color: @color1;
+    color: @color4;
     min-width: 30px;
 }
 
-
 #workspaces button:hover {
-    background-color: @base01;
+    background-color: @color2;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 #workspaces button.active {
-    background-color: @blue;
-    color: @base03;
-    box-shadow: inset 0 0 0 2px @base2;
-    text-shadow: 0 0 5px @base3;
+    background-color: @color13;
+    color: @color0;
+    box-shadow: inset 0 0 0 2px @color6;
+    text-shadow: 0 0 5px @color7;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
-    color: @base3;
+    background-color: @color10;
+    color: @color7;
 }
 
 /* Clock module, Scripts module and window title */
 #clock, #custom-scripts, #window {
-    background-color: @cyan;
-    color: @base03;
+    background-color: @color14;
+    color: @color0;
     font-weight: bold;
 }
 
 /* System modules */
 #cpu {
-    background-color: @green;
-    color: @base03;
+    background-color: @color15;
+    color: @color0;
 }
 
 #memory {
-    background-color: @yellow;
-    color: @base03;
+    background-color: @color8;
+    color: @color0;
 }
 
 #temperature {
-    background-color: @orange;
-    color: @base03;
+    background-color: @color9;
+    color: @color0;
 }
 
 #temperature.critical {
-    background-color: @red;
-    color: @base3;
+    background-color: @color10;
+    color: @color7;
     animation: blink 1s infinite alternate;
 }
 
 /* Battery module */
 #battery {
-    background-color: @violet;
-    color: @base03;
+    background-color: @color12;
+    color: @color0;
 }
 
 #battery.charging {
-    background-color: @green;
-    color: @base03;
+    background-color: @color15;
+    color: @color0;
 }
 
 #battery.warning:not(.charging) {
-    background-color: @yellow;
-    color: @base03;
+    background-color: @color8;
+    color: @color0;
 }
 
 #battery.critical:not(.charging) {
-    background-color: @red;
-    color: @base3;
+    background-color: @color10;
+    color: @color7;
     animation: blink 1s infinite alternate;
 }
 
 /* Network module */
 #network {
-    background-color: @blue;
-    color: @base03;
+    background-color: @color13;
+    color: @color0;
 }
 
 #network.disconnected {
-    background-color: @red;
-    color: @base3;
+    background-color: @color10;
+    color: @color7;
 }
 
 /* Media modules */
 #pulseaudio {
-    background-color: @magenta;
-    color: @base03;
+    background-color: @color11;
+    color: @color0;
 }
 
 #pulseaudio.muted {
-    background-color: @base01;
-    color: @base1;
+    background-color: @color2;
+    color: @color5;
 }
 
 #backlight {
-    background-color: @yellow;
-    color: @base03;
+    background-color: @color8;
+    color: @color0;
 }
 
 /* Language module */
 #language {
-    background-color: @orange;
-    color: @base03;
+    background-color: @color9;
+    color: @color0;
     min-width: 40px;
 }
 
 /* Custom modules */
 #custom-media {
-    background-color: @violet;
-    color: @base03;
+    background-color: @color12;
+    color: @color0;
     min-width: 100px;
 }
 
 #custom-power {
-    background-color: @red;
-    color: @base3;
+    background-color: @color10;
+    color: @color7;
     margin-right: 6px;
 }
 
 /* System tray */
 #tray {
-    background-color: @base02;
+    background-color: @color1;
 }
 
 #tray > .passive {
@@ -289,30 +226,30 @@ tooltip label {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: @red;
+    background-color: @color10;
 }
 
 /* Disk usage */
 #disk {
-    background-color: @green;
-    color: @base03;
+    background-color: @color15;
+    color: @color0;
 }
 
 /* Animation for critical indicators */
 @keyframes blink {
     to {
-        background-color: @base3;
-        color: @red;
+        background-color: @color7;
+        color: @color10;
     }
 }
 
 /* Idle inhibitor module */
 #idle_inhibitor {
-    background-color: @base01;
-    color: @base1;
+    background-color: @color2;
+    color: @color5;
 }
 
 #idle_inhibitor.activated {
-    background-color: @yellow;
-    color: @base03;
+    background-color: @color8;
+    color: @color0;
 }

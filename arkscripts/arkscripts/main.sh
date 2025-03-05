@@ -2,6 +2,7 @@
 
 # Define options
 options=(
+    "Kill Proccess"
     "Change Waybar Layout (NEW)"
     "Hyprland Settings App"
     "Edit Configs (GUI)"
@@ -23,11 +24,12 @@ options=(
 
 # Define corresponding commands
 commands=(
+    "~/dotfiles/arkscripts/arkscripts/kill-process.sh"
     "~/dotfiles/arkscripts/arkscripts/waybar-theme.sh"
     "~/dotfiles/arkscripts/arkscripts/settings.sh"
     "~/dotfiles/arkscripts/arkscripts/config-edit-gui.sh"
     "~/dotfiles/arkscripts/arkscripts/config-edit.sh"
-    "pkill -SIGUSR2 waybar"
+    "~/dotfiles/arkscripts/arkscripts/reload.sh"
     "~/dotfiles/arkscripts/arkscripts/select-wall.sh"
     "~/dotfiles/arkscripts/arkscripts/clean.sh"
     "~/dotfiles/arkscripts/arkscripts/recover.sh"

@@ -1,31 +1,49 @@
 /* Solarized Dark colors */
-@define-color base03 #002b36;
-@define-color base02 #073642;
-@define-color base01 #586e75;
-@define-color base00 #657b83;
-@define-color base0 #839496;
-@define-color base1 #93a1a1;
-@define-color base2 #eee8d5;
-@define-color base3 #fdf6e3;
-@define-color yellow #b58900;
-@define-color orange #cb4b16;
-@define-color red #dc322f;
-@define-color magenta #d33682;
-@define-color violet #6c71c4;
-@define-color blue #268bd2;
-@define-color cyan #2aa198;
-@define-color green #859900;
+@define-color color0  #002b36;
+@define-color color1  #073642;
+@define-color color2  #586e75;
+@define-color color3  #657b83;
+@define-color color4  #839496;
+@define-color color5  #93a1a1;
+@define-color color6  #eee8d5;
+@define-color color7  #fdf6e3;
+@define-color color8  #b58900;
+@define-color color9  #cb4b16;
+@define-color color10 #dc322f;
+@define-color color11 #d33682;
+@define-color color12 #6c71c4;
+@define-color color13 #268bd2;
+@define-color color14 #2aa198;
+@define-color color15 #859900;
+
+/* Nord
+@define-color color0  #2e3440;
+@define-color color1  #3b4252;
+@define-color color2  #434c5e;
+@define-color color3  #4c566a;
+@define-color color4  #d8dee9;
+@define-color color5  #e5e9f0;
+@define-color color6  #eceff4;
+@define-color color7  #ffffff;
+@define-color color8  #ebcb8b;
+@define-color color9  #d08770;
+@define-color color10 #bf616a;
+@define-color color11 #b48ead;
+@define-color color12 #81a1c1;
+@define-color color13 #5e81ac;
+@define-color color14 #88c0d0;
+@define-color color15 #a3be8c;
+*/
 
 * {
-    /* Changed to JetBrains Mono with fallbacks */
     font-family: "JetBrains Mono", "Font Awesome 6 Free", monospace;
     font-size: 13px;
 }
 
 window#waybar {
-    background-color: @base03;
-    border-bottom: 3px solid @base02;
-    color: @base0;
+    background-color: @color0;
+    border-bottom: 3px solid @color1;
+    color: @color4;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -34,53 +52,40 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
 button {
-    /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px @cyan;
+    box-shadow: inset 0 -3px @color14;
 }
 
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: @base0;
+    color: @color4;
 }
 
 #workspaces button:hover {
-    background: @base02;
+    background: @color1;
 }
 
-/* Fixed: .focused → .active */
 #workspaces button.active {
-    background-color: @base02;
-    box-shadow: inset 0 -3px @blue;
-    color: @base1;
+    background-color: @color1;
+    box-shadow: inset 0 -3px @color13;
+    color: @color5;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+    background-color: @color10;
 }
 
 #mode, #submap {
-    background-color: @base02;
-    border-bottom: 3px solid @blue;
+    background-color: @color1;
+    border-bottom: 3px solid @color13;
 }
 
 #clock,
@@ -100,7 +105,7 @@ button:hover {
 #mpd {
     padding: 0 10px;
     margin: 0 4px;
-    color: @base0;
+    color: @color4;
 }
 
 #window,
@@ -108,41 +113,39 @@ button:hover {
     margin: 0 4px;
 }
 
-/* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
     margin-left: 0;
 }
 
-/* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
 }
 
 #clock {
-    background-color: @base02;
-    color: @blue;
+    background-color: @color1;
+    color: @color13;
 }
 
 #battery {
-    background-color: @base02;
-    color: @green;
+    background-color: @color1;
+    color: @color15;
 }
 
 #battery.charging, #battery.plugged {
-    color: @green;
-    background-color: @base02;
+    color: @color15;
+    background-color: @color1;
 }
 
 @keyframes blink {
     to {
-        background-color: @base0;
-        color: @base03;
+        background-color: @color4;
+        color: @color0;
     }
 }
 
 #battery.critical:not(.charging) {
-    background-color: @red;
-    color: @base3;
+    background-color: @color10;
+    color: @color7;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -151,84 +154,84 @@ button:hover {
 }
 
 label:focus {
-    background-color: @base03;
+    background-color: @color0;
 }
 
 #cpu {
-    background-color: @base02;
-    color: @magenta;
+    background-color: @color1;
+    color: @color11;
 }
 
 #memory {
-    background-color: @base02;
-    color: @violet;
+    background-color: @color1;
+    color: @color12;
 }
 
 #disk {
-    background-color: @base02;
-    color: @base1;
+    background-color: @color1;
+    color: @color5;
 }
 
 #backlight {
-    background-color: @base02;
-    color: @yellow;
+    background-color: @color1;
+    color: @color8;
 }
 
 #network {
-    background-color: @base02;
-    color: @cyan;
+    background-color: @color1;
+    color: @color14;
 }
 
 #network.disconnected {
-    background-color: @base02;
-    color: @red;
+    background-color: @color1;
+    color: @color10;
 }
 
 #pulseaudio {
-    background-color: @base02;
-    color: @orange;
+    background-color: @color1;
+    color: @color9;
 }
 
 #pulseaudio.muted {
-    background-color: @base02;
-    color: @orange;
+    background-color: @color1;
+    color: @color9;
     text-decoration: line-through;
 }
 
 #custom-media {
-    background-color: @base02;
-    color: @yellow;
+    background-color: @color1;
+    color: @color8;
     min-width: 100px;
 }
 
 #custom-arkscript {
-    background-color: @base02;
-    color: @cyan;
+    background-color: @color1;
+    color: @color14;
     font-weight: bold;
 }
 
 #custom-media.custom-spotify {
-    background-color: @base02;
-    color: @green;
+    background-color: @color1;
+    color: @color15;
 }
 
 #custom-media.custom-vlc {
-    background-color: @base02;
-    color: @orange;
+    background-color: @color1;
+    color: @color9;
 }
 
 #temperature {
-    background-color: @base02;
-    color: @yellow;
+    background-color: @color1;
+    color: @color8;
 }
 
 #temperature.critical {
-    background-color: @red;
-    color: @base3;
+    background-color: @color10;
+    color: @color7;
 }
 
 #tray {
-    background-color: @base02;
+    background-color: @color1;
 }
 
 #tray > .passive {
@@ -237,46 +240,46 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: @red;
+    background-color: @color10;
 }
 
 #idle_inhibitor {
-    background-color: @base02;
+    background-color: @color1;
 }
 
 #idle_inhibitor.activated {
-    background-color: @base0;
-    color: @base03;
+    background-color: @color4;
+    color: @color0;
 }
 
 #mpd {
-    background-color: @base02;
-    color: @violet;
+    background-color: @color1;
+    color: @color12;
 }
 
 #mpd.disconnected {
-    background-color: @red;
+    background-color: @color10;
 }
 
 #mpd.stopped {
-    background-color: @base01;
+    background-color: @color2;
 }
 
 #mpd.paused {
-    background-color: @base02;
+    background-color: @color1;
 }
 
 #language {
-    background: @base02;
-    color: @violet;
+    background: @color1;
+    color: @color12;
     padding: 0 5px;
     margin: 0 5px;
     min-width: 16px;
 }
 
 #keyboard-state {
-    background: @base02;
-    color: @blue;
+    background: @color1;
+    color: @color13;
     padding: 0 0px;
     margin: 0 5px;
     min-width: 16px;
@@ -287,13 +290,13 @@ label:focus {
 }
 
 #keyboard-state > label.locked {
-    background: @red;
-    color: @base3;
+    background: @color10;
+    color: @color7;
 }
 
 #submap {
-    background: @orange;
-    color: @base03;
+    background: @color9;
+    color: @color0;
     padding: 0 5px;
     margin: 0 5px;
     font-weight: bold;

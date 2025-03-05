@@ -26,7 +26,7 @@ display_settings() {
         "Change Refresh Rate" \
         "Toggle VRR" \
         "Adjust Display Scaling" \
-        --width=300 --height=250)
+        --width=800 --height=650)
 
     case "$choice" in
         "Change Refresh Rate")
@@ -74,7 +74,7 @@ input_settings() {
         "Mouse Sensitivity" \
         "Touchpad Natural Scroll" \
         "Tap to Click" \
-        --width=300 --height=250)
+        --width=800 --height=650)
 
     case "$choice" in
         "Mouse Sensitivity")
@@ -124,7 +124,7 @@ appearance_settings() {
         "Change GTK Theme" \
         "Window Border Size" \
         "Border Color" \
-        --width=300 --height=250)
+        --width=800 --height=650)
 
     case "$choice" in
         "Change GTK Theme")
@@ -167,7 +167,7 @@ workspace_settings() {
     local choice=$(zenity --list --title="Workspace Settings" --column="Option" \
         "Bind Workspace to Monitor" \
         "Adjust Workspace Gaps" \
-        --width=300 --height=250)
+        --width=800 --height=650)
 
     case "$choice" in
         "Bind Workspace to Monitor")
@@ -215,7 +215,7 @@ main_menu() {
         "Input Settings" \
         "Appearance Settings" \
         "Workspace Settings" \
-        --width=300 --height=300)
+        --width=800 --height=600)
 
     case "$choice" in
         "Display Settings") display_settings ;;

@@ -18,18 +18,19 @@ if [[ -n "$selected_theme" ]]; then
     # Get the corresponding command
     theme_command="${themes[$selected_theme]}"
 
-    # Update autostart configuration file
+    # Update autostart configuration file (13th line)
     autostart_file=~/.config/hypr/conf/autostart.conf
-
-    # Use sed to replace the 13th line with the new theme command
     sed -i '13c\'"exec-once = $theme_command" "$autostart_file"
+
+    # Update reload script (line 8)
+    reload_script=~/arkscripts/reload.sh
+    sed -i '8c\'"$theme_command" "$reload_script"
 
     # Launch the selected theme
     eval "$theme_command"
-
-    # Notify user
-    notify-send "Waybar Theme" "Switched to $selected_theme theme"
+    sleep 1
 else
     # Notify if no theme was selected
     notify-send "Waybar Theme" "No theme selected"
+    waybar
 fi
