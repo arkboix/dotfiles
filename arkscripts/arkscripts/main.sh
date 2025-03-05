@@ -15,11 +15,8 @@ options=(
     "Night Light"
     "Send Info notification"
     "Update System"
-    "Change Waybar Theme"
-    "Change Terminal (kitty) theme"
  #   "Change Global Theme"
     "Change Display Settings"
-    "Change Waybar Layout"
     "Change Rofi Style (NEW THEMES AVAILABLE)"
 )
 
@@ -38,11 +35,8 @@ commands=(
     "~/dotfiles/arkscripts/arkscripts/nightlight.sh"
     "~/dotfiles/arkscripts/arkscripts/info.sh"
     "~/dotfiles/arkscripts/arkscripts/update.sh"
-    "~/dotfiles/arkscripts/arkscripts/waybar-color.sh"
-    "~/dotfiles/arkscripts/arkscripts/kitty-color.sh"
 #    "~/dotfiles/arkscripts/arkscripts/theme-all.sh"
     "nwg-displays"
-    "~/dotfiles/arkscripts/arkscripts/waybar-layout.sh"
     "~/dotfiles/arkscripts/arkscripts/rofi-theme.sh"
 )
 

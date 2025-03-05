@@ -24,3 +24,13 @@ sh: line 1: /home/arkboi/arkscripts/unamea.sh: No such file or directory
 (nm-applet:189461): Gtk-CRITICAL **: 10:16:58.169: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
 
 (nm-applet:189461): Gtk-CRITICAL **: 10:41:47.136: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nm-applet:189461): Gtk-CRITICAL **: 11:47:03.674: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nm-applet:189461): Gtk-CRITICAL **: 11:51:47.719: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nm-applet:189461): Gtk-CRITICAL **: 11:54:15.505: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nm-applet:189461): Gtk-CRITICAL **: 12:02:38.764: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nm-applet:189461): Gtk-CRITICAL **: 12:02:56.350: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
