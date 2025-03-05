@@ -94,26 +94,7 @@ the nvim config is trash and default, don't even bother trying it.
 ## Step 4 : Post Install (IMPORTANT !!)
 
 The post installation is:
-running a script.
-
-Since we stow-ed arkscripts, lets run a script in there;
-
-``` shell
-cd ~
-cd arkscripts
-chmod +x *.sh
-./waybar-color.sh
-```
-
-you'll be prompted to choose waybar theme, pick any you like (Solarized Recommended)
-
-Next, we need to create a symbolic link (symlink) of our wallpaper to /tmp folder, for the logout screen to work. Heres how:
-
-``` shell
-ln -sf "$HOME/wallpapers/wlogout.jpg" "/tmp/wlogout.jpg"
-```
-
-then, just log out, and log back in.
+reboot
 
 ## Step 5 : Post Issues on the repo
 

@@ -68,3 +68,4 @@ sh: line 1: /home/arkboi/arkscripts/unamea.sh: No such file or directory
 (nm-applet:189461): Gtk-CRITICAL **: 12:24:01.242: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
 
 (nm-applet:189461): GLib-GIO-CRITICAL **: 12:24:02.320: g_dbus_proxy_get_cached_property: assertion 'G_IS_DBUS_PROXY (proxy)' failed
+Gdk-Message: 12:30:55.874: Error reading events from display: Broken pipe
