@@ -2,6 +2,7 @@
 
 # Define options
 options=(
+    "Hyprland Settings App"
     "Edit Configs (GUI)"
     "Edit Configs"
     "Reload Waybar"
@@ -24,6 +25,7 @@ options=(
 
 # Define corresponding commands
 commands=(
+    "~/dotfiles/arkscripts/arkscripts/settings.sh"
     "~/dotfiles/arkscripts/arkscripts/config-edit-gui.sh"
     "~/dotfiles/arkscripts/arkscripts/config-edit.sh"
     "pkill -SIGUSR2 waybar"

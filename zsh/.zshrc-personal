@@ -1,6 +1,8 @@
 # Startup
 #arch
 pokeget cufant --hide-name
+cd ~/dotfiles
+
 # Prompt
 
 PS1='%F{white}[%F{yellow}  %F{cyan}%D{%I:%M %p}%F{red} %n@%m %F{yellow}%~%F{white}]%f '

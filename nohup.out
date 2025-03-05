@@ -18,3 +18,9 @@ sh: line 1: /home/arkboi/arkscripts/unamea.sh: No such file or directory
 [2025-03-03 08:06:08.446] [info] Bar configured (width: 1920, height: 42) for output: eDP-1
 
 ** (waybar:37304): WARNING **: 08:06:10.019: Status Notifier Item with bus name ':1.8' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+(nm-applet:189461): Gtk-CRITICAL **: 10:16:58.169: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nm-applet:189461): Gtk-CRITICAL **: 10:16:58.169: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nm-applet:189461): Gtk-CRITICAL **: 10:41:47.136: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed

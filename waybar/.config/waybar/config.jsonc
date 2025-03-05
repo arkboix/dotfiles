@@ -10,8 +10,7 @@
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/submap",
-        "custom/media"
-    ],
+],
 
     "modules-center": [
         "clock",
@@ -171,7 +170,7 @@
 
 "custom/scripts": {
     "format": "{}",
-    "exec": "echo scripts",
+    "exec": "echo  ArkScripts",
     "on-click": "~/arkscripts/main.sh",
     "exec-if": "true"
 },

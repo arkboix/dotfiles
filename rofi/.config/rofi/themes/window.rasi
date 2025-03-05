@@ -1,10 +1,13 @@
 /**
- * Solarized Dark Grid Theme for Rofi Window Mode
- * Designed for fullscreen Alt+Tab functionality
+ * Solarized Dark Grid Rofi Theme
+ * Inspired by wallpaper.rasi and fullscreen.rasi
  */
 
+configuration {
+    display-window: "Windows";
+}
+
 * {
-    /* Solarized Dark Colors */
     base03:     #002b36;
     base02:     #073642;
     base01:     #586e75;
@@ -22,140 +25,91 @@
     cyan:       #2aa198;
     green:      #859900;
 
-    /* Global Properties */
-    background-color:            @base03;
-    text-color:                  @base0;
-    font:                        "Sans 12";
-
-    /* Window Properties */
-    window-format:               "{w} · {c} · {t}";
+    background-color: transparent;
+    text-color:       @base0;
+    font:             "JetBrains Mono 11";
+    spacing:          0;
 }
 
 window {
-    fullscreen:                  true;
-    transparency:                "real";
-    background-color:            @base03;
-    padding:                     5% 5%;
+    transparency:     "real";
+    background-color: @base03;
+    border:           2px;
+    border-color:     @base01;
+    border-radius:    10px;
+    padding:          00px;
+    width:            50%;
+    height:           28%;
 }
 
 mainbox {
-    border:                      0;
-    padding:                     0;
-    background-color:            transparent;
-}
-
-message {
-    border:                      0;
-    padding:                     5px 10px;
-    background-color:            @base02;
-    text-color:                  @base0;
-}
-
-textbox {
-    background-color:            transparent;
-    text-color:                  @base0;
+    padding:          5px;
+    spacing:          10px;
+    children:         [ inputbar, listview ];
 }
 
 inputbar {
-    background-color:            @base02;
-    border:                      0 0 2px 0;
-    border-color:                @blue;
-    padding:                     10px;
-    spacing:                     0;
-    children:                    [ prompt, textbox-prompt-colon, entry, case-indicator ];
+    spacing:          0px;
+    padding:          0px;
+    margin:           0px 0px 00px 0px;
+    background-color: @base02;
+    border-radius:    6px;
+    children:         [ prompt ];
 }
 
 prompt {
-    spacing:                     0;
-    text-color:                  @blue;
-}
-
-textbox-prompt-colon {
-    expand:                      false;
-    str:                         ":";
-    margin:                      0px 0.3em 0em 0em;
-    text-color:                  @blue;
+    enabled:          true;
+    padding:          5px 8px;
+    border-radius:    4px;
+    background-color: @blue;
+    text-color:       @base3;
+    font:             "Sans Bold 12";
 }
 
 entry {
-    spacing:                     0;
-    text-color:                  @base1;
-}
-
-case-indicator {
-    spacing:                     0;
-    text-color:                  @base01;
+    padding:          5px 8px;
+    placeholder:      "Search windows...";
+    placeholder-color: @base01;
+    text-color:       @base1;
+    font:             "Sans 12";
 }
 
 listview {
-    fixed-height:                0;
-    border:                      0;
-    scrollbar:                   true;
-    padding:                     15px 0 0;
-    columns:                     5;
-    lines:                       3;
+    spacing:          10px;
+    dynamic:          true;
+    fixed-columns:    true;
+    columns:          5;
+    lines:            3;
+    flow:             horizontal;
+    layout:           vertical;
+    cycle:            false;
+    scrollbar:        false;
 }
 
 element {
-    border:                      0;
-    border-radius:               4px;
-    padding:                     10px;
-    orientation:                 vertical;
-    spacing:                     10px;
-}
-
-element normal.normal {
-    background-color:            @base02;
-    text-color:                  @base0;
-}
-
-element alternate.normal {
-    background-color:            @base02;
-    text-color:                  @base0;
-}
-
-element selected.normal {
-    background-color:            @blue;
-    text-color:                  @base3;
+    orientation:      vertical;
+    padding:          8px;
+    spacing:          6px;
+    border-radius:    6px;
+    background-color: @base02;
+    expand:           true;
 }
 
 element-icon {
-    size:                        48px;
-    border:                      0px;
-    background-color:            transparent;
-    horizontal-align:            0.5;
+    size:             96px;
+    padding:          3px;
+    horizontal-align: 0.5;
+    border-radius:    3px;
 }
 
 element-text {
-    background-color:            transparent;
-    text-color:                  inherit;
-    highlight:                   inherit;
-    horizontal-align:            0.5;
+    horizontal-align: 0.5;
+    padding:          3px;
+    font:             "JetBrains Mono 9";
+    text-color:       @base1;
 }
 
-scrollbar {
-    width:                       4px;
-    border:                      0;
-    handle-color:                @blue;
-    handle-width:                8px;
-    padding:                     0;
-}
-
-mode-switcher {
-    border:                      0;
-    spacing:                     0px;
-    expand:                      true;
-}
-
-button {
-    text-color:                  @base0;
-    border:                      0 0 2px 0;
-    border-color:                @base02;
-    border-radius:               0;
-    padding:                     8px;
-}
-
-button selected {
-    text-color:                  @blue;
-    border-color:                @blue;
+element selected {
+    background-color: @green;
+    text-color:       @base3;
 }

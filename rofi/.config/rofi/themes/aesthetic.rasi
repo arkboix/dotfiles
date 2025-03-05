@@ -1,0 +1,59 @@
+* {
+    background:         #0e2433;
+    foreground:         #8ba0ad;
+    accent:             #3a7ca5;
+
+    background-color:   @background;
+    text-color:         @foreground;
+}
+
+window {
+    width:              40%;
+    background-color:   @background;
+}
+
+mainbox {
+    background-color:   transparent;
+}
+
+inputbar {
+    background-color:   rgba(21, 53, 71, 0.5);
+    padding:            8px;
+}
+
+entry {
+    background-color:   @background ;
+    text-color:         @foreground;
+}
+
+listview {
+    background-color:   transparent;
+    scrollbar:          true;
+}
+
+scrollbar {
+    handle-color:       @accent;
+    handle-width:       4px;
+}
+
+element {
+    padding:            8px;
+    background-color:   transparent;
+}
+
+element selected {
+    background-color:   @accent;
+}
+
+mode-switcher {
+    background-color:   transparent;
+}
+
+button {
+    background-color:   transparent;
+}
+
+button selected {
+    background-color: @foreground;
+    color: @background;
+}

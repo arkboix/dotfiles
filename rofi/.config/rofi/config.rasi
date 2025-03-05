@@ -40,4 +40,26 @@ configuration {
     kb-remove-char-back: "BackSpace";
 }
 
-@theme "~/.config/rofi/themes/default.rasi"
+//@theme "~/.config/rofi/themes/centered.rasi"
+
+//@theme "~/.config/rofi/themes/translucent.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/new.rasi"
+
+//@theme "~/.config/rofi/themes/translucent.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/new.rasi"
+
+//@theme "~/.config/rofi/themes/simple.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/qwen.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/simple.rasi"
+
+//@theme "~/.config/rofi/themes/simple.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/aesthetic.rasi"
+
+//@theme "/usr/share/rofi/themes/material.rasi"
+
+@theme "~/.config/rofi/themes/simple.rasi"

@@ -144,6 +144,7 @@ tooltip label {
 #idle_inhibitor,
 #language,
 #backlight,
+#window,
 #disk {
     margin: 5px 2px;
     padding: 0 12px;
@@ -160,6 +161,7 @@ tooltip label {
     color: @base0;
     min-width: 30px;
 }
+
 
 #workspaces button:hover {
     background-color: @base01;
@@ -178,8 +180,8 @@ tooltip label {
     color: @base3;
 }
 
-/* Clock module */
-#clock, #custom-scripts {
+/* Clock module, Scripts module and window title */
+#clock, #custom-scripts, #window {
     background-color: @cyan;
     color: @base03;
     font-weight: bold;

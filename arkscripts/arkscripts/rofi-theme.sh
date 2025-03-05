@@ -7,7 +7,7 @@
 # Define the themes and their paths
 declare -A themes
 themes=(
-    ["Default"]="~/.config/rofi/themes/solarized.rasi"
+    ["Default Simple"]="~/.config/rofi/themes/simple.rasi"
     ["Centered"]="~/.config/rofi/themes/centered.rasi"
     ["Compact"]="~/.config/rofi/themes/compact.rasi"
     ["Grid"]="~/.config/rofi/themes/grid.rasi"
@@ -15,6 +15,8 @@ themes=(
     ["Material"]="~/.config/rofi/themes/material.rasi"
     ["Fullscreen"]="~/.config/rofi/themes/fullscreen.rasi"
     ["Classic"]="~/.config/rofi/themes/classic.rasi"
+    ["Translucent"]="~/.config/rofi/themes/translucent.rasi"
+    ["Default Second"]="~/.config/rofi/themes/default.rasi"
 )
 
 # Path to Rofi config
