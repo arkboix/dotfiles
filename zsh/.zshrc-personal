@@ -26,7 +26,7 @@ alias search="pacman -Ss"
 alias d="mkdir"
 alias ..="cd .."
 alias .="cd ../.."
-alias git="git add . && git commit && git push"
+#alias git="git add . && git commit && git push"
 
 
 # Emacs Makes me Do More Work (E.M.D.M.W)
