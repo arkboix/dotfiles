@@ -62,4 +62,6 @@ configuration {
 
 //@theme "/usr/share/rofi/themes/material.rasi"
 
+//@theme "~/.config/rofi/themes/simple.rasi"
+
 @theme "~/.config/rofi/themes/simple.rasi"
