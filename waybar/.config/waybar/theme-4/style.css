@@ -1,0 +1,215 @@
+/* Define Solarized Dark colors */
+@define-color color0   #002b36;
+@define-color color1   #dc322f;
+@define-color color2   #859900;
+@define-color color3   #b58900;
+@define-color color4   #268bd2;
+@define-color color5   #d33682;
+@define-color color6   #2aa198;
+@define-color color7   #eee8d5;
+@define-color color8   #073642;
+@define-color color9   #cb4b16;
+@define-color color10  #586e75;
+@define-color color11  #657b83;
+@define-color color12  #839496;
+@define-color color13  #6c71c4;
+@define-color color14  #93a1a1;
+@define-color color15  #fdf6e3;
+
+/* Nord theme colors (commented out)*/
+/* @define-color color0   #2e3440; */
+/* @define-color color1   #3b4252; */
+/* @define-color color2   #434c5e; */
+/* @define-color color3   #4c566a; */
+/* @define-color color4   #d8dee9; */
+/* @define-color color5   #e5e9f0; */
+/* @define-color color6   #eceff4; */
+/* @define-color color7   #8fbcbb; */
+/* @define-color color8   #88c0d0; */
+/* @define-color color9   #81a1c1; */
+/* @define-color color10  #5e81ac; */
+/* @define-color color11  #bf616a; */
+/* @define-color color12  #d08770; */
+/* @define-color color13  #ebcb8b; */
+/* @define-color color14  #a3be8c; */
+/* @define-color color15  #b48ead; */
+
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: alpha(@color0, 0.9);
+    border-radius: 12px;
+    border: 2px solid @color8;
+    box-shadow: 0 0 8px 2px alpha(@color13, 0.3);
+    color: @color12;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+tooltip {
+    background: @color8;
+    border: 1px solid @color10;
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: @color7;
+}
+
+#workspaces {
+    background: @color8;
+    border-radius: 10px;
+    margin-left: 5px;
+    padding: 0 5px;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    background: transparent;
+    color: @color12;
+    border-radius: 8px;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+    background: alpha(@color10, 0.4);
+    box-shadow: inset 0 -2px @color4;
+}
+
+#workspaces button.active {
+    background: alpha(@color4, 0.2);
+    color: @color7;
+    box-shadow: inset 0 -2px @color4;
+}
+
+#workspaces button.urgent {
+    background: alpha(@color1, 0.2);
+    color: @color1;
+}
+
+#custom-arkscripts {
+    background: linear-gradient(45deg, @color5, @color13);
+    color: @color15;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 0 10px;
+    margin: 3px 0;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 alpha(@color13, 0.7); }
+    70% { box-shadow: 0 0 0 6px alpha(@color13, 0); }
+    100% { box-shadow: 0 0 0 0 alpha(@color13, 0); }
+}
+
+#custom-arkscripts:hover {
+    background: linear-gradient(45deg, @color13, @color5);
+    transition: all 0.3s ease;
+}
+
+#clock {
+    background: alpha(@color8, 0.8);
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 3px 0;
+    color: @color7;
+    font-weight: bold;
+    border-bottom: 2px solid @color6;
+}
+
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#network,
+#pulseaudio,
+#custom-media,
+#tray {
+    background: alpha(@color8, 0.6);
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 3px 4px;
+    color: @color12;
+    border-left: 2px solid transparent;
+}
+
+#battery {
+    border-left-color: @color2;
+}
+
+#battery.charging, #battery.plugged {
+    color: @color7;
+    background-color: alpha(@color2, 0.4);
+}
+
+#battery.critical:not(.charging) {
+    background-color: alpha(@color1, 0.4);
+    color: @color7;
+    animation: blink 0.5s ease infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: @color7;
+        color: @color1;
+    }
+}
+
+#cpu {
+    border-left-color: @color4;
+}
+
+#memory {
+    border-left-color: @color13;
+}
+
+#temperature {
+    border-left-color: @color9;
+}
+
+#temperature.critical {
+    background-color: alpha(@color1, 0.4);
+}
+
+#network {
+    border-left-color: @color6;
+}
+
+#network.disconnected {
+    background-color: alpha(@color1, 0.4);
+}
+
+#pulseaudio {
+    border-left-color: @color3;
+}
+
+#pulseaudio.muted {
+    background-color: alpha(@color10, 0.4);
+    color: @color14;
+}
+
+#custom-media {
+    border-left-color: @color5;
+    min-width: 100px;
+}
+
+#tray {
+    background-color: alpha(@color8, 0.8);
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: alpha(@color1, 0.4);
+}

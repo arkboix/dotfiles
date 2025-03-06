@@ -6,7 +6,8 @@
 WAYBAR_DIR="$HOME/.config/waybar"
 MAIN_CSS="$WAYBAR_DIR/style.css"
 THEME2_CSS="$WAYBAR_DIR/theme-2/style.css"
-THEME3_CSS="$WAYBAR_DIR/theme-3/style.css"  # Added theme-3 CSS file
+THEME3_CSS="$WAYBAR_DIR/theme-3/style.css"
+THEME4_CSS="$WAYBAR_DIR/theme-4/style.css"  # Added theme-4 CSS file
 RELOAD_SCRIPT="$HOME/arkscripts/reload.sh"  # Custom reload script
 
 # Function to comment/uncomment lines in a file
@@ -42,6 +43,10 @@ activate_solarized() {
     toggle_lines "$THEME3_CSS" 2 17 "uncomment"  # Uncomment Solarized lines
     toggle_lines "$THEME3_CSS" 21 36 "comment"   # Comment out Nord lines
 
+    # theme-4/style.css
+    toggle_lines "$THEME4_CSS" 2 17 "uncomment"  # Uncomment Solarized lines
+    toggle_lines "$THEME4_CSS" 20 35 "comment"   # Comment out Nord lines
+
     echo "Solarized theme activated. Reloading Waybar..."
     $RELOAD_SCRIPT  # Run custom reload script
 
@@ -64,6 +69,10 @@ activate_nord() {
     # theme-3/style.css
     toggle_lines "$THEME3_CSS" 2 17 "comment"    # Comment out Solarized lines
     toggle_lines "$THEME3_CSS" 21 36 "uncomment" # Uncomment Nord lines
+
+    # theme-4/style.css
+    toggle_lines "$THEME4_CSS" 2 17 "comment"    # Comment out Solarized lines
+    toggle_lines "$THEME4_CSS" 20 35 "uncomment" # Uncomment Nord lines
 
     echo "Nord theme activated. Reloading Waybar..."
     $RELOAD_SCRIPT  # Run custom reload script
