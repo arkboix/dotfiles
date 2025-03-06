@@ -59,7 +59,7 @@ height=100
 # progress-color=over #98c379
 
 ### CUSTOM PASTEL THEME (ACTIVE) ###
-background-color=#0a0a0a
+background-color=#0f191c
 text-color=#d0d0d0
 border-color=#a9c1e2
 progress-color=over #9ae2d5

@@ -27,7 +27,7 @@ options=(
 
 # Define corresponding commands
 commands=(
-    "nwg-dock-hyprland -mb 15 -l overlay -c 'rofi -show drun'"
+    "nwg-dock-hyprland -mb 5 -l overlay -c 'rofi -show drun' -x"
     "killall nwg-dock-hyprland"
     "~/dotfiles/arkscripts/arkscripts/kill-process.sh"
     "~/dotfiles/arkscripts/arkscripts/waybar-style.sh"
