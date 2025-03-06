@@ -1,38 +1,38 @@
 /* Define Solarized Dark colors */
-@define-color color0   #002b36;
-@define-color color1   #dc322f;
-@define-color color2   #859900;
-@define-color color3   #b58900;
-@define-color color4   #268bd2;
-@define-color color5   #d33682;
-@define-color color6   #2aa198;
-@define-color color7   #eee8d5;
-@define-color color8   #073642;
-@define-color color9   #cb4b16;
-@define-color color10  #586e75;
-@define-color color11  #657b83;
-@define-color color12  #839496;
-@define-color color13  #6c71c4;
-@define-color color14  #93a1a1;
-@define-color color15  #fdf6e3;
+/* @define-color color0   #002b36; */
+/* @define-color color1   #dc322f; */
+/* @define-color color2   #859900; */
+/* @define-color color3   #b58900; */
+/* @define-color color4   #268bd2; */
+/* @define-color color5   #d33682; */
+/* @define-color color6   #2aa198; */
+/* @define-color color7   #eee8d5; */
+/* @define-color color8   #073642; */
+/* @define-color color9   #cb4b16; */
+/* @define-color color10  #586e75; */
+/* @define-color color11  #657b83; */
+/* @define-color color12  #839496; */
+/* @define-color color13  #6c71c4; */
+/* @define-color color14  #93a1a1; */
+/* @define-color color15  #fdf6e3; */
 
 /* Nord theme colors (commented out)*/
-/* @define-color color0   #2e3440; */
-/* @define-color color1   #3b4252; */
-/* @define-color color2   #434c5e; */
-/* @define-color color3   #4c566a; */
-/* @define-color color4   #d8dee9; */
-/* @define-color color5   #e5e9f0; */
-/* @define-color color6   #eceff4; */
-/* @define-color color7   #8fbcbb; */
-/* @define-color color8   #88c0d0; */
-/* @define-color color9   #81a1c1; */
-/* @define-color color10  #5e81ac; */
-/* @define-color color11  #bf616a; */
-/* @define-color color12  #d08770; */
-/* @define-color color13  #ebcb8b; */
-/* @define-color color14  #a3be8c; */
-/* @define-color color15  #b48ead; */
+@define-color color0   #2e3440;
+@define-color color1   #3b4252;
+@define-color color2   #434c5e;
+@define-color color3   #4c566a;
+@define-color color4   #d8dee9;
+@define-color color5   #e5e9f0;
+@define-color color6   #eceff4;
+@define-color color7   #8fbcbb;
+@define-color color8   #88c0d0;
+@define-color color9   #81a1c1;
+@define-color color10  #5e81ac;
+@define-color color11  #bf616a;
+@define-color color12  #d08770;
+@define-color color13  #ebcb8b;
+@define-color color14  #a3be8c;
+@define-color color15  #b48ead;
 
 
 * {

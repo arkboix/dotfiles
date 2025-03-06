@@ -6,6 +6,7 @@ declare -A themes=(
     ["Opaque"]="waybar -c ~/.config/waybar/theme-2/config.jsonc -s ~/.config/waybar/theme-2/style.css"
     ["Simple"]="waybar -c ~/.config/waybar/theme-3/config.jsonc -s ~/.config/waybar/theme-3/style.css"
     ["Fluent"]="waybar -c ~/.config/waybar/theme-4/config.jsonc -s ~/.config/waybar/theme-4/style.css"
+    ["Fluent Alt (Bottom)"]="waybar -c ~/.config/waybar/theme-5/config.jsonc -s ~/.config/waybar/theme-5/style.css"
 )
 
 # Kill existing waybar instances

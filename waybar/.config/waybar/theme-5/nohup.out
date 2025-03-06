@@ -1,0 +1,233 @@
+[2025-03-06 14:45:48.370] [info] Using configuration file /home/arkboi/.config/waybar/theme-5/config.jsonc
+[2025-03-06 14:45:48.372] [info] Discovered appearance 'dark'
+[2025-03-06 14:45:48.372] [info] Using CSS file /home/arkboi/.config/waybar/theme-5/style.css
+[2025-03-06 14:45:48.378] [info] Hyprland IPC starting
+[2025-03-06 14:45:48.378] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 14:45:48.570] [info] Bar configured (width: 1896, height: 36) for output: eDP-1
+
+** (waybar:193241): WARNING **: 14:45:48.582: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:193241): WARNING **: 14:45:48.582: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:193241): WARNING **: 14:45:49.630: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:193241): WARNING **: 14:45:49.630: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+Terminated
+[2025-03-06 14:46:23.416] [info] Using configuration file /home/arkboi/.config/waybar/theme-5/config.jsonc
+[2025-03-06 14:46:23.417] [info] Discovered appearance 'dark'
+[2025-03-06 14:46:23.417] [info] Using CSS file /home/arkboi/.config/waybar/theme-5/style.css
+[2025-03-06 14:46:23.423] [info] Hyprland IPC starting
+[2025-03-06 14:46:23.424] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 14:46:23.639] [info] Bar configured (width: 1896, height: 36) for output: eDP-1
+
+** (waybar:194603): WARNING **: 14:46:23.650: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194603): WARNING **: 14:46:23.650: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194603): WARNING **: 14:46:24.679: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194603): WARNING **: 14:46:24.679: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+Terminated
+[2025-03-06 14:46:40.748] [info] Using configuration file /home/arkboi/.config/waybar/theme-5/config.jsonc
+[2025-03-06 14:46:40.750] [info] Discovered appearance 'dark'
+[2025-03-06 14:46:40.750] [info] Using CSS file /home/arkboi/.config/waybar/theme-5/style.css
+[2025-03-06 14:46:40.756] [info] Hyprland IPC starting
+[2025-03-06 14:46:40.757] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 14:46:40.951] [info] Bar configured (width: 1896, height: 36) for output: eDP-1
+
+** (waybar:194694): WARNING **: 14:46:40.968: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194694): WARNING **: 14:46:40.968: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+
+** (waybar:194694): WARNING **: 14:46:42.634: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194694): WARNING **: 14:46:42.634: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+Activating Solarized theme...
+Solarized theme activated. Reloading Waybar...
+Terminated
+Terminated
+[2025-03-06 14:46:45.971] [info] Using configuration file /home/arkboi/.config/waybar/theme-5/config.jsonc
+[2025-03-06 14:46:45.975] [info] Discovered appearance 'dark'
+[2025-03-06 14:46:45.975] [info] Using CSS file /home/arkboi/.config/waybar/theme-5/style.css
+[2025-03-06 14:46:45.982] [info] Hyprland IPC starting
+[2025-03-06 14:46:45.983] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 14:46:46.197] [info] Bar configured (width: 1896, height: 36) for output: eDP-1
+
+** (waybar:194777): WARNING **: 14:46:46.204: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194777): WARNING **: 14:46:46.204: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194777): WARNING **: 14:46:47.684: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194777): WARNING **: 14:46:47.684: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+sh: line 1: activate: command not found
+sh: line 1: activate: command not found
+sh: line 1: activate: command not found
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+Terminated
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+[2025-03-06 14:47:33.036] [info] Using configuration file /home/arkboi/.config/waybar/config.jsonc
+[2025-03-06 14:47:33.038] [info] Discovered appearance 'dark'
+[2025-03-06 14:47:33.038] [info] Using CSS file /home/arkboi/.config/waybar/style.css
+[2025-03-06 14:47:33.044] [info] Hyprland IPC starting
+[2025-03-06 14:47:33.044] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 14:47:33.214] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+
+** (waybar:194873): WARNING **: 14:47:33.229: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194873): WARNING **: 14:47:33.229: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194873): WARNING **: 14:47:34.611: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194873): WARNING **: 14:47:34.611: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+Terminated
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+[2025-03-06 14:47:47.558] [info] Using configuration file /home/arkboi/.config/waybar/theme-2/config.jsonc
+[2025-03-06 14:47:47.562] [info] Discovered appearance 'dark'
+[2025-03-06 14:47:47.562] [info] Using CSS file /home/arkboi/.config/waybar/theme-2/style.css
+[2025-03-06 14:47:47.568] [info] Hyprland IPC starting
+[2025-03-06 14:47:47.568] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 14:47:47.572] [error] media stopped unexpectedly, is it endless?
+[2025-03-06 14:47:47.783] [info] Bar configured (width: 1920, height: 30) for output: eDP-1
+
+** (waybar:194962): WARNING **: 14:47:47.789: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194962): WARNING **: 14:47:47.789: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194962): WARNING **: 14:47:48.654: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194962): WARNING **: 14:47:48.654: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+Terminated
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+[2025-03-06 14:47:52.578] [info] Using configuration file /home/arkboi/.config/waybar/theme-4/config.jsonc
+[2025-03-06 14:47:52.581] [info] Discovered appearance 'dark'
+[2025-03-06 14:47:52.581] [info] Using CSS file /home/arkboi/.config/waybar/theme-4/style.css
+[2025-03-06 14:47:52.587] [info] Hyprland IPC starting
+[2025-03-06 14:47:52.588] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 14:47:52.592] [error] media stopped unexpectedly, is it endless?
+[2025-03-06 14:47:52.749] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+
+** (waybar:195029): WARNING **: 14:47:52.758: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195029): WARNING **: 14:47:52.758: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195029): WARNING **: 14:47:53.628: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195029): WARNING **: 14:47:53.628: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+Terminated
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+[2025-03-06 14:47:58.000] [info] Using configuration file /home/arkboi/.config/waybar/theme-3/config.jsonc
+[2025-03-06 14:47:58.003] [info] Discovered appearance 'dark'
+[2025-03-06 14:47:58.003] [info] Using CSS file /home/arkboi/.config/waybar/theme-3/style.css
+[2025-03-06 14:47:58.007] [info] Hyprland IPC starting
+[2025-03-06 14:47:58.007] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 14:47:58.012] [error] media stopped unexpectedly, is it endless?
+[2025-03-06 14:47:58.201] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+
+** (waybar:195091): WARNING **: 14:47:58.206: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195091): WARNING **: 14:47:58.206: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+
+** (waybar:195091): WARNING **: 14:47:59.651: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195091): WARNING **: 14:47:59.652: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+Terminated
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+[2025-03-06 14:48:03.176] [info] Using configuration file /home/arkboi/.config/waybar/theme-5/config.jsonc
+[2025-03-06 14:48:03.179] [info] Discovered appearance 'dark'
+[2025-03-06 14:48:03.179] [info] Using CSS file /home/arkboi/.config/waybar/theme-5/style.css
+[2025-03-06 14:48:03.186] [info] Hyprland IPC starting
+[2025-03-06 14:48:03.186] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 14:48:03.376] [info] Bar configured (width: 1896, height: 36) for output: eDP-1
+
+** (waybar:195154): WARNING **: 14:48:03.387: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195154): WARNING **: 14:48:03.387: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195154): WARNING **: 14:48:04.621: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195154): WARNING **: 14:48:04.621: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+Activating Nord theme...
+Nord theme activated. Reloading Waybar...
+Terminated
+Terminated
+[2025-03-06 14:48:10.103] [info] Using configuration file /home/arkboi/.config/waybar/theme-5/config.jsonc
+[2025-03-06 14:48:10.105] [info] Discovered appearance 'dark'
+[2025-03-06 14:48:10.105] [info] Using CSS file /home/arkboi/.config/waybar/theme-5/style.css
+[2025-03-06 14:48:10.112] [info] Hyprland IPC starting
+[2025-03-06 14:48:10.113] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 14:48:10.328] [info] Bar configured (width: 1896, height: 36) for output: eDP-1
+
+** (waybar:195234): WARNING **: 14:48:10.342: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195234): WARNING **: 14:48:10.342: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+
+** (waybar:195234): WARNING **: 14:48:11.606: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195234): WARNING **: 14:48:11.606: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+Terminated
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+[2025-03-06 14:48:13.893] [info] Using configuration file /home/arkboi/.config/waybar/theme-3/config.jsonc
+[2025-03-06 14:48:13.895] [info] Discovered appearance 'dark'
+[2025-03-06 14:48:13.895] [info] Using CSS file /home/arkboi/.config/waybar/theme-3/style.css
+[2025-03-06 14:48:13.901] [info] Hyprland IPC starting
+[2025-03-06 14:48:13.902] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 14:48:13.906] [error] media stopped unexpectedly, is it endless?
+[2025-03-06 14:48:14.091] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+
+** (waybar:195300): WARNING **: 14:48:14.095: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195300): WARNING **: 14:48:14.095: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195300): WARNING **: 14:48:15.638: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195300): WARNING **: 14:48:15.638: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+Terminated
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+[2025-03-06 14:48:18.086] [info] Using configuration file /home/arkboi/.config/waybar/theme-2/config.jsonc
+[2025-03-06 14:48:18.088] [info] Discovered appearance 'dark'
+[2025-03-06 14:48:18.088] [info] Using CSS file /home/arkboi/.config/waybar/theme-2/style.css
+[2025-03-06 14:48:18.092] [info] Hyprland IPC starting
+[2025-03-06 14:48:18.093] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 14:48:18.098] [error] media stopped unexpectedly, is it endless?
+[2025-03-06 14:48:18.323] [info] Bar configured (width: 1920, height: 30) for output: eDP-1
+
+** (waybar:195362): WARNING **: 14:48:18.326: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195362): WARNING **: 14:48:18.326: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+
+** (waybar:195362): WARNING **: 14:48:19.608: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195362): WARNING **: 14:48:19.608: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+Terminated
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+[2025-03-06 14:48:22.677] [info] Using configuration file /home/arkboi/.config/waybar/config.jsonc
+[2025-03-06 14:48:22.679] [info] Discovered appearance 'dark'
+[2025-03-06 14:48:22.679] [info] Using CSS file /home/arkboi/.config/waybar/style.css
+[2025-03-06 14:48:22.685] [info] Hyprland IPC starting
+[2025-03-06 14:48:22.686] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 14:48:22.856] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+
+** (waybar:195428): WARNING **: 14:48:22.866: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195428): WARNING **: 14:48:22.866: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195428): WARNING **: 14:48:24.650: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:195428): WARNING **: 14:48:24.650: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+Terminated
