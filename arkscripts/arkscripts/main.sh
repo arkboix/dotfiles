@@ -2,6 +2,8 @@
 
 # Define options
 options=(
+    "Open Dock"
+    "Close Dock"
     "Kill Proccess"
     "Change Waybar Style (NEW)"
     "Change Waybar Layout"
@@ -25,6 +27,8 @@ options=(
 
 # Define corresponding commands
 commands=(
+    "nwg-dock-hyprland -mb 15 -l overlay -c 'rofi -show drun'"
+    "killall nwg-dock-hyprland"
     "~/dotfiles/arkscripts/arkscripts/kill-process.sh"
     "~/dotfiles/arkscripts/arkscripts/waybar-style.sh"
     "~/dotfiles/arkscripts/arkscripts/waybar-theme.sh"

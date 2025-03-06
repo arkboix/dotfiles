@@ -34,15 +34,16 @@ window {
     transparency:     "real";
     background-color: #002b36E6;
     width:            60%;
-    height:           70%;
+    height:           65%;
     border:           0;
-    padding:          2% 2%;
+    border-radius:   10px;
+    padding:          2% 1%;
 }
 
 mainbox {
     background-color: transparent;
     children:         [ inputbar, listview ];
-    spacing:          20px;
+    spacing:          10px;
 }
 
 inputbar {
@@ -67,12 +68,12 @@ entry {
 
 listview {
     background-color: transparent;
-    columns:          5;
-    lines:            4;
-    fixed-height:     false;
-    dynamic:          true;
+    columns:          3;
+    lines:            3;
+    fixed-height:     true;
+    dynamic:          false;
     cycle:            false;
-    scrollbar:        false;
+    scrollbar:        true;
     layout:           vertical;
     spacing:          10px;
 }
