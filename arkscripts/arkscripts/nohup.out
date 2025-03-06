@@ -3553,3 +3553,12 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ** (waybar:139017): WARNING **: 16:14:22.055: Status Notifier Item with bus name ':1.10' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
 
 ** (waybar:139017): WARNING **: 16:14:22.055: Status Notifier Item with bus name ':1.10' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-06 07:13:09.906] [info] Using configuration file /home/arkboi/.config/waybar/config.jsonc
+[2025-03-06 07:13:09.910] [info] Discovered appearance 'dark'
+[2025-03-06 07:13:09.910] [info] Using CSS file /home/arkboi/.config/waybar/style.css
+[2025-03-06 07:13:09.916] [info] Hyprland IPC starting
+[2025-03-06 07:13:09.916] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-06 07:13:10.078] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+
+** (waybar:3148): WARNING **: 07:13:10.084: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+Terminated

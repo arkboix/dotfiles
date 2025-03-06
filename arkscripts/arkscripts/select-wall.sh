@@ -72,6 +72,8 @@ main() {
 
   if [[ "$choice" == "$RANDOM_PIC_NAME" ]]; then
     swww img -o "$focused_monitor" "$RANDOM_PIC" $SWWW_PARAMS;
+    killall waybar
+    bash ~/arkscripts/reload.sh
     sleep 2
     exit 0
   fi
