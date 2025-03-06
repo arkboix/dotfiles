@@ -104,3 +104,10 @@ come here, go to the issues tab and post any problems/bugs.
 
 To get notified of latest commits to the repo, join my discord:
 https://discord.gg/8XA7MgVvYN
+
+
+# Inspirations
+
+This project inspired and uses some work from these projects:
+
+[JaKoolit/Hyprland Dots](https://github.com/JaKoolit/Hyprland-Dots)
