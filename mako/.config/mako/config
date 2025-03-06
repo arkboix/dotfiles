@@ -1,5 +1,4 @@
 # Mako configuration file
-
 # Default font
 font=monospace 10
 
@@ -11,7 +10,7 @@ margin=8
 width=300
 height=100
 
-### GRUVBOX THEME (DEFAULT) ###
+### GRUVBOX THEME (COMMENTED) ###
 #background-color=#282828
 #text-color=#ebdbb2
 #border-color=#d65d0e
@@ -30,10 +29,10 @@ height=100
 # progress-color=over #50fa7b
 
 ### SOLARIZED DARK THEME (COMMENTED) ###
-background-color=#002b36
-text-color=#839496
-border-color=#2aa198
-progress-color=over #268bd2
+# background-color=#002b36
+# text-color=#839496
+# border-color=#2aa198
+# progress-color=over #268bd2
 
 ### MONOKAI THEME (COMMENTED) ###
 # background-color=#272822
@@ -58,6 +57,12 @@ progress-color=over #268bd2
 # text-color=#abb2bf
 # border-color=#61afef
 # progress-color=over #98c379
+
+### CUSTOM PASTEL THEME (ACTIVE) ###
+background-color=#0a0a0a
+text-color=#d0d0d0
+border-color=#a9c1e2
+progress-color=over #9ae2d5
 
 # Behavior settings
 default-timeout=5000
