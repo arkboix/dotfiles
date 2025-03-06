@@ -111,3 +111,5 @@ https://discord.gg/8XA7MgVvYN
 This project inspired and uses some work from these projects:
 
 [JaKoolit/Hyprland Dots](https://github.com/JaKoolit/Hyprland-Dots)
+[mylinuxforwork/dotfiles](https://github.com/mylinuxforwork/dotfiles)
+[adi1090x/rofi](https://github.com/adi1090x/rofi)
