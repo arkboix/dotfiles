@@ -225,3 +225,28 @@ xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en
 
 ** (waybar:100016): WARNING **: 15:23:04.611: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
 Terminated
+[2025-03-07 16:19:18.661] [info] Using configuration file /home/arkboi/.config/waybar/theme-4/config.jsonc
+[2025-03-07 16:19:18.665] [info] Discovered appearance 'dark'
+[2025-03-07 16:19:18.665] [info] Using CSS file /home/arkboi/.config/waybar/theme-4/style.css
+[2025-03-07 16:19:18.670] [info] Hyprland IPC starting
+[2025-03-07 16:19:18.671] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-07 16:19:18.674] [error] media stopped unexpectedly, is it endless?
+[2025-03-07 16:19:18.832] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+
+** (waybar:25576): WARNING **: 16:19:18.839: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:25576): WARNING **: 16:19:20.574: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+Terminated
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+[2025-03-07 16:19:28.108] [info] Using configuration file /home/arkboi/.config/waybar/theme-5/config.jsonc
+[2025-03-07 16:19:28.110] [info] Discovered appearance 'dark'
+[2025-03-07 16:19:28.110] [info] Using CSS file /home/arkboi/.config/waybar/theme-5/style.css
+[2025-03-07 16:19:28.115] [info] Hyprland IPC starting
+[2025-03-07 16:19:28.116] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-07 16:19:28.279] [info] Bar configured (width: 1896, height: 36) for output: eDP-1
+
+** (waybar:25652): WARNING **: 16:19:28.287: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:25652): WARNING **: 16:19:29.602: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+Terminated

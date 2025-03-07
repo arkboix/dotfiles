@@ -1,8 +1,7 @@
 @import 'pywal.css';
 
-/* @import '../../../../../.cache/wal/colors-waybar.css' */
-/*  */
-/* /* Define Solarized Dark colors */
+
+/* Define Solarized Dark colors */
 /* @define-color color0 #002b36; */
 /* @define-color color1 #dc322f; */
 /* @define-color color2 #859900; */
@@ -21,7 +20,6 @@
 @define-color color15 #fdf6e3;
 */
 /* Nord theme colors (commented out) */
-/*  */
 /* @define-color color0 #2e3440; */
 /* @define-color color1 #3b4252; */
 /* @define-color color2 #434c5e; */
