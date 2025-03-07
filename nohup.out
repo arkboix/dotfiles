@@ -509,3 +509,39 @@ xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en
 19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
 26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
                            30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+
+(waybar:192112): Gtk-WARNING **: 21:27:00.001: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+Terminated
