@@ -414,3 +414,882 @@ Terminated with SIGINT
 [2025-03-07 20:30:15.941] [info] Loading persistent workspaces from Hyprland workspace rules
 [2025-03-07 20:30:25.345] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
 [2025-03-07 20:30:25.346] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-07 21:24:55.519] [info] Using configuration file /home/arkboi/.config/waybar/config.jsonc
+[2025-03-07 21:24:55.522] [info] Discovered appearance 'dark'
+[2025-03-07 21:24:55.522] [info] Using CSS file /home/arkboi/.config/waybar/style.css
+[2025-03-07 21:24:55.527] [info] Hyprland IPC starting
+[2025-03-07 21:24:55.528] [info] Loading persistent workspaces from Hyprland workspace rules
+
+** (waybar:191995): WARNING **: 21:24:55.779: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-07 21:24:55.806] [info] Bar configured (width: 1900, height: 30) for output: eDP-1
+[2025-03-07 21:24:55.806] [error] Item '': No icon name or pixmap given.
+[2025-03-07 21:24:55.808] [error] Item '': No icon name or pixmap given.
+
+** (waybar:191995): WARNING **: 21:24:56.987: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+xkbcommon: ERROR: couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+[2025-03-07 21:25:00.756] [info] Using configuration file /home/arkboi/.config/waybar/theme-6/config.jsonc
+[2025-03-07 21:25:00.758] [info] Discovered appearance 'dark'
+[2025-03-07 21:25:00.758] [info] Using CSS file /home/arkboi/.config/waybar/theme-6/style.css
+[2025-03-07 21:25:00.767] [info] Hyprland IPC starting
+[2025-03-07 21:25:00.769] [info] Loading persistent workspaces from Hyprland workspace rules
+
+(waybar:192112): Gtk-WARNING **: 21:25:00.832: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+[2025-03-07 21:25:00.881] [warning] Requested height: 30 is less than the minimum height: 31 required by the modules
+[2025-03-07 21:25:00.881] [info] Bar configured (width: 1900, height: 31) for output: eDP-1
+
+** (waybar:192112): WARNING **: 21:25:00.891: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:192112): WARNING **: 21:25:02.152: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+(waybar:192112): Gtk-WARNING **: 21:26:00.001: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+
+(waybar:192112): Gtk-WARNING **: 21:27:00.001: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+Terminated
+[2025-03-07 21:33:45.657] [info] Using configuration file /home/arkboi/.config/waybar/theme-6/config.jsonc
+[2025-03-07 21:33:45.660] [info] Discovered appearance 'dark'
+[2025-03-07 21:33:45.660] [info] Using CSS file /home/arkboi/.config/waybar/theme-6/style.css
+[2025-03-07 21:33:45.668] [info] Hyprland IPC starting
+[2025-03-07 21:33:45.669] [info] Loading persistent workspaces from Hyprland workspace rules
+
+(waybar:194285): Gtk-WARNING **: 21:33:45.721: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+[2025-03-07 21:33:45.773] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2025-03-07 21:33:45.773] [info] Bar configured (width: 1900, height: 32) for output: eDP-1
+[2025-03-07 21:33:45.773] [error] Item '': No icon name or pixmap given.
+[2025-03-07 21:33:45.794] [error] Item '': No icon name or pixmap given.
+
+** (waybar:194285): WARNING **: 21:33:45.794: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194285): WARNING **: 21:33:47.026: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+(waybar:194285): Gtk-WARNING **: 21:34:00.001: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+[2025-03-07 21:34:13.750] [info] Reloading...
+[2025-03-07 21:34:13.764] [info] Using configuration file /home/arkboi/.config/waybar/theme-6/config.jsonc
+[2025-03-07 21:34:13.765] [info] Using CSS file /home/arkboi/.config/waybar/theme-6/style.css
+[2025-03-07 21:34:13.792] [info] Loading persistent workspaces from Hyprland workspace rules
+
+(waybar:194285): Gtk-WARNING **: 21:34:13.811: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+[2025-03-07 21:34:13.822] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2025-03-07 21:34:13.822] [info] Bar configured (width: 1900, height: 32) for output: eDP-1
+
+** (waybar:194285): WARNING **: 21:34:13.838: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194285): WARNING **: 21:34:15.031: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-07 21:34:37.876] [info] Reloading...
+[2025-03-07 21:34:37.890] [info] Using configuration file /home/arkboi/.config/waybar/theme-6/config.jsonc
+[2025-03-07 21:34:37.891] [info] Using CSS file /home/arkboi/.config/waybar/theme-6/style.css
+[2025-03-07 21:34:37.925] [info] Loading persistent workspaces from Hyprland workspace rules
+
+(waybar:194285): Gtk-WARNING **: 21:34:37.951: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+[2025-03-07 21:34:37.961] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2025-03-07 21:34:37.961] [info] Bar configured (width: 1900, height: 32) for output: eDP-1
+
+** (waybar:194285): WARNING **: 21:34:37.973: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194285): WARNING **: 21:34:39.156: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-07 21:34:52.597] [info] Reloading...
+[2025-03-07 21:34:52.607] [info] Using configuration file /home/arkboi/.config/waybar/theme-6/config.jsonc
+[2025-03-07 21:34:52.608] [info] Using CSS file /home/arkboi/.config/waybar/theme-6/style.css
+[2025-03-07 21:34:52.633] [info] Loading persistent workspaces from Hyprland workspace rules
+
+(waybar:194285): Gtk-WARNING **: 21:34:52.652: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+[2025-03-07 21:34:52.661] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2025-03-07 21:34:52.661] [info] Bar configured (width: 1900, height: 32) for output: eDP-1
+
+** (waybar:194285): WARNING **: 21:34:52.676: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194285): WARNING **: 21:34:54.066: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+(waybar:194285): Gtk-WARNING **: 21:35:00.002: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+[2025-03-07 21:35:05.495] [info] Reloading...
+[2025-03-07 21:35:05.510] [info] Using configuration file /home/arkboi/.config/waybar/theme-6/config.jsonc
+[2025-03-07 21:35:05.511] [info] Using CSS file /home/arkboi/.config/waybar/theme-6/style.css
+[2025-03-07 21:35:05.535] [info] Loading persistent workspaces from Hyprland workspace rules
+
+(waybar:194285): Gtk-WARNING **: 21:35:05.555: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+[2025-03-07 21:35:05.593] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2025-03-07 21:35:05.593] [info] Bar configured (width: 1900, height: 32) for output: eDP-1
+
+** (waybar:194285): WARNING **: 21:35:05.610: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194285): WARNING **: 21:35:07.188: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-07 21:35:21.818] [info] Reloading...
+[2025-03-07 21:35:21.839] [info] Using configuration file /home/arkboi/.config/waybar/theme-6/config.jsonc
+[2025-03-07 21:35:21.840] [info] Using CSS file /home/arkboi/.config/waybar/theme-6/style.css
+[2025-03-07 21:35:21.868] [info] Loading persistent workspaces from Hyprland workspace rules
+
+(waybar:194285): Gtk-WARNING **: 21:35:21.892: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+[2025-03-07 21:35:21.908] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2025-03-07 21:35:21.908] [info] Bar configured (width: 1900, height: 32) for output: eDP-1
+
+** (waybar:194285): WARNING **: 21:35:21.926: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194285): WARNING **: 21:35:23.034: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-07 21:35:37.712] [info] Reloading...
+[2025-03-07 21:35:37.724] [info] Using configuration file /home/arkboi/.config/waybar/theme-6/config.jsonc
+[2025-03-07 21:35:37.724] [info] Using CSS file /home/arkboi/.config/waybar/theme-6/style.css
+[2025-03-07 21:35:37.754] [info] Loading persistent workspaces from Hyprland workspace rules
+
+(waybar:194285): Gtk-WARNING **: 21:35:37.779: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+[2025-03-07 21:35:37.790] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2025-03-07 21:35:37.790] [info] Bar configured (width: 1900, height: 32) for output: eDP-1
+
+** (waybar:194285): WARNING **: 21:35:37.805: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194285): WARNING **: 21:35:39.036: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-07 21:35:58.961] [info] Reloading...
+[2025-03-07 21:35:58.977] [info] Using configuration file /home/arkboi/.config/waybar/theme-6/config.jsonc
+[2025-03-07 21:35:58.977] [info] Using CSS file /home/arkboi/.config/waybar/theme-6/style.css
+[2025-03-07 21:35:59.003] [info] Loading persistent workspaces from Hyprland workspace rules
+
+(waybar:194285): Gtk-WARNING **: 21:35:59.030: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+[2025-03-07 21:35:59.044] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2025-03-07 21:35:59.044] [info] Bar configured (width: 1900, height: 32) for output: eDP-1
+
+** (waybar:194285): WARNING **: 21:35:59.065: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:194285): WARNING **: 21:35:59.965: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+(waybar:194285): Gtk-WARNING **: 21:36:00.000: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+
+(waybar:194285): Gtk-WARNING **: 21:37:00.001: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+
+(waybar:194285): Gtk-WARNING **: 21:38:00.002: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+
+(waybar:194285): Gtk-WARNING **: 21:39:00.002: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+
+(waybar:194285): Gtk-WARNING **: 21:40:00.001: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+
+(waybar:194285): Gtk-WARNING **: 21:41:00.002: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+
+(waybar:194285): Gtk-WARNING **: 21:42:00.001: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+
+(waybar:194285): Gtk-WARNING **: 21:43:00.002: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
+
+(waybar:194285): Gtk-WARNING **: 21:44:00.001: Failed to set text '<markup><tt><small><span color="@color3"><span color="@color4"><b>January 2025               February 2025              March 2025              </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W00</b></span>                      1 <span color="@color5"><b>W04</b></span>                      1 <span color="@color5"><b>W08</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W01</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W05</b></span>    2  3  4  5  6 <span color="@color1"><b> 7</b></span>  8 <span color="@color5"><b>W09</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W02</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W06</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W10</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W03</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W07</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W11</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W04</b></span>   23 24 25 26 27 28    <span color="@color5"><b>W08</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W12</b></span>
+                                                      30 31                <span color="@color5"><b>W13</b></span>
+
+<span color="@color4"><b>April 2025                 May 2025                   June 2025               </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W13</b></span>                1  2  3 <span color="@color5"><b>W17</b></span>    1  2  3  4  5  6  7 <span color="@color5"><b>W22</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W14</b></span>    4  5  6  7  8  9 10 <span color="@color5"><b>W18</b></span>    8  9 10 11 12 13 14 <span color="@color5"><b>W23</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W15</b></span>   11 12 13 14 15 16 17 <span color="@color5"><b>W19</b></span>   15 16 17 18 19 20 21 <span color="@color5"><b>W24</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W16</b></span>   18 19 20 21 22 23 24 <span color="@color5"><b>W20</b></span>   22 23 24 25 26 27 28 <span color="@color5"><b>W25</b></span>
+27 28 29 30          <span color="@color5"><b>W17</b></span>   25 26 27 28 29 30 31 <span color="@color5"><b>W21</b></span>   29 30                <span color="@color5"><b>W26</b></span>
+
+<span color="@color4"><b>July 2025                  August 2025                September 2025          </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+       1  2  3  4  5 <span color="@color5"><b>W26</b></span>                   1  2 <span color="@color5"><b>W30</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W35</b></span>
+ 6  7  8  9 10 11 12 <span color="@color5"><b>W27</b></span>    3  4  5  6  7  8  9 <span color="@color5"><b>W31</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W36</b></span>
+13 14 15 16 17 18 19 <span color="@color5"><b>W28</b></span>   10 11 12 13 14 15 16 <span color="@color5"><b>W32</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W37</b></span>
+20 21 22 23 24 25 26 <span color="@color5"><b>W29</b></span>   17 18 19 20 21 22 23 <span color="@color5"><b>W33</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W38</b></span>
+27 28 29 30 31       <span color="@color5"><b>W30</b></span>   24 25 26 27 28 29 30 <span color="@color5"><b>W34</b></span>   28 29 30             <span color="@color5"><b>W39</b></span>
+                           31                   <span color="@color5"><b>W35</b></span>                           
+
+<span color="@color4"><b>October 2025               November 2025              December 2025           </b></span>
+<span color="@color2"><b>Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa       Su Mo Tu We Th Fr Sa    </b></span>
+          1  2  3  4 <span color="@color5"><b>W39</b></span>                      1 <span color="@color5"><b>W43</b></span>       1  2  3  4  5  6 <span color="@color5"><b>W48</b></span>
+ 5  6  7  8  9 10 11 <span color="@color5"><b>W40</b></span>    2  3  4  5  6  7  8 <span color="@color5"><b>W44</b></span>    7  8  9 10 11 12 13 <span color="@color5"><b>W49</b></span>
+12 13 14 15 16 17 18 <span color="@color5"><b>W41</b></span>    9 10 11 12 13 14 15 <span color="@color5"><b>W45</b></span>   14 15 16 17 18 19 20 <span color="@color5"><b>W50</b></span>
+19 20 21 22 23 24 25 <span color="@color5"><b>W42</b></span>   16 17 18 19 20 21 22 <span color="@color5"><b>W46</b></span>   21 22 23 24 25 26 27 <span color="@color5"><b>W51</b></span>
+26 27 28 29 30 31    <span color="@color5"><b>W43</b></span>   23 24 25 26 27 28 29 <span color="@color5"><b>W47</b></span>   28 29 30 31          <span color="@color5"><b>W52</b></span>
+                           30                   <span color="@color5"><b>W48</b></span>                           </span></small></tt></markup>' from markup due to error parsing markup: Value of 'foreground' attribute on <span> tag on line 1 could not be parsed; should be a color specification, not '@color3'
