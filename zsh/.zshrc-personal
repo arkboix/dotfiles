@@ -2,7 +2,7 @@
 #arch
 pokeget cufant --hide-name
 cd ~/dotfiles
-
+autoload -U tetris
 # Prompt
 
 PS1='%F{white}[%F{yellow}  %F{cyan}%D{%I:%M %p}%F{red} %n@%m %F{yellow}%~%F{white}]%f '

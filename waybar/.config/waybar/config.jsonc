@@ -10,6 +10,7 @@
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/submap",
+        "wlr/taskbar"
 ],
 
     "modules-center": [

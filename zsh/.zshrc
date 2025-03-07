@@ -536,7 +536,7 @@ alias personal='cp -Rf /personal/* ~'
 #create a file called .zshrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.
 
-[[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
+. ~/dotfiles/zsh/.zshrc-personal
 
 # reporting tools - install when not installed
 #fastfetch

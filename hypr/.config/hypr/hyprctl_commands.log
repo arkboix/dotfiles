@@ -1,4 +1,1 @@
-hyprctl keyword "decoration:inactive_opacity" "1"
-hyprctl keyword "general:gaps_out" "0"
-hyprctl keyword "general:gaps_out" "2"
-hyprctl keyword "general:gaps_out" "5"
+hyprctl keyword "decoration:rounding" "3"

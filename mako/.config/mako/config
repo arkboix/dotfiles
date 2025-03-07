@@ -69,7 +69,7 @@ default-timeout=5000
 ignore-timeout=0
 max-visible=5
 layer=top
-anchor=top-right
+anchor=top-center
 
 # Additional settings
 max-history=20

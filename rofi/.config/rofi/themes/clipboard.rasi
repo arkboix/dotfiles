@@ -6,10 +6,10 @@
 
 * {
     /* Solarized Dark Colors */
-    background:     #002b36;
-    background-alt: #073642;
-    foreground:     #839496;
-    selected:       #268bd2;
+    background:     #0f2121;
+    background-alt: #18423f;
+    foreground:     #ffffff;
+    selected:       #318c86;
     active:         #859900;
     urgent:         #dc322f;
     border:         #586e75;

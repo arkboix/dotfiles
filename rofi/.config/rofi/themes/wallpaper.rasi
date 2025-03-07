@@ -8,10 +8,10 @@ configuration {
 }
 
 * {
-    base03:     #002b36;
-    base02:     #073642;
+    base03:     #0fffff;
+    base02:     #112e2c;
     base01:     #586e75;
-    base00:     #657b83;
+    base00:     #081716;
     base0:      #839496;
     base1:      #93a1a1;
     base2:      #eee8d5;
@@ -22,7 +22,7 @@ configuration {
     magenta:    #d33682;
     violet:     #6c71c4;
     blue:       #268bd2;
-    cyan:       #2aa198;
+    cyan:       #24736d;
     green:      #859900;
 
     background-color: transparent;
@@ -32,7 +32,7 @@ configuration {
 
 window {
     transparency:     "real";
-    background-color: #002b36E6;
+    background-color: #081716;
     width:            60%;
     height:           65%;
     border:           0;
@@ -96,6 +96,6 @@ element-text {
 }
 
 element selected {
-    background-color: @orange;
+    background-color: @cyan;
     text-color:       @base01;
 }
