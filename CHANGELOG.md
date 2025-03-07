@@ -5,7 +5,7 @@ please note this changelog only starts from v1.1.4
 ## v1.1.5
 
 YEAH !!
-
+https://github.com/arkboix/dotfiles/releases/tag/v1.1.5
 - Waybar uses pywal to make colors from wallpapers
 - New colors for wallpaper picker and clipboard rofi themes
 - Simple Default rofi theme now uses pywal, removed the image
