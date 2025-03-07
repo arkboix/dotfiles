@@ -2,10 +2,14 @@
  *
  * Author : Aditya Shakya (adi1090x)
  * Github : @adi1090x
- *
+ * User: Arkboi
+ * Includes Pywal
  * Rofi Theme File
  * Rofi Version: 1.7.3
  **/
+
+
+@import "~/.cache/wal/colors-rofi.rasi"
 
 /*****----- Configuration -----*****/
 configuration {
@@ -22,10 +26,10 @@ configuration {
 /*****----- Global Properties -----*****/
 * {
     font:                        "JetBrains Mono Nerd Font 10";
-    background:                  #0a1f1d;
-    background-alt:              #0d2625;
-    foreground:                  #FFFFFF;
-    selected:                    #286b67;
+    background:                  @color0;
+    background-alt:              @color9;
+    foreground:                  @color15;
+    selected:                    @color5;
     active:                      #E9CC9D;
     urgent:                      #FEA861;
 }
