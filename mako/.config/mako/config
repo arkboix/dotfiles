@@ -1,7 +1,7 @@
 # Mako configuration file
 # Default font
 font=monospace 10
-
+# https://github.com/arkboix/dotfiles
 # Default styling
 border-size=2
 border-radius=5

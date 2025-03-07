@@ -1,7 +1,7 @@
 /**
  * Solarized Dark Grid - A grid-style application launcher
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 configuration {
     display-drun: "Applications";
     display-dmenu: "Wallpaper";

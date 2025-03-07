@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# https://github.com/arkboix/dotfiles
 # Solarized Colors
 BASE03="#002b36"
 BASE02="#073642"

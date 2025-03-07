@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# https://github.com/arkboix/dotfiles
 # Display the date and month
 echo "<span size='xx-large' weight='bold'>$(date "+%d %B")</span>"
 echo ""

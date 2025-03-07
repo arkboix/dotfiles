@@ -1,7 +1,7 @@
 /**
  * Solarized Dark Material - A material design inspired launcher
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 configuration {
     display-drun: "Search";
 }

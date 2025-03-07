@@ -2,7 +2,7 @@
 /**
  * Solarized Dark Classic - A traditional application launcher
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 configuration {
     display-drun: "Run";
 }

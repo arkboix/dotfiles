@@ -3,7 +3,7 @@
  * A compact theme optimized for clipboard history
  * Default: Gruvbox Dark
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 * {
     /* Solarized Dark Colors */
     background:     #0f2121;

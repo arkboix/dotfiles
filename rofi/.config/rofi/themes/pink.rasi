@@ -1,9 +1,9 @@
 /**
  * ROFI Color theme
- * User: Qball
+ * User: Arkboi
  * Copyright: Dave Davenport
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 * {
     selected-normal-foreground:  @background;
     foreground: #FFE4E9;

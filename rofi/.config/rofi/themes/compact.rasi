@@ -1,7 +1,7 @@
 /**
  * Solarized Dark Compact - A compact, efficient launcher
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 configuration {
     display-drun: "Launch:";
 }

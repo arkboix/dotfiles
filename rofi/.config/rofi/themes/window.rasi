@@ -2,7 +2,7 @@
  * Solarized Dark Grid Rofi Theme
  * Inspired by wallpaper.rasi and fullscreen.rasi
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 configuration {
     display-window: "Windows";
 }

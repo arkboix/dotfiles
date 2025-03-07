@@ -1,7 +1,7 @@
 /**
  * Solarized Dark Centered - A beautiful centered launcher
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 configuration {
     display-drun: "Apps";
 }

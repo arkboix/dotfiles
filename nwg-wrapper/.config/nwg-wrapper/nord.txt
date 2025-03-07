@@ -1,3 +1,5 @@
+# https://github.com/arkboix/dotfiles
+
 <span color="#81A1C1" size="xx-large" weight="bold">Welcome, Arkboi!</span>
 <span color="#BF616A" size="large" weight="600">What is your focus for today?</span>
 

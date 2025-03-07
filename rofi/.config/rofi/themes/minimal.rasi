@@ -1,7 +1,7 @@
 /**
  * Solarized Dark Minimal - A clean, simple launcher
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 configuration {
     display-drun: "Applications";
 }

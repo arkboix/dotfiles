@@ -27,3 +27,4 @@ Show scratchpad		<span foreground="#268bd2" face="serif">S+S</span>
 
 </span>
 </span>
+# https://github.com/arkboix/dotfiles

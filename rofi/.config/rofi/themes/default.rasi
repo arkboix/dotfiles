@@ -4,7 +4,7 @@
  * Multiple color schemes included (commented out) for easy swapping
  * Includes a mode switcher for easy navigation between modes
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 /* Solarized Dark Color Scheme */
 * {
     /* Default colors */

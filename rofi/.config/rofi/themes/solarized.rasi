@@ -4,7 +4,7 @@
  * High contrast between focused/unfocused items
  * IBM Plex Mono Bold font and clean design
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 configuration {
     display-drun: "󱗼 Apps";
     display-window: "󰖲 Windows";

@@ -1,3 +1,4 @@
+
 /**
  *
  * Author : Aditya Shakya (adi1090x)
@@ -5,6 +6,8 @@
  * 
  * Colors
  **/
+
+/* https://github.com/arkboix/dotfiles */
 
 * {
     background:     #002B36FF;

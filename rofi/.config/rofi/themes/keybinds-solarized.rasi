@@ -2,7 +2,7 @@
  * Rofi Solarized Dark Theme for Hyprland Keybindings
  * Based on Solarized Dark color scheme by Ethan Schoonover
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 * {
     /* Solarized Dark Colors */
     base03:     #002b36;

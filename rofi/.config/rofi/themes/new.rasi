@@ -6,7 +6,7 @@
  * Rofi Theme File
  * Rofi Version: 1.7.3
  **/
-
+/* https://github.com/arkboix/dotfiles */ 
 /*****----- Configuration -----*****/
 configuration {
 	modi:                       "drun,run,filebrowser,window";

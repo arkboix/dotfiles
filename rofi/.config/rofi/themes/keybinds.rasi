@@ -2,7 +2,7 @@
  * Hyprland Keybinds Theme - Solarized Dark
  * A custom rofi theme specifically for displaying keybinds
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 * {
     /* Colors - Solarized Dark */
     base03:  #002b36;  /* Background */

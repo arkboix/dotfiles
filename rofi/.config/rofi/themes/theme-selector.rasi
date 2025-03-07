@@ -1,7 +1,7 @@
 /**
  * Rofi Theme Selector - Solarized Dark
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 * {
     base03:     #002b36;
     base02:     #073642;

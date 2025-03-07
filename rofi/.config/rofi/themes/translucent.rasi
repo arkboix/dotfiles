@@ -1,7 +1,7 @@
 /**
  * Solarized Dark Transparent - A sleek transparent launcher
  */
-
+/* https://github.com/arkboix/dotfiles */ 
 configuration {
     display-drun: "Applications";
 }

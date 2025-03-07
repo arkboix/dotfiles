@@ -7,7 +7,7 @@
  * Rofi Theme File
  * Rofi Version: 1.7.3
  **/
-
+/* https://github.com/arkboix/dotfiles */ 
 
 @import "~/.cache/wal/colors-rofi.rasi"
 
