@@ -1,4 +1,7 @@
-/* Define Solarized Dark colors */
+
+@import '../../../../../.cache/wal/colors-waybar.css'
+
+/* Define Solarized Dark colors
 @define-color color0 #002b36;
 @define-color color1 #dc322f;
 @define-color color2 #859900;
@@ -15,7 +18,7 @@
 @define-color color13 #6c71c4;
 @define-color color14 #93a1a1;
 @define-color color15 #fdf6e3;
-
+*/
 /* Nord theme colors (commented out) */
 
 /* @define-color color0 #2e3440; */

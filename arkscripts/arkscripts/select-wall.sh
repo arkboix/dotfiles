@@ -73,7 +73,7 @@ main() {
   if [[ "$choice" == "$RANDOM_PIC_NAME" ]]; then
     swww img -o "$focused_monitor" "$RANDOM_PIC" $SWWW_PARAMS;
     killall waybar
-    bash ~/arkscripts/reload.sh
+    bash ~/arkscripts/wal.sh
     sleep 2
     exit 0
   fi
@@ -99,4 +99,4 @@ if pidof rofi > /dev/null; then
 fi
 
 main
-bash ~/arkscripts/reload.sh
+bash ~/arkscripts/wal.sh
