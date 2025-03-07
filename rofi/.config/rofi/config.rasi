@@ -65,4 +65,8 @@ configuration {
 
 //@theme "~/.config/rofi/themes/simple.rasi"
 
+//@theme "~/.config/rofi/themes/simple.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/simple.rasi"
+
 @theme "~/.config/rofi/themes/simple.rasi"

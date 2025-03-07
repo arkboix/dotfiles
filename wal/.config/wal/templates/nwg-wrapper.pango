@@ -1,0 +1,33 @@
+# https://github.com/arkboix/dotfiles
+<span color='{color1}' size='large' weight='bold'>Welcome, Arkboi!</span>
+<span color='{color2}' size='medium'>What is your focus for today?</span>
+
+<span color='{color3}' size='medium' underline='single'>Variables</span>
+<span>S - Super, Windows</span>
+<span>M - Alt, Meta</span>
+<span>C - Ctrl</span>
+<span>SH - Shift</span>
+<span>SPC - Space</span>
+
+<span color='{color3}' size='medium' underline='single'>Keybindings</span>
+<span color='{color4}'>S + Enter -</span><span color='{color5}'> Terminal (kitty)</span>
+<span color='{color4}'>S + SPC -</span><span color='{color5}'> App Launcher (rofi)</span>
+<span color='{color4}'>S + m -</span><span color='{color5}'> Exit Hyprland</span>
+<span color='{color4}'>S + d -</span><span color='{color5}'> Emoji Picker</span>
+<span color='{color4}'>S + SH + Arrow -</span><span color='{color5}'> Move Windows</span>
+<span color='{color4}'>S + M + Arrow -</span><span color='{color5}'> Resize Windows</span>
+<span color='{color4}'>S + U I O P -</span><span color='{color5}'> Move Focus</span>
+<span color='{color4}'>S + [Num] -</span><span color='{color5}'> Change Workspace</span>
+<span color='{color4}'>S + s -</span><span color='{color5}'> Scratchpad</span>
+<span color='{color4}'>S + SH + s -</span><span color='{color5}'> Move to Scratchpad</span>
+<span color='{color4}'>S + w -</span><span color='{color5}'> Close Window</span>
+<span color='{color4}'>S + c -</span><span color='{color5}'> Wallpaper Picker</span>
+<span color='{color4}'>S + v -</span><span color='{color5}'> Clipboard</span>
+
+<span color='{color3}' size='medium' underline='single'>Applications</span>
+<span color='{color4}'>Terminal -</span><span color='{color5}'> Kitty</span>
+<span color='{color4}'>File Manager -</span><span color='{color5}'> Nemo</span>
+<span color='{color4}'>Browser -</span><span color='{color5}'> Firefox</span>
+<span color='{color4}'>App Launcher -</span><span color='{color5}'> Rofi</span>
+<span color='{color4}'>Top Bar -</span><span color='{color5}'> Waybar</span>
+<span color='{color4}'>Text Editor -</span><span color='{color5}'> DOOM Emacs</span>
