@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Arkscripts - https://github.com/arkboix/dotfiles
 
 # dmenu theming
 lines="-l 20"

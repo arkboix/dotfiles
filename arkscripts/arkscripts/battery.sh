@@ -5,6 +5,8 @@
 # - Full charge notification
 # - Charging/discharging status changes
 
+# Arkscripts - https://github.com/arkboix/dotfiles
+
 # Configuration
 LOW_BATTERY_CRITICAL=10  # Critical battery level (%)
 LOW_BATTERY_WARNING=20   # Warning battery level (%)

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Arkscripts - https://github.com/arkboix/dotfiles
+
 echo "🚑 Running full system recovery..."
 
 # Step 1: Check and reinstall base system packages

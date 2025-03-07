@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Arkscripts - https://github.com/arkboix/dotfiles
 # Waybar Theme Toggle Script with Rofi
 # Toggles between Solarized and Nord themes
 

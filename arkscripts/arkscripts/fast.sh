@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Arkscripts - https://github.com/arkboix/dotfiles
+
 echo "🚀 Applying performance tweaks..."
 
 # Step 1: Enable zswap for faster memory management

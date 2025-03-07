@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Arkscripts - https://github.com/arkboix/dotfiles
+
 # This script replays all Hyprland commands that were executed in the settings manager
 # It reads from the hyprctl_commands.log file that records all executed commands
 

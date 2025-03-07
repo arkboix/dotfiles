@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Arkscripts - https://github.com/arkboix/dotfiles
+
 get_metadata() {
     playerctl metadata --format '{"text": "🎵 {{artist}} - {{title}}", "tooltip": "{{album}}"}' 2>/dev/null || echo '{"text": "🎵 Not Playing", "tooltip": "No media playing"}'
 }

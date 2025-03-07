@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Arkscripts - https://github.com/arkboix/dotfiles
+
 BACKUP_DIR="$HOME/backups/backup_$(date +%Y-%m-%d_%H-%M-%S)"
 CONFIG_DIR="$BACKUP_DIR/config"
 

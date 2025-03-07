@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Arkscripts - https://github.com/arkboix/dotfiles
+
 options=(
     "GUI Hyprland Tweak Tool"
     "Edit Hypr configs"

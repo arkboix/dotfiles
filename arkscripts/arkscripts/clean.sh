@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Arkscripts - https://github.com/arkboix/dotfiles
+
 echo "🧹 Cleaning up system junk..."
 
 kitty

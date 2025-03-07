@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+# Arkscripts - https://github.com/arkboix/dotfiles
+
 notify-send "Reloading"
 
 # Waybar

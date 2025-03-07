@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Arkscripts - https://github.com/arkboix/dotfiles
 echo "🔄 Resetting network interfaces..."
 
 # Restart NetworkManager

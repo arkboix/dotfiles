@@ -1,4 +1,5 @@
 #!/bin/bash
+# Arkscripts - https://github.com/arkboix/dotfiles
 
 sunset=$(hyprsunset | grep "Sunset" | awk '{print $2}')
 current_time=$(date +%H:%M)

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Arkscripts - https://github.com/arkboix/dotfiles
+
 # Get the full uname output
 sysinfo=$(uname -a)
 

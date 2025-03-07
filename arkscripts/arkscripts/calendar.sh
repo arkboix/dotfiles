@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Arkscripts - https://github.com/arkboix/dotfiles
+
 # Set window size
 WIDTH=300
 HEIGHT=250

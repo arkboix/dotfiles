@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Arkscripts - https://github.com/arkboix/dotfiles
 
 # swww transition config
 FPS=60

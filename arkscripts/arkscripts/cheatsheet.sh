@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Arkscripts - https://github.com/arkboix/dotfiles
+
 # Display keybinds cheatsheet using yad
 yad --list \
   --title="Cheat Sheet" \

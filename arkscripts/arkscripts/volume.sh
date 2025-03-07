@@ -1,4 +1,6 @@
 #!/bin/bash
+# Arkscripts - https://github.com/arkboix/dotfiles
+
 
 # Configuration
 NOTIFICATION_ID_FILE="/tmp/volume_notification_id"

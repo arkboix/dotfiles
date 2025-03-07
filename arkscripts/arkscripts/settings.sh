@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Arkscripts - https://github.com/arkboix/dotfiles
 # Configuration file to store settings
 CONFIG_FILE="$HOME/.config/hypr/custom_settings.conf"
 # Command history file to store executed hyprctl commands

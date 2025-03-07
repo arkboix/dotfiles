@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Arkscripts - https://github.com/arkboix/dotfiles
 # Rofi Solarized Dark Theme Selector
 # This script presents a menu of available custom Solarized themes
 # and applies the selected theme to the Rofi configuration

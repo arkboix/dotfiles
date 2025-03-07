@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Arkscripts - https://github.com/arkboix/dotfiles
 # Define themes with their corresponding commands
 declare -A themes=(
     ["Default"]="waybar"
