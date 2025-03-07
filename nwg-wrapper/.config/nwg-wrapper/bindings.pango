@@ -1,27 +1,25 @@
 <span face="monospace">
-<span size="xx-large" foreground="#6699cc" face="serif">Cheat sheet</span>
+<span size="xx-large" foreground="#6699cc" face="serif">Hyprland Keybinds</span>
 <span foreground="#eeeeee">
-Terminal emulator	<span foreground="#6699cc" face="serif">Mod+T</span>
-Web browser		<span foreground="#6699cc" face="serif">Mod+W</span>
-Text editor		<span foreground="#6699cc" face="serif">Mod+E</span>
-Wallpaper manager	<span foreground="#6699cc" face="serif">Mod+A</span>
-File manager		<span foreground="#6699cc" face="serif">Mod+F</span>
-Application launcher	<span foreground="#6699cc" face="serif">Alt+F1</span>
+Terminal emulator	<span foreground="#6699cc" face="serif">Super + Enter</span>
+Web browser		<span foreground="#6699cc" face="serif">Super + B</span>
+Text editor		<span foreground="#6699cc" face="serif">Super + Q</span>
+Wallpaper manager	<span foreground="#6699cc" face="serif">Super + C</span>
+File manager		<span foreground="#6699cc" face="serif">Super + E</span>
+Application launcher	<span foreground="#6699cc" face="serif">Ctrl + Space</span>
 
-Kill task		<span foreground="#6699cc" face="serif">Alt+Q</span>
-Exit menu		<span foreground="#6699cc" face="serif">Mod+X</span>
-Reload sway		<span foreground="#6699cc" face="serif">Mod+Shift+C</span>
+Kill window		<span foreground="#6699cc" face="serif">Super + W</span>
+Exit menu		<span foreground="#6699cc" face="serif">Ctrl + Alt + Delete</span>
 
-Switch workspace	<span foreground="#6699cc" face="serif">Alt+number</span>
-Move to workspace	<span foreground="#6699cc" face="serif">Mod+Shift+number</span>
-Move focus		<span foreground="#6699cc" face="serif">Mod+arrow</span>
-Move container		<span foreground="#6699cc" face="serif">Mod+Shift+arrow</span>
+Switch workspace	<span foreground="#6699cc" face="serif">Super + NUM</span>
+Move to workspace	<span foreground="#6699cc" face="serif">Super + Shift + NUM</span>
+Move focus		<span foreground="#6699cc" face="serif">Super + n</span>
+Move container		<span foreground="#6699cc" face="serif">Super + Shift + arrow</span>
 
-Toggle floating		<span foreground="#6699cc" face="serif">Mod+Shift+Space</span>
-Toggle layout		<span foreground="#6699cc" face="serif">Alt+Tab</span>
-Fullscreen		<span foreground="#6699cc" face="serif">Mod+Shift+F</span>
+Toggle floating		<span foreground="#6699cc" face="serif">Super + t</span>
+Fullscreen		<span foreground="#6699cc" face="serif">Super + F</span>
 
-Move to scratchpad	<span foreground="#6699cc" face="serif">Mod+Shift+Z</span>
-Show scratchpad		<span foreground="#6699cc" face="serif">Mod+Z</span>
+Move to scratchpad	<span foreground="#6699cc" face="serif">Super + Shift + S</span>
+Show scratchpad		<span foreground="#6699cc" face="serif">Super + S</span>
 </span>
 </span>
