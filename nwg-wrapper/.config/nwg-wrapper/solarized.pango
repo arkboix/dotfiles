@@ -1,32 +1,32 @@
-<span color='#268bd2' size='large' weight='bold'>Welcome, Arkboi!</span>
-<span color='#dc322f' size='medium'>What is your focus for today?</span>
+<span color='#37a2b3' size='large' weight='bold'>Welcome, Arkboi!</span>
+<span color='#e98f8f' size='medium'>What is your focus for today?</span>
 
-<span color='#b58900' size='medium' underline='single'>Variables</span>
+<span color='#d9b574' size='medium' underline='single'>Variables</span>
 <span>S - Super, Windows</span>
 <span>M - Alt, Meta</span>
 <span>C - Ctrl</span>
 <span>SH - Shift</span>
 <span>SPC - Space</span>
 
-<span color='#b58900' size='medium' underline='single'>Keybindings</span>
-<span color='#93a1a1'>S + Enter -</span><span color='#839496'> Terminal (kitty)</span>
-<span color='#93a1a1'>S + SPC -</span><span color='#839496'> App Launcher (rofi)</span>
-<span color='#93a1a1'>S + m -</span><span color='#839496'> Exit Hyprland</span>
-<span color='#93a1a1'>S + d -</span><span color='#839496'> Emoji Picker</span>
-<span color='#93a1a1'>S + SH + Arrow -</span><span color='#839496'> Move Windows</span>
-<span color='#93a1a1'>S + M + Arrow -</span><span color='#839496'> Resize Windows</span>
-<span color='#93a1a1'>S + U I O P -</span><span color='#839496'> Move Focus</span>
-<span color='#93a1a1'>S + [Num] -</span><span color='#839496'> Change Workspace</span>
-<span color='#93a1a1'>S + s -</span><span color='#839496'> Scratchpad</span>
-<span color='#93a1a1'>S + SH + s -</span><span color='#839496'> Move to Scratchpad</span>
-<span color='#93a1a1'>S + w -</span><span color='#839496'> Close Window</span>
-<span color='#93a1a1'>S + c -</span><span color='#839496'> Wallpaper Picker</span>
-<span color='#93a1a1'>S + v -</span><span color='#839496'> Clipboard</span>
+<span color='#d9b574' size='medium' underline='single'>Keybindings</span>
+<span color='#b0c4de'>S + Enter -</span><span color='#aec2c2'> Terminal (kitty)</span>
+<span color='#b0c4de'>S + SPC -</span><span color='#aec2c2'> App Launcher (rofi)</span>
+<span color='#b0c4de'>S + m -</span><span color='#aec2c2'> Exit Hyprland</span>
+<span color='#b0c4de'>S + d -</span><span color='#aec2c2'> Emoji Picker</span>
+<span color='#b0c4de'>S + SH + Arrow -</span><span color='#aec2c2'> Move Windows</span>
+<span color='#b0c4de'>S + M + Arrow -</span><span color='#aec2c2'> Resize Windows</span>
+<span color='#b0c4de'>S + U I O P -</span><span color='#aec2c2'> Move Focus</span>
+<span color='#b0c4de'>S + [Num] -</span><span color='#aec2c2'> Change Workspace</span>
+<span color='#b0c4de'>S + s -</span><span color='#aec2c2'> Scratchpad</span>
+<span color='#b0c4de'>S + SH + s -</span><span color='#aec2c2'> Move to Scratchpad</span>
+<span color='#b0c4de'>S + w -</span><span color='#aec2c2'> Close Window</span>
+<span color='#b0c4de'>S + c -</span><span color='#aec2c2'> Wallpaper Picker</span>
+<span color='#b0c4de'>S + v -</span><span color='#aec2c2'> Clipboard</span>
 
-<span color='#b58900' size='medium' underline='single'>Applications</span>
-<span color='#93a1a1'>Terminal -</span><span color='#839496'> Kitty</span>
-<span color='#93a1a1'>File Manager -</span><span color='#839496'> Nemo</span>
-<span color='#93a1a1'>Browser -</span><span color='#839496'> Firefox</span>
-<span color='#93a1a1'>App Launcher -</span><span color='#839496'> Rofi</span>
-<span color='#93a1a1'>Top Bar -</span><span color='#839496'> Waybar</span>
-<span color='#93a1a1'>Text Editor -</span><span color='#839496'> DOOM Emacs</span>
+<span color='#d9b574' size='medium' underline='single'>Applications</span>
+<span color='#b0c4de'>Terminal -</span><span color='#aec2c2'> Kitty</span>
+<span color='#b0c4de'>File Manager -</span><span color='#aec2c2'> Nemo</span>
+<span color='#b0c4de'>Browser -</span><span color='#aec2c2'> Firefox</span>
+<span color='#b0c4de'>App Launcher -</span><span color='#aec2c2'> Rofi</span>
+<span color='#b0c4de'>Top Bar -</span><span color='#aec2c2'> Waybar</span>
+<span color='#b0c4de'>Text Editor -</span><span color='#aec2c2'> DOOM Emacs</span>
