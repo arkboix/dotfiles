@@ -9,7 +9,6 @@
  **/
 /* https://github.com/arkboix/dotfiles */ 
 
-@import "~/.cache/wal/colors-rofi.rasi"
 
 /*****----- Configuration -----*****/
 configuration {
@@ -26,10 +25,10 @@ configuration {
 /*****----- Global Properties -----*****/
 * {
     font:                        "JetBrains Mono Nerd Font 10";
-    background:                  @color0;
-    background-alt:              @color9;
-    foreground:                  @color15;
-    selected:                    @color5;
+    background:                  #07171a;
+    background-alt:              #174b54;
+    foreground:                  #c4f6ff;
+    selected:                    #258a9c;
     active:                      #E9CC9D;
     urgent:                      #FEA861;
 }
@@ -74,7 +73,7 @@ inputbar {
     enabled:                     true;
     spacing:                     10px;
     padding:                     30px 60px;
-    background-color:            @color6;
+    background-color:            #52777d;
     text-color:                  @foreground;
     orientation:                 horizontal;
     children:                    [ "textbox-prompt-colon", "entry", "dummy", "mode-switcher" ];
