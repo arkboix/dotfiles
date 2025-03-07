@@ -1,3 +1,4 @@
+@import 'pywal.css';
 
 /* @import '../../../../../.cache/wal/colors-waybar.css' */
 /*  */
@@ -15,10 +16,10 @@
 /* @define-color color10 #586e75; */
 /* @define-color color11 #657b83; */
 /* @define-color color12 #839496; */
-@define-color color13 #6c71c4;
+/*  @define-color color13 #6c71c4;
 @define-color color14 #93a1a1;
 @define-color color15 #fdf6e3;
-/* */ */
+*/
 /* Nord theme colors (commented out) */
 /*  */
 /* @define-color color0 #2e3440; */

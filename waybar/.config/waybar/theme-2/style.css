@@ -1,5 +1,6 @@
 
-/* /* Solarized Dark colors */ */
+@import 'pywal.css';
+/* /* Solarized Dark colors */
 /* @define-color color0  #002b36; */
 /* @define-color color1  #073642; */
 /* @define-color color2  #586e75; */
@@ -15,7 +16,7 @@
 /* @define-color color12 #6c71c4; */
 /* @define-color color13 #268bd2; */
 /* @define-color color14 #2aa198; */
-@define-color color15 #859900;
+/* @define-color color15 #859900; */
 
 /* Nord */
 /* @define-color color0  #2e3440; */

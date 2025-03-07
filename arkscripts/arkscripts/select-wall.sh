@@ -73,9 +73,9 @@ main() {
 
   if [[ "$choice" == "$RANDOM_PIC_NAME" ]]; then
     swww img -o "$focused_monitor" "$RANDOM_PIC" $SWWW_PARAMS;
-    killall waybar
-    bash ~/arkscripts/wal.sh
+    pkill waybar  # Kill Waybar
     sleep 2
+    bash ~/arkscripts/reload.sh  # Restart Waybar via reload.sh
     exit 0
   fi
 
@@ -100,4 +100,6 @@ if pidof rofi > /dev/null; then
 fi
 
 main
-bash ~/arkscripts/wal.sh
+pkill waybar  # Kill Waybar
+bash ~/arkscripts/wal.sh  # Apply colors and restart Waybar via wal.sh
+bash ~/arkscripts/reload.sh  # Restart Waybar via reload.sh (ensures it runs)

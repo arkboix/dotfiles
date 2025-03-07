@@ -2,7 +2,9 @@
  * Updated color scheme using color0-15 format
  */
 
-/*  Solarized Dark Color Scheme */
+@import 'pywal.css';
+
+/*  Solarized Dark Color Scheme
 @define-color color0  #002b36;
 @define-color color1  #073642;
 @define-color color2  #586e75;
@@ -19,7 +21,7 @@
 @define-color color13 #268bd2;
 @define-color color14 #2aa198;
 @define-color color15 #859900;
-
+*/
 /* Nord */
 /* @define-color color0  #2e3440; */
 /* @define-color color1  #3b4252; */
