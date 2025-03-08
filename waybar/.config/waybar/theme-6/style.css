@@ -1,7 +1,7 @@
 @import 'pywal.css';
 
 * {
-    font-family: 'JetBrainsMono Nerd Font', 'Symbols Nerd Font Mono', 'Font Awesome 6 Free';
+    font-family: 'JetBrainsMono Nerd Font', 'Font Awesome 6 Free',  'Symbols Nerd Font Mono';
     font-size: 14px;
     min-height: 0;
 }
@@ -27,7 +27,7 @@ window#waybar {
 }
 
 /* Custom ArkScripts module with pulsing effect */
-#custom-arkscripts {
+#custom-arkscripts, #custom-youtube {
     color: @color6;
     font-size: 18px;
     font-weight: bold;
@@ -35,6 +35,13 @@ window#waybar {
     margin-right: 8px;
     border-right: 2px solid alpha(@color7, 0.3);
     animation: pulse 5s infinite ease-in-out;
+}
+
+
+#custom-youtube {
+    border-right: 0px;
+    font-size: 14px;
+    color: @color7;
 }
 
 @keyframes pulse {

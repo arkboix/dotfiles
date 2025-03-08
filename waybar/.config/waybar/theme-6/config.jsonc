@@ -7,7 +7,7 @@
     "margin-right": 10,
     "spacing": 4,
 
-    "modules-left": ["custom/arkscripts", "hyprland/workspaces"],
+    "modules-left": ["custom/arkscripts", "hyprland/workspaces", "custom/youtube"],
     "modules-center": ["clock"],
     "modules-right": ["tray", "pulseaudio", "network", "battery", "custom/power"],
 
@@ -94,6 +94,15 @@
         "format-icons": ["  ", "  ", "  ", "  ", "  "],
         "format-charging": "󰂄 {capacity}%"
     },
+
+  "custom/youtube": {
+    "format": "   {}",
+    "return-type": "json",
+    "interval": 3600,
+    "exec": "$HOME/arkscripts/subs.sh",
+    "on-click": "xdg-open https://youtube.com/@ArkboiX",
+    "tooltip": true
+},
 
     "custom/power": {
         "format": "󰐥",

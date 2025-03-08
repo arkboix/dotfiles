@@ -15,4 +15,4 @@
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/solarized.rasi"
+@import "~/.config/rofi/colors/simple.rasi"

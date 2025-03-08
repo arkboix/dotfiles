@@ -15,7 +15,7 @@ eval "$(starship init zsh)"
 
 # Aliases
 alias rm="trash"
-alias ls="exa"
+alias ls="lsd"
 #alias cat="bat"
 alias rld="source ~/.zshrc"
 alias doas="sudo"

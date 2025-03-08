@@ -32,7 +32,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-pine)
+(setq doom-theme 'doom-ayu-dark)
 
 ;; Emacs font
 (setq doom-font (font-spec :family "IBM Plex Mono" :size 18))
