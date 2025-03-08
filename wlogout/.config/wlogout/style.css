@@ -1,10 +1,12 @@
+@import 'pywal.css';
+
 * {
     background-image: none;
     box-shadow: none;
 }
 
 window {
-    background-color: rgba(0, 43, 54, 0.8);  /* Corrected alpha value */
+    background-color: alpha(@background, 0.5);/* Corrected alpha value */
 }
 
 button {
@@ -24,7 +26,7 @@ button {
 }
 
 button:hover {
-    background-color: #cb4b16;  /* Orange from Solarized */
+    background-color: @color4;  /* Orange from Solarized */
     margin: 12px;
 }
 
