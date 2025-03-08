@@ -6,10 +6,10 @@
 /* https://github.com/arkboix/dotfiles */ 
 * {
     /* Solarized Dark Colors */
-    background:     #0f2121;
-    background-alt: #18423f;
+    background:     black;
+    background-alt: #1c1c1c;
     foreground:     #ffffff;
-    selected:       #318c86;
+    selected:       #4c4c4c;
     active:         #859900;
     urgent:         #dc322f;
     border:         #586e75;
