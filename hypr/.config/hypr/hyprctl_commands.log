@@ -1,1 +1,1 @@
-hyprctl keyword "decoration:rounding" "3"
+hyprctl keyword "decoration:rounding" "10"
