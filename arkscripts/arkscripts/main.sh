@@ -37,7 +37,7 @@ commands=(
     "~/dotfiles/arkscripts/arkscripts/settings.sh"
     "~/dotfiles/arkscripts/arkscripts/config-edit-gui.sh"
     "~/dotfiles/arkscripts/arkscripts/config-edit.sh"
-    "~/dotfiles/arkscripts/arkscripts/reload.sh"
+    "pkill waybar && ~/dotfiles/arkscripts/arkscripts/reload.sh"
     "~/dotfiles/arkscripts/arkscripts/select-wall.sh"
     "~/dotfiles/arkscripts/arkscripts/clean.sh"
     "~/dotfiles/arkscripts/arkscripts/recover.sh"

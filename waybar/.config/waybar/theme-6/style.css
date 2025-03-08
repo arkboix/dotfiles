@@ -1,7 +1,7 @@
 @import 'pywal.css';
 
 * {
-    font-family: 'JetBrainsMono Nerd Font', 'Symbols Nerd Font Mono';
+    font-family: 'JetBrainsMono Nerd Font', 'Symbols Nerd Font Mono', 'Font Awesome 6 Free';
     font-size: 14px;
     min-height: 0;
 }
