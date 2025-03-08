@@ -10,7 +10,7 @@
 /* https://github.com/arkboix/dotfiles */
 
 * {
-    background:     #002B36FF;
+    background:     rgba( 0, 0, 0, 0.8 );
     background-alt: #073642FF;
     foreground:     #EEE8D5FF;
     selected:       #268BD2FF;

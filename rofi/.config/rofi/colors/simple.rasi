@@ -3,10 +3,10 @@
 /* https://github.com/arkboix/dotfiles */
 
 * {
-    background:     rgba( 0, 33, 34, 100% );
-    background-alt: rgba( 2, 51, 59, 100% );
-    foreground:     rgba( 181, 245, 255, 100% );
-    selected:       rgba( 200, 200, 255, 100% );
+    background:     rgba( 0, 0, 00, 50% );
+    background-alt: rgba( 2, 51, 59, 50% );
+    foreground:     rgba( 255, 255, 255, 100% );
+    selected:       rgba( 255, 255, 255, 100% );
     active:         @selected;
     urgent:         rgba( 196, 76, 33, 100% );
 }
