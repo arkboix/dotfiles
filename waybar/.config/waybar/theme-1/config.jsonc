@@ -1,0 +1,42 @@
+{
+    "position": "top",
+    "layer": "top",
+    "height": 30,
+    "margin-top": 6,
+    "include": "../modules.jsonc"
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 5,
+
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/submap",
+        "wlr/taskbar"
+],
+
+    "modules-center": [
+        "clock",
+        "custom/scripts"
+    ],
+
+    "modules-right": [
+        "idle_inhibitor",
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "temperature",
+        "backlight",
+        "battery",
+        "tray",
+        "custom/power"
+    ],
+
+
+    "custom/arkscripts": {
+        "exec": "echo Arkscripts",
+        "on-click": "~/arkscripts/main.sh"
+    }
+
+
+}

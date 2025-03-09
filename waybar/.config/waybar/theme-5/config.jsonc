@@ -8,7 +8,7 @@
     "spacing": 6,
     "modules-left": ["custom/arkscripts", "hyprland/workspaces"],
     "modules-center": ["clock", "custom/weather"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "battery", "tray"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "battery", "    tray"],
 
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -19,14 +19,14 @@
             "1": "一",
             "2": "二",
             "3": "三",
-            "4": "四",
+            "4": "四",    
             "5": "五",
             "6": "六",
             "7": "七",
             "8": "八",
             "9": "九",
             "10": "十",
-            "urgent": "󰀨",
+                "urgent": "󰀨",
             "active": "󰮯",
             "default": "󰑊"
         }
@@ -42,8 +42,8 @@
         "format": "{}°",
         "tooltip": true,
         "interval": 3600,
-        "exec": "curl -s 'https://wttr.in/?format=%t'",
-        "exec-if": "ping wttr.in -c1"
+        "ex    ec": "curl -s 'https://wttr.in/?format=%t'",
+        "exec-if": "ping     wttr.in -c1"
     },
 
     "tray": {
@@ -54,16 +54,16 @@
     "clock": {
         "format": "{:%H:%M}",
         "format-alt": "{:%Y-%m-%d}",
-        "tooltip-format": "<big>{:%A, %B %d, %Y}</big>\n<small>{calendar}</small>",
+        "tool    tip-format": "<big>{:%A, %B %d, %Y}</big>\n<small>{calendar}</small>",
         "calendar": {
-            "mode": "month",
+                "mode": "month",
             "weeks-pos": "right",
             "on-scroll": 1,
             "format": {
-                "months": "<span color='#eee8d5'>{}</span>",
+                "months": "<span color='#ee    e8d5'>{}</span>",
                 "weeks": "<span color='#93a1a1'>{}</span>",
                 "weekdays": "<span color='#268bd2'>{}</span>",
-                "today": "<span color='#d33682'><b>{}</b></span>"
+                    "today": "<span color='#d33682'><b>{}</b></span>"
             }
         },
         "actions": {
@@ -75,7 +75,7 @@
         }
     },
 
-    "cpu": {
+    "cpu":     {
         "format": "󰘚 {usage}%",
         "tooltip": true,
         "interval": 2
@@ -89,7 +89,7 @@
 
     "temperature": {
         "critical-threshold": 80,
-        "format": "{icon} {temperatureC}°C",
+        "format": "{icon} {temperatur    eC}°C",
         "format-icons": ["󱃃", "󰔏", "󱃂"]
     },
 
@@ -103,7 +103,7 @@
         "format-charging": "󰂄 {capacity}%",
         "format-plugged": "󰚥 {capacity}%",
         "format-alt": "{icon} {time}",
-        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+        "format-cons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
 
     "network": {
