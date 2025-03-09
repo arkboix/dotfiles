@@ -10,7 +10,8 @@
         "hyprland/workspaces",
         "hyprland/submap",
         "hyprland/scratchpad",
-        "custom/media"
+        "custom/media",
+        "custom/arkscripts"
     ],
     "modules-center": [
         "hyprland/window"
@@ -200,11 +201,20 @@
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
+
+
+    "custom/arkscripts": {
+        "format": "{}",
+        "exec": "echo ArkScripts",
+        "on-click": "~/arkscripts/main.sh",
+        "exec-if": "true"
+    },
+
     "custom/power": {
         "format" : "⏻ ",
 		"tooltip": false,
 		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+		"menu-file": "wlogout", // Menu file in resources folder
 		"menu-actions": {
 			"shutdown": "shutdown",
 			"reboot": "reboot",
