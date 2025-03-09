@@ -20,12 +20,13 @@ options=(
     "Fasten System"
     "Emergency Wifi Fix"
     "Backup Files"
-    "Night Light"
+    "Night Light ON"
+    "Night Light OFF"
     "Send Info notification"
     "Update System"
  #   "Change Global Theme"
     "Change Display Settings"
-    "Change Rofi Style (NEW THEMES AVAILABLE)"
+    "Change Rofi Style"
 )
 
 # Define corresponding commands
@@ -47,6 +48,7 @@ commands=(
     "~/dotfiles/arkscripts/arkscripts/wifi.sh"
     "~/dotfiles/arkscripts/arkscripts/backup.sh"
     "~/dotfiles/arkscripts/arkscripts/nightlight.sh"
+    "~/dotfiles/arkscripts/arkscripts/nightlight-off.sh"
     "~/dotfiles/arkscripts/arkscripts/info.sh"
     "~/dotfiles/arkscripts/arkscripts/update.sh"
 #    "~/dotfiles/arkscripts/arkscripts/theme-all.sh"

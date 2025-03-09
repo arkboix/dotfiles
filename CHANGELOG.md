@@ -2,6 +2,26 @@
 please note this changelog only starts from v1.1.4
 
 
+## v1.1.6
+
+finally, an eye candy based release
+https://github.com/arkboix/dotfiles/releases/tag/v1.1.6
+
+- A whole bunch of waybar themes
+- 9 waybar themes to be exact
+- Rofi now has new theme
+- All rofi script and rofi uses a black colorscheme (black - grey - white)
+- More arkscripts
+- Night Light script fixed
+- Pywal integration is even betternow, sadly doesn't work with a few programs
+- Fixed issues with wallpaper scripts
+- Fixed issues with hyprland looks
+- Offers an "android" waybar theme cause why not
+- removed "plain" wallpapers
+- Organized waybar themes better
+
+if you got any ideas for a new waybar theme let me know in the pull request
+
 ## v1.1.5
 
 YEAH !!
