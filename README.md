@@ -95,6 +95,23 @@ the nvim config is trash and default, don't even bother trying it.
 ## Step 4 : Post Install (IMPORTANT !!)
 
 The post installation is:
+
+``` shell
+
+swww-daemon &
+swww img ~/wallpapers/default.jpg &
+wal -i ~/wallpapers/default.jpg
+ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/pywal.css
+ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-2/pywal.css
+ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-3/pywal.css
+ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-4/pywal.css
+ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-5/pywal.css
+ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-6/pywal.css
+ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-7/pywal.css
+ln -s ~/.cache/wal/colors-waybar.css ~/.config/wlogout/pywal.css
+
+```
+
 reboot
 
 ## Step 5 : Post Issues on the repo
