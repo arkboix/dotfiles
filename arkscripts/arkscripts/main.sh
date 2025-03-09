@@ -4,6 +4,7 @@
 
 # Define options
 options=(
+    "Switch between Dark/Light mode"
     "Open Dock"
     "Close Dock"
     "Kill Proccess"
@@ -29,6 +30,7 @@ options=(
 
 # Define corresponding commands
 commands=(
+    "~/dotfiles/arkscripts/arkscripts/dark-light.sh"
     "nwg-dock-hyprland -mb 5 -l overlay -c 'rofi -show drun' -x"
     "killall nwg-dock-hyprland"
     "~/dotfiles/arkscripts/arkscripts/kill-process.sh"
