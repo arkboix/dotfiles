@@ -11,10 +11,12 @@ declare -A themes=(
     ["Simple"]="waybar -c ~/.config/waybar/theme-3/config.jsonc -s ~/.config/waybar/theme-3/style.css"
     ["Fluent"]="waybar -c ~/.config/waybar/theme-4/config.jsonc -s ~/.config/waybar/theme-4/style.css"
     ["Fluent Alt (Bottom)"]="waybar -c ~/.config/waybar/theme-5/config.jsonc -s ~/.config/waybar/theme-5/style.css"
+    ["gBar (Not Waybar)"]="gBar bar 0"
 )
 
 # Kill existing waybar instances
 killall waybar
+killall gBar
 
 # Use rofi to select theme
 selected_theme=$(printf '%s\n' "${!themes[@]}" | rofi -dmenu -p "Select Waybar Theme")
