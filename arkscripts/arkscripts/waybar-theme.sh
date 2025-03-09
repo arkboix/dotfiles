@@ -4,6 +4,7 @@
 declare -A themes=(
     ["Minimal Fluent (Default)"]="waybar -c ~/.config/waybar/theme-6/config.jsonc -s ~/.config/waybar/theme-6/style.css"
     ["Floating"]="waybar"
+    ["Minimal Opaque"]="waybar -c ~/.config/waybar/theme-8/config.jsonc -s  ~/.config/waybar/theme-8/style.css"
     ["Opaque Alt"]="waybar -c ~/.config/waybar/theme-7/config.jsonc -s ~/.config/waybar/theme-7/style.css"
     ["Opaque"]="waybar -c ~/.config/waybar/theme-2/config.jsonc -s ~/.config/waybar/theme-2/style.css"
     ["Simple"]="waybar -c ~/.config/waybar/theme-3/config.jsonc -s ~/.config/waybar/theme-3/style.css"

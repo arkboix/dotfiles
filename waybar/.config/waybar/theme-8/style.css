@@ -1,0 +1,109 @@
+@import 'pywal.css';
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @color0;
+    color: @color15;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: @color15;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button:hover {
+    background: @color8;
+    box-shadow: inherit;
+}
+
+#workspaces button.active {
+    background-color: @color2;
+    color: @color0;
+    border-bottom: 3px solid @color3;
+}
+
+#workspaces button.urgent {
+    background-color: @color1;
+}
+
+#mode {
+    background-color: @color7;
+    color: @color0;
+    padding: 0 5px;
+    margin: 0 4px;
+    border-bottom: 3px solid @color3;
+}
+
+#clock, #battery, #network, #pulseaudio, #tray {
+    padding: 0 10px;
+    margin: 0 4px;
+    color: @color15;
+}
+
+#clock {
+    background-color: @color4;
+    color: @color0;
+}
+
+#battery {
+    background-color: @color2;
+    color: @color0;
+}
+
+#battery.charging {
+    background-color: @color10;
+}
+
+#battery.warning:not(.charging) {
+    background-color: @color11;
+    color: @color0;
+}
+
+#battery.critical:not(.charging) {
+    background-color: @color1;
+    color: @color0;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#network {
+    background-color: @color5;
+    color: @color0;
+}
+
+#network.disconnected {
+    background-color: @color1;
+}
+
+#pulseaudio {
+    background-color: @color6;
+    color: @color0;
+}
+
+#pulseaudio.muted {
+    background-color: @color9;
+}
+
+#tray {
+    background-color: @color8;
+}
+
+@keyframes blink {
+    to {
+        background-color: @color0;
+        color: @color1;
+    }
+}
