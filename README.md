@@ -101,13 +101,15 @@ The post installation is:
 swww-daemon &
 swww img ~/wallpapers/default.jpg &
 wal -i ~/wallpapers/default.jpg
-ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/pywal.css
+ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-1/pywal.css
 ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-2/pywal.css
 ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-3/pywal.css
 ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-4/pywal.css
 ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-5/pywal.css
 ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-6/pywal.css
 ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-7/pywal.css
+ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-8/pywal.css
+ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/theme-9/pywal.css
 ln -s ~/.cache/wal/colors-waybar.css ~/.config/wlogout/pywal.css
 
 ```
