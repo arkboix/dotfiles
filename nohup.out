@@ -2368,3 +2368,37 @@ Terminated with SIGTERM
 Using style: /home/arkboi/.config/nwg-wrapper/bindings.css
 Using text file: /home/arkboi/.config/nwg-wrapper/bindings.pango
 Terminated with SIGTERM
+[2025-03-09 16:49:32.118] [info] Using configuration file /home/arkboi/.config/waybar/theme-9/config.jsonc
+[2025-03-09 16:49:32.120] [info] Discovered appearance 'dark'
+[2025-03-09 16:49:32.120] [info] Using CSS file /home/arkboi/.config/waybar/theme-9/style.css
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event15 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event14 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event13 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event12 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event11 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/mouse2 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/mouse1 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/mouse0 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/mice (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event10 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event9 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event8 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event7 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event6 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event5 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event4 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event3 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event2 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event1 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] Can't open /dev/input/event0 (are you in the input group?): EACCES Permission denied
+[2025-03-09 16:49:32.125] [warning] module keyboard-state: Disabling module "keyboard-state", Failed to find keyboard device: EACCES Permission denied
+[2025-03-09 16:49:32.158] [warning] Requested height: 30 is less than the minimum height: 49 required by the modules
+[2025-03-09 16:49:32.158] [info] Bar configured (width: 1920, height: 49) for output: eDP-1
+
+** (waybar:76231): WARNING **: 16:49:32.160: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:76231): WARNING **: 16:49:33.574: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+Terminated
+Using style: /home/arkboi/.config/nwg-wrapper/bindings.css
+Using text file: /home/arkboi/.config/nwg-wrapper/bindings.pango
+Terminated with SIGTERM

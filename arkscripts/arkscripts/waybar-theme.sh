@@ -3,6 +3,7 @@
 # Define themes with their corresponding commands
 declare -A themes=(
     ["Minimal Fluent (Default)"]="waybar -c ~/.config/waybar/theme-6/config.jsonc -s ~/.config/waybar/theme-6/style.css"
+    ["Android"]="waybar -c ~/.config/waybar/theme-9/config.jsonc -s ~/.config/waybar/theme-9/style.css"
     ["Minimal Opaque"]="waybar -c ~/.config/waybar/theme-8/config.jsonc -s  ~/.config/waybar/theme-8/style.css"
     ["Floating"]="waybar -c ~/.config/waybar/theme-1/config.jsonc -s  ~/.config/waybar/theme-1/style.css"
     ["Opaque Alt"]="waybar -c ~/.config/waybar/theme-7/config.jsonc -s ~/.config/waybar/theme-7/style.css"
@@ -33,9 +34,10 @@ if [[ -n "$selected_theme" ]]; then
 
     # Launch the selected theme
     eval "$theme_command"
+    notify-send "Waybar Theme" "Set to: $selected_theme"
     sleep 1
 else
     # Notify if no theme was selected
     notify-send "Waybar Theme" "No theme selected"
-    waybar
+    waybar -c ~/.config/waybar/theme-6/config.jsonc -s ~/.config/waybar/theme-6/style.css
 fi
