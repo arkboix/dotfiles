@@ -6,7 +6,7 @@
 }
 
 window {
-    background-color: alpha(@background, 0.5);/* Corrected alpha value */
+    background-color: alpha(@background, 0.8);/* Corrected alpha value */
 }
 
 button {
