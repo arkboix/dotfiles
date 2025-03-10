@@ -75,4 +75,8 @@ configuration {
 
 //@theme "/home/arkboi/.config/rofi/themes/clipboard.rasi"
 
+//@theme "/home/arkboi/.config/rofi/themes/simple.rasi"
+
+//@theme "/usr/share/rofi/themes/fancy2.rasi"
+
 @theme "/home/arkboi/.config/rofi/themes/simple.rasi"
