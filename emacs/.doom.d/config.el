@@ -11,7 +11,7 @@
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
-;; `doom-font' -- the primary font to use
+;; - `doom-font' -- the primary font to use
 ;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
 ;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
 ;;   presentations or streaming.
@@ -29,13 +29,14 @@
 ;; refresh your font settings. If Emacs still can't find your font, it likely
 ;; wasn't installed correctly. Font issues are rarely Doom issues!
 
+(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 18 :weight 'regular)
+      doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font" :size 20))
+
+
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-ayu-dark)
-
-;; Emacs font
-(setq doom-font (font-spec :family "IBM Plex Mono" :size 18))
+(setq doom-theme 'doom-henna)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -77,11 +78,3 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-
-(use-package! org-modern
-  :hook (org-mode . org-modern-mode))
-(after! org
-  (setq org-superstar-headline-bullets-list '("◉" "○" "◈" "◇"))
-  (add-hook 'org-mode-hook #'org-superstar-mode))
-
-(use-package! org)
