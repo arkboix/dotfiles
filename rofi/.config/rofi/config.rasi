@@ -79,4 +79,6 @@ configuration {
 
 //@theme "/usr/share/rofi/themes/fancy2.rasi"
 
+//@theme "/home/arkboi/.config/rofi/themes/simple.rasi"
+
 @theme "/home/arkboi/.config/rofi/themes/simple.rasi"

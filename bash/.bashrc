@@ -433,7 +433,8 @@ alias personal='cp -Rf /personal/* ~'
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
 # reporting tools - install when not installed
-pokeget cufant --hide-name
+#pokeget cufant --hide-name
+echo -e "Welcome back \e[3$((RANDOM % 6 + 1))m$(whoami)\e[0m"
 #fastfetch
 #neofetch
 #screenfetch
