@@ -3,6 +3,9 @@
 * {
     background-image: none;
     box-shadow: none;
+    font-family: JetbrainsMono Nerd Font;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 window {
@@ -19,6 +22,8 @@ button {
     border-width: 1px;
     border-radius: 50px;
     margin: 24px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
     background-repeat: no-repeat;
     background-position: center;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);

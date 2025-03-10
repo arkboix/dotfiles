@@ -4,6 +4,7 @@
 declare -A themes=(
     ["Minimal Fluent (Default)"]="waybar -c ~/.config/waybar/theme-6/config.jsonc -s ~/.config/waybar/theme-6/style.css"
     ["Android"]="waybar -c ~/.config/waybar/theme-9/config.jsonc -s ~/.config/waybar/theme-9/style.css"
+    ["Material"]="waybar -c ~/.config/waybar/theme-10/config.jsonc -s ~/.config/waybar/theme-10/style.css"
     ["Minimal Opaque"]="waybar -c ~/.config/waybar/theme-8/config.jsonc -s  ~/.config/waybar/theme-8/style.css"
     ["Floating"]="waybar -c ~/.config/waybar/theme-1/config.jsonc -s  ~/.config/waybar/theme-1/style.css"
     ["Opaque Alt"]="waybar -c ~/.config/waybar/theme-7/config.jsonc -s ~/.config/waybar/theme-7/style.css"
