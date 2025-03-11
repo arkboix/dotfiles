@@ -33,7 +33,7 @@ configuration {
 window {
     transparency:     "real";
     background-color: black;
-    width:            60%;
+    width:            80%;
     height:           65%;
     border:           0;
     border-radius:   10px;
@@ -68,8 +68,8 @@ entry {
 
 listview {
     background-color: transparent;
-    columns:          3;
-    lines:            3;
+    columns:          5;
+    lines:            2;
     fixed-height:     true;
     dynamic:          false;
     cycle:            false;
@@ -77,6 +77,18 @@ listview {
     layout:           vertical;
     spacing:          10px;
 }
+
+
+scrollbar {
+    margin:          5px;
+    handle-width:    2px;
+    handle-color:    white;
+    background-color: #1c1c1c; /* This will be the applied color */
+    border-radius:   25px;
+}
+
+
+
 
 element {
     background-color: @base02;

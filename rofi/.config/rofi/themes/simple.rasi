@@ -180,7 +180,7 @@ listview {
 }
 scrollbar {
     margin:                      5px;
-    handle-width:                5px ;
+    handle-width:                2px ;
     handle-color:                @handle-colour;
     border-radius:               15px;
     background-color:            black;
