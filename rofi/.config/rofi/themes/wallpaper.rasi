@@ -24,9 +24,10 @@ configuration {
     blue:       #268bd2;
     cyan:       #3b3b3b;
     green:      #859900;
+    selected:   #2a2a2a;
 
     background-color: transparent;
-    text-color:       @base0;
+    text-color:       white;
     font:             "JetbrainsMono Nerd Font 11";
 }
 
@@ -35,7 +36,8 @@ window {
     background-color: black;
     width:            80%;
     height:           65%;
-    border:           0;
+    border:           2px;
+    border-color: white;
     border-radius:   10px;
     padding:          2% 1%;
 }
@@ -104,10 +106,21 @@ element-icon {
 
 element-text {
     horizontal-align: 0.5;
-    vertical-align:   0.5;
+    vertical-align:   0;
+    padding: 4px;
 }
 
 element selected {
-    background-color: @cyan;
+    background-color: @selected;
     text-color:       @base01;
+  /*  border:           1px;
+    border-color: white;
+    border-radius:    12px;
+    */
+}
+
+element-text selected {
+    background-color: #8c8c8c;
+    text-color: black;
+    border-radius: 4px;
 }
