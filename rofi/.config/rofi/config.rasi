@@ -14,13 +14,13 @@ configuration {
     window-format: "{w} · {c} · {t}";
 
     /* Settings */
-    terminal: "alacritty";
-    sidebar-mode: true;
+    terminal: "kitty";
+    sidebar-mode: false;
     fixed-num-lines: true;
     combi-modi: "window,drun,run";
     click-to-exit: true;
-    sorting-method: "fzf";
-    matching: "fuzzy";
+    sorting-method: "levenshtein";
+    matching: "regex";
     case-sensitive: false;
     cycle: true;
 
@@ -80,5 +80,9 @@ configuration {
 //@theme "/usr/share/rofi/themes/fancy2.rasi"
 
 //@theme "/home/arkboi/.config/rofi/themes/simple.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/simple.rasi"
+
+//@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
 
 @theme "/home/arkboi/.config/rofi/themes/simple.rasi"

@@ -7,25 +7,9 @@ configuration {
     display-drun: "Applications";
 }
 
-* {
-    base03:     #0fffff;
-    base02:     #1c1c1c;
-    base01:     #586e75;
-    base00:     #081716;
-    base0:      #839496;
-    base1:      #93a1a1;
-    base2:      #383838;
-    base3:      #fdf6e3;
-    yellow:     #b58900;
-    orange:     #cb4b16;
-    red:        #dc322f;
-    magenta:    #d33682;
-    violet:     #6c71c4;
-    blue:       #268bd2;
-    cyan:       #3b3b3b;
-    green:      #859900;
-    selected:   #2a2a2a;
+@import '~/.cache/wal/colors-rofi-dark.rasi'
 
+* {
     background-color: transparent;
     text-color:       white;
     font:             "JetbrainsMono Nerd Font 11";
@@ -33,9 +17,9 @@ configuration {
 
 window {
     transparency:     "real";
-    background-color: black;
+    background-color: @background;
     width:            80%;
-    height:           65%;
+    height:           66%;
     border:           2px;
     border-color: white;
     border-radius:   10px;
@@ -49,7 +33,7 @@ mainbox {
 }
 
 inputbar {
-    background-color: @base02;
+    background-color: @active-background;
     border-radius:    6px;
     padding:          10px;
     spacing:          10px;
@@ -58,14 +42,13 @@ inputbar {
 
 
 prompt {
-    text-color:       @red;
     font:             "Sans Bold 11";
 }
 
 entry {
-    placeholder:      "Search";
-    placeholder-color: @base01;
-    text-color:       @base1;
+    placeholder:      "Search Wallpapers";
+    placeholder-color: @foreground;
+    text-color:       @foreground;
 }
 
 listview {
@@ -84,7 +67,7 @@ listview {
 scrollbar {
     margin:          5px;
     handle-width:    2px;
-    handle-color:    white;
+    handle-color:    @selected-active-background;
     background-color: #1c1c1c; /* This will be the applied color */
     border-radius:   25px;
 }
@@ -93,14 +76,13 @@ scrollbar {
 
 
 element {
-    background-color: @base02;
     orientation:      vertical;
     border-radius:    6px;
     padding:          15px 10px;
 }
 
 element-icon {
-    size:             28px;
+    size:             12px;
     horizontal-align: 0.5;
 }
 
@@ -110,17 +92,16 @@ element-text {
     padding: 4px;
 }
 
-element selected {
-    background-color: @selected;
-    text-color:       @base01;
-  /*  border:           1px;
-    border-color: white;
-    border-radius:    12px;
-    */
+element selected  {
 }
 
 element-text selected {
-    background-color: #8c8c8c;
-    text-color: black;
+    background-color: @selected-normal-foreground;
+    text-color: @selected-normal-background;
     border-radius: 4px;
+}
+
+
+element hover {
+    background-color: @selected-normal-background;
 }
