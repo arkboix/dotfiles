@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # Arkscripts - https://github.com/arkboix/dotfiles
-SELECTED_WALL="$(swww query | awk '{print $8}')"
+SELECTED_WALL="$(bash ~/arkscripts/swww.sh)"
 
 rm ~/.config/waybar/android/pywal.css
 rm ~/.config/waybar/fluent/pywal.css

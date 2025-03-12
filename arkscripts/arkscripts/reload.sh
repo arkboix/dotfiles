@@ -5,7 +5,7 @@
 notify-send "Reloading"
 
 # Waybar
-waybar -c /home/arkboi/.config/waybar/minimal-floating/config.jsonc -s /home/arkboi/.config/waybar/minimal-floating/style.css
+waybar -c /home/arkboi/.config/waybar/floating-opaque/config.jsonc -s /home/arkboi/.config/waybar/floating-opaque/style.css
 sleep 2
 # Mako
 pkill mako
