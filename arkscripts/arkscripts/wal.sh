@@ -1,43 +1,41 @@
 #!/usr/bin/env sh
 # Arkscripts - https://github.com/arkboix/dotfiles
 SELECTED_WALL="$(swww query | awk '{print $8}')"
-rm ~/.config/waybar/theme-1/pywal.css
-rm ~/.config/waybar/theme-2/pywal.css
-rm ~/.config/waybar/theme-3/pywal.css
-rm ~/.config/waybar/theme-4/pywal.css
-rm ~/.config/waybar/theme-5/pywal.css
-rm ~/.config/waybar/theme-6/pywal.css
-rm ~/.config/waybar/theme-7/pywal.css
-rm ~/.config/waybar/theme-8/pywal.css
-rm ~/.config/waybar/theme-9/pywal.css
-rm ~/.config/waybar/theme-10/pywal.css
-rm ~/.config/waybar/theme-11/pywal.css
+
+rm ~/.config/waybar/android/pywal.css
+rm ~/.config/waybar/fluent/pywal.css
+rm ~/.config/waybar/material-bottom/pywal.css
+rm ~/.config/waybar/opaque/pywal.css
+rm ~/.config/waybar/opaque-minimal/pywal.css
+rm ~/.config/waybar/floating/pywal.css
+rm ~/.config/waybar/fluent-alt-bottom/pywal.css
+rm ~/.config/waybar/minimal-floating/pywal.css
+rm ~/.config/waybar/opaque-alt/pywal.css
+rm ~/.config/waybar/simple/pywal.css
 rm ~/.config/wlogout/pywal.css
 
-touch ~/.config/waybar/theme-1/pywal.css
-touch ~/.config/waybar/theme-2/pywal.css
-touch ~/.config/waybar/theme-3/pywal.css
-touch ~/.config/waybar/theme-4/pywal.css
-touch ~/.config/waybar/theme-5/pywal.css
-touch ~/.config/waybar/theme-6/pywal.css
-touch ~/.config/waybar/theme-7/pywal.css
-touch ~/.config/waybar/theme-8/pywal.css
-touch ~/.config/waybar/theme-9/pywal.css
-touch ~/.config/waybar/theme-10/pywal.css
-touch ~/.config/waybar/theme-11/pywal.css
+touch ~/.config/waybar/android/pywal.css
+touch ~/.config/waybar/fluent/pywal.css
+touch ~/.config/waybar/material-bottom/pywal.css
+touch ~/.config/waybar/opaque/pywal.css
+touch ~/.config/waybar/opaque-minimal/pywal.css
+touch ~/.config/waybar/floating/pywal.css
+touch ~/.config/waybar/fluent-alt-bottom/pywal.css
+touch ~/.config/waybar/minimal-floating/pywal.css
+touch ~/.config/waybar/opaque-alt/pywal.css
+touch ~/.config/waybar/simple/pywal.css
 touch ~/.config/wlogout/pywal.css
 
 wal -i "$SELECTED_WALL"
 
-cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-1/pywal.css
-cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-2/pywal.css
-cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-3/pywal.css
-cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-4/pywal.css
-cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-5/pywal.css
-cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-6/pywal.css
-cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-7/pywal.css
-cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-8/pywal.css
-cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-9/pywal.css
-cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-10/pywal.css
-cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-11/pywal.css
+cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/android/pywal.css
+cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/fluent/pywal.css
+cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/material-bottom/pywal.css
+cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/opaque/pywal.css
+cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/opaque-minimal/pywal.css
+cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/floating/pywal.css
+cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/fluent-alt-bottom/pywal.css
+cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/minimal-floating/pywal.css
+cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/opaque-alt/pywal.css
+cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/simple/pywal.css
 cat ~/.cache/wal/colors-waybar.css > ~/.config/wlogout/pywal.css
