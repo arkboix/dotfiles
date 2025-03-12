@@ -1,0 +1,27 @@
+[2025-03-12 12:28:08.232] [info] Using configuration file /home/arkboi/.config/waybar/theme-11/config.jsonc
+[2025-03-12 12:28:08.235] [info] Discovered appearance 'dark'
+[2025-03-12 12:28:08.235] [info] Using CSS file /home/arkboi/.config/waybar/theme-11/style.css
+[2025-03-12 12:28:08.251] [info] Hyprland IPC starting
+[2025-03-12 12:28:08.252] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-12 12:28:08.379] [info] Bar configured (width: 1920, height: 30) for output: eDP-1
+
+** (waybar:378630): WARNING **: 12:28:08.386: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+Terminated
+Using style: /home/arkboi/.config/nwg-wrapper/bindings.css
+Using text file: /home/arkboi/.config/nwg-wrapper/bindings.pango
+Terminated with SIGTERM
+[2025-03-12 12:30:25.702] [info] Using configuration file /home/arkboi/.config/waybar/theme-11/config.jsonc
+[2025-03-12 12:30:25.706] [info] Discovered appearance 'dark'
+[2025-03-12 12:30:25.706] [info] Using CSS file /home/arkboi/.config/waybar/theme-11/style.css
+[2025-03-12 12:30:25.713] [info] Hyprland IPC starting
+[2025-03-12 12:30:25.714] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-12 12:30:25.783] [warning] Requested height: 30 is less than the minimum height: 40 required by the modules
+[2025-03-12 12:30:25.783] [info] Bar configured (width: 1920, height: 40) for output: eDP-1
+
+** (waybar:379745): WARNING **: 12:30:25.791: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:379745): WARNING **: 12:30:27.311: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+Terminated
+Using style: /home/arkboi/.config/nwg-wrapper/bindings.css
+Using text file: /home/arkboi/.config/nwg-wrapper/bindings.pango
+Terminated with SIGTERM

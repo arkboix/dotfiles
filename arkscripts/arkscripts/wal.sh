@@ -11,6 +11,7 @@ rm ~/.config/waybar/theme-7/pywal.css
 rm ~/.config/waybar/theme-8/pywal.css
 rm ~/.config/waybar/theme-9/pywal.css
 rm ~/.config/waybar/theme-10/pywal.css
+rm ~/.config/waybar/theme-11/pywal.css
 rm ~/.config/wlogout/pywal.css
 
 touch ~/.config/waybar/theme-1/pywal.css
@@ -23,6 +24,7 @@ touch ~/.config/waybar/theme-7/pywal.css
 touch ~/.config/waybar/theme-8/pywal.css
 touch ~/.config/waybar/theme-9/pywal.css
 touch ~/.config/waybar/theme-10/pywal.css
+touch ~/.config/waybar/theme-11/pywal.css
 touch ~/.config/wlogout/pywal.css
 
 wal -i "$SELECTED_WALL"
@@ -37,4 +39,5 @@ cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-7/pywal.css
 cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-8/pywal.css
 cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-9/pywal.css
 cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-10/pywal.css
+cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-11/pywal.css
 cat ~/.cache/wal/colors-waybar.css > ~/.config/wlogout/pywal.css
