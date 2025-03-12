@@ -1,0 +1,117 @@
+@import 'pywal.css';
+
+* {
+    font-family: "JetbrainsMono Nerd Font, Font Awesome 6 Free";
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar > box {
+    margin: 8px 8px 8px 8px;
+    padding: 4px;
+    box-shadow: 0px 0px 2px @color2;
+    background-color: @background;
+    border-radius: 4px;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: @foreground;
+    border-radius: 4px;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.active {
+    background-color: @color2;
+    color: @background;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#custom-arkscripts,
+#custom-power,
+#power-profiles-daemon,
+#mpd {
+    padding: 0 10px;
+    color: @foreground;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+
+#pulseaduio {
+    color: @color13;
+}
+
+#network {
+    color: @color6;
+}
+
+#memory {
+    color: @color13;
+}
+
+#battery {
+    color: @color11;
+}
+
+
+#window {
+    font-weight: bold;
+}
