@@ -20,6 +20,7 @@
         "battery",
         "clock",
         "tray",
+        "custom/arkscripts",
         "custom/power"
     ],
     // Modules configuration
@@ -41,6 +42,13 @@
              "urgent": "",
          }
      },
+
+"custom/arkscripts": {
+        "format": "{}",
+        "exec": "echo ",
+        "on-click": "~/arkscripts/main.sh",
+        "exec-if": "true"
+},
     "tray": {
         "icon-size": 21,
         "spacing": 10

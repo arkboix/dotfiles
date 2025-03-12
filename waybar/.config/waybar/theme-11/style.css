@@ -13,7 +13,7 @@ window#waybar {
 }
 
 window#waybar > box {
-    margin: 4px 4px 4px 4px;
+    margin: 8px 8px 8px 8px;
     padding: 4px;
     box-shadow: 0px 0px 2px @color2;
     background-color: @background;
@@ -71,6 +71,8 @@ button {
 #mode,
 #idle_inhibitor,
 #scratchpad,
+#custom-arkscripts,
+#custom-power,
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
