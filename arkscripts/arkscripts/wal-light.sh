@@ -17,7 +17,7 @@ touch ~/.config/waybar/theme-5/pywal.css
 touch ~/.config/waybar/theme-6/pywal.css
 touch ~/.config/wlogout/pywal.css
 
-wal -l -i "$SELECTED_WALL"
+wallust pywal -l -i "$SELECTED_WALL"
 
 cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/pywal.css
 cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/theme-2/pywal.css

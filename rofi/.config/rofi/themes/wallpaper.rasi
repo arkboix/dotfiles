@@ -1,107 +1,78 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+/* -- Modified By https://github.com/arkboix -- */
+/* Main Config (wallpaper) */
 
-/**
- * Solarized Dark Grid - A grid-style application launcher
- */
-/* https://github.com/arkboix/dotfiles */ 
+@import "~/.config/rofi/config.rasi"
+
+/* ---- Configuration ---- */
 configuration {
-    display-drun: "Applications";
-}
-
-@import '~/.config/rofi/wallust/colors-rofi.rasi'
-
-* {
-    background-color: transparent;
-    text-color:       white;
-    font:             "JetbrainsMono Nerd Font 11";
+  modi: "drun";
 }
 
 window {
-    transparency:     "real";
-    width:            80%;
-    background-color: @background;
-    height:           66%;
-    border:           2px;
-    border-color: white;
-    border-radius:   10px;
-    padding:          2% 1%;
+  width: 75%;
+  height: inherit;
 }
 
+/* ---- Mainbox ---- */
 mainbox {
-    background-color: transparent;
-    children:         [ inputbar, listview ];
-    spacing:          10px;
-}
-
-inputbar {
-    background-color: @active-background;
-    border-radius:    6px;
-    padding:          10px;
-    spacing:          10px;
-    children:         [ entry ];
-}
-
-
-prompt {
-    font:             "Sans Bold 11";
+  children:
+    [ "inputbar", "listview"];
 }
 
 entry {
-    placeholder:      "Search Wallpapers";
-    placeholder-color: @foreground;
-    text-color:       @foreground;
+  expand: true;
+  placeholder: "Search / Choose Wallpaper";
+  horizontal-align: 0;
+  horizontal-align: 0;
+  color: @color4;
 }
 
+/* ---- Listview ---- */
 listview {
-    background-color: transparent;
-    columns:          5;
-    lines:            2;
-    fixed-height:     false;
-    dynamic:          false;
-    cycle:            false;
-    scrollbar:        true;
-    layout:           vertical;
-    spacing:          10px;
+  columns: 6;
+  lines: 2;
+  spacing: 20px;
+  padding: 10px;
+  columns: 6;
+  lines: 2;
+  dynamic: true;
+  flow: vertical;
+  fixed-width: true;
+  fixed-height: false;
+  cycle: false;
 }
 
-
-scrollbar {
-    margin:          5px;
-    handle-width:    2px;
-    handle-color:    @selected-active-background;
-    background-color: #1c1c1c; /* This will be the applied color */
-    border-radius:   25px;
-}
-
-
-
-
+/* ---- Element ---- */
 element {
-    orientation:      vertical;
-    border-radius:    6px;
-    padding:          15px 10px;
+  orientation: vertical;
+  padding: 0px;
+  spacing: 0px;
+  border-radius: 10px;
+  padding: 0px;
+  margin: 0px;
+}
+
+element selected.normal {
+  background-color: transparent;
 }
 
 element-icon {
-    size:             12px;
-    horizontal-align: 0.5;
+    text-color:                  inherit;
+    size:                        10%;
+    margin:                      -30px;
+    cursor:                      inherit;
 }
 
 element-text {
-    horizontal-align: 0.5;
-    vertical-align:   0;
-    padding: 4px;
+  vertical-align: 0.5;
+  horizontal-align: 0.5;
+  padding: 6px;
+  margin: 6px;
 }
 
-element selected  {
-}
 
 element-text selected {
-    background-color: @selected-normal-foreground;
-    text-color: @background;
+    background-color: @color11;
     border-radius: 4px;
-}
-
-
-element hover {
-    background-color: @selected-normal-background;
 }

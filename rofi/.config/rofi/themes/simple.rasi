@@ -154,8 +154,8 @@ listview {
     scrollbar:                   true;
     layout:                      vertical;
     reverse:                     false;
-    fixed-height:                true;
-    fixed-columns:               true;
+    fixed-height:                false;
+    fixed-columns:               false;
 
     spacing:                     5px;
     margin:                      0px;

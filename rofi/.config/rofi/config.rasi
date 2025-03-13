@@ -39,6 +39,8 @@ configuration {
     kb-row-last: "End,KP_End";
     kb-remove-to-eol: "Control+Shift+e";
     kb-remove-char-back: "BackSpace";
+    hover-select:               	true;
+    click-to-exit: 		            true;
 }
 
 //@theme "~/.config/rofi/themes/centered.rasi"
