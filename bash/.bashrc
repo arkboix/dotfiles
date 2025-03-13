@@ -130,7 +130,7 @@ alias update-fc='sudo fc-cache -fv'
 #skel alias has been replaced with a script at /usr/local/bin/skel
 
 #backup contents of /etc/skel to hidden backup folder in home/user
-alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
+alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(de +%Y.%m.%d-%H.%M.%S)'
 
 #copy shell configs
 alias cb='cp /etc/skel/.bashrc ~/.bashrc && exec bash'
@@ -481,7 +481,7 @@ alias ..="cd .."
 alias .="cd ../.."
 #alias git="git add . && git commit && git push"
 alias gitter="git add . && git commit && git push"
-
+alias gpush='git add . && read -p "Commit message: " msg && git commit -m "$msg" && git push'
 
 # Emacs Makes me Do More Work (E.M.D.M.W)
 export PATH="$HOME/.emacs.d/bin:$PATH"
@@ -492,6 +492,3 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH="$HOME/arkscripts:$PATH"
 
 
-
-## Syntax Highlighting
-source /usr/share/bash-completion/completions/git
