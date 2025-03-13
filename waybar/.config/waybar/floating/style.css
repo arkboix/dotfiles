@@ -2,7 +2,7 @@
  * Updated color scheme using color0-15 format
  */
 
-@import 'pywal.css';
+@import '../wallust/colors-waybar.css';
 
 
 * {

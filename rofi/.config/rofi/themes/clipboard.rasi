@@ -3,16 +3,12 @@
  * A compact theme optimized for clipboard history
  * User - ArkboiX
  */
-/* https://github.com/arkboix/dotfiles */ 
+/* https://github.com/arkboix/dotfiles */
+
+
+@import '../wallust/colors-rofi.rasi'
+
 * {
-    /* Solarized Dark Colors */
-    background:     black;
-    background-alt: #1c1c1c;
-    foreground:     #ffffff;
-    selected:       #4c4c4c;
-    active:         #859900;
-    urgent:         #dc322f;
-    border:         #586e75;
     /* Theme Settings */
     spacing: 0;
     background-color: transparent;
@@ -40,7 +36,7 @@ inputbar {
     spacing: 10px;
     padding: 10px;
     margin: 0px 0px 10px 0px;
-    background-color: @background-alt;
+    background-color: @alternate-active-background;
     border-radius: 6px;
     children: [prompt, entry];
 }
@@ -56,7 +52,7 @@ prompt {
 entry {
     padding: 5px 10px;
     placeholder: "Search clipboard...";
-    placeholder-color: #928374;
+    placeholder-color: @background;
 }
 
 listview {
@@ -69,9 +65,8 @@ listview {
 }
 
 scrollbar {
-    handle-width: 6px;
-    handle-color: @selected;
-    background-color: @background-alt;
+    handle-width: 2px;
+    handle-color: @active-background;
     border-radius: 3px;
 }
 
@@ -96,7 +91,7 @@ element normal.normal {
 }
 
 element selected.normal {
-    background-color: @selected;
+    background-color: @selected-normal-background;
     text-color: @background;
 }
 

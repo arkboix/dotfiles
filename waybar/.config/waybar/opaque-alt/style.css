@@ -1,4 +1,4 @@
-@import 'pywal.css';
+@import '../wallust/colors-waybar.css';
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */

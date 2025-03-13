@@ -1,4 +1,4 @@
-@import 'pywal.css';
+@import '../wallust/colors-waybar.css';
 
 * {
     font-family: "JetbrainsMono Nerd Font, Font Awesome 6 Free";

@@ -29,6 +29,8 @@ touch ~/.config/waybar/floating-opaque/pywal.css
 touch ~/.config/wlogout/pywal.css
 
 wal -i "$SELECTED_WALL"
+wallust run "$SELECTED_WALL"
+
 
 cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/android/pywal.css
 cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/fluent/pywal.css

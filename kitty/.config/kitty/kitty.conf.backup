@@ -1,8 +1,0 @@
-include ~/dotfiles/kitty/.config/kitty/nord.conf
-
-font_family    BlexMono Nerd Font Bold
-bold_font      auto
-font_size      18.0
-confirm_os_window_close 0
-window_padding_width 6
-background_opacity 1

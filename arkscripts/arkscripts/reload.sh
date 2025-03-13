@@ -1,12 +1,11 @@
 #!/usr/bin/env sh
 
+notify-send "Reloading" "Has been reloaded succesfully"
 # Arkscripts - https://github.com/arkboix/dotfiles
-
-notify-send "Reloading"
+pkill waybar
 
 # Waybar
-waybar -c /home/arkboi/.config/waybar/floating-opaque/config.jsonc -s /home/arkboi/.config/waybar/floating-opaque/style.css
-sleep 2
+waybar -c /home/arkboi/.config/waybar/minimal-floating/config.jsonc -s /home/arkboi/.config/waybar/minimal-floating/style.css
 # Mako
 pkill mako
 mako &
@@ -15,5 +14,4 @@ mako &
 pkill nwg-wrapper
 nwg-wrapper -t bindings.pango -c bindings.css -p left -a end -mb 30 -ml 30
 
-# Notifs
-notify-send -t 2000 "Reloaded"
+

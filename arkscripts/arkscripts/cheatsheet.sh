@@ -1,28 +1,52 @@
 #!/bin/bash
 
-# Arkscripts - https://github.com/arkboix/dotfiles
+# Improved Keybind Menu Script for Rofi
+# Based on Arkscripts keybinds
 
-# Display keybinds cheatsheet using yad
-yad --list \
-  --title="Cheat Sheet" \
-  --no-buttons \
-  --center \
-  --text="<b>LEGEND:</b> S - Super | M - Alt | C - Ctrl | SPC - Space | SH - Shift" \
-  --column="Keybind" \
-  --column="Action" \
-  --column="Command" \
-  --timeout-indicator=bottom \
-  "S + Enter" "Launch terminal" "kitty" \
-  "C + SPC" "App Launcher" "Rofi" \
-  "S + w" "Close Window" "" \
-  "S + m" "Emoji Picker" "rofi-emoji" \
-  "S + c" "Set wallpaper" "" \
-  "S + m" "Exit Hyprland" "" \
-  "S + U I O P" "Move Focus" "" \
-  "S + s" "Scratchpad" "" \
-  "S + SH + s" "Move to scratchpad" "" \
-  "S + SH + Arrow" "Move Windows" "" \
-  "S + M + Arrow" "Resize Windows" "" \
-  "S + v" "Clipboard" ""
-sleep 1
-hyprctl dispatch resizeactive 600 400
+# Define the data for keybinds with proper key abbreviations
+keybind_data() {
+    cat << EOF
+S + Enter - Launch terminal
+C + SPC - App Launcher
+S + w - Close Window
+S + m - Emoji Picker
+S + c - Set wallpaper
+S + q - Exit Hyprland
+S + U - Move Focus Left
+S + I - Move Focus Right
+S + O - Move Focus Up
+S + P - Move Focus Down
+S + s - Toggle Scratchpad
+S + v - Clipboard
+S + b - Launch Browser
+S + a - Launch Video Editor
+S + l - Lock Screen
+S + t - Toggle Floating
+S + f - Fullscreen
+S + x - Launch Terminal (Left-Hand)
+S + z - Launch Menu (Left-Hand)
+EOF
+}
+
+# Create a legend for key abbreviations
+create_legend() {
+    echo "LEGEND: S = Super, C = Ctrl, A = Alt, SH = Shift, SPC = Space"
+}
+
+# Main function
+main() {
+    # Get keybind data and legend
+    local kb_data=$(keybind_data)
+
+    # Use rofi to display the menu
+    rofi -dmenu -i -p "Keybinds" \
+        -mesg "$legend" \
+        -no-custom \
+        -width 500 \
+        -theme-str 'element { children: [element-text]; }' \
+        -theme-str 'element-text { vertical-align: 0.5; }' \
+        <<< "$kb_data"
+}
+
+# Run the main function
+main

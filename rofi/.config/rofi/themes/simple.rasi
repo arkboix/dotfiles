@@ -24,7 +24,7 @@ configuration {
 @import                          "shared/colors.rasi"
 @import                          "shared/fonts.rasi"
 
-@import "~/.cache/wal/colors-rofi-dark.rasi"
+@import "~/.config/rofi/wallust/colors-rofi.rasi"
 
 /*
 * {
@@ -108,13 +108,13 @@ textbox-prompt-colon {
     expand:                      false;
     str:                         "  ";
     background-color:            inherit;
-    text-color:                  inherit;
+    text-color:                  @foreground;
 }
 entry {
     enabled:                     true;
     padding:                     5px 0px;
     background-color:            inherit;
-    text-color:                  inherit;
+    text-color:                  @foreground;
     cursor:                      text;
     placeholder:                 "Search...";
     placeholder-color:           inherit;
