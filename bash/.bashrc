@@ -490,3 +490,8 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 
 # ArkScripts
 export PATH="$HOME/arkscripts:$PATH"
+
+
+
+## Syntax Highlighting
+source /usr/share/bash-completion/completions/git

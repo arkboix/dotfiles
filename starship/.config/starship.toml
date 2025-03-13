@@ -1,176 +1,162 @@
-# https://github.com/arkboix/dotfiles
-[aws]
-symbol = "  "
+"$schema" = 'https://starship.rs/config-schema.json'
 
-[buf]
-symbol = " "
+# Inserts a blank line between shell prompts
+add_newline = true
 
-[c]
-symbol = " "
+# Replace the "❯" symbol with a cooler one
+[character]
+success_symbol = "[λ](green)"
+error_symbol = "[](red)"
+vimcmd_symbol = "[](blue)"
+vimcmd_replace_symbol = "[󰷾](yellow)"
+vimcmd_visual_symbol = "[󰙅](purple)"
 
-[cmake]
-symbol = " "
+# Disable the package module to avoid unnecessary slowdowns
+[package]
+disabled = true
 
-[conda]
-symbol = " "
+# Cool custom format for the command prompt
+format = """
+[┌─────>](bold cyan) $username$hostname$directory$git_branch$git_status$git_metrics$cmd_duration$memory_usage$battery$time
+[└─>](bold cyan) $character"""
 
-[crystal]
-symbol = " "
-
-[dart]
-symbol = " "
-
+# Configure directory display
 [directory]
-read_only = " 󰌾"
+style = "blue"
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = " "
+read_only_style = "red"
+truncate_to_repo = true
+fish_style_pwd_dir_length = 1
 
-[docker_context]
-symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
-
-[fennel]
-symbol = " "
-
-[fossil_branch]
-symbol = " "
-
+# Nerd Font symbols for Git status
 [git_branch]
-symbol = " "
+symbol = " "
+format = "[$symbol$branch]($style) "
+style = "bold purple"
 
-[git_commit]
-tag_symbol = '  '
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "bold yellow"
+conflicted = ""
+ahead = ""
+behind = ""
+diverged = ""
+up_to_date = ""
+untracked = ""
+stashed = ""
+modified = ""
+staged = ""
+renamed = ""
+deleted = ""
 
-[golang]
-symbol = " "
+# Detailed git metrics
+[git_metrics]
+added_style = "bold green"
+deleted_style = "bold red"
+disabled = false
 
-[guix_shell]
-symbol = " "
+# Show command duration if it takes longer than 3 seconds
+[cmd_duration]
+min_time = 3_000
+format = "took [$duration](bold yellow) "
+show_milliseconds = false
 
-[haskell]
-symbol = " "
+# System resource monitoring
+[memory_usage]
+disabled = false
+threshold = 75
+style = "bold dimmed white"
+format = "[$ram_pct]($style) "
 
-[haxe]
-symbol = " "
+# Show battery when below 30%
+[battery]
+full_symbol = " "
+charging_symbol = " "
+discharging_symbol = " "
+disabled = false
+display = [
+    { threshold = 30, style = "bold red" },
+]
 
-[hg_branch]
-symbol = " "
+# Username and hostname styling
+[username]
+style_user = "bold cyan"
+style_root = "bold red"
+format = "[$user]($style)@"
+disabled = false
+show_always = true
 
 [hostname]
-ssh_symbol = " "
+ssh_only = false
+format = "[$hostname]($style) in "
+disabled = false
+style = "green"
 
-[java]
-symbol = " "
+# Show time in prompt
+[time]
+disabled = false
+format = " [$time](bold blue) "
+time_format = "%-I:%M %p"
 
-[julia]
-symbol = " "
-
-[kotlin]
-symbol = " "
-
-[lua]
-symbol = " "
-
-[memory_usage]
-symbol = "󰍛 "
-
-[meson]
-symbol = "󰔷 "
-
-[nim]
-symbol = "󰆥 "
-
-[nix_shell]
-symbol = " "
+# Language-specific customizations
+[python]
+symbol = " "
+pyenv_version_name = true
+format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+style = "bold green"
+pyenv_prefix = "pyenv "
+python_binary = "python3"
 
 [nodejs]
 symbol = " "
-
-[ocaml]
-symbol = " "
-
-[os.symbols]
-Alpaquita = " "
-Alpine = " "
-AlmaLinux = " "
-Amazon = " "
-Android = " "
-Arch = " "
-Artix = " "
-CachyOS = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Garuda = "󰛓 "
-Gentoo = " "
-HardenedBSD = "󰞌 "
-Illumos = "󰈸 "
-Kali = " "
-Linux = " "
-Mabox = " "
-Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-Nobara = " "
-OpenBSD = "󰈺 "
-openSUSE = " "
-OracleLinux = "󰌷 "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-RockyLinux = " "
-Redox = "󰀘 "
-Solus = "󰠳 "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Void = " "
-Windows = "󰍲 "
-
-[package]
-symbol = "󰏗 "
-
-[perl]
-symbol = " "
-
-[php]
-symbol = " "
-
-[pijul_channel]
-symbol = " "
-
-[python]
-symbol = " "
-
-[rlang]
-symbol = "󰟔 "
-
-[ruby]
-symbol = " "
+format = "via [$symbol($version )]($style)"
+style = "bold green"
 
 [rust]
-symbol = "󱘗 "
+symbol = " "
+format = "via [$symbol($version )]($style)"
+style = "bold red"
 
-[scala]
-symbol = " "
+[golang]
+symbol = " "
+format = "via [$symbol($version )]($style)"
+style = "bold cyan"
 
-[swift]
-symbol = " "
+[java]
+symbol = " "
+format = "via [$symbol($version )]($style)"
+style = "bold red"
 
-[zig]
-symbol = " "
+[docker_context]
+symbol = " "
+format = "via [$symbol$context]($style) "
+style = "blue"
+only_with_files = true
+detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+detect_folders = []
 
-[gradle]
-symbol = " "
+# Custom command to show system load
+[custom.load]
+command = "uptime | grep -ohe 'load average[s:][: ].*' | awk '{ print $3 }'"
+symbol = " "
+style = "bold red"
+format = "[$symbol$output]($style) "
+when = "exit 0"
+shell = ["bash", "--noprofile", "--norc"]
+
+# Kubernetes context info
+[kubernetes]
+symbol = "󱃾 "
+format = '[$symbol$context( \($namespace\))]($style) '
+style = "cyan"
+disabled = false
+
+# Nix-shell indicator
+[nix_shell]
+symbol = " "
+format = 'via [$symbol$state( \($name\))]($style) '
+style = "bold blue"
+impure_msg = "impure"
+pure_msg = "pure"
