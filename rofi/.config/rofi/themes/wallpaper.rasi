@@ -7,6 +7,7 @@
 /* ---- Configuration ---- */
 configuration {
   modi: "drun";
+  click-to-exit: true;
 }
 
 window {

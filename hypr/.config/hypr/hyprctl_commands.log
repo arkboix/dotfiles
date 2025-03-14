@@ -1,5 +1,1 @@
-hyprctl keyword "decoration:blur" "true"
-hyprctl keyword "decoration:blur" "false"
-hyprctl keyword "decoration:blur" "true"
-hyprctl keyword "decoration:blur" "false"
-hyprctl keyword "decoration:blur" "true"
+hyprctl keyword "decoration:rounding" "3"

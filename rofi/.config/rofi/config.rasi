@@ -4,7 +4,7 @@ configuration {
     modi: "drun,run,window,ssh,combi";
     font: "JetBrainsMono Nerd Font 12";
     show-icons: true;
-    icon-theme: "Papirus";
+    icon-theme: "Yaru-blue-dark";
     display-drun: "󰀻 Apps";
     display-run: "󰌧 Run";
     display-window: "󱂬 Windows";

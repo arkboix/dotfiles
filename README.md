@@ -1,127 +1,100 @@
-# Arkboi X dotfiles
-
-These are dotfiles used by Arkboi, it turns hyprland into just a window manager without usual eye candy.
-
-# Pictures
-
-![Image 1](assets/2025-03-08-114211_hyprshot.png)
-![Image 2](assets/2025-03-08-114238_hyprshot.png)
-![Image 2](assets/2025-03-08-114253_hyprshot.png)
-
-
-# Video
-![Video 1](assets/showcase.mp4)
-
-# Installation
-
-> [!CAUTION]
-> These are meant to be used by Arkboi only, might have issues installing it yourself, but I believe you can do it 😉
-
-## Install Scripts (beta)
-
-For an install script on Arch Linux or Arch Linux based distros, run the install setup script in the [Arch-hyprland repo](https://github.com/arkboix/arch-hyprland)
+<h1 align="right">✨ ARKBOI'S DOTFILES ✨ </h1>
+<p align="right">
+  <img src="https://img.shields.io/github/stars/arkboix/dotfiles?style=for-the-badge&color=cb9bfd">
+  <img src="https://img.shields.io/github/last-commit/arkboix/dotfiles?style=for-the-badge&color=8ea6dc">
+  <img src="https://img.shields.io/github/repo-size/arkboix/dotfiles?style=for-the-badge&color=cba6f7">
+  <a href="https://discord.gg/8XA7MgVvYN">
+    <img src="https://img.shields.io/discord/8XA7MgVvYN?style=for-the-badge&color=8ea6dc&label=Chat">
+  </a>
+</p>
 
 
-> [!WARNING]
-> If you are a script runner kid that came from.. let's say JaKoolit, get out of here. Dotfiles install Scripts are for noobs and they are pretty annoying to make, you have to manually install. However, I am making a script and working on it. So wait I guess.
+These are my Linux dotfiles, I use Hyprland as my window manager with various tools, this is supposed to be no - nonsense, just plain "Just Werks" stuff.
 
+Usually meant to be a starting ground for whatever you want to do, so feel free to have fun with all these files, and do not blame me if you accidentally forgot a semicolon and started crying without knowing the problem for 4 years.
 
+Most of this is surprisingly written in bash. That's because of ArkScripts, i came up with that name out of nowhere and it's a collection of a whole bunch of shell scripts because who doesn't love shell scripts?
 
-## Step 0 : Install Packages
+If you delete arkscripts, 99% of stuff is gonna collapse, mind this is an ecosystem, everything depends on another
 
-For Arch based systems, use an AUR helper like yay or paru.
+## 🌟 Showcase 🌟
+Here is a screenshots of how my dotfiles looks like, and don't just walk off after being like "Ohh it doesn't have that"- if i were to include everything then get ready to look at screenshots for the next 4 hours.
 
+![Image](assets/1.png)
+![Image](assests/2.png)
+![Image](assets/3.png)
+
+## 🐧 Officially Supported Distrubutions 🐧
+
+This script makes use of a lot of packages from the AUR and Archlinux Repository, which is the only major support problem, everything else works just fine. Currently these are the supported distros:
+
+- Arch
+- Any Archlinux based distrubution
+
+## 🚀 Installation Script 🚀
+
+There is an automated installation script for Arch Linux and Arch based distrubutions. This is maintained in a seperate repository, to check that out:
+[Click Me!](https://github.com/arkboix/arch-hyprland)
+In the repository you will see just two scripts, main.sh and update.sh, the update script is still under development, but for installation only main.sh is required.
+
+Installation commands:
 ``` shell
-yay -S --needed hyprland hyprlock hypridle hyprpaper hyprsunset waybar rofi-wayland nwg-wrapper kitty zsh wlogout mako hyprgui zenity nwg-displays ttf-font-awesome ttf-ibm-plex ttf-ibmplex-mono-nerd
+git clone --depth 1 https://github.com/arkboix/arch-hyprland.git
+cd arch-hyprland
+chmod +x main.sh
+./main.sh
 ```
 
-Install Doom Emacs:
+You will be presented with a nice and interactive installer.
 
-``` shell
-mkdir emacs-backup
-mv ~/.emacs.d emacs-backup # If needed
-git clone https://github.com/doomemacs/doomemacs ~/.emacs.d
-~/.emacs.d/bin/doom install
-```
+## 💛 List of Features 💛
 
-## Step 1 : Pre Installation
+Here are the features provided in the latest version as well as upcoming features:
 
-Clone this repository in the $HOME folder.
+In version 1.1.6 and older
 
-``` shell
-git clone https://github.com/arkboix/dotfiles.git
-```
+- Wallpaper Picker with rofi
+- Dynamic Colorschemes generated from wallpaper
+- Multiple themes for the top bar
+- Creating custom themes for the top bar is made easy as possible
+- Control Center
+- Many Scripts for convienience
+- An Optional Dock
+- NWG Displays support
+- Nice lil animations
+- Hyprland Settings App, entirely made with Rofi (an app launcher)
+- Some plugins support (hyprexpo, hyprtail)
+- Choose between multi
+- multiple animation sets
+- Left Hand Keybindings
+- Emacs Support
+- Chromium as the default browser
+- gBar support
+- Cheatsheet on desktop
+- Cheatsheet as searchable menu
+- Beautiful prompt
+- Logout menu
+- Kitty terminal
+- Dynamic Border colors from wallpaper
+- Android Bar
+- Windows 10 Bar
+- Windows-like start menu in  Windows 10 bar
+- Custom screenshot with grim and slurp
+- Optional Rainbow Borders
 
-## Step 2 : Backup / Delete existing configurations
-
-The dotfiles use GNU Stow's symlink-ing to work properly, that means the correct location of a config file is linked with the file in the repo. That's why you need to delete/move existing configs this is the recommended one:
-
-``` shell
-cd ~
-mkdir my-backups
-mv .config/hypr .config/waybar .config/rofi .config/kitty ~/arkscripts .config/mako .config/nwg-wrapper ~/.zshrc .config/wlogout my-backups
-```
-
-Make sure these files/folders exist, if they don't then no extra steps.
-
-## Step 3 : GNU Stow
-
-Now it's the fun part, symlinking with stow. First install it via your package manager:
-
-Arch:
-
-``` shell
-sudo pacman -S stow
-```
-
-next, let's symlink the folders:
-
-``` shell
-cd ~/dotfiles
-stow -v -t ~ hypr
-stow -v -t ~ waybar
-stow -v -t ~ kitty
-stow -v -t ~ arkscripts
-stow -v -t ~ mako
-stow -v -t ~ zsh
-stow -v -t ~ nwg-wrapper
-stow -v -t ~ wlogout
-stow -v -t ~ rofi
-```
-
-This is enough, all these folders are **Important, and needed.**
-the nvim config is trash and default, don't even bother trying it.
-
-## Step 4 : Post Install (IMPORTANT !!)
-
-The post installation is:
-
-``` shell
-
-swww-daemon &
-swww img ~/wallpapers/polarlights3.jpg &
-./home/$(whoami)/arkscripts/wal.sh
-
-```
-
-reboot
-
-## Step 5 : Post Issues on the repo
-
-come here, go to the issues tab and post any problems/bugs.
-
-## Step 6 : Join Discord for updates
-
-To get notified of latest commits to the repo, join my discord:
-https://discord.gg/8XA7MgVvYN
-
-
-# Inspirations
-
-This project inspired and uses some work from these projects:
-
-[JaKoolit/Hyprland Dots](https://github.com/JaKoolit/Hyprland-Dots)
 <br>
-[mylinuxforwork/dotfiles](https://github.com/mylinuxforwork/dotfiles)
-<br>
-[adi1090x/rofi](https://github.com/adi1090x/rofi)
+Upcoming features to be expected in version 2.0.0:
+
+- Full plugin support
+- i3WM support
+- Bash for everything !
+- Arkboi's own configuration folder
+- Multiple choosable rofi themes
+
+## 😻 Inspirations 😻
+
+The project is inspired and uses work from these:
+
+[JaKoolit's Hyprland Dots](https://github.com/jakoolit/hyprland-dots)
+[My Linux for Work Dotfiles](https://github.com/mylinuxforwork/dotfiles)
+
