@@ -7,9 +7,7 @@ pkill waybar
 # Waybar
 waybar -c /home/arkboi/.config/waybar/minimal-floating/config.jsonc -s /home/arkboi/.config/waybar/minimal-floating/style.css
 
-sleep 1
-pkill swaync
-swaync &
+swaync-client -R
 
 
 # NWG Wrapper

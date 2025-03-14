@@ -87,4 +87,4 @@ configuration {
 
 //@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
 
-@theme "/home/arkboi/.config/rofi/themes/simple.rasi"
+@theme "~/.config/rofi/themes/simple.rasi"
