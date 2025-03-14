@@ -21,7 +21,7 @@ If you delete arkscripts, 99% of stuff is gonna collapse, mind this is an ecosys
 Here is a screenshots of how my dotfiles looks like, and don't just walk off after being like "Ohh it doesn't have that"- if i were to include everything then get ready to look at screenshots for the next 4 hours.
 
 ![Image](assets/1.png)
-![Image](assests/2.png)
+![Image](assets/2.png)
 ![Image](assets/3.png)
 
 ## 🐧 Officially Supported Distrubutions 🐧
