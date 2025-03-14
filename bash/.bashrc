@@ -31,7 +31,6 @@ bind "set completion-ignore-case on"
 ### ALIASES ###
 
 #list
-alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -alFh'
 alias l='ls'
@@ -467,7 +466,7 @@ eval "$(starship init bash)"
 
 # Aliases
 alias rm="trash"
-alias ls="lsd"
+alias ls="lsd --group-dirs first "
 #alias cat="bat"
 alias rld="source ~/.zshrc"
 alias doas="sudo"
