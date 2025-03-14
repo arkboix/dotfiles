@@ -8,7 +8,7 @@
     "spacing": 4,
 
     "modules-left": ["custom/arkscripts", "hyprland/workspaces"],
-    "modules-center": ["clock"],
+    "modules-center": ["custom/notif","clock"],
     "modules-right": ["tray", "pulseaudio", "network", "battery", "custom/power"],
 
     "hyprland/workspaces": {
@@ -39,6 +39,13 @@
         "on-click": "~/arkscripts/main.sh",
         "interval": "once"
     },
+
+"custom/notif": {
+        "format": "{}",
+        "exec": "echo ",
+        "on-click": "swaync-client -t",
+        "exec-if": "true"
+},
 
     "clock": {
         "format": "{:%H:%M}",

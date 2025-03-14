@@ -6,9 +6,11 @@ pkill waybar
 
 # Waybar
 waybar -c /home/arkboi/.config/waybar/minimal-floating/config.jsonc -s /home/arkboi/.config/waybar/minimal-floating/style.css
-# Mako
-pkill mako
-mako &
+
+sleep 1
+pkill swaync
+swaync &
+
 
 # NWG Wrapper
 pkill nwg-wrapper

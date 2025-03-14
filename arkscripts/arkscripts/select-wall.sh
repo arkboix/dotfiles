@@ -100,5 +100,6 @@ fi
 
 main
 pkill waybar  # Kill Waybar
+pkill swaync
 bash ~/arkscripts/wal.sh  # Apply colors and restart Waybar via wal.sh
 bash ~/arkscripts/reload.sh  # Restart Waybar via reload.sh (ensures it runs)

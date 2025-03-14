@@ -72,7 +72,7 @@ window#waybar {
 }
 
 /* Clock in center with special styling */
-#clock {
+#clock, #custom-notif {
     color: @color5;
     font-weight: bold;
     font-size: 16px;
@@ -83,6 +83,11 @@ window#waybar {
         alpha(@color5, 0.15) 0%,
         transparent 70%
     );
+}
+
+
+#custom-notif {
+    padding: 0px 4px;;
 }
 
 /* Right modules with consistent styling but unique accents */
