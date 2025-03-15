@@ -4,6 +4,7 @@
 
 # Define options
 options=(
+    "Change Global Theme"
     "Switch between Layouts"
     "Open Dock"
     "Close Dock"
@@ -24,13 +25,13 @@ options=(
     "Night Light OFF"
     "Send Info notification"
     "Update System"
- #   "Change Global Theme"
     "Change Display Settings"
     "Change Rofi Style"
 )
 
 # Define corresponding commands
 commands=(
+    "~/dotfiles/arkscripts/arkscripts/theme-all.sh"
     "~/dotfiles/arkscripts/arkscripts/layout.sh"
     "nwg-dock-hyprland -mb 5 -l overlay -c 'rofi -show drun' -x"
     "killall nwg-dock-hyprland"
@@ -51,7 +52,6 @@ commands=(
     "~/dotfiles/arkscripts/arkscripts/nightlight-off.sh"
     "~/dotfiles/arkscripts/arkscripts/info.sh"
     "~/dotfiles/arkscripts/arkscripts/update.sh"
-#    "~/dotfiles/arkscripts/arkscripts/theme-all.sh"
     "nwg-displays"
     "~/dotfiles/arkscripts/arkscripts/rofi-theme.sh"
 )
