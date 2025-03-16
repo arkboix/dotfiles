@@ -1,13 +1,13 @@
 /* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
 /* swaync colors - wallust from waybar.css */
 
-@import '../../.config/waybar/wallust/colors-waybar.css';
+@import 'wallust/colors-wallust.css';
 
-@define-color noti-border-color @color5;
-@define-color noti-bg rgba(0, 0, 0, 0.8);
-@define-color noti-bg-alt @background-alt;
-@define-color noti-bg-hover @background;
-@define-color text-color @foreground;
+@define-color noti-border-color white;
+@define-color noti-bg black;
+@define-color noti-bg-alt #1c1c1c;
+@define-color noti-bg-hover #1c1c1c;
+@define-color text-color white;
 
 * {
     font-family: "JetBrains Mono Nerd Font";

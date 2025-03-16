@@ -55,20 +55,20 @@
           "image-radius": 0
       },
       "volume": {
-          "label": "󰕾"
+          "label": " 󰕾  "
       },
       "backlight": {
-          "label": "󰃟"
+          "label": " 󰃟 "
       },
       "buttons-grid": {
           "actions": [
               {
                   "label": "󰐥",
-                  "command": "bash -c $HOME/.config/hypr/scripts/Wlogout.sh"
+                  "command": "wlogout"
               },
               {
                   "label": "󰌾",
-                  "command": "bash -c $HOME/.config/hypr/scripts/LockScreen.sh"
+                  "command": "hyprlock"
               },
               {
                   "label": "󰍃",
@@ -76,7 +76,7 @@
               },
               {
                   "label": "󰀝",
-                  "command": "bash -c $HOME/.config/hypr/scripts/AirplaneMode.sh"
+                  "command": ""
               },
               {
                   "label": "󰝟",
