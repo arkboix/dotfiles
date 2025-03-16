@@ -1,6 +1,23 @@
 # Arkboi's Hyprland Dotfiles CHANGE LOG
 please note this changelog only starts from v1.1.4
 
+## v1.1.7
+
+Feature updates release
+https://github.com/arkboix/dotfiles/releases/tag/v1.1.7
+
+- Add a global theme switcher
+- a lot of themes for the global theme switcher
+- even more waybar themes
+- add new wallpapers
+- add window layout switcher
+- add swaync support
+- add hyprland plugins support
+- new hyprlock theme
+- wallust integration
+- wallust works well with all prgorams
+- removed many wallpapers to other repo
+
 
 ## v1.1.6
 
