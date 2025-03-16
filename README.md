@@ -23,6 +23,7 @@ Here is a screenshots of how my dotfiles looks like, and don't just walk off aft
 ![Image](assets/1.png)
 ![Image](assets/2.png)
 ![Image](assets/3.png)
+![Image](assets/4.png)
 
 ## 🐧 Officially Supported Distrubutions 🐧
 
@@ -53,6 +54,7 @@ Here are the features provided in the latest version as well as upcoming feature
 
 In version 1.1.6 and older
 
+- Global theme switcher with tons and tons of themes
 - Wallpaper Picker with rofi
 - Dynamic Colorschemes generated from wallpaper
 - Multiple themes for the top bar

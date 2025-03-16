@@ -5,7 +5,7 @@ notify-send "Reloading" "Has been reloaded succesfully"
 pkill waybar
 
 # Waybar
-waybar -c /home/arkboi/.config/waybar/minimal-floating/config.jsonc -s /home/arkboi/.config/waybar/minimal-floating/style.css
+waybar -c /home/arkboi/.config/waybar/fluent/config.jsonc -s /home/arkboi/.config/waybar/fluent/style.css
 
 swaync-client -R
 
