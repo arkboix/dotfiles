@@ -21,10 +21,9 @@ configuration {
 }
 
 /*****----- Global Properties -----*****/
-@import                          "shared/colors.rasi"
 @import                          "shared/fonts.rasi"
 
-@import "~/.config/rofi/wallust/colors-rofi.rasi"
+@import "wallust/colors-rofi.rasi"
 
 /*
 * {
@@ -154,8 +153,8 @@ listview {
     scrollbar:                   true;
     layout:                      vertical;
     reverse:                     false;
-    fixed-height:                false;
-    fixed-columns:               false;
+    fixed-height:                true;
+    fixed-columns:               true;
 
     spacing:                     5px;
     margin:                      0px;

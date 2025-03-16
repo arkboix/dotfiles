@@ -4,7 +4,7 @@ configuration {
     modi: "drun,run,window,ssh,combi";
     font: "JetBrainsMono Nerd Font 12";
     show-icons: true;
-    icon-theme: "Yaru-blue-dark";
+    icon-theme: "Surfn";
     display-drun: "󰀻 Apps";
     display-run: "󰌧 Run";
     display-window: "󱂬 Windows";
@@ -20,7 +20,7 @@ configuration {
     combi-modi: "window,drun,run";
     click-to-exit: true;
     sorting-method: "levenshtein";
-    matching: "regex";
+    matching: "fuzzy";
     case-sensitive: false;
     cycle: true;
 
@@ -43,48 +43,5 @@ configuration {
     click-to-exit: 		            true;
 }
 
-//@theme "~/.config/rofi/themes/centered.rasi"
 
-//@theme "~/.config/rofi/themes/translucent.rasi"
-
-//@theme "/home/arkboi/.config/rofi/themes/new.rasi"
-
-//@theme "~/.config/rofi/themes/translucent.rasi"
-
-//@theme "/home/arkboi/.config/rofi/themes/new.rasi"
-
-//@theme "~/.config/rofi/themes/simple.rasi"
-
-//@theme "/home/arkboi/.config/rofi/themes/qwen.rasi"
-
-//@theme "/home/arkboi/.config/rofi/themes/simple.rasi"
-
-//@theme "~/.config/rofi/themes/simple.rasi"
-
-//@theme "/home/arkboi/.config/rofi/themes/aesthetic.rasi"
-
-//@theme "/usr/share/rofi/themes/material.rasi"
-
-//@theme "~/.config/rofi/themes/simple.rasi"
-
-//@theme "~/.config/rofi/themes/simple.rasi"
-
-//@theme "/home/arkboi/.config/rofi/themes/simple.rasi"
-
-//@theme "~/.config/rofi/themes/simple.rasi"
-
-//@theme "/home/arkboi/.config/rofi/themes/simple.rasi"
-
-//@theme "/home/arkboi/.config/rofi/themes/clipboard.rasi"
-
-//@theme "/home/arkboi/.config/rofi/themes/simple.rasi"
-
-//@theme "/usr/share/rofi/themes/fancy2.rasi"
-
-//@theme "/home/arkboi/.config/rofi/themes/simple.rasi"
-
-//@theme "/home/arkboi/.config/rofi/themes/simple.rasi"
-
-//@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
-
-@theme "~/.config/rofi/themes/simple.rasi"
+@theme "~/.config/rofi/themes/style-10.rasi"

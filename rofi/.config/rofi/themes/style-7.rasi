@@ -1,0 +1,110 @@
+/**
+ * Compact Vertical Theme
+ * A space-efficient vertical layout with minimal padding
+ */
+
+@import "../wallust/colors-rofi.rasi"
+
+* {
+    font: "JetBrains Mono 10";
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    spacing: 0;
+
+    /* Define theme colors using wallust variables */
+    BG: @background;
+    FG: @foreground;
+    SEL-BG: @selected-normal-background;
+    SEL-FG: @selected-normal-foreground;
+    BDR: @color3;
+    ALT-BG: @normal-background;
+    PROMPT-COL: @color3;
+}
+
+window {
+    width: 22%;
+    height: 70%;
+    transparency: "real";
+    border: 1px;
+    border-color: @BDR;
+}
+
+mainbox {
+    children: [inputbar, listview];
+    padding: 0;
+    spacing: 0;
+    background-color: transparent;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @color0;
+    padding: 8px;
+    spacing: 8px;
+}
+
+prompt {
+    enabled: true;
+    text-color: @PROMPT-COL;
+    font: "JetBrains Mono Bold 10";
+    background-color: transparent;
+}
+
+entry {
+    text-color: @FG;
+    placeholder: "Type to search";
+    placeholder-color: @color8;
+    cursor: text;
+    background-color: transparent;
+}
+
+listview {
+    lines: 15;
+    columns: 1;
+    fixed-height: false;
+    scrollbar: true;
+    dynamic: true;
+    background-color: @BG;
+    spacing: 0;
+}
+
+scrollbar {
+    handle-width: 3px;
+    handle-color: @BDR;
+    background-color: @ALT-BG;
+}
+
+element {
+    padding: 8px;
+    spacing: 8px;
+    background-color: transparent;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @FG;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: @FG;
+}
+
+element selected {
+    background-color: @SEL-BG;
+    text-color: @SEL-FG;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    size: 1.0em;
+    padding: 0 8px 0 0;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}

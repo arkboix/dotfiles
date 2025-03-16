@@ -1,6 +1,8 @@
 <span face="JetbrainsMono Nerd Font">
 <span size="xx-large" foreground="#999999" font="JetbrainsMono Nerd Font">Hyprland Keybinds</span>
 <span foreground="#eeeeee">
+All Keybinds     	<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + F1</span>
+
 Terminal emulator	<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + ENTER</span>
 Web browser		<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + B</span>
 Text editor		<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + Q</span>

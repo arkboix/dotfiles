@@ -1,0 +1,126 @@
+/**
+ * Dynamic Center Theme
+ * A centered popup with dynamic sizing and animations
+ */
+
+@import "../wallust/colors-rofi.rasi"
+
+* {
+    font: "SF Pro Display 12";
+    border-radius: 12px;
+    padding: 0;
+    margin: 0;
+    spacing: 0;
+
+    /* Define theme colors using wallust variables */
+    BG: @background;
+    FG: @foreground;
+    SEL-BG: @selected-normal-background;
+    SEL-FG: @selected-normal-foreground;
+    BDR: @color4;
+    ALT-BG: @normal-background;
+    PROMPT-COL: @color4;
+}
+
+window {
+    width: 35%;
+    location: center;
+    anchor: center;
+    transparency: "real";
+    border: 3px;
+    border-color: @BDR;
+}
+
+
+mainbox {
+    children: [inputbar, message, listview];
+    padding: 15px;
+    spacing: 15px;
+    background-color: transparent;
+}
+
+inputbar {
+    children: [textbox-prompt, entry];
+    background-color: @ALT-BG;
+    padding: 2px;
+    border-radius: 25px;
+}
+
+textbox-prompt {
+    enabled: true;
+    str: "Search";
+    font: "Font Awesome 12";
+    padding: 0 2px 0 0;
+    text-color: @PROMPT-COL;
+    background-color: transparent;
+}
+
+entry {
+    text-color: @FG;
+    placeholder: "Search applications...";
+    placeholder-color: @color8;
+    cursor: text;
+    background-color: transparent;
+}
+
+message {
+    border: 0;
+    padding: 5px;
+    background-color: @ALT-BG;
+    text-color: @FG;
+}
+
+listview {
+    lines: 6;
+    columns: 1;
+    fixed-height: false;
+    scrollbar: true;
+    dynamic: true;
+    cycle: false;
+    background-color: transparent;
+    spacing: 5px;
+}
+
+scrollbar {
+    handle-width: 5px;
+    handle-color: @color5;
+    background-color: @ALT-BG;
+    padding: 0 3px 0 0;
+}
+
+element {
+    padding: 10px 15px;
+    spacing: 10px;
+    border-radius: 8px;
+    margin: 0 0 5px 0;
+    background-color: @ALT-BG;
+}
+
+element normal.normal {
+    background-color: @ALT-BG;
+    text-color: @FG;
+}
+
+element alternate.normal {
+    background-color: @ALT-BG;
+    text-color: @FG;
+}
+
+element selected {
+    background-color: @SEL-BG;
+    text-color: @SEL-FG;
+    border-radius: 8px;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    size: 1.5em;
+    padding: 0 10px 0 0;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}

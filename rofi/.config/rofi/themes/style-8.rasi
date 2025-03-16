@@ -1,0 +1,117 @@
+/**
+ * Circular Icons Theme
+ * A theme with emphasized circular icons
+ */
+
+@import "../wallust/colors-rofi.rasi"
+
+* {
+    font: "Noto Sans 11";
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    spacing: 0;
+
+    /* Define theme colors using wallust variables */
+    BG: @background;
+    FG: @foreground;
+    SEL-BG: @selected-normal-background;
+    SEL-FG: @selected-normal-foreground;
+    BDR: @border-color;
+    ALT-BG: @normal-background;
+    PROMPT-COL: @color4;
+}
+
+window {
+    width: 40%;
+    transparency: "real";
+    border: 2px;
+    border-color: @BDR;
+    border-radius: 12px;
+}
+
+mainbox {
+    children: [inputbar, listview];
+    padding: 15px;
+    spacing: 15px;
+    background-color: transparent;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @ALT-BG;
+    border-radius: 30px;
+    padding: 10px 15px;
+    spacing: 10px;
+}
+
+prompt {
+    enabled: true;
+    str: "";
+    font: "Font Awesome 11";
+    text-color: @PROMPT-COL;
+    background-color: transparent;
+}
+
+entry {
+    text-color: @FG;
+    placeholder: "Search applications";
+    placeholder-color: @color8;
+    cursor: text;
+    background-color: transparent;
+}
+
+listview {
+    lines: 8;
+    columns: 1;
+    fixed-height: false;
+    scrollbar: true;
+    background-color: transparent;
+    spacing: 10px;
+}
+
+scrollbar {
+    handle-width: 5px;
+    handle-color: @PROMPT-COL;
+    background-color: @ALT-BG;
+    border-radius: 10px;
+    padding: 0 0 0 5px;
+}
+
+element {
+    padding: 8px;
+    spacing: 15px;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @FG;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: @FG;
+}
+
+element selected {
+    background-color: @SEL-BG;
+    text-color: @SEL-FG;
+    border-radius: 8px;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    size: 2.0em;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+    horizontal-align: 0;
+}

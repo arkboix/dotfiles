@@ -1,0 +1,113 @@
+/**
+ * Modern Minimal Theme
+ * A clean, minimalist rofi theme with rounded corners
+ */
+
+@import "~/.config/rofi/wallust/colors-rofi.rasi"
+
+* {
+    font: "JetBrains Mono 12";
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    spacing: 0;
+
+    /* Define theme colors using wallust variables */
+    BG: @background;
+    FG: @foreground;
+    SEL-BG: @selected-normal-background;
+    SEL-FG: @selected-normal-foreground;
+    BDR: @border-color;
+    PROMPT: @color4;
+    ALT-BG: @normal-background;
+}
+
+window {
+    width: 40%;
+    transparency: "real";
+    border: 2px;
+    border-color: @BDR;
+    border-radius: 10px;
+}
+
+mainbox {
+    children: [inputbar, listview];
+    padding: 15px;
+    spacing: 15px;
+    background-color: transparent;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @ALT-BG;
+    padding: 12px;
+    spacing: 12px;
+    border-radius: 8px;
+}
+
+prompt {
+    enabled: true;
+    text-color: @PROMPT;
+    font: "JetBrains Mono Bold 12";
+}
+
+entry {
+    text-color: @FG;
+    placeholder: "Search...";
+    placeholder-color: @color8;
+    cursor: text;
+}
+
+listview {
+    lines: 8;
+    columns: 2;
+    fixed-height: false;
+    scrollbar: true;
+    scrollbar-width: 4px;
+    background-color: transparent;
+    spacing: 5px;
+}
+
+scrollbar {
+    handle-width: 4px;
+    handle-color: @PROMPT;
+    background-color: @ALT-BG;
+    border-radius: 8px;
+}
+
+element {
+    padding: 12px;
+    spacing: 10px;
+    background-color: @ALT-BG;
+    border-radius: 8px;
+}
+
+element normal.normal {
+    background-color: @ALT-BG;
+    text-color: @FG;
+}
+
+element alternate.normal {
+    background-color: @ALT-BG;
+    text-color: @FG;
+}
+
+element selected {
+    background-color: @SEL-BG;
+    text-color: @BG;
+    border-radius: 8px;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    size: 1.2em;
+    padding: 0 8px 0 0;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+    horizontal-align: 0;
+}

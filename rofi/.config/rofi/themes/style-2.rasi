@@ -1,0 +1,111 @@
+/**
+ * Grid View Theme
+ * A grid-style layout with app icons
+ */
+
+@import "../wallust/colors-rofi.rasi"
+
+* {
+    font: "Ubuntu 11";
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    spacing: 0;
+
+    /* Define theme colors using wallust variables */
+    BG: @background;
+    FG: @foreground;
+    SEL-BG: @selected-normal-background;
+    SEL-FG: @selected-normal-foreground;
+    BDR: @border-color;
+    ALT-BG: @normal-background;
+    PROMPT-COL: @color5;
+}
+
+window {
+    width: 50%;
+    transparency: "real";
+    border: 0;
+    border-radius: 12px;
+}
+
+mainbox {
+    children: [inputbar, listview];
+    padding: 20px;
+    spacing: 20px;
+    background-color: transparent;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @ALT-BG;
+    padding: 12px;
+    margin: 0px 0px 10px 0px;
+    border: 1px;
+    border-color: @BDR;
+    border-radius: 8px;
+}
+
+prompt {
+    enabled: true;
+    padding: 0px 10px 0px 0px;
+    text-color: @PROMPT-COL;
+    font: "Ubuntu Bold 11";
+}
+
+entry {
+    text-color: @FG;
+    placeholder: "Type to search...";
+    placeholder-color: @color8;
+    cursor: text;
+}
+
+listview {
+    lines: 3;
+    columns: 4;
+    fixed-height: false;
+    scrollbar: false;
+    background-color: transparent;
+    spacing: 15px;
+    layout: vertical;
+}
+
+element {
+    orientation: vertical;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: @ALT-BG;
+}
+
+element normal.normal {
+    background-color: @ALT-BG;
+    text-color: @FG;
+}
+
+element alternate.normal {
+    background-color: @ALT-BG;
+    text-color: @FG;
+}
+
+element selected {
+    background-color: @SEL-BG;
+    text-color: @SEL-FG;
+    border: 2px;
+    border-color: @color4;
+    border-radius: 8px;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    size: 48px;
+    horizontal-align: 0.5;
+    padding: 0 0 10px 0;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}

@@ -1,0 +1,118 @@
+/**
+ * Terminal Style Theme
+ * A theme that resembles a terminal interface
+ */
+
+@import "../wallust/colors-rofi.rasi"
+
+* {
+    font: "Cascadia Code PL 11";
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    spacing: 0;
+
+    /* Define theme colors using wallust variables */
+    BG: @color0;
+    FG: @foreground;
+    SEL-BG: @color3;
+    SEL-FG: @color0;
+    BDR: @color8;
+    ALT-BG: @color0;
+    PROMPT-COL: @color5;
+}
+
+window {
+    width: 45%;
+    transparency: "real";
+    border: 1px;
+    border-color: @BDR;
+}
+
+mainbox {
+    children: [inputbar, listview, message];
+    padding: 10px;
+    spacing: 10px;
+    background-color: transparent;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: transparent;
+    padding: 5px;
+    spacing: 10px;
+}
+
+prompt {
+    enabled: true;
+    text-color: @PROMPT-COL;
+    str: "❯";
+    font: "Cascadia Code PL Bold 11";
+    background-color: transparent;
+}
+
+entry {
+    text-color: @FG;
+    placeholder: "Type command...";
+    placeholder-color: @color8;
+    cursor: text;
+    background-color: transparent;
+}
+
+message {
+    border: 0;
+    padding: 5px;
+    background-color: transparent;
+    text-color: @FG;
+}
+
+listview {
+    lines: 10;
+    columns: 1;
+    fixed-height: false;
+    scrollbar: true;
+    dynamic: true;
+    background-color: transparent;
+    spacing: 0;
+}
+
+scrollbar {
+    handle-width: 4px;
+    handle-color: @BDR;
+    background-color: @ALT-BG;
+    padding: 0 0 0 5px;
+}
+
+element {
+    padding: 8px;
+    spacing: 8px;
+    background-color: transparent;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @FG;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: @FG;
+}
+
+element selected {
+    background-color: @SEL-BG;
+    text-color: @SEL-FG;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    size: 1.0em;
+    padding: 0 8px 0 0;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}

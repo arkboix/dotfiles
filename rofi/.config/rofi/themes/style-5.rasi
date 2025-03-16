@@ -1,0 +1,144 @@
+/**
+ * Dark Material Theme
+ * Inspired by material design with card-based elements
+ */
+
+@import "../wallust/colors-rofi.rasi"
+
+* {
+    font: "Roboto 11";
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    spacing: 0;
+
+    /* Define theme colors using wallust variables */
+    BG: @background;
+    FG: @foreground;
+    SEL-BG: @selected-normal-background;
+    SEL-FG: @selected-normal-foreground;
+    BDR: @color1;
+    ALT-BG: @normal-background;
+    PROMPT-COL: @color1;
+}
+
+window {
+    width: 45%;
+    border: 2px solid;
+    border-color: @BDR;
+    transparency: "real";
+    border-radius: 8px;
+}
+
+mainbox {
+    children: [inputbar, message, listview, mode-switcher];
+    padding: 0;
+    spacing: 0;
+    background-color: transparent;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @ALT-BG;
+    padding: 16px;
+    margin: 0 0 15px 0;
+    border-radius: 0 0 8px 8px;
+    border: 0 0 2px 0;
+    border-color: @BDR;
+    spacing: 10px;
+}
+
+prompt {
+    enabled: true;
+    text-color: @PROMPT-COL;
+    font: "Roboto Bold 11";
+}
+
+entry {
+    text-color: @FG;
+    placeholder: "Search...";
+    placeholder-color: @color8;
+    cursor: text;
+    background-color: transparent;
+}
+
+message {
+    border: 0;
+    padding: 0 15px 15px 15px;
+    background-color: transparent;
+    text-color: @FG;
+}
+
+listview {
+    lines: 8;
+    columns: 1;
+    fixed-height: false;
+    scrollbar: true;
+    padding: 0 15px;
+    background-color: transparent;
+    spacing: 10px;
+}
+
+scrollbar {
+    handle-width: 5px;
+    handle-color: @BDR;
+    background-color: @ALT-BG;
+    padding: 0 0 0 5px;
+}
+
+element {
+    padding: 12px;
+    spacing: 10px;
+    background-color: @ALT-BG;
+    border-radius: 4px;
+}
+
+element normal.normal {
+    background-color: @ALT-BG;
+    text-color: @FG;
+}
+
+element alternate.normal {
+    background-color: @ALT-BG;
+    text-color: @FG;
+}
+
+element selected {
+    background-color: @SEL-BG;
+    text-color: @SEL-FG;
+    border-left: 4px solid;
+    border-color: @BDR;
+    border-radius: 4px;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    size: 1.2em;
+    padding: 0 12px 0 0;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+mode-switcher {
+    padding: 15px;
+    spacing: 10px;
+    background-color: transparent;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: @ALT-BG;
+    text-color: @color8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button selected {
+    background-color: @color3;
+    text-color: @FG;
+}

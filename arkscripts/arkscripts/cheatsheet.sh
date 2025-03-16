@@ -7,6 +7,10 @@
 keybind_data() {
     cat << EOF
 S + Enter - Launch terminal
+S + SHIFT + Q - Open Global theme Switcher
+S + SHIFT + D - Open ArkScripts
+S + SHIFT + A - Reload
+S + SHIFT + Z - Choose Waybar Theme
 C + SPC - App Launcher
 S + w - Close Window
 S + m - Emoji Picker

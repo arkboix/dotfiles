@@ -52,6 +52,7 @@ element {
   border-radius: 10px;
   padding: 0px;
   margin: 0px;
+  background-color: transparent;
 }
 
 element selected.normal {
@@ -69,6 +70,7 @@ element-text {
   vertical-align: 0.5;
   horizontal-align: 0.5;
   padding: 6px;
+  background-color: transparent;
   margin: 6px;
 }
 

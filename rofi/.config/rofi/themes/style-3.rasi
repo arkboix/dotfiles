@@ -1,0 +1,142 @@
+/**
+ * Sidebar Style Theme
+ * A left-aligned sidebar design with categories
+ */
+
+@import "../wallust/colors-rofi.rasi"
+
+* {
+    font: "Inter 11";
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    spacing: 0;
+
+    /* Define theme colors using wallust variables */
+    BG: @background;
+    FG: @foreground;
+    SEL-BG: @selected-normal-background;
+    SEL-FG: @selected-normal-foreground;
+    BDR: @border-color;
+    ALT-BG: @color0;
+    SIDEBAR-BG: @color0;
+    PROMPT-COL: @color1;
+}
+
+window {
+    width: 40%;
+    height: 70%;
+    transparency: "real";
+    background-color: @BG;
+    border: 0;
+    orientation: horizontal;
+    border-radius: 12px;
+}
+
+mainbox {
+    children: [sidebar, vertibox];
+    background-color: transparent;
+}
+
+sidebar {
+    width: 25%;
+    background-color: @SIDEBAR-BG;
+    padding: 15px 0 15px 0;
+    expand: false;
+}
+
+vertibox {
+    children: [inputbar, listview];
+    padding: 20px;
+    expand: true;
+}
+
+button {
+    padding: 12px;
+    margin: 5px 15px 5px 15px;
+    text-color: @color8;
+    horizontal-align: 0;
+}
+
+button selected {
+    background-color: @color3;
+    text-color: @foreground;
+    border-radius: 5px;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: transparent;
+    padding: 0 0 20px 0;
+    border-bottom: 2px;
+    border-color: @BDR;
+}
+
+prompt {
+    enabled: true;
+    padding: 0 10px 0 0;
+    text-color: @PROMPT-COL;
+    font: "Inter Bold 11";
+}
+
+entry {
+    text-color: @FG;
+    placeholder: "Search...";
+    placeholder-color: @color8;
+    cursor: text;
+}
+
+listview {
+    lines: 10;
+    columns: 1;
+    fixed-height: false;
+    scrollbar: true;
+    scrollbar-width: 5px;
+    padding: 15px 0 0 0;
+    background-color: transparent;
+    spacing: 5px;
+}
+
+scrollbar {
+    handle-width: 5px;
+    handle-color: @color5;
+    background-color: @SIDEBAR-BG;
+    padding: 0 0 0 5px;
+}
+
+element {
+    padding: 10px;
+    spacing: 10px;
+    border-radius: 5px;
+    margin: 0 0 5px 0;
+    background-color: @ALT-BG;
+}
+
+element normal.normal {
+    background-color: @ALT-BG;
+    text-color: @FG;
+}
+
+element alternate.normal {
+    background-color: @ALT-BG;
+    text-color: @FG;
+}
+
+element selected {
+    background-color: @SEL-BG;
+    text-color: @SEL-FG;
+    border-radius: 5px;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    size: 1.2em;
+    padding: 0 10px 0 0;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}

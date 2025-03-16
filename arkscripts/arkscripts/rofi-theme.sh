@@ -1,57 +1,56 @@
 #!/bin/bash
 
-# Arkscripts - https://github.com/arkboix/dotfiles
-# Rofi Solarized Dark Theme Selector
-# This script presents a menu of available custom Solarized themes
-# and applies the selected theme to the Rofi configuration
+# Path to Rofi configuration directory
+ROFI_CONFIG_DIR="$HOME/.config/rofi"
+ROFI_CONFIG_FILE="$ROFI_CONFIG_DIR/config.rasi"
+THEMES_DIR="$ROFI_CONFIG_DIR/themes"
 
-# Define the themes and their paths
-declare -A themes
-themes=(
-    ["Default Simple"]="~/.config/rofi/themes/simple.rasi"
-    ["Centered"]="~/.config/rofi/themes/centered.rasi"
-    ["Compact"]="~/.config/rofi/themes/compact.rasi"
-    ["Grid"]="~/.config/rofi/themes/grid.rasi"
-    ["Minimal"]="~/.config/rofi/themes/minimal.rasi"
-    ["Material"]="~/.config/rofi/themes/material.rasi"
-    ["Fullscreen"]="~/.config/rofi/themes/fullscreen.rasi"
-    ["Classic"]="~/.config/rofi/themes/classic.rasi"
-    ["Translucent"]="~/.config/rofi/themes/translucent.rasi"
-    ["Default Second"]="~/.config/rofi/themes/default.rasi"
-)
-
-# Path to Rofi config
-config_file="$HOME/.config/rofi/config.rasi"
-
-# Check if config file exists
-if [ ! -f "$config_file" ]; then
-    echo "Error: Rofi config file not found at $config_file"
+# Check if necessary directories and files exist
+if [ ! -d "$THEMES_DIR" ]; then
+    echo "Error: Themes directory not found at $THEMES_DIR"
     exit 1
 fi
 
-# Generate the menu items
-menu_items=""
-for theme_name in "${!themes[@]}"; do
-    menu_items+="$theme_name\n"
-done
-menu_items=${menu_items%\\n}  # Remove trailing newline
-
-# Show the Rofi menu
-selected=$(echo -e "$menu_items" | rofi -dmenu -p "Select Theme" -theme ~/.config/rofi/themes/solarized.rasi)
-
-# If a theme was selected
-if [ -n "$selected" ] && [ -n "${themes[$selected]}" ]; then
-    selected_theme_path="${themes[$selected]}"
-
-    # Remove the last line from the config file (assumed to be the @theme line)
-    sed -i '$ d' "$config_file"
-
-    # Add the new theme line
-    echo "@theme \"$selected_theme_path\"" >> "$config_file"
-
-    # Notify the user
-    notify-send "Rofi Theme" "Theme changed to: $selected"
-
-    echo "Theme changed to: $selected"
-    echo "Path: $selected_theme_path"
+if [ ! -f "$ROFI_CONFIG_FILE" ]; then
+    echo "Error: Rofi config file not found at $ROFI_CONFIG_FILE"
+    exit 1
 fi
+
+# Get list of theme files and remove the .rasi extension
+themes=()
+for theme_file in "$THEMES_DIR"/*.rasi; do
+    if [ -f "$theme_file" ]; then
+        theme_name=$(basename "$theme_file" .rasi)
+        themes+=("$theme_name")
+    fi
+done
+
+# Check if any themes were found
+if [ ${#themes[@]} -eq 0 ]; then
+    echo "No themes found in $THEMES_DIR"
+    exit 1
+fi
+
+# Display menu with available themes using rofi itself
+selected_theme=$(printf "%s\n" "${themes[@]}" | rofi -dmenu -p "Select a theme:")
+
+# Check if a theme was selected
+if [ -z "$selected_theme" ]; then
+    echo "No theme selected. Exiting."
+    exit 0
+fi
+
+# Backup the original config
+cp "$ROFI_CONFIG_FILE" "$ROFI_CONFIG_FILE.backup"
+
+# Update the config.rasi file by replacing the @theme line
+if grep -q "^@theme" "$ROFI_CONFIG_FILE"; then
+    # Replace existing @theme line
+    sed -i "s|^@theme.*|@theme \"~/.config/rofi/themes/$selected_theme.rasi\"|" "$ROFI_CONFIG_FILE"
+else
+    # Add @theme line if it doesn't exist
+    echo "@theme \"~/.config/rofi/themes/$selected_theme.rasi\"" >> "$ROFI_CONFIG_FILE"
+fi
+
+echo "Theme updated to $selected_theme"
+echo "Original config backed up at $ROFI_CONFIG_FILE.backup"

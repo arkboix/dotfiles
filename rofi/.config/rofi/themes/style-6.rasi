@@ -1,0 +1,123 @@
+/**
+ * Glassmorphic Theme
+ * A modern, translucent glass-like interface
+ */
+
+@import "../wallust/colors-rofi.rasi"
+
+* {
+    font: "Ubuntu 11";
+    border-radius: 12px;
+    padding: 0;
+    margin: 0;
+    spacing: 0;
+
+    /* Define theme colors using wallust variables */
+    BG: @background;  /* Based on @color0 but with transparency */
+    FG: @foreground;
+    SEL-BG: @selected-normal-background;  /* Based on @selected-normal-background */
+    SEL-FG: @selected-normal-foreground;
+    BDR: @border-color;  /* Based on @border-color */
+    ALT-BG: @alternate-normal-background;
+    PROMPT-COL: @color1;
+    ICON: @color8;
+
+    blur: 10;
+}
+
+window {
+    width: 38%;
+    transparency: "real";
+    border: 1px;
+    border-color: @BDR;
+    border-radius: 12px;
+}
+
+mainbox {
+    children: [inputbar, listview];
+    padding: 20px;
+    spacing: 15px;
+    background-color: transparent;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @ALT-BG;
+    padding: 12px;
+    spacing: 10px;
+    border: 1px;
+    border-color: @BDR;
+}
+
+prompt {
+    enabled: true;
+    text-color: @PROMPT-COL;
+    font: "Ubuntu Bold 11";
+    background-color: transparent;
+}
+
+entry {
+    text-color: @FG;
+    placeholder: "Search...";
+    placeholder-color: rgba(229, 233, 240, 0.5);  /* Based on @foreground */
+    cursor: text;
+    background-color: transparent;
+}
+
+listview {
+    lines: 6;
+    columns: 2;
+    fixed-height: false;
+    scrollbar: true;
+    background-color: transparent;
+    spacing: 8px;
+}
+
+scrollbar {
+    handle-width: 4px;
+    handle-color: @BDR;
+    background-color: @ALT-BG;
+    padding: 0 0 0 5px;
+}
+
+element {
+    padding: 12px;
+    spacing: 10px;
+    border-radius: 10px;
+    border: 1px;
+    border-color: transparent;
+}
+
+element normal.normal {
+    background-color: @ALT-BG;
+    text-color: @FG;
+}
+
+element alternate.normal {
+    background-color: @ALT-BG;
+    text-color: @FG;
+}
+
+element selected {
+    background-color: @SEL-BG;
+    text-color: @BG;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+element-icon {
+    background-color: @ICON;
+    text-color: inherit;
+    size: 1.2em;
+    padding: 0 10px 0 0;
+}
+
+element-icon selected {
+    background-color: @color7;
+}
+
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
