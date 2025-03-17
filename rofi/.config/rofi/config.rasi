@@ -44,4 +44,4 @@ configuration {
 }
 
 
-@theme "~/.config/rofi/themes/style-10.rasi"
+@theme "~/.config/rofi/themes/style-1.rasi"

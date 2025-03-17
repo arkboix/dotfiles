@@ -29,8 +29,8 @@
 ;; refresh your font settings. If Emacs still can't find your font, it likely
 ;; wasn't installed correctly. Font issues are rarely Doom issues!
 
-(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 18 :weight 'regular)
-      doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font" :size 20))
+(setq doom-font (font-spec :family "Iosevka Nerd Font Mono" :size 18 :weight 'regular)
+      doom-variable-pitch-font (font-spec :family "Iosevka Nerd Font Mono" :size 20))
 
 
 ;; There are two ways to load a theme. Both assume the theme is installed and

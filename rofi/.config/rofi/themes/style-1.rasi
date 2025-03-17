@@ -6,7 +6,7 @@
 @import "~/.config/rofi/wallust/colors-rofi.rasi"
 
 * {
-    font: "JetBrains Mono 12";
+    font: "Iosevka Nerd Font Mono 12";
     border-radius: 8px;
     padding: 0;
     margin: 0;
