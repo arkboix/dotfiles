@@ -1,0 +1,158 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 36,
+    "spacing": 6,
+    "margin-top": 8,
+    "margin-left": 10,
+    "margin-right": 10,
+
+    "modules-left": ["hyprland/workspaces", "hyprland/submap"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "temperature", "network", "pulseaudio", "backlight", "battery", "tray"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "󱚌",
+            "2": "󰖟",
+            "3": "󰅩",
+            "4": "󰨞",
+            "5": "󱓥",
+            "6": "󰕼",
+            "7": "󰙯",
+            "8": "󰍹",
+            "9": "󰝚",
+            "10": "󰎆",
+            "urgent": "󰀨",
+            "active": "󰮯",
+            "default": "󰊠"
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+
+    "hyprland/submap": {
+        "format": "󰩨 {}",
+        "tooltip": false
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 8
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%A, %B %d}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'>{}</span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699' background='#1a1b26'><b>{}</b></span>"
+            }
+        },
+        "actions": {
+            "on-click": "mode",
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+
+    "cpu": {
+        "format": "󰘚 {usage}%",
+        "format-alt": "󰓅 {load}",
+        "interval": 2,
+        "tooltip": true
+    },
+
+    "memory": {
+        "format": "󰍛 {percentage}%",
+        "format-alt": "󰆼 {used:0.1f}GB",
+        "interval": 2,
+        "tooltip": true,
+        "tooltip-format": "Used: {used:0.1f}GB\nTotal: {total:0.1f}GB"
+    },
+
+    "temperature": {
+        "thermal-zone": 2,
+        "critical-threshold": 80,
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": ["󰔏", "󱃃", "󰸁"],
+        "tooltip": true
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"],
+        "tooltip": false,
+        "scroll-step": 5
+    },
+
+    "battery": {
+        "bat": "BAT0",
+        "adapter": "AC",
+        "full-at": 100,
+        "design-capacity": false,
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰚥 {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-time": "{H}h {M}m",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "tooltip": true
+    },
+
+    "network": {
+        "format-wifi": "󰖩 {essid}",
+        "format-ethernet": "󰈀 {ipaddr}",
+        "format-linked": "󰒞 {ifname}",
+        "format-disconnected": "󰯡 Disconnected",
+        "format-alt": "󱛇 {bandwidthUpBits} | 󱛋 {bandwidthDownBits}",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) on {ifname} via {gwaddr} ⇅",
+        "tooltip-format-ethernet": "{ifname} {ipaddr} via {gwaddr} ⇅",
+        "tooltip-format-disconnected": "Disconnected",
+        "interval": 5
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "󰂯 {volume}%",
+        "format-bluetooth-muted": "󰂲 Muted",
+        "format-muted": "󰖁 Muted",
+        "format-source": "󰍬 {volume}%",
+        "format-source-muted": "󰍭 Muted",
+        "format-icons": {
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
+            "phone": "󰏲",
+            "portable": "󰏲",
+            "car": "󰄋",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "scroll-step": 5,
+        "on-click": "pavucontrol",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    }
+}

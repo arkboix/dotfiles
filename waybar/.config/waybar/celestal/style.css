@@ -1,0 +1,206 @@
+@import "../wallust/colors-waybar.css";
+
+* {
+    font-family: "Iosevka Nerd Font", "Iosevka", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background: linear-gradient(to right,
+                alpha(@color0, 0.95) 0%,
+                alpha(@background, 0.85) 40%,
+                alpha(@background, 0.85) 60%,
+                alpha(@color0, 0.95) 100%);
+    color: @foreground;
+    border-bottom: 2px solid alpha(@color4, 0.3);
+    box-shadow: 0 1px 8px alpha(black, 0.5);
+}
+
+#workspaces {
+    margin: 4px 0 4px 6px;
+    border-radius: 10px;
+    background: alpha(@background, 0.7);
+    padding: 0 6px;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: alpha(@foreground, 0.5);
+    margin: 4px 2px;
+    border-radius: 16px;
+    background: transparent;
+    transition: all 0.25s cubic-bezier(.55, -0.68, .48, 1.68);
+}
+
+#workspaces button:hover {
+    color: @foreground;
+    background: alpha(@foreground, 0.1);
+}
+
+#workspaces button.active {
+    color: @background;
+    background: linear-gradient(135deg, @color4 30%, @color5 100%);
+    box-shadow: 0 1px 4px alpha(@color4, 0.5);
+    padding: 0 12px;
+    margin: 4px 3px;
+    transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
+}
+
+#workspaces button.urgent {
+    color: @background;
+    background: linear-gradient(135deg, @color9 30%, @color1 100%);
+    box-shadow: 0 1px 4px alpha(@color9, 0.5);
+}
+
+/* The "stellar" gradient circle display */
+#clock {
+    margin: 5px 0;
+    padding: 0 20px;
+    color: @background;
+    font-weight: bold;
+    font-size: 15px;
+    background: radial-gradient(circle, @color4 0%, @color5 100%);
+    border-radius: 24px;
+    box-shadow: 0 2px 6px alpha(black, 0.5);
+    text-shadow: 0 1px 1px alpha(black, 0.3);
+}
+
+#submap {
+    padding: 0 10px;
+    margin: 5px 0;
+    color: @color5;
+    background: alpha(@background, 0.7);
+    border-left: 3px solid @color5;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Module styling with star-like dots between them */
+#battery,
+#cpu,
+#memory,
+#backlight,
+#network,
+#pulseaudio,
+#tray {
+    padding: 0 15px;
+    margin: 4px 0;
+    color: @foreground;
+}
+
+
+#battery {
+    color: @color7;
+}
+
+#battery.charging, #battery.plugged {
+    color: @color10;
+    background: alpha(@color10, 0.15);
+    border-radius: 10px;
+}
+
+@keyframes battery-pulse {
+    0% {
+        background: alpha(@color9, 0.1);
+    }
+    50% {
+        background: alpha(@color9, 0.3);
+    }
+    100% {
+        background: alpha(@color9, 0.1);
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: @color9;
+    background: alpha(@color9, 0.15);
+    border-radius: 10px;
+    animation: battery-pulse 1.5s infinite;
+}
+
+#cpu {
+    color: @color3;
+}
+
+#cpu.warning {
+    color: @color11;
+}
+
+#cpu.critical {
+    color: @color9;
+}
+
+#memory {
+    color: @color5;
+}
+
+#memory.warning {
+    color: @color11;
+}
+
+#memory.critical {
+    color: @color9;
+}
+
+#backlight {
+    color: @color6;
+}
+
+#network {
+    color: @color2;
+}
+
+#network.disconnected {
+    color: @color9;
+}
+
+#pulseaudio {
+    color: @color1;
+}
+
+#pulseaudio.muted {
+    color: @color8;
+}
+
+#tray {
+    background: alpha(@background, 0.7);
+    margin: 4px 6px 4px 0;
+    border-radius: 10px;
+}
+
+#tray menu {
+    background: @background;
+    color: @foreground;
+    border-radius: 8px;
+}
+
+tooltip {
+    background: alpha(@background, 0.95);
+    border: 1px solid @color4;
+    border-radius: 10px;
+}
+
+tooltip label {
+    color: @foreground;
+    padding: 5px;
+}
+
+/* Animation for buttons */
+@keyframes gradient-fade {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#workspaces button:hover {
+    animation: gradient-fade 3s ease infinite;
+    background: linear-gradient(270deg, alpha(@color3, 0.3), alpha(@color5, 0.3), alpha(@color4, 0.3));
+    background-size: 600% 600%;
+}
