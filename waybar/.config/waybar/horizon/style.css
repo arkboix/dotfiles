@@ -1,0 +1,225 @@
+@import "../wallust/colors-waybar.css";
+
+* {
+    font-family: "Iosevka Nerd Font", "Iosevka", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* Layered background effect */
+window#waybar > box {
+    background: alpha(@background, 0.8);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid alpha(@color4, 0.2);
+    padding: 2px 0;
+}
+
+/* Workspaces with floating effect */
+#workspaces {
+    margin-left: 8px;
+    padding: 2px;
+    border-radius: 9px;
+    background: alpha(@background, 0.6);
+    border: 1px solid alpha(@foreground, 0.1);
+}
+
+#workspaces button {
+    padding: 0 6px;
+    margin: 2px;
+    color: alpha(@foreground, 0.6);
+    border-radius: 6px;
+    background: transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#workspaces button:hover {
+    color: @foreground;
+    background: alpha(@foreground, 0.1);
+    box-shadow: inset 0 0 0 1px alpha(@foreground, 0.1);
+}
+
+#workspaces button.active {
+    color: @background;
+    background: linear-gradient(135deg, @color4 0%, @color12 100%);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    min-width: 28px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease;
+}
+
+#workspaces button.urgent {
+    color: @background;
+    background: linear-gradient(135deg, @color9 0%, @color1 100%);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Elegant clock centered */
+#clock {
+    color: @foreground;
+    font-size: 14px;
+    background: alpha(@background, 0.5);
+    border-radius: 12px;
+    padding: 0 16px;
+    margin: 2px 0;
+    border: 1px solid alpha(@color4, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#submap {
+    margin-left: 8px;
+    padding: 0 12px;
+    border-radius: 8px;
+    color: @color4;
+    background: alpha(@background, 0.7);
+    border: 1px solid alpha(@color4, 0.3);
+}
+
+/* Groups styling */
+.modules-right .group {
+    background: alpha(@background, 0.6);
+    border-radius: 9px;
+    margin: 2px 4px;
+    padding: 0 2px;
+    border: 1px solid alpha(@foreground, 0.1);
+}
+
+/* Hover effects for all modules */
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#tray {
+    padding: 0 10px;
+    margin: 2px 3px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#temperature:hover,
+#backlight:hover,
+#network:hover,
+#pulseaudio:hover {
+    background: alpha(@foreground, 0.1);
+}
+
+/* Horizon glow effect */
+#cpu {
+    color: @color3;
+    padding-left: 12px;
+}
+
+#memory {
+    color: @color5;
+}
+
+#temperature {
+    color: @color8;
+    padding-right: 12px;
+}
+
+#temperature.critical {
+    color: @color9;
+    background: alpha(@color9, 0.2);
+}
+
+#backlight {
+    color: @color6;
+    padding-left: 12px;
+}
+
+#network {
+    color: @color2;
+}
+
+#network.disconnected {
+    color: @color9;
+}
+
+#pulseaudio {
+    color: @color4;
+    padding-right: 12px;
+}
+
+#pulseaudio.muted {
+    color: @color8;
+}
+
+/* Special battery styling */
+#battery {
+    margin-right: 8px;
+    color: @color7;
+    background: alpha(@background, 0.6);
+    border-radius: 9px;
+    border: 1px solid alpha(@foreground, 0.1);
+    padding: 0 12px;
+}
+
+@keyframes horizon-battery-pulse {
+    0% { border-color: alpha(@color9, 0.3); }
+    50% { border-color: alpha(@color9, 0.8); }
+    100% { border-color: alpha(@color9, 0.3); }
+}
+
+#battery.critical:not(.charging) {
+    color: @color9;
+    border-color: @color9;
+    animation: horizon-battery-pulse 2s infinite;
+}
+
+#battery.charging, #battery.plugged {
+    color: @color10;
+    border-color: alpha(@color10, 0.5);
+}
+
+/* Tray styling */
+#tray {
+    margin-right: 8px;
+    padding: 2px 8px;
+    background: alpha(@background, 0.6);
+    border-radius: 9px;
+    border: 1px solid alpha(@foreground, 0.1);
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+/* Tooltip styled */
+tooltip {
+    background: alpha(@background, 0.95);
+    border: 1px solid alpha(@color4, 0.3);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+tooltip label {
+    padding: 4px 8px;
+    color: @foreground;
+}
+
+/* Smooth state transitions */
+#cpu.warning, #memory.warning {
+    color: @color11;
+}
+
+#cpu.critical, #memory.critical {
+    color: @color9;
+    background: alpha(@color9, 0.2);
+}
