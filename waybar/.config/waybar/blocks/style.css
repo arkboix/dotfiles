@@ -1,0 +1,177 @@
+@import "../wallust/colors-waybar.css";
+
+* {
+    /* Iosevka Nerd Font */
+    font-family: "Iosevka Nerd Font", "Iosevka", sans-serif;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+    color: @foreground;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces button {
+    background-color: @background;
+    color: @foreground;
+    border: none;
+    border-radius: 8px;
+    padding: 0 8px;
+    margin: 3px 0;
+}
+
+#workspaces button:hover {
+    background: @color8;
+    box-shadow: inherit;
+    text-shadow: 0 0 5px @foreground;
+}
+
+#workspaces button.active {
+    background-color: @color2;
+    color: @background;
+}
+
+#workspaces button.urgent {
+    background-color: @color9;
+}
+
+#mode {
+    background-color: @color5;
+    color: @background;
+    padding: 0 10px;
+    margin: 3px 0;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#tray,
+#mode,
+#submap {
+    padding: 0 10px;
+    margin: 3px 0;
+    color: @foreground;
+    background-color: @background;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: @color4;
+    color: @background;
+    font-weight: bold;
+}
+
+#battery {
+    background-color: @color7;
+    color: @background;
+}
+
+#battery.charging, #battery.plugged {
+    background-color: @color10;
+    color: @background;
+}
+
+@keyframes blink {
+    to {
+        background-color: @foreground;
+        color: @background;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: @color9;
+    color: @background;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: @background;
+}
+
+#cpu {
+    background-color: @color3;
+    color: @background;
+}
+
+#memory {
+    background-color: @color5;
+    color: @background;
+}
+
+#backlight {
+    background-color: @color6;
+    color: @background;
+}
+
+#network {
+    background-color: @color2;
+    color: @background;
+}
+
+#network.disconnected {
+    background-color: @color9;
+}
+
+#pulseaudio {
+    background-color: @color1;
+    color: @background;
+}
+
+#pulseaudio.muted {
+    background-color: @color8;
+    color: @foreground;
+}
+
+#temperature {
+    background-color: @color7;
+    color: @background;
+}
+
+#temperature.critical {
+    background-color: @color9;
+}
+
+#tray {
+    background-color: @background;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @color9;
+}

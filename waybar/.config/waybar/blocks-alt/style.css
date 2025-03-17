@@ -1,0 +1,155 @@
+@import "../wallust/colors-waybar.css";
+
+* {
+    font-family: "Iosevka Nerd Font", "Iosevka", sans-serif;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: alpha(@background, 0.9);
+    color: @foreground;
+    border-bottom: 3px solid @color4;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: @foreground;
+    border-bottom: 3px solid transparent;
+    padding: 0 5px;
+    margin: 0 2px;
+}
+
+#workspaces button:hover {
+    background: alpha(@foreground, 0.1);
+    border-bottom: 3px solid @color8;
+}
+
+#workspaces button.active {
+    background-color: alpha(@color2, 0.2);
+    border-bottom: 3px solid @color2;
+    color: @foreground;
+}
+
+#workspaces button.urgent {
+    background-color: alpha(@color9, 0.2);
+    border-bottom: 3px solid @color9;
+}
+
+#mode {
+    background-color: alpha(@color5, 0.2);
+    border-bottom: 3px solid @color5;
+    padding: 0 10px;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#tray,
+#mode,
+#submap {
+    padding: 0 10px;
+    margin: 0 2px;
+    color: @foreground;
+    border-bottom: 3px solid transparent;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+#clock {
+    border-bottom: 3px solid @color4;
+    font-weight: bold;
+}
+
+#battery {
+    border-bottom: 3px solid @color7;
+}
+
+#battery.charging, #battery.plugged {
+    border-bottom: 3px solid @color10;
+    color: @color10;
+}
+
+@keyframes blink {
+    to {
+        background-color: alpha(@color9, 0.5);
+    }
+}
+
+#battery.critical:not(.charging) {
+    border-bottom: 3px solid @color9;
+    color: @color9;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+    border-bottom: 3px solid @color3;
+}
+
+#memory {
+    border-bottom: 3px solid @color5;
+}
+
+#backlight {
+    border-bottom: 3px solid @color6;
+}
+
+#network {
+    border-bottom: 3px solid @color2;
+}
+
+#network.disconnected {
+    border-bottom: 3px solid @color9;
+    color: @color9;
+}
+
+#pulseaudio {
+    border-bottom: 3px solid @color1;
+}
+
+#pulseaudio.muted {
+    border-bottom: 3px solid @color8;
+    color: @color8;
+}
+
+#temperature {
+    border-bottom: 3px solid @color7;
+}
+
+#temperature.critical {
+    border-bottom: 3px solid @color9;
+    color: @color9;
+}
+
+#tray {
+    border-bottom: 3px solid @color14;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    border-bottom: 3px solid @color9;
+}
