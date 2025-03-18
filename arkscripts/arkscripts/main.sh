@@ -4,6 +4,7 @@
 
 # Define options
 options=(
+    "Change Animations intensity"
     "Change Global Theme"
     "Switch between Layouts"
     "Open Dock"
@@ -31,6 +32,7 @@ options=(
 
 # Define corresponding commands
 commands=(
+    "~/dotfiles/arkscripts/arkscripts/animation.sh"
     "~/dotfiles/arkscripts/arkscripts/theme-all.sh"
     "~/dotfiles/arkscripts/arkscripts/layout.sh"
     "nwg-dock-hyprland -mb 5 -l overlay -c 'rofi -show drun' -x"

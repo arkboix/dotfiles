@@ -65,7 +65,7 @@ else
     notify-send "Waybar Theme" "No theme selected"
 
     # Default theme fallback
-    default_folder="minimal-floating" # Keeping original default
+    default_folder="vapour" # Keeping original default
     if [ -d "$waybar_config_dir/$default_folder" ]; then
         waybar -c "$waybar_config_dir/$default_folder/config.jsonc" -s "$waybar_config_dir/$default_folder/style.css"
     else

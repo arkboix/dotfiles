@@ -1,26 +1,52 @@
 #!/bin/bash
 
-# Arkscripts - https://github.com/arkboix/dotfiles
+# Script to select animation level for Hyprland
 
-# Define options
-options=(
-    "Enabled"
-    "Disabled"
-)
+# Path to Hyprland config file
+HYPRLAND_CONF="$HOME/.config/hypr/hyprland.conf"
 
-# Define corresponding commands
-commands=(
-    "hyprctl keyword animations:enabled 1"
-    "hyprctl keyword animations:enabled 0"
-)
+# Check if the config file exists
+if [ ! -f "$HYPRLAND_CONF" ]; then
+    echo "Error: Hyprland config file not found at $HYPRLAND_CONF"
+    exit 1
+fi
 
-# Show Rofi menu
-selection=$(printf "%s\n" "${options[@]}" | rofi -dmenu -p "Main Scripts" -no-icons -columns 2)
+# Use rofi to prompt for animation level
+ANIMATION_LEVEL=$(echo -e "high\nmedium\nlow" | rofi -dmenu -p "Select animation level:")
 
-# Execute the corresponding command
-for i in "${!options[@]}"; do
-    if [[ "${options[i]}" == "$selection" ]]; then
-        eval "${commands[i]}"
-        exit 0
+# Check if user selected an option
+if [ -z "$ANIMATION_LEVEL" ]; then
+    echo "No animation level selected. Exiting."
+    exit 0
+fi
+
+# Validate selection
+if [[ ! "$ANIMATION_LEVEL" =~ ^(high|medium|low)$ ]]; then
+    echo "Invalid selection: $ANIMATION_LEVEL"
+    exit 1
+fi
+
+# Create backup of the config file
+cp "$HYPRLAND_CONF" "$HYPRLAND_CONF.bak"
+
+# Replace the animation source line in the config file
+sed -i "s|source = ~/.config/hypr/conf/animations/.*|source = ~/.config/hypr/conf/animations/$ANIMATION_LEVEL.conf|" "$HYPRLAND_CONF"
+
+# Check if the replacement was successful
+if grep -q "source = ~/.config/hypr/conf/animations/$ANIMATION_LEVEL.conf" "$HYPRLAND_CONF"; then
+    echo "Animation level set to $ANIMATION_LEVEL"
+    echo "Config file updated successfully."
+
+    # Optionally reload Hyprland config
+    if command -v hyprctl &> /dev/null; then
+        echo "Reloading Hyprland configuration..."
+        hyprctl reload
+    else
+        echo "Hyprland configuration updated. You may need to reload or restart Hyprland for changes to take effect."
     fi
-  done
+else
+    echo "Error: Failed to update config file."
+    echo "Restoring backup..."
+    mv "$HYPRLAND_CONF.bak" "$HYPRLAND_CONF"
+    exit 1
+fi

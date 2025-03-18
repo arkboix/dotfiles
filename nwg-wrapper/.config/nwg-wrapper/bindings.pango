@@ -1,27 +1,5 @@
 <span face="JetbrainsMono Nerd Font">
-<span size="xx-large" foreground="#999999" font="JetbrainsMono Nerd Font">Hyprland Keybinds</span>
 <span foreground="#eeeeee">
-All Keybinds     	<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + F1</span>
-
-Terminal emulator	<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + ENTER</span>
-Web browser		<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + B</span>
-Text editor		<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + Q</span>
-Wallpaper manager	<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + C</span>
-File manager		<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + E</span>
-Application launcher	<span foreground="#999999" font="JetbrainsMono Nerd Font">CTRL + SPACE</span>
-
-Kill window		<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + W</span>
-Exit menu		<span foreground="#999999" font="JetbrainsMono Nerd Font">CTRL + ALT + DELETE</span>
-
-Switch workspace	<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + NUM</span>
-Move to workspace	<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + SHIFT + NUM</span>
-Move focus		<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + N</span>
-Move container		<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + SHIFT + ARROW</span>
-
-Toggle floating		<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + T</span>
-Fullscreen		<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + F</span>
-
-Move to scratchpad	<span foreground="#999999" font="JetbrainsMono Nerd Font">SUPER + SHIFT + S</span>
-Show scratchpad		<span foreground="#999999" face="JetbrainsMono Nerd Font Bold">SUPER + S</span>
+All Keybinds     	<span foreground="#ffffff" font="JetbrainsMono Nerd Font">SUPER + F1</span>
 </span>
 </span>

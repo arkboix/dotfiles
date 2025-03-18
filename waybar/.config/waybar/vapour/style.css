@@ -1,0 +1,201 @@
+/* Floating Vapor - A sleek, minimalist floating waybar theme for Hyprland
+ * Created by Claude - 2025
+ */
+
+@import "../wallust/colors-waybar.css";
+
+* {
+    font-family: "Iosevka Nerd Font", "Iosevka", monospace;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+    min-height: 0;
+    transition: 0.3s;
+}
+
+window#waybar {
+    background: transparent;
+    color: @foreground;
+}
+
+
+window#waybar.empty #window {
+    background: transparent;
+    border: none;
+}
+
+
+tooltip {
+    background: alpha(@background, 0.9);
+    border: 2px solid alpha(@color4, 0.6);
+    border-radius: 10px;
+}
+
+tooltip label {
+    color: @foreground;
+}
+
+#workspaces {
+    background: alpha(@background, 0.7);
+    margin: 5px 5px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 2px solid alpha(@color12, 0.2);
+}
+
+#workspaces button {
+    padding: 0 5px;
+    margin: 5px 3px;
+    color: @color7;
+    background: alpha(@color0, 0.3);
+    border: none;
+    border-radius: 8px;
+}
+
+#workspaces button:hover {
+    background: alpha(@color8, 0.4);
+    color: @foreground;
+    box-shadow: 0 0 5px alpha(@color13, 0.7);
+}
+
+#workspaces button.active {
+    color: @color0;
+    background: linear-gradient(45deg, @color4, @color5);
+    box-shadow: 0 0 5px alpha(@color13, 0.7);
+}
+
+#workspaces button.urgent {
+    background: alpha(@color9, 0.8);
+    color: @color0;
+}
+
+#window {
+    background: alpha(@background, 0.7);
+    padding: 0 12px;
+    margin: 5px 2px;
+    border-radius: 10px;
+    border: 2px solid alpha(@color12, 0.2);
+    color: @color7;
+}
+
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#custom-memory,
+#cpu,
+#temperature,
+#backlight,
+#custom-power,
+#tray {
+    background: alpha(@background, 0.7);
+    padding: 0 12px;
+    margin: 5px 2px;
+    border-radius: 10px;
+    border: 2px solid alpha(@color12, 0.2);
+}
+
+#clock {
+    color: @color3;
+    background: alpha(@background, 0.85);
+    border-left: 2px solid alpha(@color3, 0.5);
+}
+
+#battery {
+    color: @color10;
+    border-left: 2px solid alpha(@color10, 0.5);
+}
+
+#battery.charging {
+    color: @color14;
+    border-left: 2px solid alpha(@color14, 0.5);
+}
+
+#battery.warning:not(.charging) {
+    color: @color11;
+    border-left: 2px solid alpha(@color11, 0.5);
+    animation: blink 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        background: alpha(@color9, 0.4);
+    }
+}
+
+#network {
+    color: @color6;
+    border-left: 2px solid alpha(@color6, 0.5);
+}
+
+#pulseaudio {
+    color: @color5;
+    border-left: 2px solid alpha(@color5, 0.5);
+}
+
+#pulseaudio.muted {
+    color: @color8;
+    border-left: 2px solid alpha(@color8, 0.5);
+}
+
+#custom-memory {
+    color: @color4;
+    border-left: 2px solid alpha(@color4, 0.5);
+}
+
+#cpu {
+    color: @color2;
+    border-left: 2px solid alpha(@color2, 0.5);
+}
+
+#temperature {
+    color: @color1;
+    border-left: 2px solid alpha(@color1, 0.5);
+}
+
+#temperature.critical {
+    color: @color9;
+    border-left: 2px solid alpha(@color9, 0.5);
+    animation: blink 0.5s ease-in-out infinite alternate;
+}
+
+#backlight {
+    color: @color3;
+    border-left: 2px solid alpha(@color3, 0.5);
+}
+
+#custom-power {
+    color: @color9;
+    border-left: 2px solid alpha(@color9, 0.5);
+    margin-right: 5px;
+}
+
+#tray {
+    background: alpha(@background, 0.85);
+    border-left: 2px solid alpha(@color7, 0.5);
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+/* Hover effects for all modules */
+#clock:hover,
+#battery:hover,
+#network:hover,
+#pulseaudio:hover,
+#custom-memory:hover,
+#cpu:hover,
+#temperature:hover,
+#backlight:hover,
+#custom-power:hover,
+#window:hover,
+#tray:hover {
+    background: alpha(@background, 0.9);
+    border-width: 2px;
+    box-shadow: 0 0 5px alpha(@color13, 0.7);
+}
