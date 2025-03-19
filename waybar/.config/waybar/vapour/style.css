@@ -151,7 +151,7 @@ tooltip label {
 }
 
 #temperature {
-    color: @color1;
+    color: @color14;
     border-left: 2px solid alpha(@color1, 0.5);
 }
 

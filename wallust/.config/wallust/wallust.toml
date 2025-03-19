@@ -4,7 +4,7 @@
 
 # How the image is parse, in order to get the colors:
 # full - resized - wal - thumb -  fastresize - kmeans
-backend = "fastresize"
+backend = "wal"
 
 # What color space to use to produce and select the most prominent colors:
 # lab - labmixed - lch - lchmixed

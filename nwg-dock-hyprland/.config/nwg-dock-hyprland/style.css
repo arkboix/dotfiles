@@ -1,7 +1,9 @@
 /* NWG Dock for Hyprland - https://github.com/arkboix/dotfiles */
 /* https://github.com/arkboix/dotfiles */
+@import '../../.config/waybar/wallust/colors-waybar.css';
+
 window {
-	background: rgba(0, 0, 20, 1);
+	background: @background;
 	border-radius: 0px;
 	border-style: solid;
 	border-width: 2px;

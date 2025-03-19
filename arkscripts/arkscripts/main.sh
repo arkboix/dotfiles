@@ -6,6 +6,7 @@
 options=(
     "Change Animations intensity"
     "Change Global Theme"
+    "Switch between rounding modes"
     "Switch between Layouts"
     "Open Dock"
     "Close Dock"
@@ -34,6 +35,7 @@ options=(
 commands=(
     "~/dotfiles/arkscripts/arkscripts/animation.sh"
     "~/dotfiles/arkscripts/arkscripts/theme-all.sh"
+    "~/dotfiles/arkscripts/arkscripts/rounding.sh"
     "~/dotfiles/arkscripts/arkscripts/layout.sh"
     "nwg-dock-hyprland -mb 5 -l overlay -c 'rofi -show drun' -x"
     "killall nwg-dock-hyprland"

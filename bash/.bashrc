@@ -492,3 +492,4 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH="$HOME/arkscripts:$PATH"
 
 
+nofetch

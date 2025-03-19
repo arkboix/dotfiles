@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script to select animation level for Hyprland
+# Script to select animation level for Hyprland
 
 # Path to Hyprland config file
 HYPRLAND_CONF="$HOME/.config/hypr/hyprland.conf"
