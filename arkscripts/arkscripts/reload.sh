@@ -6,7 +6,6 @@ pkill waybar
 
 # Waybar
 waybar -c /home/arkboi/.config/waybar/vapour/config.jsonc -s /home/arkboi/.config/waybar/vapour/style.css
-
 swaync-client -R
 
 

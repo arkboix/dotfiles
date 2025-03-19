@@ -67,7 +67,7 @@
     },
 
     "network": {
-        "format-wifi": "󰖩 {essid}",
+        "format-wifi": "󰖩 Wifi",
         "format-ethernet": "󰈀 {ipaddr}",
         "format-linked": "󰈀 {ifname} (No IP)",
         "format-disconnected": "󰖪 Disconnected",

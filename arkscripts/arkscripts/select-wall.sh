@@ -3,9 +3,9 @@
 # /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 # This script for selecting wallpapers
 
-# WALLPAPERS PATH
-terminal=kitty
-wallDIR="$HOME/wallpapers"
+# WALLPAPERS PATHS
+target_terminal=kitty
+wallDIRS=("$HOME/wallpapers" "$HOME/wallpapers-extra")
 SCRIPTSDIR="$HOME/arkscripts"
 
 # Directory for swaync
@@ -39,14 +39,19 @@ if pidof swaybg > /dev/null; then
   pkill swaybg
 fi
 
-# Retrieve image files using null delimiter to handle spaces in filenames
-mapfile -d '' PICS < <(find -L "${wallDIR}" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.pnm" -o -iname "*.tga" -o -iname "*.tiff" -o -iname "*.webp" -o -iname "*.bmp" -o -iname "*.farbfeld" -o -iname "*.png" -o -iname "*.gif" \) -print0)
+# Retrieve image files from multiple directories
+PICS=()
+for dir in "${wallDIRS[@]}"; do
+  while IFS= read -r -d '' file; do
+    PICS+=("$file")
+  done < <(find -L "$dir" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.pnm" -o -iname "*.tga" -o -iname "*.tiff" -o -iname "*.webp" -o -iname "*.bmp" -o -iname "*.farbfeld" -o -iname "*.png" -o -iname "*.gif" \) -print0)
+done
 
 RANDOM_PIC="${PICS[$((RANDOM % ${#PICS[@]}))]}"
 RANDOM_PIC_NAME=". random"
 
 # Rofi command
-rofi_command="rofi -dmenu    -theme wallpaper -theme-str $rofi_override  -me-select-entry w -me-accept-entry MousePrimary"
+rofi_command="rofi -dmenu -p Gallery -theme wallpaper -theme-str $rofi_override -me-select-entry w -me-accept-entry MousePrimary"
 
 # Sorting Wallpapers
 menu() {
@@ -73,8 +78,8 @@ main() {
 
   if [[ "$choice" == "$RANDOM_PIC_NAME" ]]; then
     swww img -o "$focused_monitor" "$RANDOM_PIC" $SWWW_PARAMS;
-    bash ~/arkscripts/wal.sh  # Apply colors and restart Waybar via wal.sh
-    bash ~/arkscripts/reload.sh  # Restart Waybar via reload.sh
+    bash "$SCRIPTSDIR/wal.sh"  # Apply colors and restart Waybar via wal.sh
+    bash "$SCRIPTSDIR/reload.sh"  # Restart Waybar via reload.sh
     exit 0
   fi
 
@@ -101,5 +106,5 @@ fi
 main
 pkill waybar  # Kill Waybar
 pkill swaync
-bash ~/arkscripts/wal.sh  # Apply colors and restart Waybar via wal.sh
-bash ~/arkscripts/reload.sh  # Restart Waybar via reload.sh (ensures it runs)
+bash "$SCRIPTSDIR/wal.sh"  # Apply colors and restart Waybar via wal.sh
+bash "$SCRIPTSDIR/reload.sh"  # Restart Waybar via reload.sh (ensures it runs)

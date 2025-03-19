@@ -1,12 +1,12 @@
 /* Floating Vapor - A sleek, minimalist floating waybar theme for Hyprland
- * Created by Claude - 2025
+ * Created by Arkboi lmao - 2025
  */
 
 @import "../wallust/colors-waybar.css";
 
 * {
     font-family: "Iosevka Nerd Font", "Iosevka", monospace;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 10px;
     min-height: 0;
@@ -23,6 +23,8 @@ window#waybar.empty #window {
     background: transparent;
     border: none;
 }
+
+
 
 
 tooltip {

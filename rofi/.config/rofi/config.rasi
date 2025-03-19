@@ -3,6 +3,8 @@
 configuration {
     modi: "drun,run,window,ssh,combi";
     font: "JetBrainsMono Nerd Font 12";
+    me-select-entry: "w";
+    me-accept-entry: "MousePrimary";
     show-icons: true;
     icon-theme: "Surfn";
     display-drun: "󰀻 Apps";
@@ -16,7 +18,6 @@ configuration {
     /* Settings */
     terminal: "kitty";
     sidebar-mode: false;
-    fixed-num-lines: true;
     combi-modi: "window,drun,run";
     click-to-exit: true;
     sorting-method: "levenshtein";

@@ -1,6 +1,6 @@
 window {
         background-color: rgba (0, 0, 0, 0.0);
-        border-radius: 12px;
+        border-radius: 28px;
 }
 
 #box-outer {
@@ -11,5 +11,5 @@ window {
 #box-inner {
         background-color: rgba (0, 0, 0, 0);
 	padding: 0 20px 0 20px;
-        border-radius: 12px;
+        border-radius: 48px;
 }

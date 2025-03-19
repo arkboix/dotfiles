@@ -12,7 +12,7 @@ if [ ! -f "$config" ]; then
 fi
 
 
-selected=$(echo -e "master\ndwindle" | rofi -dmenu)
+selected=$(echo -e "master\ndwindle\nnstack\nhy3" | rofi -dmenu -p "Layout")
 
 if [ -z "$selected" ]; then
     echo "No select, exit"

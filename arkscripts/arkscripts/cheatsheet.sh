@@ -11,15 +11,16 @@ S + SHIFT + Q - Open Global theme Switcher
 S + SHIFT + D - Open ArkScripts
 S + SHIFT + A - Reload
 S + SHIFT + Z - Choose Waybar Theme
+S + Tab - Toggle Overview
 C + SPC - App Launcher
 S + w - Close Window
 S + m - Emoji Picker
 S + c - Set wallpaper
 S + q - Exit Hyprland
-S + U - Move Focus Left
-S + I - Move Focus Right
-S + O - Move Focus Up
-S + P - Move Focus Down
+S + L_ARROW - Move Focus Left
+S + R_ARROW - Move Focus Right
+S + U_ARROW - Move Focus Up
+S + D_ARROW - Move Focus Down
 S + s - Toggle Scratchpad
 S + v - Clipboard
 S + b - Launch Browser
