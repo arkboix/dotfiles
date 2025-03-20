@@ -45,4 +45,8 @@ configuration {
 }
 
 
-@theme "~/.config/rofi/themes/style-1.rasi"
+//@theme "~/.config/rofi/themes/style-1.rasi"
+
+//@theme "/usr/share/rofi/themes/material.rasi"
+
+@theme "/home/arkboi/.config/rofi/themes/style-1.rasi"

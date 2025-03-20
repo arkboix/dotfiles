@@ -8,7 +8,7 @@ backend = "wal"
 
 # What color space to use to produce and select the most prominent colors:
 # lab - labmixed - lch - lchmixed
-color_space = "lchmixed"
+color_space = "labmixed"
 
 # NOTE: All filters will fill 16 colors (from color0 to color15), 16 color
 #       variations are the 'ilusion' of more colors by opaquing color1 to color5.
@@ -32,7 +32,7 @@ palette = "harddark16"
 #  2 - 10     Perceptible at a glance.
 #  11 - 49    Colors are more similar than opposite
 #  100        Colors are exact opposite
-threshold = 30
+threshold = 20
 
 [templates]
 hypr.template = 'colors-hyprland.conf'

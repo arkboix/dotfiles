@@ -11,7 +11,7 @@ configuration {
 }
 
 window {
-  width: 75%;
+  width: 100%;
   height: inherit;
 }
 
@@ -31,11 +31,10 @@ entry {
 
 /* ---- Listview ---- */
 listview {
-  columns: 6;
+  columns: 9;
   lines: 2;
   spacing: 20px;
   padding: 10px;
-  columns: 6;
   lines: 2;
   dynamic: true;
   flow: vertical;
@@ -43,6 +42,11 @@ listview {
   fixed-height: false;
   cycle: false;
 }
+
+scrollbar {
+          handle-width: 4px;
+}
+
 
 /* ---- Element ---- */
 element {

@@ -1,0 +1,152 @@
+@import '../wallust/colors-waybar.css';
+
+* {
+    font-family: "Montserrat Alternates, JetbrainsMono Nerd Font";
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: @background;
+    color: @foreground;
+    padding: 4px;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar > box {
+    padding: 4px;
+    border-radius: 40px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px @foreground;
+}
+
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: @foreground;
+    border-radius: 40px;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.active {
+    background-color: @color3;
+    color: @background;
+}
+
+
+
+#workspaces button.urgent {
+    background-color: @color2;
+}
+
+#custom-power {
+    padding: 0px;
+}
+
+
+
+#clock,
+#custom-shot,
+#custom-picker,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#custom-control,
+#idle_inhibitor,
+#scratchpad,
+#custom-media,
+#power-profiles-daemon,
+#mpd {
+    padding: 0 10px;
+    color: @foreground;
+    background-color: @color2;
+    border-radius: 40px;
+}
+
+
+#custom-shot, #custom-picker {
+    background-color: @color3;
+}
+
+
+
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#temperature:hover,
+#backlight:hover,
+#network:hover,
+#pulseaudio:hover,
+#wireplumber:hover,
+#custom-media:hover,
+#tray:hover,
+#mode:hover,
+#idle_inhibitor:hover,
+#scratchpad:hover,
+#custom-control:hover,
+#custom-media:hover,
+#power-profiles-daemon:hover,
+#mpd:hover{
+    border: 2px solid @foreground;
+}
+
+
+
+
+#network,
+#idle_inhibitor,
+#pulseaudio,
+#backlight{
+    background-color: transparent;
+}
+
+#window,
+#workspaces {
+    margin: 0 0px;
+}
+
+
+#clock.time {
+    font-weight: bold;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#window {
+    font-weight: bold;
+}

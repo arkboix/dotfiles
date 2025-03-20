@@ -1,3 +1,4 @@
+
 /**
  * Modern Minimal Theme
  * A clean, minimalist rofi theme with rounded corners
@@ -23,10 +24,10 @@
 }
 
 window {
-    width: 100%;
+    width: 20%;
+    location: northwest;
     transparency: "real";
     border: 2px;
-    location: northwest;
     border-color: @BDR;
     border-radius: 10px;
 }
@@ -60,8 +61,9 @@ entry {
 }
 
 listview {
-    lines: 8;
-    columns: 6;
+    columns: 1;
+     layout: vertical;
+    lines: 10;
     fixed-height: false;
     scrollbar: true;
     scrollbar-width: 4px;
