@@ -16,9 +16,9 @@ alternate-normal-foreground: {{foreground}};
 alternate-urgent-background: {{background}};
 alternate-urgent-foreground: {{foreground}};
 
-selected-active-background: {{color13}};
+selected-active-background: {{color5}};
 selected-active-foreground: {{foreground}};
-selected-normal-background: {{color13}};
+selected-normal-background: {{color5}};
 selected-normal-foreground: {{foreground}};
 selected-urgent-background: {{color12}};
 selected-urgent-foreground: {{foreground}};

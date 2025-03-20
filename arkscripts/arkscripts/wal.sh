@@ -29,7 +29,7 @@ touch ~/.config/waybar/floating-opaque/pywal.css
 touch ~/.config/wlogout/pywal.css
 
 wal -i "$SELECTED_WALL"
-wallust pywal -i "$SELECTED_WALL"
+wallust theme base16-nord
 
 
 cat ~/.cache/wal/colors-waybar.css > ~/.config/waybar/android/pywal.css
