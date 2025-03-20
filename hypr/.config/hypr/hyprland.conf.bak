@@ -22,7 +22,7 @@ source = ~/.config/hypr/conf/programs.conf
 source = ~/.config/hypr/conf/autostart.conf
 
 # Animations - choose between medium, high, and low
-source = ~/.config/hypr/conf/animations/low.conf
+source = ~/.config/hypr/conf/animations/high.conf
 
 # Hyprland Looks, includes window rules, and decoration.
 source = ~/.config/hypr/conf/looks.conf
