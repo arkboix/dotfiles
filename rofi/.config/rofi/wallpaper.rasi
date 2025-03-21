@@ -12,7 +12,7 @@ configuration {
 
 window {
   width: 100%;
-  height: inherit;
+  height: 100%;
 }
 
 /* ---- Mainbox ---- */
@@ -32,10 +32,9 @@ entry {
 /* ---- Listview ---- */
 listview {
   columns: 9;
-  lines: 2;
+  lines: 4;
   spacing: 20px;
   padding: 10px;
-  lines: 2;
   dynamic: true;
   flow: vertical;
   fixed-width: true;

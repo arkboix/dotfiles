@@ -20,7 +20,7 @@ selected-active-background: {{color5}};
 selected-active-foreground: {{foreground}};
 selected-normal-background: {{color5}};
 selected-normal-foreground: {{foreground}};
-selected-urgent-background: {{color12}};
+selected-urgent-background: {{color5}};
 selected-urgent-foreground: {{foreground}};
 
 background-color: {{background}};

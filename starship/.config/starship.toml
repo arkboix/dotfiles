@@ -137,14 +137,6 @@ only_with_files = true
 detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
 detect_folders = []
 
-# Custom command to show system load
-[custom.load]
-command = "uptime | grep -ohe 'load average[s:][: ].*' | awk '{ print $3 }'"
-symbol = " "
-style = "bold red"
-format = "[$symbol$output]($style) "
-when = "exit 0"
-shell = ["bash", "--noprofile", "--norc"]
 
 # Kubernetes context info
 [kubernetes]

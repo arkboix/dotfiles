@@ -1,0 +1,70 @@
+configuration {
+    modi: "drun,run";
+    show-icons: true;
+    font: "JetBrainsMono Nerd Font 12";
+    display-drun: "  Apps";
+    display-run: "  Run";
+}
+
+@import "~/.config/rofi/wallust/colors-rofi.rasi"
+
+window {
+    transparency: "real";
+    location: center;
+    width: 400px;
+    border: 2px;
+    border-color: @border-color;
+    padding: 20px;
+    background-color: @background-color;
+}
+
+mainbox {
+    spacing: 10px;
+}
+
+listview {
+    lines: 10;
+    fixed-height: false;
+    scrollbar: false;
+}
+
+element {
+    padding: 10px;
+    background-color: @normal-background;
+    text-color: @normal-foreground;
+}
+
+element selected {
+    background-color: @selected-normal-background;
+    text-color: @selected-normal-foreground;
+    border-radius: 10px;
+}
+
+element urgent {
+    background-color: @urgent-background;
+    text-color: @urgent-foreground;
+}
+
+element alternate {
+    background-color: @alternate-normal-background;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    background-color: @background-color;
+    text-color: @foreground;
+    border: 1px solid @border-color;
+    padding: 10px;
+    margin: 10px;
+}
+
+prompt {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+textbox {
+    background-color: inherit;
+    text-color: inherit;
+    padding: 5px;
+}

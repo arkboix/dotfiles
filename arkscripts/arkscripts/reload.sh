@@ -1,5 +1,13 @@
 #!/usr/bin/env sh
 
+
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+
+makoctl reload
 notify-send "Reloading" "Has been reloaded succesfully"
 # Arkscripts - https://github.com/arkboix/dotfiles
 pkill waybar
@@ -7,10 +15,95 @@ pkill waybar
 # Waybar
 waybar -c /home/arkboi/.config/waybar/material/config.jsonc -s /home/arkboi/.config/waybar/material/style.css
 swaync-client -R
+makoctl reload
 
-
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
 # NWG Wrapper
 pkill nwg-wrapper
-nwg-wrapper -t bindings.pango -c bindings.css -p left -a end -mb 30 -ml 30
+nwg-wrapper -t note.txt -p left -a end -mb 30 -ml 30
 
 
+
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload
+makoctl reload

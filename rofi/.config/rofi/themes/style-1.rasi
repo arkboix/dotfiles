@@ -6,7 +6,7 @@
 @import "~/.config/rofi/wallust/colors-rofi.rasi"
 
 * {
-    font: "Iosevka Nerd Font Mono 12";
+    font: "Gabarito, Montserrat Alternates, Iosevka Nerd Font Mono 12";
     border-radius: 8px;
     padding: 0;
     margin: 0;
@@ -23,10 +23,9 @@
 }
 
 window {
-    width: 100%;
+    width: 40%;
     transparency: "real";
     border: 2px;
-    location: northwest;
     border-color: @BDR;
     border-radius: 10px;
 }
@@ -60,8 +59,8 @@ entry {
 }
 
 listview {
-    lines: 8;
-    columns: 6;
+    lines: 10;
+    columns: 2;
     fixed-height: false;
     scrollbar: true;
     scrollbar-width: 4px;

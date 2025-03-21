@@ -1,7 +1,7 @@
 @import '../wallust/colors-waybar.css';
 
 * {
-    font-family: "Montserrat Alternates, JetbrainsMono Nerd Font";
+    font-family: "Gabarito,Montserrat Alternates, Iosevka Nerd Font";
     font-size: 13px;
 }
 
@@ -15,12 +15,14 @@ window#waybar {
 
 window#waybar > box {
     padding: 4px;
-    border-radius: 40px;
+    border-radius: 12px;
 }
 
 window#waybar.hidden {
     opacity: 0.2;
 }
+
+
 
 button {
     box-shadow: inset 0 -3px transparent;
@@ -29,15 +31,17 @@ button {
 }
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px @foreground;
+    border: 1px solid @color4;
 }
 
 
 #workspaces button {
     padding: 0 5px;
-    background-color: transparent;
+    background-color: @color1;
     color: @foreground;
-    border-radius: 40px;
+    border-radius: 0px;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
 }
 
 #workspaces button:hover {
@@ -47,9 +51,14 @@ button:hover {
 #workspaces button.active {
     background-color: @color3;
     color: @background;
+    padding: 0 10px;
+    transition: all 0.3s ease-in-out;
 }
 
-
+#workspaces button.empty {
+    background-color: @background;
+    color: @foreground;
+}
 
 #workspaces button.urgent {
     background-color: @color2;
@@ -60,10 +69,7 @@ button:hover {
 }
 
 
-
 #clock,
-#custom-shot,
-#custom-picker,
 #battery,
 #cpu,
 #memory,
@@ -85,12 +91,14 @@ button:hover {
     padding: 0 10px;
     color: @foreground;
     background-color: @color2;
-    border-radius: 40px;
+    border-radius: 12px;
 }
 
 
 #custom-shot, #custom-picker {
     background-color: @color3;
+    border-radius: 12px;
+    padding: 0 10px;
 }
 
 
@@ -117,7 +125,9 @@ button:hover {
     border: 2px solid @foreground;
 }
 
-
+#custom-control {
+    border-radius: 40px;
+}
 
 
 #network,
@@ -149,4 +159,10 @@ button:hover {
 
 #window {
     font-weight: bold;
+        margin-bottom: -16px;
+        margin-left: -98px;
+}
+
+#custom-wundow {
+    margin-top: -12px;
 }
