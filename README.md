@@ -8,6 +8,15 @@
   </a>
 </p>
 
+<h2> NOTE: I no longer use Hyprland, I use SwayWM. My Sway config is the only one being maintained here </h2>
+<h2> INSTALLING MY SWAY CONFIG: Just clone this repo, then `stow -v -t ~ sway`. also do the same stow for rofi, waybar, and nwg-wrapper. Then in ~/.config/sway execute this command below: </h2>
+
+``` shell
+ln -s ~/.config/rofi rofi
+ln -s ~/.config/nwg-wrapper nwg-wrapper
+```
+
+<h2> THE BELOW MENTIONED STUFF ARE UNMAINTAINED !! </h2>
 
 These are my Linux dotfiles, I use Hyprland as my window manager with various tools, this is supposed to be no - nonsense, just plain "Just Werks" stuff.
 
