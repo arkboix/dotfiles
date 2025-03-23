@@ -9,9 +9,10 @@
 </p>
 
 <h2> NOTE: I no longer use Hyprland, I use SwayWM. My Sway config is the only one being maintained here </h2>
-<h2> INSTALLING MY SWAY CONFIG: Just clone this repo, then `stow -v -t ~ sway`. also do the same stow for rofi, waybar, and nwg-wrapper. Then in ~/.config/sway execute this command below: </h2>
+INSTALLING MY SWAY CONFIG: Just clone this repo, then `stow -v -t ~ sway`. also do the same stow for rofi, waybar, and nwg-wrapper. Then in ~/.config/sway execute this command below: 
 
 ``` shell
+cd ~/.config/sway
 ln -s ~/.config/rofi rofi
 ln -s ~/.config/nwg-wrapper nwg-wrapper
 ```
