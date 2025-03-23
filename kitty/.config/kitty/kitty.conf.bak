@@ -1,0 +1,542 @@
+# Kitty Terminal Theme with Multiple Colorschemes
+# Switch between themes by uncommenting your preferred colorscheme
+# https://github.com/arkboix/dotfiles
+# Lil extra
+# MEOW
+confirm_os_window_close 0
+
+include /home/arkboi/.config/kitty/wallust/colors-kitty.conf
+
+
+
+###############################################################
+# Solarized Dark (Commented)
+###############################################################
+# foreground            #839496
+# background            #002b36
+# selection_foreground  #93a1a1
+# selection_background  #073642
+
+# # Cursor Colors
+# cursor                #93a1a1
+# cursor_text_color     #002b36
+
+# # URL underline color when hovering
+# url_color             #2aa198
+
+# # Window border colors
+# active_border_color   #268bd2
+# inactive_border_color #073642
+
+# # Tab bar
+# tab_bar_style         powerline
+# tab_bar_edge          bottom
+# tab_powerline_style   slanted
+# active_tab_foreground #002b36
+# active_tab_background #268bd2
+# active_tab_font_style bold
+# inactive_tab_foreground #839496
+# inactive_tab_background #073642
+# inactive_tab_font_style normal
+
+# # Colors for marks (marked text in the terminal)
+# mark1_foreground #002b36
+# mark1_background #b58900
+# mark2_foreground #002b36
+# mark2_background #cb4b16
+# mark3_foreground #002b36
+# mark3_background #6c71c4
+
+# # The 16 terminal colors
+# # black
+# color0   #073642
+# color8   #002b36
+
+# # red
+# color1   #dc322f
+# color9   #cb4b16
+
+# # green
+# color2   #859900
+# color10  #586e75
+
+# # yellow
+# color3   #b58900
+# color11  #657b83
+
+# # blue
+# color4   #268bd2
+# color12  #839496
+
+# # magenta
+# color5   #d33682
+# color13  #6c71c4
+
+# # cyan
+# color6   #2aa198
+# color14  #93a1a1
+
+# # white
+# color7   #eee8d5
+# color15  #fdf6e3
+###############################################################
+# Nord Theme (Commented)
+###############################################################
+# foreground            #d8dee9
+# background            #2e3440
+# selection_foreground  #d8dee9
+# selection_background  #4c566a
+#
+# cursor                #d8dee9
+# cursor_text_color     #2e3440
+#
+# url_color             #88c0d0
+#
+# active_border_color   #81a1c1
+# inactive_border_color #4c566a
+#
+# tab_bar_style         powerline
+# tab_bar_edge          bottom
+# tab_powerline_style   slanted
+# active_tab_foreground #2e3440
+# active_tab_background #81a1c1
+# active_tab_font_style bold
+# inactive_tab_foreground #d8dee9
+# inactive_tab_background #3b4252
+# inactive_tab_font_style normal
+#
+# mark1_foreground #2e3440
+# mark1_background #ebcb8b
+# mark2_foreground #2e3440
+# mark2_background #d08770
+# mark3_foreground #2e3440
+# mark3_background #8fbcbb
+#
+# # black
+# color0   #3b4252
+# color8   #4c566a
+#
+# # red
+# color1   #bf616a
+# color9   #bf616a
+#
+# # green
+# color2   #a3be8c
+# color10  #a3be8c
+#
+# # yellow
+# color3   #ebcb8b
+# color11  #ebcb8b
+#
+# # blue
+# color4   #81a1c1
+# color12  #81a1c1
+#
+# # magenta
+# color5   #b48ead
+# color13  #b48ead
+#
+# # cyan
+# color6   #88c0d0
+# color14  #8fbcbb
+#
+# # white
+# color7   #e5e9f0
+# color15  #eceff4
+
+###############################################################
+# Dracula Theme (Commented)
+###############################################################
+# foreground            #f8f8f2
+# background            #282a36
+# selection_foreground  #f8f8f2
+# selection_background  #44475a
+#
+# cursor                #f8f8f2
+# cursor_text_color     #282a36
+#
+# url_color             #8be9fd
+#
+# active_border_color   #bd93f9
+# inactive_border_color #44475a
+#
+# tab_bar_style         powerline
+# tab_bar_edge          bottom
+# tab_powerline_style   slanted
+# active_tab_foreground #282a36
+# active_tab_background #bd93f9
+# active_tab_font_style bold
+# inactive_tab_foreground #f8f8f2
+# inactive_tab_background #44475a
+# inactive_tab_font_style normal
+#
+# mark1_foreground #282a36
+# mark1_background #f1fa8c
+# mark2_foreground #282a36
+# mark2_background #ffb86c
+# mark3_foreground #282a36
+# mark3_background #bd93f9
+#
+# # black
+# color0   #21222c
+# color8   #6272a4
+#
+# # red
+# color1   #ff5555
+# color9   #ff6e6e
+#
+# # green
+# color2   #50fa7b
+# color10  #69ff94
+#
+# # yellow
+# color3   #f1fa8c
+# color11  #ffffa5
+#
+# # blue
+# color4   #bd93f9
+# color12  #d6acff
+#
+# # magenta
+# color5   #ff79c6
+# color13  #ff92df
+#
+# # cyan
+# color6   #8be9fd
+# color14  #a4ffff
+#
+# # white
+# color7   #f8f8f2
+# color15  #ffffff
+
+###############################################################
+# Tokyo Night Theme (Commented)
+###############################################################
+# foreground            #a9b1d6
+# background            #1a1b26
+# selection_foreground  #a9b1d6
+# selection_background  #414868
+#
+# cursor                #a9b1d6
+# cursor_text_color     #1a1b26
+#
+# url_color             #7dcfff
+#
+# active_border_color   #7aa2f7
+# inactive_border_color #414868
+#
+# tab_bar_style         powerline
+# tab_bar_edge          bottom
+# tab_powerline_style   slanted
+# active_tab_foreground #1a1b26
+# active_tab_background #7aa2f7
+# active_tab_font_style bold
+# inactive_tab_foreground #a9b1d6
+# inactive_tab_background #24283b
+# inactive_tab_font_style normal
+#
+# mark1_foreground #1a1b26
+# mark1_background #e0af68
+# mark2_foreground #1a1b26
+# mark2_background #ff9e64
+# mark3_foreground #1a1b26
+# mark3_background #9d7cd8
+#
+# # black
+# color0   #24283b
+# color8   #414868
+#
+# # red
+# color1   #f7768e
+# color9   #f7768e
+#
+# # green
+# color2   #9ece6a
+# color10  #9ece6a
+#
+# # yellow
+# color3   #e0af68
+# color11  #e0af68
+#
+# # blue
+# color4   #7aa2f7
+# color12  #7aa2f7
+#
+# # magenta
+# color5   #bb9af7
+# color13  #bb9af7
+#
+# # cyan
+# color6   #7dcfff
+# color14  #7dcfff
+#
+# # white
+# color7   #a9b1d6
+# color15  #c0caf5
+
+###############################################################
+# Gruvbox Dark Theme (Commented)
+###############################################################
+# foreground            #ebdbb2
+# background            #282828
+# selection_foreground  #ebdbb2
+ #selection_background  #504945
+
+ #cursor                #ebdbb2
+ #cursor_text_color     #282828
+
+ #url_color             #83a598
+
+ #active_border_color   #fabd2f
+ #inactive_border_color #504945
+#
+# tab_bar_style         powerline
+# tab_bar_edge          bottom
+# tab_powerline_style   slanted
+# active_tab_foreground #282828
+# active_tab_background #fabd2f
+# active_tab_font_style bold
+# inactive_tab_foreground #ebdbb2
+# inactive_tab_background #3c3836
+# inactive_tab_font_style normal
+
+# mark1_foreground #282828
+# mark1_background #fabd2f
+# mark2_foreground #282828
+# mark2_background #fe8019
+# mark3_foreground #282828
+# mark3_background #83a598
+
+# black
+# color0   #282828
+# color8   #928374
+
+# red
+ #color1   #cc241d
+ #color9   #fb4934
+
+# # green
+#color2   #98971a
+#color10  #b8bb26
+
+# # yellow
+#color3   #d79921
+#color11  #fabd2f
+#
+# # blue
+#color4   #458588
+#color12  #83a598
+
+# # magenta
+#color5   #b16286
+#color13  #d3869b
+#
+# # cyan
+#color6   #689d6a
+#color14  #8ec07c
+#
+# # white
+#color7   #a89984
+#color15  #ebdbb2
+
+###############################################################
+# Catppuccin Mocha Theme (Commented)
+###############################################################
+# foreground              #cdd6f4
+# background              #1e1e2e
+# selection_foreground    #1e1e2e
+# selection_background    #f5e0dc
+#
+# cursor                  #f5e0dc
+# cursor_text_color       #1e1e2e
+#
+# url_color               #f5e0dc
+#
+# active_border_color     #b4befe
+# inactive_border_color   #6c7086
+#
+# tab_bar_style           powerline
+# tab_bar_edge            bottom
+# tab_powerline_style     slanted
+# active_tab_foreground   #1e1e2e
+# active_tab_background   #cba6f7
+# active_tab_font_style   bold
+# inactive_tab_foreground #cdd6f4
+# inactive_tab_background #181825
+# inactive_tab_font_style normal
+#
+# mark1_foreground #1e1e2e
+# mark1_background #f9e2af
+# mark2_foreground #1e1e2e
+# mark2_background #fab387
+# mark3_foreground #1e1e2e
+# mark3_background #cba6f7
+#
+# # black
+# color0 #45475a
+# color8 #585b70
+#
+# # red
+# color1 #f38ba8
+# color9 #f38ba8
+#
+# # green
+# color2  #a6e3a1
+# color10 #a6e3a1
+#
+# # yellow
+# color3  #f9e2af
+# color11 #f9e2af
+#
+# # blue
+# color4  #89b4fa
+# color12 #89b4fa
+#
+# # magenta
+# color5  #f5c2e7
+# color13 #f5c2e7
+#
+# # cyan
+# color6  #94e2d5
+# color14 #94e2d5
+#
+# # white
+# color7  #bac2de
+# color15 #a6adc8
+
+
+# Dev/TTY Inspired Dark Theme
+#foreground            #d0d0d0
+#background            #0f191c
+#selection_foreground  #303030
+#selection_background  #6080d0
+
+# Cursor Colors
+#cursor                #6080d0
+#cursor_text_color     #303030
+
+# URL underline color when hovering
+#url_color             #6080d0
+
+# Window border colors
+#active_border_color   #6080d0
+#inactive_border_color #606060
+
+# Tab bar
+#tab_bar_style         powerline
+#tab_bar_edge          bottom
+#tab_powerline_style   slanted
+#active_tab_foreground #303030
+#active_tab_background #6080d0
+#active_tab_font_style bold
+#inactive_tab_foreground #d0d0d0
+#inactive_tab_background #404040
+#inactive_tab_font_style normal
+
+# Colors for marks (marked text in the terminal)
+#mark1_foreground #303030
+#mark1_background #d0a060
+#mark2_foreground #303030
+#mark2_background #d06060
+#mark3_foreground #303030
+#mark3_background #a060d0
+
+# The 16 terminal colors
+# black
+#color0   #303030
+#color8   #606060
+
+# red
+#color1   #d06060
+#color9   #ff8080
+
+# green
+#color2   #60d075
+#color10  #80ff95
+
+# yellow
+#color3   #d0a060
+#color11  #ffc080
+
+# blue
+#color4   #6080d0
+#color12  #80a0ff
+
+# magenta
+#color5   #a060d0
+#color13  #c080ff
+
+# cyan
+#color6   #60d0d0
+#color14  #80ffff
+
+# white
+#color7   #d0d0d0
+#color15  #f0f0f0
+
+
+###############################################################
+# Font Configuration
+###############################################################
+font_family       Iosevka Nerd Font Mono
+bold_font         Iosevka Nerd Font Mono
+italic_font       Iosevka Nerd Font Mono
+bold_italic_font  Iosevka Nerd Font Mono
+font_size         20.0
+
+###############################################################
+# Window Configuration
+###############################################################
+window_padding_width 10
+hide_window_decorations yes
+background_opacity 0.9
+dynamic_background_opacity yes
+window_margin_width 5
+allow_remote_control yes
+
+
+###############################################################
+# Terminal Bell
+###############################################################
+enable_audio_bell no
+visual_bell_duration 0.0
+window_alert_on_bell yes
+
+###############################################################
+# Additional Settings
+###############################################################
+scrollback_lines 10000
+copy_on_select yes
+enable_audio_bell no
+cursor_blink_interval 0.5
+cursor_shape beam
+strip_trailing_spaces smart
+mouse_hide_wait 3.0
+focus_follows_mouse yes
+
+###############################################################
+# Keyboard Shortcuts
+###############################################################
+# Clipboard
+map ctrl+shift+c copy_to_clipboard
+map ctrl+shift+v paste_from_clipboard
+
+# Font size
+map ctrl+shift+equal change_font_size all +1.0
+map ctrl+shift+minus change_font_size all -1.0
+map ctrl+shift+0 change_font_size all 0
+
+# Scrolling
+map ctrl+shift+k scroll_line_up
+map ctrl+shift+j scroll_line_down
+map ctrl+shift+page_up scroll_page_up
+map ctrl+shift+page_down scroll_page_down
+map ctrl+shift+home scroll_home
+map ctrl+shift+end scroll_end
+
+# Window management
+map ctrl+shift+n new_os_window
+map ctrl+shift+w close_window
+map ctrl+shift+enter new_window
+map ctrl+shift+] next_window
+map ctrl+shift+[ previous_window

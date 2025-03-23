@@ -1,21 +1,21 @@
 layer=overlay
-background-color=#2B140C
+background-color=#1E2326
 border-size=2
-border-color=#5B2C19
-border-radius=10
+border-color=#A7C080
+border-radius=0
 default-timeout=5000
 ignore-timeout=1
-font=Montserrat Alternates 12
-text-color=#CCB7AF
+font=Iosevka Nerd Font Mono 12
+text-color=#D3C6AA
 outer-margin=0,5,15,0
-anchor=top-center
+anchor=top-right
 
 [urgency=high]
-border-color=#765944
+border-color=#61AFEF
 default-timeout=0
 
 [urgency=low]
-border-color=#3E2E21
+border-color=#282C34
 
 [category=mpd]
 default-timeout=2000

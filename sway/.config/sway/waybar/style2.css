@@ -1,0 +1,209 @@
+/* EverForest Dark theme for Waybar - Clean Minimal Edition */
+
+/* Base color definitions */
+@define-color black #272e33;
+@define-color bg0 #2d353b;
+@define-color bg1 #343f44;
+@define-color bg2 #3d484d;
+@define-color bg3 #475258;
+@define-color bg4 #4f585e;
+@define-color bg5 #56635f;
+@define-color fg #d3c6aa;
+@define-color red #e67e80;
+@define-color orange #e69875;
+@define-color yellow #dbbc7f;
+@define-color green #a7c080;
+@define-color aqua #83c092;
+@define-color blue #7fbbb3;
+@define-color purple #d699b6;
+@define-color gray #859289;
+
+/* Global styling */
+* {
+    font-family: "Iosevka Nerd Font", monospace;
+    font-size: 12px;
+    min-height: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+}
+
+window#waybar {
+    background-color: alpha(@black, 0.95);
+    color: @fg;
+    border-bottom: 1px solid @bg3;
+}
+
+tooltip {
+    background-color: @bg0;
+    border: 1px solid @bg3;
+}
+
+tooltip label {
+    color: @fg;
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 0 5px;
+    color: @gray;
+    min-width: 20px;
+    margin: 0 2px;
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
+}
+
+#workspaces button:hover {
+    color: @fg;
+    border-bottom: 2px solid @bg3;
+}
+
+#workspaces button.focused {
+    color: @green;
+    border-bottom: 2px solid @green;
+}
+
+#workspaces button.urgent {
+    color: @red;
+    border-bottom: 2px solid @red;
+}
+
+/* Clock - Centerpiece */
+#clock {
+    padding: 0 10px;
+    color: @aqua;
+    font-weight: bold;
+    border-bottom: 2px solid @aqua;
+}
+
+/* System modules - Shared minimal styling */
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#backlight,
+#idle_inhibitor,
+#custom-notification,
+#tray,
+#custom-layout,
+#custom-media,
+#custom-weather,
+#custom-power,
+#mode {
+    padding: 0 8px;
+    margin: 0 2px;
+}
+
+/* Individual module styling with accent colors */
+#battery {
+    color: @green;
+    border-bottom: 2px solid alpha(@green, 0.5);
+}
+
+#battery.warning {
+    color: @yellow;
+    border-bottom-color: alpha(@yellow, 0.5);
+}
+
+#battery.critical {
+    color: @red;
+    border-bottom-color: @red;
+    font-weight: bold;
+}
+
+#cpu {
+    color: @purple;
+    border-bottom: 2px solid alpha(@purple, 0.5);
+}
+
+#memory {
+    color: @orange;
+    border-bottom: 2px solid alpha(@orange, 0.5);
+}
+
+#temperature {
+    color: @yellow;
+    border-bottom: 2px solid alpha(@yellow, 0.5);
+}
+
+#temperature.critical {
+    color: @red;
+    border-bottom-color: @red;
+}
+
+#backlight {
+    color: @fg;
+    border-bottom: 2px solid alpha(@fg, 0.5);
+}
+
+/* Network */
+#network {
+    color: @blue;
+    border-bottom: 2px solid alpha(@blue, 0.5);
+}
+
+#network.disconnected {
+    color: @red;
+    border-bottom-color: @red;
+}
+
+/* Pulseaudio */
+#pulseaudio {
+    color: @aqua;
+    border-bottom: 2px solid alpha(@aqua, 0.5);
+}
+
+#pulseaudio.muted {
+    color: @red;
+    border-bottom-color: @red;
+}
+
+/* Custom modules */
+#custom-weather {
+    color: @blue;
+    border-bottom: 2px solid alpha(@blue, 0.5);
+}
+
+#custom-notification {
+    color: @fg;
+    border-bottom: 2px solid alpha(@fg, 0.5);
+}
+
+#idle_inhibitor {
+    color: @gray;
+    border-bottom: 2px solid alpha(@gray, 0.5);
+}
+
+#idle_inhibitor.activated {
+    color: @green;
+    border-bottom-color: @green;
+}
+
+#tray {
+    padding: 0 8px;
+}
+
+#custom-layout {
+    color: @purple;
+    border-bottom: 2px solid alpha(@purple, 0.5);
+}
+
+#custom-media {
+    color: @orange;
+    border-bottom: 2px solid alpha(@orange, 0.5);
+    min-width: 100px;
+}
+
+#custom-power {
+    color: @red;
+    font-weight: bold;
+    border-bottom: 2px solid alpha(@red, 0.5);
+}
+
+#mode {
+    color: @yellow;
+    font-weight: bold;
+    border-bottom: 2px solid alpha(@yellow, 0.5);
+}

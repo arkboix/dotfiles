@@ -1,1 +1,0 @@
-<span color="white">To see all keybinds press Super + F1</span>

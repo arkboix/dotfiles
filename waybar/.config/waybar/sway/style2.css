@@ -1,0 +1,221 @@
+/* EverForest Dark theme for Waybar - Calm Edition */
+
+/* Base color definitions */
+@define-color black #272e33;
+@define-color bg0 #2d353b;
+@define-color bg1 #343f44;
+@define-color bg2 #3d484d;
+@define-color bg3 #475258;
+@define-color bg4 #4f585e;
+@define-color bg5 #56635f;
+@define-color fg #d3c6aa;
+@define-color red #e67e80;
+@define-color orange #e69875;
+@define-color yellow #dbbc7f;
+@define-color green #a7c080;
+@define-color aqua #83c092;
+@define-color blue #7fbbb3;
+@define-color purple #d699b6;
+@define-color gray #859289;
+
+/* Module-specific colors - Softer, more calming palette */
+@define-color workspaces-bg @bg1;
+@define-color workspaces-focus @green;
+@define-color clock-bg transparent;
+@define-color clock-fg @aqua;
+@define-color battery-bg transparent;
+@define-color battery-fg @green;
+@define-color battery-warning @yellow;
+@define-color battery-critical @red;
+@define-color network-bg transparent;
+@define-color network-fg @blue;
+@define-color cpu-bg transparent;
+@define-color cpu-fg @aqua;
+@define-color memory-bg transparent;
+@define-color memory-fg @yellow;
+@define-color temp-bg transparent;
+@define-color temp-fg @yellow;
+@define-color temp-critical @red;
+@define-color audio-bg transparent;
+@define-color audio-fg @purple;
+@define-color power-bg transparent;
+@define-color power-fg @fg;
+@define-color quote-fg @green;
+@define-color meditation-fg @aqua;
+@define-color weather-fg @blue;
+
+/* Global styling */
+* {
+    font-family: "Iosevka Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+    transition-duration: 0.5s;
+}
+
+window#waybar {
+    background-color: alpha(@black, 0.85);
+    color: @fg;
+    border: none;
+    box-shadow: none;
+}
+
+tooltip {
+    background-color: alpha(@bg0, 0.9);
+    border: 1px solid @bg3;
+}
+
+tooltip label {
+    color: @fg;
+}
+
+/* Workspaces - Simple, minimal */
+#workspaces button {
+    padding: 0 8px;
+    margin: 4px 2px;
+    color: @gray;
+    background-color: transparent;
+    font-weight: normal;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button:hover {
+    background: alpha(@bg2, 0.5);
+    color: @fg;
+    border-bottom: 2px solid @aqua;
+}
+
+#workspaces button.focused {
+    color: @green;
+    background-color: alpha(@bg2, 0.4);
+    border-bottom: 2px solid @green;
+}
+
+#workspaces button.urgent {
+    color: @red;
+    border-bottom: 2px solid @red;
+}
+
+/* Clock - Centerpiece */
+#clock {
+    padding: 0 12px;
+    color: @clock-fg;
+    background-color: @clock-bg;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 2px solid alpha(@aqua, 0.4);
+}
+
+/* System modules - Uniform, calm design */
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio {
+    padding: 0 12px;
+    margin: 4px 1px;
+    background-color: transparent;
+}
+
+#battery {
+    color: @battery-fg;
+    border-bottom: 2px solid alpha(@green, 0.4);
+}
+
+#battery.warning {
+    color: @battery-warning;
+    border-bottom: 2px solid @battery-warning;
+}
+
+#battery.critical {
+    color: @battery-critical;
+    border-bottom: 2px solid @battery-critical;
+    animation: blink 1s infinite alternate;
+}
+
+#cpu {
+    color: @cpu-fg;
+    border-bottom: 2px solid alpha(@aqua, 0.4);
+}
+
+#memory {
+    color: @memory-fg;
+    border-bottom: 2px solid alpha(@yellow, 0.4);
+}
+
+/* Network */
+#network {
+    color: @network-fg;
+    border-bottom: 2px solid alpha(@blue, 0.4);
+}
+
+#network.disconnected {
+    color: @red;
+    border-bottom: 2px solid @red;
+}
+
+/* Pulseaudio */
+#pulseaudio {
+    color: @audio-fg;
+    border-bottom: 2px solid alpha(@purple, 0.4);
+}
+
+#pulseaudio.muted {
+    color: @red;
+    border-bottom: 2px solid @red;
+}
+
+/* Custom modules */
+#custom-weather {
+    color: @weather-fg;
+    background-color: transparent;
+    padding: 0 12px;
+    margin: 4px 2px;
+    border-bottom: 2px solid alpha(@blue, 0.4);
+}
+
+#custom-meditation {
+    color: @meditation-fg;
+    background-color: transparent;
+    padding: 0 12px;
+    margin: 4px 2px;
+    border-bottom: 2px solid alpha(@aqua, 0.4);
+    font-weight: bold;
+}
+
+#custom-quote {
+    color: @quote-fg;
+    background-color: transparent;
+    padding: 0 12px;
+    margin: 4px 2px;
+    border-bottom: 2px solid alpha(@green, 0.4);
+    font-style: italic;
+}
+
+/* Custom power button */
+#custom-power {
+    color: @power-fg;
+    background-color: @power-bg;
+    padding: 0 12px;
+    margin: 4px 2px;
+    border-bottom: 2px solid alpha(@fg, 0.4);
+}
+
+/* Animations */
+@keyframes blink {
+    to {
+        color: @fg;
+        border-bottom: 2px solid @fg;
+    }
+}
+
+#mode {
+    color: @yellow;
+    margin: 4px 2px;
+    padding: 0 8px;
+    border-bottom: 2px solid @yellow;
+}

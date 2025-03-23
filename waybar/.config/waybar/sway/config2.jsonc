@@ -1,0 +1,122 @@
+/* Waybar configuration file */
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 6,
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+
+    // Modules left
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "custom/weather"
+    ],
+
+    // Modules center
+    "modules-center": [
+        "custom/meditation",
+        "clock",
+        "custom/quote"
+    ],
+
+    // Modules right
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "battery",
+        "custom/power"
+    ],
+
+    // Module configuration
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+
+    "sway/mode": {
+        "format": "{}",
+        "tooltip": false
+    },
+
+    "clock": {
+        "tooltip-format": "<big>{:%B %Y}</big>\n<small>{calendar}</small>",
+        "format": "{:%H:%M}",
+        "format-alt": "{:%a, %d %b}"
+    },
+
+    "cpu": {
+        "format": "cpu {usage}%",
+        "tooltip": false,
+        "interval": 3
+    },
+
+    "memory": {
+        "format": "mem {}%",
+        "interval": 3
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "bat {capacity}%",
+        "format-charging": "bat+ {capacity}%",
+        "format-plugged": "bat~ {capacity}%"
+    },
+
+    "network": {
+        "format-wifi": "net {signalStrength}%",
+        "format-ethernet": "eth",
+        "format-linked": "link",
+        "format-disconnected": "no-net",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip-format": "{essid} {signalStrength}%"
+    },
+
+    "pulseaudio": {
+        "format": "vol {volume}%",
+        "format-bluetooth": "bt {volume}%",
+        "format-bluetooth-muted": "bt mute",
+        "format-muted": "mute",
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+
+    "custom/weather": {
+        "exec": "curl 'https://wttr.in/?format=%C+%t'",
+        "interval": 3600,
+        "tooltip": false
+    },
+
+    "custom/meditation": {
+        "format": "breathe",
+        "on-click": "swaymsg exec 'kitty -e tty-clock -c -B -C 6'",
+        "tooltip": "Take a moment to breathe"
+    },
+
+    "custom/quote": {
+        "exec": "echo 'be present'",
+        "interval": 3600,
+        "tooltip": "Remember to be mindful"
+    },
+
+    "custom/power": {
+        "format": "power",
+        "on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown' 'shutdown -h now'"
+    }
+}

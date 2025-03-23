@@ -49,4 +49,10 @@ configuration {
 
 //@theme "/usr/share/rofi/themes/material.rasi"
 
-@theme "/home/arkboi/.config/rofi/themes/style-1.rasi"
+//@theme "/home/arkboi/.config/rofi/themes/style-1.rasi"
+
+//@theme "/home/arkboi/.config/rofi/themes/sway.rasi"
+
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+@theme "/home/arkboi/.config/rofi/themes/sway.rasi"

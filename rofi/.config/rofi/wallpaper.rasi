@@ -11,8 +11,8 @@ configuration {
 }
 
 window {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 70%;
 }
 
 /* ---- Mainbox ---- */
@@ -24,6 +24,7 @@ mainbox {
 entry {
   expand: true;
   placeholder: "Search / Choose Wallpaper";
+  placeholder-color: @foreground;
   horizontal-align: 0;
   horizontal-align: 0;
   color: @color4;
@@ -84,6 +85,6 @@ element-text {
 
 
 element-text selected {
-    background-color: @color11;
+    background-color: @selected-normal-background;
     border-radius: 4px;
 }

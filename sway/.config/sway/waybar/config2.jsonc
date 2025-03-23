@@ -1,0 +1,157 @@
+/* Waybar configuration file */
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 0,
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+
+    // Modules left
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "custom/layout",
+        "custom/media"
+    ],
+
+    // Modules center
+    "modules-center": [
+        "clock"
+    ],
+
+    // Modules right
+    "modules-right": [
+        "custom/weather",
+        "idle_inhibitor",
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "temperature",
+        "backlight",
+        "battery",
+        "custom/notification",
+        "tray",
+        "custom/power"
+    ],
+
+    // Module configuration
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+
+    "sway/mode": {
+        "format": "  {}"
+    },
+
+    "clock": {
+        "tooltip-format": "<big>{:%B %Y}</big>\n<small>{calendar}</small>",
+        "format": "{:%a %d %b  %H:%M}",
+        "interval": 1
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%",
+        "interval": 2,
+        "tooltip": true
+    },
+
+    "memory": {
+        "format": "MEM {percentage}%",
+        "interval": 2
+    },
+
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "TEMP {temperatureC}°C"
+    },
+
+    "backlight": {
+        "format": "BL {percent}%"
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "BAT {capacity}%",
+        "format-charging": "BAT+ {capacity}%",
+        "format-plugged": "BAT~ {capacity}%",
+        "format-alt": "BAT {time}"
+    },
+
+    "network": {
+        "format-wifi": "NET {signalStrength}%",
+        "format-ethernet": "ETH",
+        "format-linked": "LNK",
+        "format-disconnected": "NET!",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip-format": "{essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "{ifname} {ipaddr}"
+    },
+
+    "pulseaudio": {
+        "format": "VOL {volume}%",
+        "format-bluetooth": "BT {volume}%",
+        "format-bluetooth-muted": "BT MUTE",
+        "format-muted": "MUTE",
+        "on-click": "pavucontrol"
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "FOCUS",
+            "deactivated": "IDLE"
+        }
+    },
+
+    "tray": {
+        "spacing": 5
+    },
+
+    "custom/layout": {
+        "exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | awk -F '\"' '{print $4}'",
+        "interval": 1,
+        "format": "KB {}",
+        "tooltip": false
+    },
+
+    "custom/media": {
+        "format": "MPD {}",
+        "return-type": "json",
+        "max-length": 80,
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{title}}\", \"tooltip\": \"{{playerName}}: {{artist}} - {{title}} ({{album}})\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "on-click": "playerctl play-pause"
+    },
+
+    "custom/weather": {
+        "exec": "curl 'https://wttr.in/?format=%C+%t'",
+        "interval": 3600,
+        "format": "WTR {}"
+    },
+
+    "custom/notification": {
+        "tooltip": false,
+        "format": "NOTIF",
+        "on-click": "swaync-client -t -sw"
+    },
+
+    "custom/power": {
+        "format": "PWR",
+        "on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown' 'shutdown -h now'"
+    }
+}

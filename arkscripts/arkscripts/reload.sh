@@ -13,7 +13,7 @@ notify-send "Reloading" "Has been reloaded succesfully"
 pkill waybar
 
 # Waybar
-waybar -c /home/arkboi/.config/waybar/material/config.jsonc -s /home/arkboi/.config/waybar/material/style.css
+waybar -c /home/arkboi/.config/waybar/sway/config.jsonc -s /home/arkboi/.config/waybar/sway/style.css
 swaync-client -R
 makoctl reload
 

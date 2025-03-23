@@ -1,0 +1,137 @@
+/* Everforest color palette */
+@define-color bg-dark #2b3339;
+@define-color bg0 #323c41;
+@define-color bg1 #3a454a;
+@define-color bg2 #424a50;
+@define-color bg3 #4c5356;
+@define-color bg4 #555e61;
+@define-color bg5 #5d6568;
+@define-color fg #d3c6aa;
+@define-color red #e67e80;
+@define-color orange #e69875;
+@define-color yellow #dbbc7f;
+@define-color green #a7c080;
+@define-color aqua #83c092;
+@define-color blue #7fbbb3;
+@define-color purple #d699b6;
+@define-color grey1 #868d80;
+@define-color grey2 #77817d;
+
+/* Module specific colors */
+@define-color background @bg-dark;
+@define-color foreground @fg;
+@define-color workspaces @bg0;
+@define-color workspaces-active @green;
+@define-color clock @blue;
+@define-color battery @aqua;
+@define-color battery-warning @yellow;
+@define-color battery-critical @red;
+@define-color network @green;
+@define-color cpu @purple;
+@define-color memory @blue;
+@define-color pulseaudio @aqua;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Iosevka Nerd Font", monospace;
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @background;
+    color: @foreground;
+    border-bottom: 1px solid @bg2;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    background-color: transparent;
+    color: @foreground;
+}
+
+#workspaces button:hover {
+    background: @bg1;
+}
+
+#workspaces button.focused {
+    background-color: @workspaces-active;
+    color: @bg-dark;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+}
+
+#mode {
+    background-color: @bg1;
+    padding: 0 5px;
+    margin: 0 4px;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#mode {
+    padding: 0 8px;
+    margin: 0 2px;
+    color: @bg-dark;
+}
+
+#clock {
+    background-color: @clock;
+}
+
+#battery {
+    background-color: @battery;
+}
+
+#battery.charging, #battery.plugged {
+    background-color: @battery;
+}
+
+#battery.warning:not(.charging) {
+    background-color: @battery-warning;
+}
+
+#battery.critical:not(.charging) {
+    background-color: @battery-critical;
+}
+
+#cpu {
+    background-color: @cpu;
+}
+
+#memory {
+    background-color: @memory;
+}
+
+#network {
+    background-color: @network;
+}
+
+#network.disconnected {
+    background-color: @red;
+}
+
+#pulseaudio {
+    background-color: @pulseaudio;
+}
+
+#pulseaudio.muted {
+    background-color: @bg2;
+    color: @fg;
+}
+
+#tray {
+    background-color: @bg1;
+}
